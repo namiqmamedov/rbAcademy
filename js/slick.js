@@ -36,6 +36,14 @@ $('#card-item').slick({
     ]
 });
 
+$('.home-main').slick({
+    dots: true,
+    infinite: true,
+    autoplaySpeed: 3000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+});
+
 $('#feedback-card').slick({
     dots: false,
     infinite: true,
