@@ -1,12 +1,54 @@
 $('#card-item').slick({
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 300,
     autoplay: true,
-    centerMode: true,
+    centerMode: false,
     autoplaySpeed: 3000,
-    slidesToShow: 3,
+    slidesToShow: 3.5,
     slidesToScroll: 3,
+    prevArrow: '<i class="fa-solid fa-arrow-left slick-prev"></i>',
+    nextArrow: '<i class="fa-solid fa-arrow-right slick-next"></i>',
+    responsive: [{
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
+});
+
+$('#course-item').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    centerMode: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    prevArrow: '<i class="fa-solid fa-arrow-left slick-prev"></i>',
+    nextArrow: '<i class="fa-solid fa-arrow-right slick-next"></i>',
+    slidesToShow: 4,
+    slidesToScroll: 2,
     responsive: [{
             breakpoint: 1024,
             settings: {
@@ -42,6 +84,30 @@ $('.home-main').slick({
     autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    // responsive: [{
+    //     breakpoint: 1024,
+    //     settings: {
+    //         slidesToShow: 3,
+    //         slidesToScroll: 3,
+    //         infinite: true,
+    //         dots: true
+    //     }
+    // },
+    // {
+    //     breakpoint: 600,
+    //     settings: {
+    //         slidesToShow: 2,
+    //         slidesToScroll: 2
+    //     }
+    // },
+    // {
+    //     breakpoint: 480,
+    //     settings: {
+    //         slidesToShow: 1,
+    //         slidesToScroll: 1
+    //     }
+    // }
+]
 });
 
 $('#feedback-card').slick({
@@ -78,7 +144,6 @@ $('#feedback-card').slick({
         // instead of a settings object
     ]
 });
-
 
 $('#grade-card').slick({
     dots: false,
@@ -117,8 +182,6 @@ $('#grade-card').slick({
     ]
 });
 
-
-
 $('#cert-card').slick({
     dots: false,
     infinite: true,
@@ -126,6 +189,8 @@ $('#cert-card').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
     centerMode: true,
+    prevArrow: '<i class="fa-solid fa-arrow-left slick-prev"></i>',
+    nextArrow: '<i class="fa-solid fa-arrow-right slick-next"></i>',
     responsive: [{
             breakpoint: 1024,
             settings: {
@@ -155,13 +220,14 @@ $('#cert-card').slick({
     ]
 });
 
-
 $('#book-card').slick({
     dots: false,
     infinite: true,
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
+    prevArrow: '<i class="fa-solid fa-arrow-left slick-prev"></i>',
+    nextArrow: '<i class="fa-solid fa-arrow-right slick-next"></i>',
     responsive: [{
             breakpoint: 1024,
             settings: {
