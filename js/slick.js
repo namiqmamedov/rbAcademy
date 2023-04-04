@@ -5,19 +5,15 @@ $('#card-item').slick({
     autoplay: true,
     centerMode: false,
     autoplaySpeed: 3000,
-    slidesToShow: 3.5,
-    slidesToScroll: 3,
-    mobileFirst: true,
     prevArrow: '<i class="fa-solid fa-arrow-left slick-prev"></i>',
     nextArrow: '<i class="fa-solid fa-arrow-right slick-next"></i>',
     responsive: [{
             breakpoint: 1024,
             settings: {
-                slidesToShow: 1,
-                slidesToScroll: 3,
+                slidesToShow: 4,
+                slidesToScroll: 2,
                 infinite: true,
                 dots: true,
-                mobileFirst: false,
             }
         },
         {
@@ -28,10 +24,17 @@ $('#card-item').slick({
             }
         },
         {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
             breakpoint: 350,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 1
+                slidesToScroll: 2
             }
         }
     ]
@@ -46,14 +49,11 @@ $('#card-item').slick({
         autoplaySpeed: 3000,
         prevArrow: '<i class="fa-solid fa-arrow-left slick-prev"></i>',
         nextArrow: '<i class="fa-solid fa-arrow-right slick-next"></i>',
-        slidesToShow: 4,
-        slidesToScroll: 2,
-        mobileFirst: true,
         responsive: [{
-                breakpoint: 1024,
+                breakpoint: 2000,
                 settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
+                    slidesToShow: 4,
+                    slidesToScroll: 2,
                     infinite: true,
                     dots: false
                 }
@@ -106,14 +106,11 @@ $('#feedback-card').slick({
     dots: false,
     infinite: true,
     speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    mobileFirst: true,
     responsive: [{
-            breakpoint: 1024,
+            breakpoint: 2000,
             settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
+                slidesToShow: 4,
+                slidesToScroll: 2,
                 infinite: true,
                 dots: false
             }
@@ -128,7 +125,7 @@ $('#feedback-card').slick({
         {
             breakpoint: 480,
             settings: {
-                slidesToShow: 1,
+                slidesToShow: 2,
                 slidesToScroll: 1
             }
         }
@@ -142,54 +139,12 @@ $('#grade-card').slick({
     dots: false,
     infinite: true,
     speed: 300,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    mobileFirst: true,
+    // slidesToShow: 4,
+    // slidesToScroll: 2,
     responsive: [{
-            breakpoint: 1024,
+            breakpoint: 2000,
             settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: false,
-            }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-    ]
-});
-
-$('#cert-card').slick({
-    dots: false,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    centerMode: true,
-    mobileFirst: true,
-    prevArrow: '<i class="fa-solid fa-arrow-left slick-prev"></i>',
-    nextArrow: '<i class="fa-solid fa-arrow-right slick-next"></i>',
-    responsive: [{
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 1,
+                slidesToShow: 4,
                 slidesToScroll: 1,
                 infinite: true,
                 dots: false
@@ -198,8 +153,50 @@ $('#cert-card').slick({
         {
             breakpoint: 600,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 350,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 2
+            }
+        },
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
+    });
+
+$('#cert-card').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    // slidesToShow: 4,
+    // slidesToScroll: 2,
+    responsive: [{
+            breakpoint: 2000,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
             }
         },
         {
@@ -213,7 +210,8 @@ $('#cert-card').slick({
         // settings: "unslick"
         // instead of a settings object
     ]
-});
+    });
+    
 
 $('#book-card').slick({
     dots: false,
@@ -230,10 +228,19 @@ $('#news-card').slick({
 dots: false,
 infinite: true,
 speed: 300,
-slidesToShow: 4,
-slidesToScroll: 2,
-mobileFirst: true,
-responsive: [{
+// slidesToShow: 4,
+// slidesToScroll: 2,
+responsive: [
+    {
+        breakpoint: 2000,
+        settings: {
+            slidesToShow: 4,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: false
+        }
+    },
+    {
         breakpoint: 1024,
         settings: {
             slidesToShow: 1,
@@ -245,8 +252,8 @@ responsive: [{
     {
         breakpoint: 600,
         settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
+            slidesToShow: 1,
+            slidesToScroll: 1
         }
     },
     {

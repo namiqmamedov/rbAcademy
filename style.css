@@ -1716,6 +1716,10 @@ footer .main-footer {
   display: flex;
   gap: 9.8rem;
 }
+footer .main-footer .main-router {
+  display: flex;
+  gap: 10rem;
+}
 footer .main-footer .router-link-first {
   display: flex;
   flex-direction: column;
@@ -1938,6 +1942,7 @@ footer .last-footer div span {
   }
   footer .main-footer .logo img {
     width: 31%;
+    padding-bottom: 13px;
   }
   footer .main-footer .contact-footer {
     margin-bottom: 18px;
@@ -1962,4 +1967,50 @@ footer .last-footer div span {
     text-align: center;
     gap: 0.7rem;
   }
+}
+.about-card {
+  padding: 80px 0;
+  /* the parent */
+}
+.about-card .title {
+  font-weight: bold;
+  font-size: 30px;
+}
+.about-card .slick-slide {
+  margin: 0 10px;
+}
+.about-card .slick-list {
+  margin: 0 -10px;
+}
+.about-card .all-item {
+  display: flex;
+  gap: 0.8rem;
+  padding-top: 40px;
+}
+.about-card .all-item .card-box {
+  border: none;
+  background: #FFFFFF;
+  border: 0.5px solid #ededed;
+  box-shadow: 0px 0px 7px rgba(190, 190, 190, 0.25);
+  padding: 22px 20px;
+  width: 100% !important;
+  height: 100%;
+}
+.about-card .all-item .card-box img {
+  width: 22%;
+  height: 65px;
+  margin-bottom: 15px;
+}
+.about-card .all-item .card-box .card-body {
+  padding: 0;
+}
+.about-card .all-item .card-box .card-body .subject-title h6 {
+  color: #FE5538 !important;
+  font-weight: 600;
+  font-size: 15px;
+}
+.about-card .all-item .card-box .card-body .card-title {
+  font-size: 25px;
+  line-height: 32px;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */

@@ -2151,6 +2151,11 @@ footer {
         display: flex;
         gap: 9.8rem;
 
+        .main-router{
+            display: flex;
+        gap: 10rem;
+        }
+
         .router-link-first {
             display: flex;
             flex-direction: column;
@@ -2457,6 +2462,7 @@ footer {
             .logo {
                 img {
                     width: 31%;
+                    padding-bottom: 13px;
                 }
             }
 
@@ -2488,4 +2494,62 @@ footer {
         }
     }
 
+}
+
+.about-card {
+    padding: 80px 0;
+
+    .title {
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .slick-slide {
+        margin: 0 10px;
+    }
+
+    /* the parent */
+    .slick-list {
+        margin: 0 -10px;
+    }
+
+    .all-item {
+        display: flex;
+        gap: 0.8rem;
+        padding-top: 40px;
+
+        .card-box {
+            border: none;
+            background: #FFFFFF;
+            border: 0.5px solid #ededed;
+            box-shadow: 0px 0px 7px rgba(190, 190, 190, 0.25);
+            padding: 22px 20px;
+            width: 100% !important;
+            height: 100%;
+
+            img {
+                width: 22%;
+                height: 65px;
+                margin-bottom: 15px;
+            }
+
+            .card-body {
+                padding: 0;
+
+                .subject-title {
+                    h6 {
+                        color: #FE5538 !important;
+                        font-weight: 600;
+                        font-size: 15px;
+                    }
+                }
+
+                .card-title {
+                    font-size: 25px;
+                    line-height: 32px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
 }
