@@ -52,16 +52,18 @@ a {
         display: none;
     }
 
-    &:before {
-        content: "";
-        opacity: 0.5;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: url("https://rbacademy.az/assets/new_frontend/images/home-bg.png");
-    }
+    // &:before {
+    //     content: "";
+    //     opacity: 0.8;
+    //     position: absolute;
+    //     top: -20px;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     background-size: cover;
+    //     background-position: center;
+    //     background-image: url("https://rbacademy.az/assets/new_frontend/images/home-bg.png");
+    // }
 
     .slick-dots li.slick-active button:before {
         opacity: .75;
@@ -2584,7 +2586,6 @@ footer {
         }
     }
 
-
     .about-card {
         .subtitle {
             max-width: 614px;
@@ -2599,8 +2600,132 @@ footer {
         }
     }
 
-}
+    .course-index {
 
+        .card-title {
+            h3 {
+                font-family: 'Futurica', sans-serif;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 25px;
+            }
+        }
+
+        .course-title {
+            font-size: 24px !important;
+            line-height: 30px;
+            max-width: 561px;
+            margin: 0 auto;
+            padding-bottom: 15px;
+        }
+
+        .course-subtitle {
+            max-width: 515px;
+            margin: 0 auto;
+        }
+
+        #card-choose {
+            display: none !important;
+        }
+
+        .course-section {
+
+            .form-check {
+                padding-left: 0;
+            }
+
+            .form-group {
+                display: block;
+                margin-bottom: 9px;
+                border-bottom: 1px solid #D5D5D5;
+
+                &:last-child {
+                    border-bottom: 1px solid #212121;
+                }
+            }
+
+            .form-group input {
+                padding: 0;
+                height: initial;
+                width: initial;
+                margin-bottom: 0;
+                display: none;
+                cursor: pointer;
+            }
+
+            .form-group label {
+                position: relative;
+                cursor: pointer;
+                padding-bottom: 9px;
+            }
+
+            .form-group label:before {
+                content: '';
+                -webkit-appearance: none;
+                background-color: transparent;
+                border: 2px solid #FE5538;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+                width: 13px;
+                height: 13px;
+                display: inline-block;
+                position: relative;
+                vertical-align: middle;
+                cursor: pointer;
+                margin-right: 10px;
+            }
+
+            .form-group input:checked+label:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 2px;
+                left: 6px;
+                width: 6px;
+                height: 14px;
+                border: solid #FE5538;
+                border-width: 0 2px 2px 0;
+                transform: rotate(45deg);
+            }
+        }
+
+        .course-main-card {
+            padding: 0;
+            width: 100%;
+
+            &::before {
+                position: static;
+            }
+
+            .card-item {
+                flex-wrap: wrap;
+                padding-top: 0;
+
+
+                .card {
+                    width: 58% !important;
+                    height: 14% !important;
+                    margin-left: auto;
+                    margin-right: auto;
+                    transition: .3s ease-in-out;
+
+                    &:hover {
+                        box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
+                    }
+                }
+            }
+        }
+
+        .card-index-second {
+            .form-group {
+                &:last-child {
+                    border-bottom: transparent !important;
+                }
+            }
+        }
+
+    }
+
+}
 
 .about-card {
     padding: 80px 0;
@@ -2671,20 +2796,299 @@ footer {
     }
 }
 
-.course-index{
-    .course-index{
-        .course-title{
-            font-size: 48px;
-            font-weight: bold;
-            font-family: 'Futurica',sans-serif;
-            text-align: center;
+.course-index {
+    padding-top: 90px;
+
+    .course-title {
+        font-size: 48px;
+        font-weight: bold;
+        font-family: 'Futurica', sans-serif;
+        text-align: center;
+    }
+
+    .course-index {
+        display: flex;
+
+
+        .card-title {
+            h3 {
+                font-family: 'Futurica', sans-serif;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 25px;
+            }
         }
 
-        .card-choose{
-            width: 315px;
-            height: 941px;
-            box-shadow: rgba(190, 190, 190, 0.5);
+        .card-choose {
+            display: block !important;
+            box-shadow: 0px 0px 7px rgba(190, 190, 190, 0.5);
+
+            .card-index-first {
+                padding: 28px 26px;
+            }
         }
+
+        .course-section {
+
+            .form-check {
+                padding-left: 0;
+            }
+
+            .form-group {
+                display: block;
+                margin-bottom: 9px;
+                border-bottom: 1px solid #D5D5D5;
+
+                &:last-child {
+                    border-bottom: 1px solid #212121;
+                }
+            }
+
+            .form-group input {
+                padding: 0;
+                height: initial;
+                width: initial;
+                margin-bottom: 0;
+                display: none;
+                cursor: pointer;
+            }
+
+            .form-group label {
+                position: relative;
+                cursor: pointer;
+                padding-bottom: 9px;
+            }
+
+            .form-group label:before {
+                content: '';
+                -webkit-appearance: none;
+                background-color: transparent;
+                border: 2px solid #FE5538;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+                width: 13px;
+                height: 13px;
+                display: inline-block;
+                position: relative;
+                vertical-align: middle;
+                cursor: pointer;
+                margin-right: 10px;
+            }
+
+            .form-group input:checked+label:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 2px;
+                left: 6px;
+                width: 6px;
+                height: 14px;
+                border: solid #FE5538;
+                border-width: 0 2px 2px 0;
+                transform: rotate(45deg);
+            }
+        }
+
+        .course-main-card {
+            padding: 0;
+
+            .card {
+
+                .slick-slide {
+                    width: 100%;
+                    height: 100% !important;
+                }
+
+                .card-body {
+                    padding: 1rem 1.4rem;
+
+                    .card-text {
+                        margin-bottom: 2rem;
+                        opacity: 0;
+                        transition: .5s ease-in-out;
+
+                    }
+
+                    .bottom-content {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .btn {
+                            background: #543EE9;
+                            outline: none;
+                            border: none;
+                            width: 50%;
+                            border-radius: 30px;
+                            transition: .5s ease-in-out;
+                        }
+
+                        .price-card {
+                            h6 {
+                                font-family: "Mulish", sans-serif;
+                                font-weight: 800;
+                                font-size: 15px;
+                                line-height: 20px;
+                                color: #fe5538 !important;
+                                transition: .5s ease-in-out;
+                            }
+
+                            p {
+                                text-decoration-line: line-through;
+                                margin-bottom: 0;
+                                color: #929292 !important;
+                                font-family: 'Mulish', sans-serif;
+                                font-weight: bold;
+                                text-decoration-color: black;
+                                text-decoration-thickness: 2px;
+
+                            }
+                        }
+                    }
+                }
+
+                .card-title-first {
+                    display: flex;
+                    gap: 1rem;
+
+                    .title-first {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .square {
+                        background: #3AD4D8;
+                        width: 4px;
+                        height: 4px;
+                        margin-left: 1rem;
+                        margin-top: -0.3rem;
+                        border-radius: 50%;
+                    }
+
+                    h6 {
+                        font-weight: 700;
+                        font-size: 12px !important;
+                        line-height: 20px;
+                        color: #FE5538;
+                    }
+                }
+
+                .card-title-second {
+                    font-family: 'Futurica';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 25px;
+                    margin-bottom: 38px;
+                }
+
+
+            }
+
+            .card:hover {
+                .card-text {
+                    opacity: 1;
+                    transition: .5s ease-in-out;
+                }
+
+                .btn {
+                    background: #fff !important;
+                    color: black;
+                    transition: .5s ease-in-out;
+                    border: 1px solid #353535 !important;
+                }
+
+                .card-img-top {
+                    padding: 10px 10px 10px 10px;
+                }
+
+                .card-feedback {
+                    opacity: 1;
+                    visibility: visible !important;
+                }
+
+            }
+
+            .title {
+                font-weight: 700;
+                font-size: 30px;
+                padding-bottom: 10px;
+            }
+
+            .subtitle {
+                max-width: 648px;
+                margin: 0 auto;
+            }
+
+            .card-feedback {
+                display: flex;
+                align-items: center;
+                gap: 0.25rem;
+                padding-bottom: 8px;
+                opacity: 0;
+                visibility: hidden !important;
+                transition: .5s ease-in-out;
+
+                .fa-solid {
+                    color: #543EE9;
+                }
+
+                .fa-regular {
+                    color: #543EE9;
+                }
+
+                img {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+
+            img {
+                width: 100%;
+                border-radius: 0;
+                transition: .5s ease-in-out;
+                height: 213px;
+
+            }
+
+            .card-item {
+                display: flex;
+                gap: 1rem;
+                justify-content: center;
+                padding-top: 58px;
+
+            }
+
+            &::before {
+                position: static;
+            }
+
+            #course-item {
+                display: flex;
+                flex-wrap: wrap;
+                padding-top: 0;
+                gap: 1rem;
+
+
+                #card {
+                    width: 32%;
+                    height: 35%;
+                    transition: .3s ease-in-out;
+
+                    &:hover {
+                        box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
+                    }
+                }
+            }
+        }
+
+        .card-index-second {
+            .form-group {
+                &:last-child {
+                    border-bottom: transparent !important;
+                }
+            }
+        }
+
     }
 }
 
@@ -3032,7 +3436,6 @@ footer {
         }
     }
 
-
     .about-card {
         .subtitle {
             max-width: 614px;
@@ -3045,6 +3448,131 @@ footer {
                 height: 330px !important;
             }
         }
+    }
+
+    .course-index {
+        padding-top: 55px;
+
+        .card-title {
+            h3 {
+                font-family: 'Futurica', sans-serif;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 25px;
+            }
+        }
+
+        .course-title {
+            font-size: 30px !important;
+            max-width: 561px;
+            margin: 0 auto;
+            padding-bottom: 15px;
+            line-height: 35px;
+        }
+
+        .course-subtitle {
+            max-width: 495px;
+            margin: 0 auto;
+        }
+
+        #card-choose {
+            display: none !important;
+        }
+
+        .course-section {
+
+            .form-check {
+                padding-left: 0;
+            }
+
+            .form-group {
+                display: block;
+                margin-bottom: 9px;
+                border-bottom: 1px solid #D5D5D5;
+
+                &:last-child {
+                    border-bottom: 1px solid #212121;
+                }
+            }
+
+            .form-group input {
+                padding: 0;
+                height: initial;
+                width: initial;
+                margin-bottom: 0;
+                display: none;
+                cursor: pointer;
+            }
+
+            .form-group label {
+                position: relative;
+                cursor: pointer;
+                padding-bottom: 9px;
+            }
+
+            .form-group label:before {
+                content: '';
+                -webkit-appearance: none;
+                background-color: transparent;
+                border: 2px solid #FE5538;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+                width: 13px;
+                height: 13px;
+                display: inline-block;
+                position: relative;
+                vertical-align: middle;
+                cursor: pointer;
+                margin-right: 10px;
+            }
+
+            .form-group input:checked+label:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 2px;
+                left: 6px;
+                width: 6px;
+                height: 14px;
+                border: solid #FE5538;
+                border-width: 0 2px 2px 0;
+                transform: rotate(45deg);
+            }
+        }
+
+        .course-main-card {
+            padding: 0;
+            width: 100%;
+
+            &::before {
+                position: static;
+            }
+
+            .card-item {
+                flex-wrap: wrap;
+                padding-top: 0;
+
+
+                .card {
+                    width: 58% !important;
+                    height: 14% !important;
+                    margin-left: auto;
+                    transition: .3s ease-in-out;
+
+                    &:hover {
+                        box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
+                    }
+                }
+            }
+        }
+
+        .card-index-second {
+            .form-group {
+                &:last-child {
+                    border-bottom: transparent !important;
+                }
+            }
+        }
+
     }
 
 }
@@ -3148,8 +3676,6 @@ footer {
         }
 
         .main-header {
-
-
             .active {
                 height: 100vh !important;
 
@@ -3467,6 +3993,137 @@ footer {
                 }
             }
         }
+    }
+
+    .course-index {
+        padding-top: 55px;
+
+        .card-title {
+            h3 {
+                font-family: 'Futurica', sans-serif;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 25px;
+            }
+        }
+
+        .course-title {
+            font-size: 30px !important;
+            max-width: 665px;
+            margin: 0 auto;
+            padding-bottom: 15px;
+            line-height: 35px;
+        }
+
+        .course-subtitle {
+            max-width: 625px;
+            margin: 0 auto;
+        }
+
+        #card-choose {
+            width: 50%;
+            height: 22%;
+        }
+
+        .course-main-card {
+            width: 50%;
+        }
+
+
+
+        .course-section {
+
+            .form-check {
+                padding-left: 0;
+            }
+
+            .form-group {
+                display: block;
+                margin-bottom: 9px;
+                border-bottom: 1px solid #D5D5D5;
+
+                &:last-child {
+                    border-bottom: 1px solid #212121;
+                }
+            }
+
+            .form-group input {
+                padding: 0;
+                height: initial;
+                width: initial;
+                margin-bottom: 0;
+                display: none;
+                cursor: pointer;
+            }
+
+            .form-group label {
+                position: relative;
+                cursor: pointer;
+                padding-bottom: 9px;
+            }
+
+            .form-group label:before {
+                content: '';
+                -webkit-appearance: none;
+                background-color: transparent;
+                border: 2px solid #FE5538;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+                width: 13px;
+                height: 13px;
+                display: inline-block;
+                position: relative;
+                vertical-align: middle;
+                cursor: pointer;
+                margin-right: 10px;
+            }
+
+            .form-group input:checked+label:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 2px;
+                left: 6px;
+                width: 6px;
+                height: 14px;
+                border: solid #FE5538;
+                border-width: 0 2px 2px 0;
+                transform: rotate(45deg);
+            }
+        }
+
+        .course-main-card {
+            padding: 0;
+
+            &::before {
+                position: static;
+            }
+
+            .card-item {
+                flex-wrap: wrap;
+                padding-top: 0;
+
+
+                .card {
+                    width: 82% !important;
+                    height: 14% !important;
+                    margin-left: auto;
+                    transition: .3s ease-in-out;
+
+                    &:hover {
+                        box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
+                    }
+                }
+            }
+        }
+
+        .card-index-second {
+            .form-group {
+                &:last-child {
+                    border-bottom: transparent !important;
+                }
+            }
+        }
+
     }
 
 }
@@ -3793,7 +4450,7 @@ footer {
                 margin-left: auto;
                 margin-right: auto;
                 justify-content: center;
-                gap: 11rem;
+                gap: 14rem;
             }
 
             .router-link-thirst {
@@ -3854,5 +4511,884 @@ footer {
         }
     }
 
+    .course-index {
+        padding-top: 55px;
+
+        .card-title {
+            h3 {
+                font-family: 'Futurica', sans-serif;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 25px;
+            }
+        }
+
+        .course-title {
+            font-size: 30px !important;
+            max-width: 665px;
+            margin: 0 auto;
+            padding-bottom: 15px;
+            line-height: 35px;
+        }
+
+        .course-subtitle {
+            max-width: 625px;
+            margin: 0 auto;
+        }
+
+        #card-choose {
+            height: 22%;
+        }
+
+        .course-section {
+
+            .form-check {
+                padding-left: 0;
+            }
+
+            .form-group {
+                display: block;
+                margin-bottom: 9px;
+                border-bottom: 1px solid #D5D5D5;
+
+                &:last-child {
+                    border-bottom: 1px solid #212121;
+                }
+            }
+
+            .form-group input {
+                padding: 0;
+                height: initial;
+                width: initial;
+                margin-bottom: 0;
+                display: none;
+                cursor: pointer;
+            }
+
+            .form-group label {
+                position: relative;
+                cursor: pointer;
+                padding-bottom: 9px;
+            }
+
+            .form-group label:before {
+                content: '';
+                -webkit-appearance: none;
+                background-color: transparent;
+                border: 2px solid #FE5538;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+                width: 13px;
+                height: 13px;
+                display: inline-block;
+                position: relative;
+                vertical-align: middle;
+                cursor: pointer;
+                margin-right: 10px;
+            }
+
+            .form-group input:checked+label:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 2px;
+                left: 6px;
+                width: 6px;
+                height: 14px;
+                border: solid #FE5538;
+                border-width: 0 2px 2px 0;
+                transform: rotate(45deg);
+            }
+        }
+
+        .course-main-card {
+            padding: 0;
+
+            &::before {
+                position: static;
+            }
+
+            .card-item {
+                flex-wrap: wrap;
+                padding-top: 0;
+
+
+                .card {
+                    width: 47% !important;
+                    height: 25% !important;
+                    transition: .3s ease-in-out;
+
+                    &:hover {
+                        box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
+                    }
+                }
+            }
+        }
+
+        .card-index-second {
+            .form-group {
+                &:last-child {
+                    border-bottom: transparent !important;
+                }
+            }
+        }
+
+    }
+
 }
 
+@media only screen and (min-width: 1200px) {
+
+    .header-top {
+        height: 49px;
+
+        .top-header {
+            height: 49px;
+
+            h6 {
+                font-size: 1rem;
+                font-family: 'Mulish', sans-serif;
+            }
+
+            .icon-header {
+                gap: 1.8rem;
+
+                img {
+                    width: 16.5px;
+                    height: 16.5px;
+                }
+            }
+        }
+
+    }
+
+    .header-main {
+
+        .slick-dots {
+            bottom: -44px;
+        }
+
+        .home-main {
+            .wrapper {
+                padding-top: 51px;
+
+                h1 {
+                    font-family: 'Futurica', sans-serif;
+                    text-align: left;
+                    margin-left: auto;
+                    margin-right: auto;
+                    font-size: 39px;
+                    max-width: 500px;
+                    line-height: 53px;
+                }
+
+                h5 {
+                    font-size: 15px;
+                    text-align: left;
+                    margin-left: auto;
+                    margin-right: auto;
+                    font-family: 'Mulish', sans-serif;
+                }
+
+                .home-btn {
+                    display: none;
+                }
+            }
+        }
+
+        .home-content {
+            padding: 170px 0;
+            gap: 2.7rem;
+
+            .video-popup {
+                margin-top: 3.2rem;
+
+                div {
+                    &:nth-child(1) {
+                        &::before {
+                            top: -64px;
+                            left: -45px;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        &::before {
+                            top: -63px;
+                            left: auto;
+                            right: 34px;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        &::before {
+                            top: -94px;
+                            left: 18px;
+                            z-index: -2;
+                        }
+                    }
+
+                    &:nth-child(4) {
+                        &::before {
+                            top: -92px;
+                            left: auto;
+                            right: 46px;
+                        }
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    height: 350px;
+                }
+            }
+        }
+
+        .main-header {
+
+
+            .active {
+                height: 100vh !important;
+
+                ul {
+                    opacity: 1 !important;
+                }
+            }
+
+            .social-link {
+                gap: 0.5rem !important;
+                padding-right: 0 !important;
+            }
+
+            .hamburger {
+                display: none;
+            }
+
+            .main-text {
+
+                ul {
+                    gap: 0.1rem !important;
+                    width: 100% !important;
+                    padding-right: 4px;
+
+                    a {
+                        padding-left: 8px;
+                        color: black !important;
+                        margin-bottom: 12px;
+                        font-size: 15px;
+                        font-family: 'Mulish', sans-serif;
+                        font-weight: 600;
+                        opacity: 0.85;
+                    }
+                }
+
+            }
+
+
+        }
+    }
+
+    .about-item {
+        padding-top: 114px;
+
+        .all-about {
+            padding: 32px 10px;
+
+            .left-h {
+                width: 50%;
+                text-align: center;
+
+
+                img {
+                    width: 100%;
+                    margin-right: 80px;
+                    margin-top: 0.5rem;
+                }
+
+                div {
+                    &:nth-child(1) {
+                        display: none;
+                    }
+
+                    &:nth-child(2) {
+                        top: 104.5%;
+                        left: -24px;
+                        right: 0;
+                    }
+
+                    &:nth-child(4) {
+                        &::before {
+                            bottom: 141px;
+                            right: 99px;
+                            width: 237px;
+                        }
+                    }
+
+                    &:nth-child(5) {
+                        &::before {
+                            left: 97px;
+                            top: auto;
+                            bottom: -60px;
+                        }
+                    }
+                }
+            }
+
+            .right-h {
+                width: 50%;
+
+                h1 {
+                    font-size: 30px;
+                    font-family: "Futurica", sans-serif;
+                    line-height: 39px;
+                    max-width: 383px;
+                    min-width: 0 !important;
+                    margin-left: auto;
+                }
+
+                h6 {
+                    display: none;
+                }
+
+                .info-all {
+                    display: none;
+                }
+
+                p {
+                    max-width: 470px;
+                    font-family: "Mulish", sans-serif;
+                    margin-left: auto;
+                    padding-left: 85px;
+                }
+            }
+        }
+    }
+
+    .main-section {
+        .index-main {
+            padding: 7px 18px;
+            flex-direction: column;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .online-card-first {
+        .card-item {
+            flex-direction: column;
+        }
+    }
+
+    .online-card-second {
+        padding: 33px 0;
+
+    }
+
+    .info-item {
+        .all-info {
+            align-items: flex-start;
+            padding: 44px 16px;
+            flex-direction: column;
+
+            .left-h,
+            .right-h {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+
+                h1 {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+
+    .feedback-card {
+        margin-top: 0;
+        padding: 60px 0;
+    }
+
+    .home-course-index {
+        .main-index {
+            flex-direction: column;
+
+            .left-h,
+            .right-h {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    footer {
+        height: 100%;
+
+        .main-footer {
+            padding: 56px 0;
+            text-align: center;
+            gap: 0.8rem;
+            flex-direction: unset;
+            align-items: center;
+            justify-content: space-between;
+
+
+            .logo {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .contact-footer {
+                margin-bottom: 18px;
+            }
+
+            .router-link-first,
+            .router-link-second,
+            .router-link-thirst {
+                font-family: "Mulish", sans-serif;
+            }
+
+            .main-router {
+                display: flex;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                justify-content: center;
+                gap: 7rem;
+            }
+
+            .footer-content {
+                gap: 6rem;
+            }
+
+            .router-link-thirst {
+                padding: 31px 0;
+            }
+
+            .social-link {
+                flex-direction: column;
+                justify-content: center;
+                margin-bottom: 21px;
+                padding-top: 12px;
+
+                img {
+                    width: 70%;
+                }
+            }
+        }
+
+        .last-footer {
+            text-align: center;
+            gap: 0.7rem;
+        }
+    }
+
+    .about-card {
+
+        .col-lg-3 {
+            padding-right: 7px;
+            padding-left: 7px;
+            width: 24%;
+        }
+
+        .subtitle {
+            max-width: 614px;
+            font-family: "Mulish", sans-serif;
+        }
+
+        .title {
+            font-family: 'Futurica', sans-serif;
+        }
+
+        .all-item {
+            gap: 0.7rem;
+            flex-wrap: wrap;
+            padding-top: 68px;
+
+            .card-box {
+                height: 355px !important;
+
+                .card-title {
+                    font-family: 'Futurica', sans-serif;
+                }
+
+                .card-text {
+                    font-family: "Mulish", sans-serif;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1400px) {
+
+    .header-main {
+
+        .slick-dots {
+            bottom: -44px;
+        }
+
+        .home-main {
+            .wrapper {
+                padding-top: 51px;
+
+                h1 {
+                    font-family: 'Futurica', sans-serif;
+                    text-align: left;
+                    margin-left: auto;
+                    margin-right: auto;
+                    font-size: 39px;
+                    max-width: 500px;
+                    line-height: 53px;
+                }
+
+                h5 {
+                    font-size: 15px;
+                    text-align: left;
+                    margin-left: auto;
+                    margin-right: auto;
+                    font-family: 'Mulish', sans-serif;
+                }
+
+                .home-btn {
+                    display: none;
+                }
+            }
+        }
+
+        .home-content {
+            padding: 170px 0;
+            gap: 2.7rem;
+
+            .video-popup {
+                margin-top: 3.2rem;
+
+                div {
+                    &:nth-child(1) {
+                        &::before {
+                            top: -64px;
+                            left: -45px;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        &::before {
+                            top: -63px;
+                            left: auto;
+                            right: 34px;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        &::before {
+                            top: -94px;
+                            left: 18px;
+                            z-index: -2;
+                        }
+                    }
+
+                    &:nth-child(4) {
+                        &::before {
+                            top: -92px;
+                            left: auto;
+                            right: 46px;
+                        }
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    height: 350px;
+                }
+            }
+        }
+
+        .main-header {
+
+
+            .active {
+                height: 100vh !important;
+
+                ul {
+                    opacity: 1 !important;
+                }
+            }
+
+            .social-link {
+                gap: 0.5rem !important;
+                padding-right: 0 !important;
+            }
+
+            .hamburger {
+                display: none;
+            }
+
+            .main-text {
+
+                ul {
+                    gap: 1.7rem !important;
+                    width: 100% !important;
+                    padding-right: 4px;
+
+                    a {
+                        padding-left: 8px;
+                        color: black !important;
+                        margin-bottom: 12px;
+                        font-size: 15px;
+                        font-family: 'Mulish', sans-serif;
+                        font-weight: 600;
+                        opacity: 0.85;
+                    }
+                }
+
+            }
+
+
+        }
+    }
+
+    .about-item {
+        padding-top: 114px;
+
+        .all-about {
+            padding: 32px 10px;
+
+            .left-h {
+                width: 50%;
+                text-align: center;
+
+
+                img {
+                    width: 100%;
+                    margin-right: 80px;
+                    margin-top: 0.5rem;
+                }
+
+                div {
+                    &:nth-child(1) {
+                        display: none;
+                    }
+
+                    &:nth-child(2) {
+                        top: 104.5%;
+                        left: -24px;
+                        right: 0;
+                    }
+
+                    &:nth-child(4) {
+                        &::before {
+                            bottom: 141px;
+                            right: 99px;
+                            width: 237px;
+                        }
+                    }
+
+                    &:nth-child(5) {
+                        &::before {
+                            left: 97px;
+                            top: auto;
+                            bottom: -60px;
+                        }
+                    }
+                }
+            }
+
+            .right-h {
+                width: 50%;
+
+                h1 {
+                    font-size: 30px;
+                    font-family: "Futurica", sans-serif;
+                    line-height: 39px;
+                    max-width: 383px;
+                    min-width: 0 !important;
+                    margin-left: auto;
+                }
+
+                h6 {
+                    display: none;
+                }
+
+                .info-all {
+                    display: none;
+                }
+
+                p {
+                    max-width: 470px;
+                    font-family: "Mulish", sans-serif;
+                    margin-left: auto;
+                    padding-left: 85px;
+                }
+            }
+        }
+    }
+
+    .main-section {
+        .index-main {
+            padding: 7px 18px;
+            flex-direction: column;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .online-card-first {
+        .card-item {
+            flex-direction: column;
+        }
+    }
+
+    .online-card-second {
+        padding: 33px 0;
+
+    }
+
+    .info-item {
+        .all-info {
+            align-items: flex-start;
+            padding: 44px 16px;
+            flex-direction: column;
+
+            .left-h,
+            .right-h {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+
+                h1 {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+
+    .feedback-card {
+        margin-top: 0;
+        padding: 60px 0;
+    }
+
+    .home-course-index {
+        .main-index {
+            flex-direction: column;
+
+            .left-h,
+            .right-h {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    footer {
+        height: 100%;
+
+        .main-footer {
+            padding: 56px 0;
+            text-align: center;
+            gap: 0.8rem;
+            flex-direction: unset;
+            align-items: center;
+            justify-content: space-between;
+
+
+            .logo {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .contact-footer {
+                margin-bottom: 18px;
+            }
+
+            .router-link-first,
+            .router-link-second,
+            .router-link-thirst {
+                font-family: "Mulish", sans-serif;
+            }
+
+            .main-router {
+                display: flex;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                justify-content: center;
+                gap: 7rem;
+            }
+
+            .footer-content {
+                gap: 6rem;
+            }
+
+            .router-link-thirst {
+                padding: 31px 0;
+            }
+
+            .social-link {
+                flex-direction: column;
+                justify-content: center;
+                margin-bottom: 21px;
+                padding-top: 12px;
+
+                img {
+                    width: 70%;
+                }
+            }
+        }
+
+        .last-footer {
+            text-align: center;
+            gap: 0.7rem;
+        }
+    }
+
+    .about-card {
+
+        .col-lg-3 {
+            padding-right: 7px;
+            padding-left: 7px;
+            width: 24%;
+        }
+
+        .subtitle {
+            max-width: 614px;
+            font-family: "Mulish", sans-serif;
+        }
+
+        .title {
+            font-family: 'Futurica', sans-serif;
+        }
+
+        .all-item {
+            gap: 0.7rem;
+            flex-wrap: wrap;
+            padding-top: 68px;
+
+            .card-box {
+                height: 355px !important;
+
+                .card-title {
+                    font-family: 'Futurica', sans-serif;
+                }
+
+                .card-text {
+                    font-family: "Mulish", sans-serif;
+                }
+            }
+        }
+    }
+
+}
