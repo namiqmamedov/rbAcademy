@@ -13,6 +13,14 @@ a {
     max-width: 1400px !important;
   }
 }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
 .header-top {
   background: #3AD4D8;
   height: 40px;
@@ -43,18 +51,6 @@ a {
 }
 .header-main .hamburger {
   display: none;
-}
-.header-main .slick-dots li.slick-active button:before {
-  opacity: 0.75;
-  color: #671C7C !important;
-}
-.header-main .slick-dots li button:before {
-  font-size: 15px;
-  color: #42C0C4;
-  opacity: 1 !important;
-}
-.header-main .slick-dots {
-  bottom: 92px;
 }
 .header-main .logo {
   cursor: pointer;
@@ -114,25 +110,55 @@ a {
   padding: 7px 13.5px;
   border-radius: 50%;
 }
-.header-main .home-content {
+
+.hero-index {
+  height: 815px;
+  position: relative;
+  overflow: hidden;
+  background: url("/assets/img/background.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-index .slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #671C7C !important;
+}
+.hero-index .slick-dots li button:before {
+  font-size: 15px;
+  color: #42C0C4;
+  opacity: 1 !important;
+}
+.hero-index .slick-dots {
+  bottom: 92px;
+}
+.hero-index .home-content {
   display: flex !important;
   gap: 12rem;
-  padding: 170px 0;
 }
-.header-main .home-main .wrapper h1 {
+.hero-index .home-main {
+  padding-top: 160px;
+}
+.hero-index .home-main .slick-list {
+  height: 93vh;
+  padding-top: 155px;
+}
+.hero-index .home-main .wrapper h1 {
   font-size: 46px;
   font-weight: bold;
   max-width: 350px;
   line-height: 60px;
 }
-.header-main .home-main .wrapper h5 {
+.hero-index .home-main .wrapper h5 {
   margin-bottom: 20px;
 }
-.header-main .home-main .wrapper .description {
+.hero-index .home-main .wrapper .description {
   max-width: 558px;
   margin-bottom: 25px;
 }
-.header-main .home-main .home-btn a {
+.hero-index .home-main .home-btn a {
   background: #543EE9;
   border-radius: 30px;
   color: white;
@@ -143,10 +169,10 @@ a {
   height: 50px;
   position: relative;
 }
-.header-main .home-main .gallery-home {
+.hero-index .home-main .gallery-home {
   position: relative;
 }
-.header-main .home-main .gallery-home i {
+.hero-index .home-main .gallery-home i {
   top: 50%;
   left: 50%;
   width: 88px;
@@ -160,14 +186,14 @@ a {
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
-.header-main .home-main .video-popup img {
+.hero-index .home-main .video-popup img {
   position: relative;
   z-index: 111111111;
 }
-.header-main .home-main .video-popup div {
+.hero-index .home-main .video-popup div {
   position: relative;
 }
-.header-main .home-main .video-popup div:nth-child(1)::before {
+.hero-index .home-main .video-popup div:nth-child(1)::before {
   position: absolute;
   content: "";
   width: 211px;
@@ -182,7 +208,7 @@ a {
   border-radius: 5px;
   transform: rotate(-37.25deg);
 }
-.header-main .home-main .video-popup div:nth-child(2)::before {
+.hero-index .home-main .video-popup div:nth-child(2)::before {
   position: absolute;
   content: "";
   width: 292.78px;
@@ -197,7 +223,7 @@ a {
   border-radius: 5px;
   transform: rotate(22.66deg);
 }
-.header-main .home-main .video-popup div:nth-child(3)::before {
+.hero-index .home-main .video-popup div:nth-child(3)::before {
   position: absolute;
   content: "";
   width: 40px;
@@ -211,7 +237,7 @@ a {
   box-shadow: 30px 20px 11px rgba(101, 101, 101, 0.25);
   border-radius: 50%;
 }
-.header-main .home-main .video-popup div:nth-child(4)::before {
+.hero-index .home-main .video-popup div:nth-child(4)::before {
   position: absolute;
   content: "";
   width: 40px;
@@ -561,12 +587,13 @@ a {
   color: #FE5538;
 }
 .course-card .card .card-title-second {
-  font-family: "Futurica";
+  font-family: "Futurica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
   margin-bottom: 38px;
+  color: black;
 }
 .course-card .card:hover .card-text {
   opacity: 1;
@@ -890,7 +917,7 @@ a {
   color: #FE5538;
 }
 .online-card-second .card .card-title-second {
-  font-family: "Futurica";
+  font-family: "Futurica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -1200,7 +1227,7 @@ a {
   color: #FE5538;
 }
 .grade-card .card .card-title-second {
-  font-family: "Futurica";
+  font-family: "Futurica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -1894,6 +1921,23 @@ footer .last-footer div span {
     color: black !important;
     margin-bottom: 12px;
   }
+  .hero-index .home-content {
+    justify-content: center;
+    padding: 50px 0;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  .hero-index .wrapper h1 {
+    margin: 0 auto;
+    font-size: 26px !important;
+  }
+  .hero-index .wrapper .description {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  .hero-index .video-popup div:nth-child(1)::before, .hero-index .video-popup div:nth-child(2)::before, .hero-index .video-popup div:nth-child(3)::before, .hero-index .video-popup div:nth-child(4)::before {
+    display: none;
+  }
   .about-item .all-about {
     flex-direction: column;
     padding: 32px 10px;
@@ -2022,6 +2066,11 @@ footer .last-footer div span {
   }
   .about-card .all-item .card-box {
     height: 330px !important;
+    width: 100%;
+  }
+  .course-index {
+    padding-top: 150px !important;
+    justify-content: center;
   }
   .course-index .card-title h3 {
     font-family: "Futurica", sans-serif;
@@ -2104,14 +2153,14 @@ footer .last-footer div span {
     flex-wrap: wrap;
     padding-top: 0;
   }
-  .course-index .course-main-card .card-item .card {
-    width: 58% !important;
+  .course-index .course-main-card .card-item #card {
+    width: 100% !important;
     height: 14% !important;
     margin-left: auto;
     margin-right: auto;
     transition: 0.3s ease-in-out;
   }
-  .course-index .course-main-card .card-item .card:hover {
+  .course-index .course-main-card .card-item #card:hover {
     box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
   }
   .course-index .card-index-second .form-group:last-child {
@@ -2183,34 +2232,35 @@ footer .last-footer div span {
   font-family: "Futurica", sans-serif;
   text-align: center;
 }
-.course-index .course-index {
+.course-index .course-main {
   display: flex;
+  padding-top: 79px;
 }
-.course-index .course-index .card-title h3 {
+.course-index .course-main .card-title h3 {
   font-family: "Futurica", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 25px;
 }
-.course-index .course-index .card-choose {
+.course-index .course-main .card-choose {
   display: block !important;
   box-shadow: 0px 0px 7px rgba(190, 190, 190, 0.5);
 }
-.course-index .course-index .card-choose .card-index-first {
+.course-index .course-main .card-choose .card-index-first {
   padding: 28px 26px;
 }
-.course-index .course-index .course-section .form-check {
+.course-index .course-main .course-section .form-check {
   padding-left: 0;
 }
-.course-index .course-index .course-section .form-group {
+.course-index .course-main .course-section .form-group {
   display: block;
   margin-bottom: 9px;
   border-bottom: 1px solid #D5D5D5;
 }
-.course-index .course-index .course-section .form-group:last-child {
+.course-index .course-main .course-section .form-group:last-child {
   border-bottom: 1px solid #212121;
 }
-.course-index .course-index .course-section .form-group input {
+.course-index .course-main .course-section .form-group input {
   padding: 0;
   height: initial;
   width: initial;
@@ -2218,12 +2268,12 @@ footer .last-footer div span {
   display: none;
   cursor: pointer;
 }
-.course-index .course-index .course-section .form-group label {
+.course-index .course-main .course-section .form-group label {
   position: relative;
   cursor: pointer;
   padding-bottom: 9px;
 }
-.course-index .course-index .course-section .form-group label:before {
+.course-index .course-main .course-section .form-group label:before {
   content: "";
   -webkit-appearance: none;
   background-color: transparent;
@@ -2237,7 +2287,7 @@ footer .last-footer div span {
   cursor: pointer;
   margin-right: 10px;
 }
-.course-index .course-index .course-section .form-group input:checked + label:after {
+.course-index .course-main .course-section .form-group input:checked + label:after {
   content: "";
   display: block;
   position: absolute;
@@ -2249,27 +2299,26 @@ footer .last-footer div span {
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
-.course-index .course-index .course-main-card {
+.course-index .course-main .course-main-card {
   padding: 0;
 }
-.course-index .course-index .course-main-card .card .slick-slide {
+.course-index .course-main .course-main-card .card .slick-slide {
   width: 100%;
   height: 100% !important;
 }
-.course-index .course-index .course-main-card .card .card-body {
+.course-index .course-main .course-main-card .card .card-body {
   padding: 1rem 1.4rem;
 }
-.course-index .course-index .course-main-card .card .card-body .card-text {
+.course-index .course-main .course-main-card .card .card-body .card-text {
   margin-bottom: 2rem;
   opacity: 0;
   transition: 0.5s ease-in-out;
 }
-.course-index .course-index .course-main-card .card .card-body .bottom-content {
+.course-index .course-main .course-main-card .card .card-body .bottom-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
-.course-index .course-index .course-main-card .card .card-body .bottom-content .btn {
+.course-index .course-main .course-main-card .card .card-body .bottom-content .btn {
   background: #543EE9;
   outline: none;
   border: none;
@@ -2277,7 +2326,10 @@ footer .last-footer div span {
   border-radius: 30px;
   transition: 0.5s ease-in-out;
 }
-.course-index .course-index .course-main-card .card .card-body .bottom-content .price-card h6 {
+.course-index .course-main .course-main-card .card .card-body .bottom-content .price-card {
+  margin-left: auto;
+}
+.course-index .course-main .course-main-card .card .card-body .bottom-content .price-card h6 {
   font-family: "Mulish", sans-serif;
   font-weight: 800;
   font-size: 15px;
@@ -2285,7 +2337,7 @@ footer .last-footer div span {
   color: #fe5538 !important;
   transition: 0.5s ease-in-out;
 }
-.course-index .course-index .course-main-card .card .card-body .bottom-content .price-card p {
+.course-index .course-main .course-main-card .card .card-body .bottom-content .price-card p {
   text-decoration-line: line-through;
   margin-bottom: 0;
   color: #929292 !important;
@@ -2294,15 +2346,15 @@ footer .last-footer div span {
   text-decoration-color: black;
   text-decoration-thickness: 2px;
 }
-.course-index .course-index .course-main-card .card .card-title-first {
+.course-index .course-main .course-main-card .card .card-title-first {
   display: flex;
   gap: 1rem;
 }
-.course-index .course-index .course-main-card .card .card-title-first .title-first {
+.course-index .course-main .course-main-card .card .card-title-first .title-first {
   display: flex;
   align-items: center;
 }
-.course-index .course-index .course-main-card .card .card-title-first .square {
+.course-index .course-main .course-main-card .card .card-title-first .square {
   background: #3AD4D8;
   width: 4px;
   height: 4px;
@@ -2310,47 +2362,52 @@ footer .last-footer div span {
   margin-top: -0.3rem;
   border-radius: 50%;
 }
-.course-index .course-index .course-main-card .card .card-title-first h6 {
+.course-index .course-main .course-main-card .card .card-title-first h6 {
   font-weight: 700;
   font-size: 12px !important;
   line-height: 20px;
   color: #FE5538;
 }
-.course-index .course-index .course-main-card .card .card-title-second {
-  font-family: "Futurica";
+.course-index .course-main .course-main-card .card .card-title-second {
+  font-family: "Futurica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
   margin-bottom: 38px;
+  color: black;
 }
-.course-index .course-index .course-main-card .card:hover .card-text {
+.course-index .course-main .course-main-card .card .card-text {
+  color: black;
+}
+.course-index .course-main .course-main-card .card:hover .card-text {
   opacity: 1;
   transition: 0.5s ease-in-out;
+  color: black;
 }
-.course-index .course-index .course-main-card .card:hover .btn {
+.course-index .course-main .course-main-card .card:hover .btn {
   background: #fff !important;
   color: black;
   transition: 0.5s ease-in-out;
   border: 1px solid #353535 !important;
 }
-.course-index .course-index .course-main-card .card:hover .card-img-top {
+.course-index .course-main .course-main-card .card:hover .card-img-top {
   padding: 10px 10px 10px 10px;
 }
-.course-index .course-index .course-main-card .card:hover .card-feedback {
+.course-index .course-main .course-main-card .card:hover .card-feedback {
   opacity: 1;
   visibility: visible !important;
 }
-.course-index .course-index .course-main-card .title {
+.course-index .course-main .course-main-card .title {
   font-weight: 700;
   font-size: 30px;
   padding-bottom: 10px;
 }
-.course-index .course-index .course-main-card .subtitle {
+.course-index .course-main .course-main-card .subtitle {
   max-width: 648px;
   margin: 0 auto;
 }
-.course-index .course-index .course-main-card .card-feedback {
+.course-index .course-main .course-main-card .card-feedback {
   display: flex;
   align-items: center;
   gap: 0.25rem;
@@ -2359,50 +2416,50 @@ footer .last-footer div span {
   visibility: hidden !important;
   transition: 0.5s ease-in-out;
 }
-.course-index .course-index .course-main-card .card-feedback .fa-solid {
+.course-index .course-main .course-main-card .card-feedback .fa-solid {
   color: #543EE9;
 }
-.course-index .course-index .course-main-card .card-feedback .fa-regular {
+.course-index .course-main .course-main-card .card-feedback .fa-regular {
   color: #543EE9;
 }
-.course-index .course-index .course-main-card .card-feedback img {
+.course-index .course-main .course-main-card .card-feedback img {
   width: 15px;
   height: 15px;
 }
-.course-index .course-index .course-main-card img {
+.course-index .course-main .course-main-card img {
   width: 100%;
   border-radius: 0;
   transition: 0.5s ease-in-out;
   height: 213px;
 }
-.course-index .course-index .course-main-card .card-item {
+.course-index .course-main .course-main-card .card-item {
   display: flex;
   gap: 1rem;
   justify-content: center;
   padding-top: 58px;
 }
-.course-index .course-index .course-main-card::before {
+.course-index .course-main .course-main-card::before {
   position: static;
 }
-.course-index .course-index .course-main-card #course-item {
+.course-index .course-main .course-main-card #course-item {
   display: flex;
   flex-wrap: wrap;
   padding-top: 0;
   gap: 1rem;
 }
-.course-index .course-index .course-main-card #course-item #card {
+.course-index .course-main .course-main-card #course-item #card {
   width: 32%;
   height: 35%;
   transition: 0.3s ease-in-out;
 }
-.course-index .course-index .course-main-card #course-item #card:hover {
+.course-index .course-main .course-main-card #course-item #card:hover {
   box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
 }
-.course-index .course-index .card-index-second .form-group:last-child {
+.course-index .course-main .card-index-second .form-group:last-child {
   border-bottom: transparent !important;
 }
 
-@media only screen and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
   .top-header h6 {
     font-size: 12px;
   }
@@ -2650,7 +2707,7 @@ footer .last-footer div span {
     height: 330px !important;
   }
   .course-index {
-    padding-top: 55px;
+    padding-top: 150px;
   }
   .course-index .card-title h3 {
     font-family: "Futurica", sans-serif;
@@ -2666,7 +2723,7 @@ footer .last-footer div span {
     line-height: 35px;
   }
   .course-index .course-subtitle {
-    max-width: 495px;
+    max-width: 540px;
     margin: 0 auto;
   }
   .course-index #card-choose {
@@ -2722,31 +2779,32 @@ footer .last-footer div span {
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
   }
-  .course-index .course-main-card {
+  .course-index #course-card {
     padding: 0;
     width: 100%;
   }
-  .course-index .course-main-card::before {
+  .course-index #course-card::before {
     position: static;
   }
-  .course-index .course-main-card .card-item {
+  .course-index #course-card .card-item {
     flex-wrap: wrap;
     padding-top: 0;
   }
-  .course-index .course-main-card .card-item .card {
-    width: 58% !important;
+  .course-index #course-card .card-item #card {
+    width: 76% !important;
     height: 14% !important;
+    margin-right: auto;
     margin-left: auto;
     transition: 0.3s ease-in-out;
   }
-  .course-index .course-main-card .card-item .card:hover {
+  .course-index #course-card .card-item #card:hover {
     box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
   }
   .course-index .card-index-second .form-group:last-child {
     border-bottom: transparent !important;
   }
 }
-@media only screen and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .top-header h6 {
     font-size: 12px;
   }
@@ -3071,7 +3129,7 @@ footer .last-footer div span {
   }
   .course-index #card-choose {
     width: 50%;
-    height: 22%;
+    height: 23.5% !important;
   }
   .course-index .course-main-card {
     width: 50%;
@@ -3137,7 +3195,7 @@ footer .last-footer div span {
     padding-top: 0;
   }
   .course-index .course-main-card .card-item .card {
-    width: 82% !important;
+    width: 93% !important;
     height: 14% !important;
     margin-left: auto;
     transition: 0.3s ease-in-out;
@@ -3145,11 +3203,14 @@ footer .last-footer div span {
   .course-index .course-main-card .card-item .card:hover {
     box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
   }
+  .course-index .course-main-card .card-item .card .bottom-content .price-card {
+    margin-left: auto;
+  }
   .course-index .card-index-second .form-group:last-child {
     border-bottom: transparent !important;
   }
 }
-@media only screen and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1200px) {
   .header-top {
     height: 49px;
   }
@@ -3420,7 +3481,7 @@ footer .last-footer div span {
     font-family: "Mulish", sans-serif;
   }
   .course-index {
-    padding-top: 55px;
+    padding-top: 175px;
   }
   .course-index .card-title h3 {
     font-family: "Futurica", sans-serif;
@@ -3440,7 +3501,7 @@ footer .last-footer div span {
     margin: 0 auto;
   }
   .course-index #card-choose {
-    height: 22%;
+    height: 40%;
   }
   .course-index .course-section .form-check {
     padding-left: 0;
@@ -3498,16 +3559,17 @@ footer .last-footer div span {
   .course-index .course-main-card::before {
     position: static;
   }
-  .course-index .course-main-card .card-item {
+  .course-index .course-main-card #course-item {
     flex-wrap: wrap;
     padding-top: 0;
+    gap: 2.8rem !important;
   }
-  .course-index .course-main-card .card-item .card {
-    width: 47% !important;
-    height: 25% !important;
+  .course-index .course-main-card #course-item #card {
+    width: 43% !important;
+    height: 24.3% !important;
     transition: 0.3s ease-in-out;
   }
-  .course-index .course-main-card .card-item .card:hover {
+  .course-index .course-main-card #course-item #card:hover {
     box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
   }
   .course-index .card-index-second .form-group:last-child {
@@ -3790,6 +3852,105 @@ footer .last-footer div span {
   .about-card .all-item .card-box .card-text {
     font-family: "Mulish", sans-serif;
   }
+  .course-index {
+    padding-top: 55px;
+  }
+  .course-index .card-title h3 {
+    font-family: "Futurica", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .course-index .course-title {
+    font-size: 30px !important;
+    max-width: 725px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    line-height: 35px;
+  }
+  .course-index .course-subtitle {
+    max-width: 625px;
+    margin: 0 auto;
+  }
+  .course-index #card-choose {
+    height: 42%;
+  }
+  .course-index .course-section .form-check {
+    padding-left: 0;
+  }
+  .course-index .course-section .form-group {
+    display: block;
+    margin-bottom: 9px;
+    border-bottom: 1px solid #D5D5D5;
+  }
+  .course-index .course-section .form-group:last-child {
+    border-bottom: 1px solid #212121;
+  }
+  .course-index .course-section .form-group input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  .course-index .course-section .form-group label {
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 9px;
+  }
+  .course-index .course-section .form-group label:before {
+    content: "";
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid #FE5538;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  .course-index .course-section .form-group input:checked + label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    width: 6px;
+    height: 14px;
+    border: solid #FE5538;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  .course-index .course-main-card {
+    padding: 0;
+  }
+  .course-index .course-main-card::before {
+    position: static;
+  }
+  .course-index .course-main-card #course-item {
+    flex-wrap: wrap;
+    padding-top: 0;
+    gap: 0.8rem !important;
+    justify-content: space-around;
+  }
+  .course-index .course-main-card #course-item #card {
+    width: 36% !important;
+    height: 24.3% !important;
+    transition: 0.3s ease-in-out;
+  }
+  .course-index .course-main-card #course-item #card:hover {
+    box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
+  }
+  .course-index .course-main-card #course-item #card .card-body {
+    padding: 1rem 0.8rem;
+  }
+  .course-index .card-index-second .form-group:last-child {
+    border-bottom: transparent !important;
+  }
 }
 @media only screen and (min-width: 1400px) {
   .header-main .slick-dots {
@@ -4049,5 +4210,104 @@ footer .last-footer div span {
   }
   .about-card .all-item .card-box .card-text {
     font-family: "Mulish", sans-serif;
+  }
+  .course-index {
+    padding-top: 200px;
+  }
+  .course-index .card-title h3 {
+    font-family: "Futurica", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .course-index .course-title {
+    font-size: 30px !important;
+    max-width: 725px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    line-height: 35px;
+  }
+  .course-index .course-subtitle {
+    max-width: 625px;
+    margin: 0 auto;
+  }
+  .course-index #card-choose {
+    height: 59%;
+  }
+  .course-index .course-section .form-check {
+    padding-left: 0;
+  }
+  .course-index .course-section .form-group {
+    display: block;
+    margin-bottom: 9px;
+    border-bottom: 1px solid #D5D5D5;
+  }
+  .course-index .course-section .form-group:last-child {
+    border-bottom: 1px solid #212121;
+  }
+  .course-index .course-section .form-group input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  .course-index .course-section .form-group label {
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 9px;
+  }
+  .course-index .course-section .form-group label:before {
+    content: "";
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid #FE5538;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  .course-index .course-section .form-group input:checked + label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    width: 6px;
+    height: 14px;
+    border: solid #FE5538;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  .course-index .course-main-card {
+    padding: 0;
+  }
+  .course-index .course-main-card::before {
+    position: static;
+  }
+  .course-index .course-main-card #course-item {
+    flex-wrap: wrap;
+    padding-top: 0;
+    gap: 0.95rem !important;
+    justify-content: space-around;
+  }
+  .course-index .course-main-card #course-item #card {
+    width: 32% !important;
+    height: 33.3% !important;
+    transition: 0.3s ease-in-out;
+  }
+  .course-index .course-main-card #course-item #card:hover {
+    box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
+  }
+  .course-index .course-main-card #course-item #card .card-body {
+    padding: 1rem 0.8rem;
+  }
+  .course-index .card-index-second .form-group:last-child {
+    border-bottom: transparent !important;
   }
 }/*# sourceMappingURL=style.css.map */

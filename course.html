@@ -26,70 +26,73 @@
 
 <body>
 
-    <div class="header-top">
-        <div class="container">
-            <div class="row">
-                <div class="top-header">
-                    <div class="number-header">
-                        <h6> +994 55 349 60 60 | info@rbacademy.az</h6>
-                    </div>
-                    <div class="icon-header">
-                        <img src="/assets/img/Instagram.svg" alt="IG">
-                        <img src="/assets/img/Facebook.svg" alt="FB">
-                        <img src="/assets/img/Twitter.svg" alt="TW">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="header-main">
-        <div class="container">
-            <div class="row">
-                <div class="main-header">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="/assets/img/headerLogo.svg" alt="">
-                        </a>
-                    </div>
-                    <div class="main-text">
-                        <ul>
-                            <li><a href="about.html">Haqqımızda</a></li>
-                            <li><a href="course.html">Kurslar</a></li>
-                            <li><a href="#">İmtahanlar</a></li>
-                            <li><a href="#">Müəllimlər</a></li>
-                            <li><a href="#">Məzunlar</a></li>
-                            <li><a href="#">Kitablar</a></li>
-                            <li><a href="#">Sertifikatlar</a></li>
-                            <li><a href="#">Xəbərlər</a></li>
-                            <li><a href="#">Əlaqə</a></li>
-                        </ul>
-                        <div class="bottom-content">
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="top-header">
+                        <div class="number-header">
+                            <h6> +994 55 349 60 60 | info@rbacademy.az</h6>
+                        </div>
+                        <div class="icon-header">
                             <img src="/assets/img/Instagram.svg" alt="IG">
                             <img src="/assets/img/Facebook.svg" alt="FB">
                             <img src="/assets/img/Twitter.svg" alt="TW">
                         </div>
                     </div>
-                    <div class="social-link">
-                        <div class="wish-list">
-                            <img src="/assets/img/WishList.svg" alt="wishlist">
+                </div>
+            </div>
+        </div>
+    
+        <div class="header-main">
+            <div class="container">
+                <div class="row">
+                    <div class="main-header">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="/assets/img/headerLogo.svg" alt="">
+                            </a>
                         </div>
-                        <div class="user">
-                            <img src="/assets/img/User.svg" alt="user">
+                        <div class="main-text">
+                            <ul>
+                                <li><a href="about.html">Haqqımızda</a></li>
+                                <li><a href="course.html">Kurslar</a></li>
+                                <li><a href="#">İmtahanlar</a></li>
+                                <li><a href="#">Müəllimlər</a></li>
+                                <li><a href="#">Məzunlar</a></li>
+                                <li><a href="#">Kitablar</a></li>
+                                <li><a href="#">Sertifikatlar</a></li>
+                                <li><a href="#">Xəbərlər</a></li>
+                                <li><a href="#">Əlaqə</a></li>
+                            </ul>
+                            <div class="bottom-content">
+                                <img src="/assets/img/Instagram.svg" alt="IG">
+                                <img src="/assets/img/Facebook.svg" alt="FB">
+                                <img src="/assets/img/Twitter.svg" alt="TW">
+                            </div>
                         </div>
-                        <div class="search-widget">
-                            <img src="/assets/img/Search.svg" alt="search">
-                        </div>
-                        <div class="hamburger">
-                            <div class="line"></div>
-                            <div class="line"></div>
-                            <div class="line"></div>
+                        <div class="social-link">
+                            <div class="wish-list">
+                                <img src="/assets/img/WishList.svg" alt="wishlist">
+                            </div>
+                            <div class="user">
+                                <img src="/assets/img/User.svg" alt="user">
+                            </div>
+                            <div class="search-widget">
+                                <img src="/assets/img/Search.svg" alt="search">
+                            </div>
+                            <div class="hamburger">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
+
 
     <div class="course-index">
         <h1 class="course-title">
@@ -101,7 +104,7 @@
         </p>
         <div class="container">
             <div class="row">
-                <div class="course-index">
+                <div class="course-main">
                     <div class="card-choose col-lg-3" id="card-choose">
                         <div class="card-index-first">
                             <div class="card-title">
@@ -198,12 +201,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="course-main-card col-lg-9 " id="course-card">
+                    <div class="course-main-card col-lg-9" id="course-card">
                         <div class="container">
                             <div class="row">
                                 <div class="card-item" id="course-item">
                                     <div class="card" id="card">
-                                        <img src="/assets/img/courseCard01.png" class="card-img-top" alt="...">
+                                        <a href="/course-detail.html">
+                                            <img src="/assets/img/courseCard01.png" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <div class="card-feedback">
                                                 <img src="/assets/img/Star 1.png" alt="">
@@ -237,9 +241,11 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        </a>
                                     </div>
                                     <div class="card" id="card">
-                                        <img src="/assets/img/courseCard02.png" class="card-img-top" alt="...">
+                                        <a href="/course-detail.html">
+                                            <img src="/assets/img/courseCard02.png" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <div class="card-feedback">
                                                 <img src="/assets/img/Star 1.png" alt="">
@@ -273,9 +279,11 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        </a>
                                     </div>
                                     <div class="card" id="card">
-                                        <img src="/assets/img/courseCard03.png" class="card-img-top" alt="...">
+                                        <a href="/course-detail.html">
+                                            <img src="/assets/img/courseCard03.png" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <div class="card-feedback">
                                                 <img src="/assets/img/Star 1.png" alt="">
@@ -309,9 +317,11 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        </a>
                                     </div>
                                     <div class="card" id="card">
-                                        <img src="/assets/img/courseCard01.png" class="card-img-top" alt="...">
+                                        <a href="/course-detail.html">
+                                            <img src="/assets/img/courseCard01.png" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <div class="card-feedback">
                                                 <img src="/assets/img/Star 1.png" alt="">
@@ -345,9 +355,11 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        </a>
                                     </div>
                                     <div class="card" id="card">
-                                        <img src="/assets/img/courseCard02.png" class="card-img-top" alt="...">
+                                        <a href="/course-detail.html">
+                                            <img src="/assets/img/courseCard02.png" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <div class="card-feedback">
                                                 <img src="/assets/img/Star 1.png" alt="">
@@ -381,9 +393,11 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        </a>
                                     </div>
                                     <div class="card" id="card">
-                                        <img src="/assets/img/courseCard03.png" class="card-img-top" alt="...">
+                                        <a href="/course-detail.html">
+                                            <img src="/assets/img/courseCard03.png" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <div class="card-feedback">
                                                 <img src="/assets/img/Star 1.png" alt="">
@@ -417,9 +431,11 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        </a>
                                     </div>
                                     <div class="card" id="card">
-                                        <img src="/assets/img/courseCard03.png" class="card-img-top" alt="...">
+                                        <a href="/course-detail.html">
+                                            <img src="/assets/img/courseCard03.png" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <div class="card-feedback">
                                                 <img src="/assets/img/Star 1.png" alt="">
@@ -453,6 +469,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -462,6 +479,88 @@
             </div>
         </div>
     </div>
+
+
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="main-footer">
+                    <div class="logo">
+                        <img src="/assets/img/footerLogo.png" alt="footer logo">
+                    </div>
+                    <div class="main-router">
+                        <div class="router-link-first">
+                            <a href="about.html">
+                                Haqqımızda
+                            </a>
+                            <a href="#">
+                                Müəllimlər
+                            </a>
+                            <a href="#">
+                                Xəbərlər
+                            </a>
+                        </div>
+                        <div class="router-link-second">
+                            <a href="#">
+                                Kurslar
+                            </a>
+                            <a href="#">
+                                İmtahanlar
+                            </a>
+                            <a href="#">
+                                Əlaqə
+                            </a>
+                        </div>
+                        <div class="router-link-thirst">
+                            <a href="#">
+                                Riyaziyyat
+                            </a>
+                            <a href="#">
+                                MİQ Riyaziyyat
+                            </a>
+                            <a href="#">
+                                Kimya
+                            </a>
+                            <a href="#">
+                                İngilis dili
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-footer">
+                        <a class="phone" href="tel://+994553496060">
+                                +994 55 349 60 60
+                        </a>
+                        <a class="email" href="mailto:info@rbacademy.az">
+                            info@rbacademy.az
+                        </a>
+                    </div>
+                    <div class="social-link">
+                        <a href="#">
+                            <img src="/assets/img/InstagramWhite.svg" alt="ig">
+                        </a>
+                        <a href="#">
+                            <img src="/assets/img/FacebookWhite.svg" alt="fb">
+                        </a>
+                        <a href="#">
+                            <img src="/assets/img/TwitterWhite.svg" alt="tw">
+                        </a>
+                    </div>
+                </div>
+                <div class="last-footer">
+                    <div class="since">
+                        © 2022 RBAcademy
+                    </div>
+                    <div class="secured">
+                        Müəllif hüquqları qorunur
+                    </div>
+                    <div class="site-name">
+                        Site by: <span>JedAi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
