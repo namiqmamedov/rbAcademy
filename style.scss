@@ -493,6 +493,7 @@ header {
                     font-weight: 700;
                     font-size: 46px;
                     line-height: 56px;
+                    font-family: 'Futurica', sans-serif;
                 }
             }
 
@@ -2445,10 +2446,26 @@ footer {
             gap: 3rem;
         }
 
+        .home-main {
+            padding-top: 235px;
+
+            .slick-list {
+                padding-top: 0px;
+            }
+
+            .slick-list {
+                height: 125vh;
+            }
+        }
+
         .wrapper {
             h1 {
-                margin: 0 auto;
-                font-size: 26px !important;
+                margin: initial;
+                font-size: 32px !important;
+                font-weight: bold;
+                font-family: 'Futurica', sans-serif;
+                line-height: 33px !important;
+                padding-bottom: 10px;
             }
 
             .description {
@@ -2483,6 +2500,7 @@ footer {
 
                 img {
                     width: 100%;
+                    height: 313px;
                 }
 
                 div {
@@ -2515,15 +2533,13 @@ footer {
 
                 h1 {
                     font-size: 28px;
+                    margin-bottom: 0.7rem;
                 }
 
                 h6 {
                     display: none;
                 }
 
-                .info-all {
-                    display: none;
-                }
             }
         }
     }
@@ -2533,8 +2549,43 @@ footer {
             padding: 7px 18px;
             flex-direction: column;
 
-            img {
-                width: 100%;
+            .fullname {
+                padding-bottom: 0;
+
+                h1 {
+                    font-size: 32px !important;
+                }
+            }
+
+            .left-m {
+                div {
+                    &:nth-child(5) {
+                        display: none;
+                    }
+                }
+            }
+
+            .right-m {
+                padding-top: 50px;
+
+                div {
+                    &:nth-child(3) {
+                        display: none;
+                    }
+
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                }
+
+
+                .image-content {
+                    text-align: center;
+
+                    img {
+                        width: 90%;
+                    }
+                }
             }
         }
     }
@@ -2542,6 +2593,13 @@ footer {
     .online-card-first {
         .card-item {
             flex-direction: column;
+        }
+
+        .flip-card {
+            width: 77%;
+            height: 287px;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 
@@ -2574,6 +2632,43 @@ footer {
     .feedback-card {
         margin-top: 0;
         padding: 60px 0;
+
+        .slick-list,
+        .slick-slide {
+            margin: 0 !important;
+        }
+
+        .all-item {
+            .card-box {
+                width: 85% !important;
+                display: flex !important;
+                flex-direction: column;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+
+    .grade-card {
+        .card {
+            height: 621px !important;
+        }
+
+        .card-title-second {
+            line-height: 30px !important;
+            font-size: 23px !important;
+        }
+
+        .all-item {
+            display: flex;
+            justify-content: center;
+
+            a{
+                position: absolute;
+                width: 17%;
+                height: 46px;
+            }
+        }
     }
 
     .home-course-index {
@@ -2588,6 +2683,23 @@ footer {
                     width: 100%;
                 }
             }
+
+            .right-h{
+                padding-top: 50px;
+
+                img{
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+    .certification__card{
+        .card{
+            display: flex !important;
+            width: 62% !important;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 
@@ -2780,6 +2892,49 @@ footer {
             }
         }
 
+    }
+
+    .book__card {
+        .card {
+            .card-index {
+                padding: 30px 29px !important;
+                flex-direction: column;
+            }
+
+            .card-body {
+                width: 100%;
+                height: 330px;
+
+                .content {
+                    padding: 2px 20px;
+                }
+            }
+
+            .card-thumbnail {
+                top: -51px;
+                left: -15%;
+            }
+
+            img {
+                &:nth-child(1) {
+                    width: 60%;
+                    height: 250px;
+                }
+
+                &:nth-child(2) {
+                    width: 60%;
+                    height: 250px;
+                    top: 0;
+                }
+
+                &:nth-child(3) {
+                    width: 85%;
+                    height: 263.5px;
+                    right: -166px;
+                    top: -8px;
+                }
+            }
+        }
     }
 
 }
@@ -2982,6 +3137,7 @@ footer {
 
                         .price-card {
                             margin-left: auto;
+
                             h6 {
                                 font-family: "Mulish", sans-serif;
                                 font-weight: 800;
@@ -3440,6 +3596,49 @@ footer {
         padding: 60px 0;
     }
 
+    .book__card {
+        .card {
+            .card-index {
+                padding: 30px 29px !important;
+                flex-direction: column;
+            }
+
+            .card-body {
+                width: 100%;
+                height: 330px;
+
+                .content {
+                    padding: 2px 20px;
+                }
+            }
+
+            .card-thumbnail {
+                top: -51px;
+                left: -15%;
+            }
+
+            img {
+                &:nth-child(1) {
+                    width: 60%;
+                    height: 250px;
+                }
+
+                &:nth-child(2) {
+                    width: 60%;
+                    height: 250px;
+                    top: 0;
+                }
+
+                &:nth-child(3) {
+                    width: 85%;
+                    height: 263.5px;
+                    right: -166px;
+                    top: -8px;
+                }
+            }
+        }
+    }
+
     .home-course-index {
         .main-index {
             flex-direction: column;
@@ -3450,8 +3649,10 @@ footer {
 
                 img {
                     width: 100%;
+                    border-radius: 13px;
                 }
             }
+
         }
     }
 
@@ -3460,10 +3661,12 @@ footer {
 
         .main-footer {
             display: block;
-            padding: 56px 0;
+            padding: 64px 0;
             text-align: center;
 
             .logo {
+                margin-bottom: 32px;
+
                 img {
                     width: 19%;
                     padding-bottom: 13px;
@@ -3480,7 +3683,14 @@ footer {
                 margin-left: auto;
                 margin-right: auto;
                 justify-content: center;
-                gap: 11rem;
+                gap: 0rem;
+                flex-wrap: wrap;
+
+                .router-link-first,
+                .router-link-second {
+                    width: 50%;
+                }
+
             }
 
             .router-link-thirst {
@@ -3498,7 +3708,6 @@ footer {
         }
 
         .last-footer {
-            flex-direction: column;
             text-align: center;
             gap: 0.7rem;
         }
@@ -4182,8 +4391,8 @@ footer {
                         box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
                     }
 
-                    .bottom-content{
-                        .price-card{
+                    .bottom-content {
+                        .price-card {
                             margin-left: auto;
                         }
                     }
