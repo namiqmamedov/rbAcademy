@@ -162,11 +162,6 @@ header {
   background: #543EE9;
   border-radius: 30px;
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 29%;
-  height: 50px;
   position: relative;
 }
 .hero-index .home-main .gallery-home {
@@ -341,14 +336,9 @@ header {
 .about-item .all-about .right-h .info-all a {
   background: #543EE9;
   border-radius: 30px;
-  width: 30%;
   border: none;
   outline: none;
   font-size: 15px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .main-section {
@@ -513,18 +503,14 @@ header {
   background: #FFFFFF !important;
   box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
   border-radius: 50px;
-  height: 50px;
   color: black !important;
   position: relative;
   border: none;
   outline: none;
-  width: 13%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-top: 39px;
+  padding: 7px 32px;
 }
 .course-card .card {
   width: 95% !important;
@@ -732,8 +718,7 @@ header {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .online-card-first .flip-card-back {
   background: #FFFFFF;
@@ -1076,14 +1061,13 @@ header {
 .info-item .all-info .right-h .info-all a {
   background: #543EE9;
   border-radius: 30px;
-  width: 30%;
   border: none;
   outline: none;
   font-size: 15px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  max-width: 132px;
+  padding: 7px 30px;
+  display: block;
 }
 
 .feedback-card {
@@ -1399,17 +1383,13 @@ header {
   background: #FFFFFF !important;
   box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
   border-radius: 50px;
-  height: 50px;
   color: black !important;
   border: none;
   outline: none;
-  width: 13%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-top: 39px;
+  padding: 7px 32px;
 }
 .certification__card .slick-slide {
   transform: scale(0.8) !important;
@@ -1557,17 +1537,13 @@ header {
   background: #FFFFFF !important;
   box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
   border-radius: 50px;
-  height: 50px;
   color: black !important;
   border: none;
   outline: none;
-  width: 13%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-top: 39px;
+  padding: 7px 32px;
 }
 .book__card .card-item {
   display: flex;
@@ -1591,8 +1567,6 @@ header {
 }
 .book__card .card .card-thumbnail {
   display: flex;
-  position: relative;
-  width: 65%;
 }
 .book__card .card .card-index {
   padding: 30px 136px;
@@ -1614,23 +1588,7 @@ header {
 .book__card .card img {
   width: 100%;
   height: 290px;
-}
-.book__card .card img:nth-child(1) {
   width: 37%;
-}
-.book__card .card img:nth-child(2) {
-  width: 45%;
-  position: absolute;
-  left: 138px;
-  top: -13px;
-  height: 317px;
-}
-.book__card .card img:nth-child(3) {
-  width: 49%;
-  height: 408px;
-  position: absolute;
-  right: -33px;
-  top: -63px;
 }
 
 .news-card {
@@ -1656,16 +1614,12 @@ header {
   background: #FFFFFF !important;
   box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
   border-radius: 50px;
-  height: 50px;
   color: black !important;
   border: none;
   outline: none;
-  width: 13%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
   margin-left: auto;
   margin-right: auto;
+  padding: 7px 32px;
 }
 .news-card .news-card {
   display: flex;
@@ -1922,20 +1876,42 @@ footer .last-footer div span {
     color: black !important;
     margin-bottom: 12px;
   }
+  .hero-index {
+    display: block;
+  }
   .hero-index .home-content {
-    justify-content: center;
     padding: 50px 0;
     flex-wrap: wrap;
     gap: 3rem;
   }
+  .hero-index .slick-dots {
+    bottom: -41px;
+  }
+  .hero-index .slick-dots li {
+    width: 16px;
+    height: 16px;
+    margin: 0 3px;
+  }
   .hero-index .home-main {
-    padding-top: 235px;
+    padding-top: 100px;
   }
   .hero-index .home-main .slick-list {
     padding-top: 0px;
   }
   .hero-index .home-main .slick-list {
     height: 125vh;
+  }
+  .hero-index .home-main .gallery-home i {
+    width: 70px;
+    height: 70px;
+    font-size: 26px;
+    padding: 20px 27px;
+  }
+  .hero-index .home-main .home-btn a {
+    position: relative;
+    max-width: 132px;
+    padding: 7px 30px;
+    display: block;
   }
   .hero-index .wrapper h1 {
     margin: initial;
@@ -1949,12 +1925,19 @@ footer .last-footer div span {
     font-size: 1rem;
     margin: 0 auto;
   }
+  .hero-index .video-popup {
+    margin: 0 auto;
+  }
   .hero-index .video-popup div:nth-child(1)::before, .hero-index .video-popup div:nth-child(2)::before, .hero-index .video-popup div:nth-child(3)::before, .hero-index .video-popup div:nth-child(4)::before {
     display: none;
   }
+  .hero-index .video-popup img {
+    width: 100%;
+  }
   .about-item .all-about {
     flex-direction: column;
-    padding: 32px 10px;
+    padding: 22px 14px;
+    height: 100%;
   }
   .about-item .all-about .left-h {
     width: 100%;
@@ -1968,9 +1951,9 @@ footer .last-footer div span {
     display: none;
   }
   .about-item .all-about .left-h div:nth-child(2) {
-    top: 105%;
+    top: 89%;
     left: auto;
-    right: -141px;
+    right: -124px;
   }
   .about-item .all-about .left-h div:nth-child(4)::before {
     position: static;
@@ -1987,6 +1970,13 @@ footer .last-footer div span {
   }
   .about-item .all-about .right-h h6 {
     display: none;
+  }
+  .about-item .all-about .right-h .info-all a {
+    padding: 7px 33px;
+  }
+  .course-card .card {
+    display: flex !important;
+    margin: 0 auto;
   }
   .main-section .index-main {
     padding: 7px 18px;
@@ -2039,11 +2029,38 @@ footer .last-footer div span {
   }
   .info-item .all-info .left-h img,
   .info-item .all-info .right-h img {
-    width: 100%;
+    width: 87%;
   }
   .info-item .all-info .left-h h1,
   .info-item .all-info .right-h h1 {
     font-size: 28px;
+    margin-bottom: 0.3rem;
+  }
+  .info-item .all-info .right-h .info-all a {
+    padding: 7px 32px;
+  }
+  .info-item .all-info .left-h div:nth-child(1) {
+    display: none;
+  }
+  .info-item .all-info .left-h div:nth-child(2) {
+    display: none;
+  }
+  .info-item .all-info .left-h div:nth-child(4) {
+    display: none;
+  }
+  .info-item .all-info .left-h div:nth-child(5) {
+    display: none;
+  }
+  .online-card-second .card-title-second {
+    line-height: 38px !important;
+    font-size: 18px !important;
+  }
+  .online-card-second h5 {
+    font-size: 1rem;
+  }
+  .online-card-second .card {
+    display: flex !important;
+    margin: 0 auto;
   }
   .feedback-card {
     margin-top: 0;
@@ -2061,7 +2078,9 @@ footer .last-footer div span {
     margin-right: auto;
   }
   .grade-card .card {
-    height: 621px !important;
+    height: 588px !important;
+    display: flex !important;
+    margin: 0 auto;
   }
   .grade-card .card-title-second {
     line-height: 30px !important;
@@ -2095,9 +2114,16 @@ footer .last-footer div span {
   }
   .certification__card .card {
     display: flex !important;
-    width: 62% !important;
+    width: 100% !important;
+    max-width: 270px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .certification__card .all-item a {
+    padding: 7px 32px;
+  }
+  .course-card .all-item a {
+    padding: 7px 32px;
   }
   footer {
     height: 100%;
@@ -2120,7 +2146,15 @@ footer .last-footer div span {
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
-    gap: 11rem;
+    gap: 0;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  footer .main-footer .main-router .router-link-first {
+    width: 50%;
+  }
+  footer .main-footer .main-router .router-link-second {
+    width: 50%;
   }
   footer .main-footer .router-link-thirst {
     padding: 31px 0;
@@ -2245,6 +2279,9 @@ footer .last-footer div span {
   .course-index .card-index-second .form-group:last-child {
     border-bottom: transparent !important;
   }
+  .book__card .square {
+    display: none;
+  }
   .book__card .card .card-index {
     padding: 30px 29px !important;
     flex-direction: column;
@@ -2252,28 +2289,50 @@ footer .last-footer div span {
   .book__card .card .card-body {
     width: 100%;
     height: 330px;
+    padding: 30px 25px;
   }
   .book__card .card .card-body .content {
     padding: 2px 20px;
   }
+  .book__card .card img {
+    width: 100%;
+    height: 250px;
+  }
   .book__card .card .card-thumbnail {
-    top: -51px;
-    left: -15%;
+    justify-content: center;
   }
-  .book__card .card img:nth-child(1) {
-    width: 60%;
-    height: 250px;
+  .certification__card {
+    padding: 34px 0;
   }
-  .book__card .card img:nth-child(2) {
-    width: 60%;
-    height: 250px;
-    top: 0;
+  .certification__card h3 {
+    font-weight: bold;
   }
-  .book__card .card img:nth-child(3) {
-    width: 85%;
-    height: 263.5px;
-    right: -166px;
-    top: -8px;
+  .certification__card .square {
+    display: none;
+  }
+  .certification__card .card-item {
+    padding-top: 14px;
+  }
+  .info-item {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .about-item {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .info-item {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 580px;
+  }
+  .grade-card {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .feedback-card {
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
 }
 .about-card {
@@ -2686,6 +2745,67 @@ footer .last-footer div span {
     color: black !important;
     margin-bottom: 12px;
   }
+  .course-card .subtitle {
+    max-width: 465px;
+  }
+  .hero-index {
+    display: block;
+  }
+  .hero-index .home-content {
+    padding: 50px 0;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  .hero-index .slick-dots {
+    bottom: -41px;
+  }
+  .hero-index .slick-dots li {
+    width: 16px;
+    height: 16px;
+    margin: 0 3px;
+  }
+  .hero-index .home-main {
+    padding-top: 100px;
+  }
+  .hero-index .home-main .slick-list {
+    padding-top: 0px;
+  }
+  .hero-index .home-main .slick-list {
+    height: 125vh;
+  }
+  .hero-index .home-main .gallery-home i {
+    width: 70px;
+    height: 70px;
+    font-size: 26px;
+    padding: 20px 27px;
+  }
+  .hero-index .home-main .home-btn a {
+    position: relative;
+    max-width: 132px;
+    padding: 7px 30px;
+    display: block;
+  }
+  .hero-index .wrapper h1 {
+    margin: initial;
+    font-size: 32px !important;
+    font-weight: bold;
+    font-family: "Futurica", sans-serif;
+    line-height: 33px !important;
+    padding-bottom: 10px;
+  }
+  .hero-index .wrapper .description {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  .hero-index .video-popup {
+    margin: 0 auto;
+  }
+  .hero-index .video-popup div:nth-child(1)::before, .hero-index .video-popup div:nth-child(2)::before, .hero-index .video-popup div:nth-child(3)::before, .hero-index .video-popup div:nth-child(4)::before {
+    display: none;
+  }
+  .hero-index .video-popup img {
+    width: 100%;
+  }
   .about-item .all-about {
     flex-direction: column;
     padding: 32px 10px;
@@ -2730,11 +2850,22 @@ footer .last-footer div span {
   .main-section .index-main img {
     width: 100%;
   }
+  .main-section .index-main .right-m {
+    padding: 50px 0;
+  }
   .online-card-first .card-item {
     flex-direction: column;
   }
   .online-card-second {
     padding: 33px 0;
+  }
+  .online-card-second .card {
+    display: flex !important;
+    margin: 0 auto;
+  }
+  .online-card-second .card .card-title-second {
+    line-height: 38px !important;
+    font-size: 18px !important;
   }
   .info-item .all-info {
     align-items: flex-start;
@@ -2767,10 +2898,6 @@ footer .last-footer div span {
   }
   .book__card .card .card-body .content {
     padding: 2px 20px;
-  }
-  .book__card .card .card-thumbnail {
-    top: -51px;
-    left: -15%;
   }
   .book__card .card img:nth-child(1) {
     width: 60%;

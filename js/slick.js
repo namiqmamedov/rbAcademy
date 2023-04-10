@@ -17,24 +17,35 @@ $('#card-item').slick({
             }
         },
         {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                arrows: false,  
+            }
+        },
+        {
             breakpoint: 600,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToScroll: 2,
+                arrows: false,  
             }
         },
         {
             breakpoint: 480,
             settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToShow: 1,
+                slidesToScroll: 2,
+                arrows: false,
             }
         },
         {
             breakpoint: 350,
             settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToShow: 1,
+                slidesToScroll: 2,
+                arrows: false,
             }
         }
     ]
@@ -60,7 +71,7 @@ $('#card-item').slick({
             {
                 breakpoint: 767,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 2
                 }
             },
@@ -68,14 +79,16 @@ $('#card-item').slick({
                 breakpoint: 600,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 2,
+                    dots: false,
                 }
             },
             {
                 breakpoint: 576,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 2
+                    slidesToScroll: 2,
+                    dots: false,
                 }
             },
             {
@@ -84,7 +97,7 @@ $('#card-item').slick({
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true,
+                    dots: false,
                 }
             },
             // You can unslick at a given breakpoint now by adding:
@@ -202,24 +215,38 @@ $('.home-main').slick({
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 767,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 2,
+                    arrows:false,
+
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 2,
+                    arrows:false,
+
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows:false,
+
                 }
             },
             {
                 breakpoint: 350,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 2
+                    slidesToScroll: 2,
+                    arrows:false,
                 }
             },
             // You can unslick at a given breakpoint now by adding:
@@ -241,6 +268,13 @@ $('.home-main').slick({
                     slidesToScroll: 1,
                     infinite: true,
                     dots: false
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
                 }
             },
             {

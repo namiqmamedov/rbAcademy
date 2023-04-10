@@ -200,11 +200,6 @@ header {
                 background: #543EE9;
                 border-radius: 30px;
                 color: white;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 29%;
-                height: 50px;
                 position: relative;
             }
         }
@@ -420,14 +415,9 @@ header {
                 a {
                     background: #543EE9;
                     border-radius: 30px;
-                    width: 30%;
                     border: none;
                     outline: none;
                     font-size: 15px;
-                    height: 50px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
                 }
             }
         }
@@ -638,18 +628,14 @@ header {
             background: #FFFFFF !important;
             box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
             border-radius: 50px;
-            height: 50px;
             color: black !important;
             position: relative;
             border: none;
             outline: none;
-            width: 13%;
-            align-items: center;
-            justify-content: center;
-            display: flex;
             margin-left: auto;
             margin-right: auto;
             margin-top: 39px;
+            padding: 7px 32px;
 
         }
     }
@@ -1353,14 +1339,13 @@ header {
                 a {
                     background: #543EE9;
                     border-radius: 30px;
-                    width: 30%;
                     border: none;
                     outline: none;
                     font-size: 15px;
-                    height: 50px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    position: relative;
+                    max-width: 132px;
+                    padding: 7px 30px;
+                    display: block;
                 }
             }
         }
@@ -1753,17 +1738,13 @@ header {
             background: #FFFFFF !important;
             box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
             border-radius: 50px;
-            height: 50px;
             color: black !important;
             border: none;
             outline: none;
-            width: 13%;
-            align-items: center;
-            justify-content: center;
-            display: flex;
             margin-left: auto;
             margin-right: auto;
             margin-top: 39px;
+            padding: 7px 32px;
 
         }
     }
@@ -1944,17 +1925,13 @@ header {
             background: #FFFFFF !important;
             box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
             border-radius: 50px;
-            height: 50px;
             color: black !important;
             border: none;
             outline: none;
-            width: 13%;
-            align-items: center;
-            justify-content: center;
-            display: flex;
             margin-left: auto;
             margin-right: auto;
             margin-top: 39px;
+            padding: 7px 32px;
 
         }
     }
@@ -1986,8 +1963,6 @@ header {
 
         .card-thumbnail {
             display: flex;
-            position: relative;
-            width: 65%;
         }
 
         .card-index {
@@ -2017,25 +1992,7 @@ header {
             width: 100%;
             height: 290px;
 
-            &:nth-child(1) {
-                width: 37%;
-            }
-
-            &:nth-child(2) {
-                width: 45%;
-                position: absolute;
-                left: 138px;
-                top: -13px;
-                height: 317px;
-            }
-
-            &:nth-child(3) {
-                width: 49%;
-                height: 408px;
-                position: absolute;
-                right: -33px;
-                top: -63px;
-            }
+            width: 37%;
         }
     }
 }
@@ -2070,16 +2027,12 @@ header {
             background: #FFFFFF !important;
             box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
             border-radius: 50px;
-            height: 50px;
             color: black !important;
             border: none;
             outline: none;
-            width: 13%;
-            align-items: center;
-            justify-content: center;
-            display: flex;
             margin-left: auto;
             margin-right: auto;
+            padding: 7px 32px;
 
         }
     }
@@ -2439,15 +2392,26 @@ footer {
     }
 
     .hero-index {
+        display: block;
+
         .home-content {
-            justify-content: center;
             padding: 50px 0;
             flex-wrap: wrap;
             gap: 3rem;
         }
 
+        .slick-dots {
+            bottom: -41px;
+
+            li {
+                width: 16px;
+                height: 16px;
+                margin: 0 3px;
+            }
+        }
+
         .home-main {
-            padding-top: 235px;
+            padding-top: 100px;
 
             .slick-list {
                 padding-top: 0px;
@@ -2455,6 +2419,25 @@ footer {
 
             .slick-list {
                 height: 125vh;
+            }
+
+            .gallery-home {
+                i {
+                    width: 70px;
+                    height: 70px;
+                    font-size: 26px;
+                    padding: 20px 27px;
+                }
+            }
+
+            .home-btn {
+                a {
+                    position: relative;
+                    max-width: 132px;
+                    padding: 7px 30px;
+                    display: block;
+                }
+
             }
         }
 
@@ -2475,6 +2458,8 @@ footer {
         }
 
         .video-popup {
+            margin: 0 auto;
+
             div {
 
                 &:nth-child(1),
@@ -2486,13 +2471,18 @@ footer {
                     }
                 }
             }
+
+            img {
+                width: 100%;
+            }
         }
     }
 
     .about-item {
         .all-about {
             flex-direction: column;
-            padding: 32px 10px;
+            padding: 22px 14px;
+            height: 100%;
 
             .left-h {
                 width: 100%;
@@ -2509,9 +2499,9 @@ footer {
                     }
 
                     &:nth-child(2) {
-                        top: 105%;
+                        top: 89%;
                         left: auto;
-                        right: -141px;
+                        right: -124px;
                     }
 
                     &:nth-child(4) {
@@ -2540,7 +2530,23 @@ footer {
                     display: none;
                 }
 
+                .info-all {
+                    a {
+                        padding: 7px 33px;
+
+                    }
+                }
+
             }
+        }
+    }
+
+
+    .course-card {
+
+        .card {
+            display: flex !important;
+            margin: 0 auto;
         }
     }
 
@@ -2619,13 +2625,59 @@ footer {
                 width: 100%;
 
                 img {
-                    width: 100%;
+                    width: 87%;
                 }
 
                 h1 {
                     font-size: 28px;
+                    margin-bottom: 0.3rem;
                 }
             }
+
+            .right-h {
+                .info-all {
+                    a {
+                        padding: 7px 32px;
+                    }
+                }
+            }
+
+            .left-h {
+
+                div {
+                    &:nth-child(1) {
+                        display: none;
+                    }
+
+                    &:nth-child(2) {
+                        display: none;
+                    }
+
+                    &:nth-child(4) {
+                        display: none;
+                    }
+
+                    &:nth-child(5) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .online-card-second {
+        .card-title-second {
+            line-height: 38px !important;
+            font-size: 18px !important;
+        }
+
+        h5 {
+            font-size: 1rem;
+        }
+
+        .card {
+            display: flex !important;
+            margin: 0 auto;
         }
     }
 
@@ -2651,7 +2703,9 @@ footer {
 
     .grade-card {
         .card {
-            height: 621px !important;
+            height: 588px !important;
+            display: flex !important;
+            margin: 0 auto;
         }
 
         .card-title-second {
@@ -2663,7 +2717,7 @@ footer {
             display: flex;
             justify-content: center;
 
-            a{
+            a {
                 position: absolute;
                 width: 17%;
                 height: 46px;
@@ -2684,22 +2738,38 @@ footer {
                 }
             }
 
-            .right-h{
+            .right-h {
                 padding-top: 50px;
 
-                img{
+                img {
                     border-radius: 5px;
                 }
             }
         }
     }
 
-    .certification__card{
-        .card{
+    .certification__card {
+        .card {
             display: flex !important;
-            width: 62% !important;
+            width: 100% !important;
+            max-width: 270px;
             margin-left: auto;
             margin-right: auto;
+
+        }
+
+        .all-item {
+            a {
+                padding: 7px 32px;
+            }
+        }
+    }
+
+    .course-card {
+        .all-item {
+            a {
+                padding: 7px 32px;
+            }
         }
     }
 
@@ -2728,7 +2798,17 @@ footer {
                 margin-left: auto;
                 margin-right: auto;
                 justify-content: center;
-                gap: 11rem;
+                gap: 0;
+                align-items: center;
+                flex-wrap: wrap;
+
+                .router-link-first {
+                    width: 50%;
+                }
+
+                .router-link-second {
+                    width: 50%;
+                }
             }
 
             .router-link-thirst {
@@ -2895,6 +2975,11 @@ footer {
     }
 
     .book__card {
+
+        .square {
+            display: none;
+        }
+
         .card {
             .card-index {
                 padding: 30px 29px !important;
@@ -2904,37 +2989,65 @@ footer {
             .card-body {
                 width: 100%;
                 height: 330px;
+                padding: 30px 25px;
 
                 .content {
                     padding: 2px 20px;
                 }
             }
 
-            .card-thumbnail {
-                top: -51px;
-                left: -15%;
-            }
 
             img {
-                &:nth-child(1) {
-                    width: 60%;
-                    height: 250px;
-                }
+                width: 100%;
+                height: 250px;
+            }
 
-                &:nth-child(2) {
-                    width: 60%;
-                    height: 250px;
-                    top: 0;
-                }
-
-                &:nth-child(3) {
-                    width: 85%;
-                    height: 263.5px;
-                    right: -166px;
-                    top: -8px;
-                }
+            .card-thumbnail {
+                justify-content: center;
             }
         }
+    }
+
+    .certification__card {
+        padding: 34px 0;
+
+        h3 {
+            font-weight: bold;
+        }
+
+        .square {
+            display: none;
+        }
+
+        .card-item {
+            padding-top: 14px;
+        }
+    }
+
+    .info-item {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .about-item {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .info-item {
+        overflow-x: hidden;
+        overflow-y: hidden;
+        height: 580px;
+    }
+
+    .grade-card {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .feedback-card {
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
 
 }
@@ -3492,6 +3605,99 @@ footer {
         }
     }
 
+    .course-card{
+        .subtitle{
+            max-width: 465px;
+        }
+    }
+
+    .hero-index {
+        display: block;
+
+        .home-content {
+            padding: 50px 0;
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+
+        .slick-dots {
+            bottom: -41px;
+
+            li {
+                width: 16px;
+                height: 16px;
+                margin: 0 3px;
+            }
+        }
+
+        .home-main {
+            padding-top: 100px;
+
+            .slick-list {
+                padding-top: 0px;
+            }
+
+            .slick-list {
+                height: 125vh;
+            }
+
+            .gallery-home {
+                i {
+                    width: 70px;
+                    height: 70px;
+                    font-size: 26px;
+                    padding: 20px 27px;
+                }
+            }
+
+            .home-btn {
+                a {
+                    position: relative;
+                    max-width: 132px;
+                    padding: 7px 30px;
+                    display: block;
+                }
+
+            }
+        }
+
+        .wrapper {
+            h1 {
+                margin: initial;
+                font-size: 32px !important;
+                font-weight: bold;
+                font-family: 'Futurica', sans-serif;
+                line-height: 33px !important;
+                padding-bottom: 10px;
+            }
+
+            .description {
+                font-size: 1rem;
+                margin: 0 auto;
+            }
+        }
+
+        .video-popup {
+            margin: 0 auto;
+
+            div {
+
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
     .about-item {
         .all-about {
             flex-direction: column;
@@ -3556,6 +3762,10 @@ footer {
             img {
                 width: 100%;
             }
+
+            .right-m{
+                padding: 50px 0;
+            }
         }
     }
 
@@ -3567,6 +3777,16 @@ footer {
 
     .online-card-second {
         padding: 33px 0;
+
+        .card {
+            display: flex !important;
+            margin: 0 auto;
+
+            .card-title-second {
+                line-height: 38px !important;
+                font-size: 18px !important;
+            }
+        }
 
     }
 
@@ -3610,11 +3830,6 @@ footer {
                 .content {
                     padding: 2px 20px;
                 }
-            }
-
-            .card-thumbnail {
-                top: -51px;
-                left: -15%;
             }
 
             img {
