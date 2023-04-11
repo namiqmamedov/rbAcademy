@@ -17,6 +17,14 @@ $('#card-item').slick({
             }
         },
         {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2.3,
+                slidesToScroll: 2,
+                arrows: false,  
+            }
+        },
+        {
             breakpoint: 767,
             settings: {
                 slidesToShow: 2,
@@ -62,9 +70,16 @@ $('#card-item').slick({
         nextArrow: '<i class="fa-solid fa-arrow-right slick-next"></i>',
         responsive: [
             {
-                breakpoint: 992,
+                breakpoint: 1200,
                 settings: {
                     slidesToShow: 4,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
                     slidesToScroll: 2
                 }
             },
@@ -185,9 +200,11 @@ $('.home-main').slick({
             }
           },
     {
-      breakpoint: 991,
+      breakpoint: 992,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
       }
     },
     {
@@ -212,6 +229,15 @@ $('.home-main').slick({
                     slidesToScroll: 1,
                     infinite: true,
                     dots: false
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    arrows:false,
+
                 }
             },
             {
@@ -265,6 +291,15 @@ $('.home-main').slick({
                 breakpoint: 2000,
                 settings: {
                     slidesToShow: 5,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
                     slidesToScroll: 1,
                     infinite: true,
                     dots: false

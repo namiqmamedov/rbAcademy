@@ -3085,30 +3085,23 @@ footer .last-footer div span {
   .top-header .icon-header {
     display: none !important;
   }
-  .header-main .container {
-    justify-content: center;
-    display: flex;
-    text-align: center;
-  }
   .header-main .slick-dots {
     bottom: -44px;
   }
+  .header-main .home-main .wrapper {
+    padding-left: 47px;
+  }
   .header-main .home-main .wrapper h1 {
     font-family: "Futurica", sans-serif;
-    text-align: left;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
-    font-size: 46px;
+    font-size: 32px;
     max-width: 500px;
-    line-height: 53px;
   }
   .header-main .home-main .wrapper h5 {
     font-size: 16px;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 29px;
-    font-family: "Mulish", sans-serif;
+    text-align: center;
   }
   .header-main .home-main .wrapper .home-btn {
     display: none;
@@ -3118,30 +3111,22 @@ footer .last-footer div span {
     padding: 59px 0;
     gap: 2.7rem;
   }
-  .header-main .home-content .video-popup {
-    margin-top: 3.2rem;
-  }
   .header-main .home-content .video-popup div:nth-child(1)::before {
-    top: -53px;
-    left: 41px;
+    position: static;
   }
   .header-main .home-content .video-popup div:nth-child(2)::before {
-    top: -51px;
-    left: auto;
-    right: 130px;
+    position: static;
   }
   .header-main .home-content .video-popup div:nth-child(3)::before {
-    top: -94px;
-    left: 109px;
-    z-index: -2;
+    position: static;
   }
   .header-main .home-content .video-popup div:nth-child(4)::before {
-    top: -90px;
+    top: -60px;
     left: auto;
-    right: 163px;
+    right: 74px;
   }
   .header-main .home-content .video-popup img {
-    width: 75%;
+    width: 100%;
   }
   .header-main .main-header .active {
     height: 100vh !important;
@@ -3214,6 +3199,103 @@ footer .last-footer div span {
     color: black !important;
     margin-bottom: 12px;
   }
+  .course-card .subtitle {
+    max-width: 465px;
+  }
+  .course-card .card {
+    height: 656px !important;
+  }
+  .course-card .card .card-body {
+    padding: 1rem 0.7rem;
+  }
+  .book__card .slick-prev,
+  .book__card .slick-next {
+    bottom: 115px;
+  }
+  .book__card .card .card-index {
+    padding: 30px 29px !important;
+    flex-direction: column;
+  }
+  .book__card .card .card-body {
+    width: 100%;
+    height: 225px;
+  }
+  .book__card .card .card-body .content {
+    padding: 2px 20px;
+  }
+  .book__card .card img:nth-child(1) {
+    width: 100%;
+    height: 335px;
+  }
+  .book__card .card img:nth-child(2) {
+    width: 60%;
+    height: 250px;
+    top: 0;
+  }
+  .book__card .card img:nth-child(3) {
+    width: 85%;
+    height: 263.5px;
+    right: -166px;
+    top: -8px;
+  }
+  .hero-index {
+    height: 100%;
+  }
+  .hero-index .home-content {
+    padding: 50px 0;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  .hero-index .slick-dots {
+    bottom: -20px;
+  }
+  .hero-index .slick-dots li {
+    width: 16px;
+    height: 16px;
+    margin: 0 3px;
+  }
+  .hero-index .home-main {
+    padding-top: 100px;
+  }
+  .hero-index .home-main .slick-list {
+    padding-top: 0px;
+  }
+  .hero-index .home-main .slick-list {
+    height: auto;
+  }
+  .hero-index .home-main .gallery-home i {
+    width: 70px;
+    height: 70px;
+    font-size: 26px;
+    padding: 20px 27px;
+  }
+  .hero-index .home-main .home-btn a {
+    position: relative;
+    max-width: 132px;
+    padding: 7px 30px;
+    display: block;
+  }
+  .hero-index .wrapper h1 {
+    margin: initial;
+    font-size: 45px !important;
+    font-weight: bold;
+    font-family: "Futurica", sans-serif;
+    line-height: 50px !important;
+    padding-bottom: 10px;
+  }
+  .hero-index .wrapper .description {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  .hero-index .video-popup {
+    margin: 0 auto;
+  }
+  .hero-index .video-popup div:nth-child(1)::before, .hero-index .video-popup div:nth-child(2)::before, .hero-index .video-popup div:nth-child(3)::before, .hero-index .video-popup div:nth-child(4)::before {
+    display: none;
+  }
+  .hero-index .video-popup img {
+    width: 100%;
+  }
   .about-item {
     padding-top: 114px;
   }
@@ -3266,18 +3348,41 @@ footer .last-footer div span {
     max-width: 615px;
     font-family: "Mulish", sans-serif;
   }
+  .main-section .image-content {
+    padding-left: 33px;
+  }
   .main-section .index-main {
     padding: 7px 18px;
     flex-direction: column;
   }
   .main-section .index-main img {
-    width: 100%;
+    width: 71%;
+  }
+  .main-section .index-main .right-m {
+    padding: 50px 0;
+  }
+  .main-section .index-main .right-m div:nth-child(2) {
+    display: none;
+  }
+  .main-section .index-main .right-m div:nth-child(3) {
+    display: none;
+  }
+  .main-section .index-main .left-m div:nth-child(5) {
+    display: none;
   }
   .online-card-first .card-item {
     flex-direction: column;
   }
+  .online-card-first .flip-card {
+    width: 57%;
+    height: 273px;
+    margin: 0 auto;
+  }
   .online-card-second {
     padding: 33px 0;
+  }
+  .online-card-second .card .card-title-second {
+    font-size: 20px;
   }
   .info-item .all-info {
     align-items: flex-start;
@@ -3290,11 +3395,21 @@ footer .last-footer div span {
   }
   .info-item .all-info .left-h img,
   .info-item .all-info .right-h img {
-    width: 100%;
+    width: 69%;
   }
   .info-item .all-info .left-h h1,
   .info-item .all-info .right-h h1 {
     font-size: 28px;
+    margin-bottom: 0.9rem;
+  }
+  .info-item .all-info .right-h {
+    padding-top: 8px;
+  }
+  .info-item .all-info .left-h div:nth-child(4) {
+    right: 115px;
+  }
+  .info-item .all-info .left-h div:nth-child(5) {
+    display: none;
   }
   .feedback-card {
     margin-top: 0;
@@ -3306,33 +3421,33 @@ footer .last-footer div span {
   .home-course-index .main-index .left-h,
   .home-course-index .main-index .right-h {
     width: 100%;
+    padding-top: 36px;
   }
   .home-course-index .main-index .left-h img,
   .home-course-index .main-index .right-h img {
-    width: 100%;
+    width: 79%;
+    padding-left: 65px;
+  }
+  .home-course-index .main-index .right-h div:nth-child(1) {
+    display: none;
   }
   footer {
     height: 100%;
   }
   footer .main-footer {
     display: block;
-    padding: 56px 0;
+    padding: 80px 0;
     text-align: center;
   }
   footer .main-footer .logo {
-    padding-bottom: 24px;
+    margin-bottom: 32px;
   }
   footer .main-footer .logo img {
-    width: 14.5%;
+    width: 19%;
     padding-bottom: 13px;
   }
   footer .main-footer .contact-footer {
     margin-bottom: 18px;
-  }
-  footer .main-footer .router-link-first,
-  footer .main-footer .router-link-second,
-  footer .main-footer .router-link-thirst {
-    font-family: "Mulish", sans-serif;
   }
   footer .main-footer .main-router {
     display: flex;
@@ -3340,7 +3455,12 @@ footer .last-footer div span {
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
-    gap: 11rem;
+    gap: 0rem;
+    flex-wrap: wrap;
+  }
+  footer .main-footer .main-router .router-link-first,
+  footer .main-footer .main-router .router-link-second {
+    width: 50%;
   }
   footer .main-footer .router-link-thirst {
     padding: 31px 0;
@@ -3348,8 +3468,6 @@ footer .last-footer div span {
   footer .main-footer .social-link {
     flex-direction: unset;
     justify-content: center;
-    margin-bottom: 21px;
-    padding-top: 12px;
   }
   footer .main-footer .social-link img {
     width: 100%;
@@ -3485,23 +3603,6 @@ footer .last-footer div span {
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
-  .header-top {
-    height: 49px;
-  }
-  .header-top .top-header {
-    height: 49px;
-  }
-  .header-top .top-header h6 {
-    font-size: 1rem;
-    font-family: "Mulish", sans-serif;
-  }
-  .header-top .top-header .icon-header {
-    gap: 1.8rem;
-  }
-  .header-top .top-header .icon-header img {
-    width: 16.5px;
-    height: 16.5px;
-  }
   .header-main .slick-dots {
     bottom: -44px;
   }
@@ -3640,9 +3741,124 @@ footer .last-footer div span {
     margin-left: auto;
     padding-left: 85px;
   }
-  .main-section .index-main {
-    padding: 7px 18px;
-    flex-direction: column;
+  .hero-index {
+    height: 100%;
+  }
+  .hero-index .home-content {
+    padding-top: 200px;
+    gap: 3rem;
+  }
+  .hero-index .slick-dots {
+    bottom: -20px;
+  }
+  .hero-index .slick-dots li {
+    width: 16px;
+    height: 16px;
+    margin: 0 3px;
+  }
+  .hero-index .home-main {
+    padding-top: 100px;
+  }
+  .hero-index .home-main .slick-list {
+    padding-top: 0px;
+    width: 980px;
+  }
+  .hero-index .home-main .video-popup {
+    padding-right: 58px;
+  }
+  .hero-index .home-main .video-popup div:nth-child(2) {
+    right: -13px;
+  }
+  .hero-index .home-main .slick-list {
+    height: auto;
+  }
+  .hero-index .home-main .gallery-home i {
+    width: 70px;
+    height: 70px;
+    font-size: 26px;
+    padding: 20px 27px;
+  }
+  .hero-index .home-main .home-btn a {
+    position: relative;
+    max-width: 132px;
+    padding: 7px 30px;
+    display: block;
+  }
+  .hero-index .wrapper h1 {
+    margin: initial;
+    font-size: 45px !important;
+    font-weight: bold;
+    font-family: "Futurica", sans-serif;
+    line-height: 50px !important;
+    padding-bottom: 10px;
+  }
+  .hero-index .wrapper .description {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  .course-card .card-body {
+    padding: 1rem 0.6rem !important;
+  }
+  .course-card .card {
+    height: 611px !important;
+  }
+  .hero-index-about {
+    height: 100%;
+  }
+  .hero-index-about .home-content {
+    padding: 50px 0;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  .hero-index-about .slick-dots {
+    bottom: -20px;
+  }
+  .hero-index-about .slick-dots li {
+    width: 16px;
+    height: 16px;
+    margin: 0 3px;
+  }
+  .hero-index-about .home-main {
+    padding-top: 100px;
+  }
+  .hero-index-about .home-main .slick-list {
+    padding-top: 0px;
+  }
+  .hero-index-about .home-main .slick-list {
+    height: auto;
+  }
+  .hero-index-about .home-main .gallery-home i {
+    width: 70px;
+    height: 70px;
+    font-size: 26px;
+    padding: 20px 27px;
+  }
+  .hero-index-about .home-main .home-btn a {
+    position: relative;
+    max-width: 132px;
+    padding: 7px 30px;
+    display: block;
+  }
+  .hero-index-about .wrapper h1 {
+    margin: initial;
+    font-size: 45px !important;
+    font-weight: bold;
+    font-family: "Futurica", sans-serif;
+    line-height: 50px !important;
+    padding-bottom: 10px;
+  }
+  .hero-index-about .wrapper .description {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  .hero-index-about .video-popup {
+    margin: 0 auto;
+  }
+  .hero-index-about .video-popup div:nth-child(1)::before, .hero-index-about .video-popup div:nth-child(2)::before, .hero-index-about .video-popup div:nth-child(3)::before, .hero-index-about .video-popup div:nth-child(4)::before {
+    display: none;
+  }
+  .hero-index-about .video-popup img {
+    width: 100%;
   }
   .main-section .index-main img {
     width: 100%;
