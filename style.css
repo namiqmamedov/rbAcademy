@@ -8,11 +8,6 @@ a {
   text-decoration: none !important;
 }
 
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1400px !important;
-  }
-}
 header {
   position: fixed;
   top: 0;
@@ -233,6 +228,142 @@ header {
   border-radius: 50%;
 }
 .hero-index .home-main .video-popup div:nth-child(4)::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  z-index: 1111;
+  top: -106px;
+  left: auto;
+  right: 48px;
+  bottom: 0;
+  background: #FE5538;
+  box-shadow: 30px 20px 11px rgba(101, 101, 101, 0.25);
+  border-radius: 50%;
+}
+
+.hero-index-about {
+  height: 815px;
+  position: relative;
+  overflow: hidden;
+  background: url("/assets/img/background.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-index-about .slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #671C7C !important;
+}
+.hero-index-about .slick-dots li button:before {
+  font-size: 15px;
+  color: #42C0C4;
+  opacity: 1 !important;
+}
+.hero-index-about .slick-dots {
+  bottom: 92px;
+}
+.hero-index-about .home-content {
+  display: flex !important;
+  gap: 12rem;
+}
+.hero-index-about .home-main {
+  padding-top: 160px;
+}
+.hero-index-about .home-main .slick-list {
+  height: 93vh;
+  padding-top: 155px;
+}
+.hero-index-about .home-main .wrapper h1 {
+  font-size: 46px;
+  font-weight: bold;
+  max-width: 350px;
+  line-height: 60px;
+}
+.hero-index-about .home-main .wrapper h5 {
+  margin-bottom: 20px;
+}
+.hero-index-about .home-main .wrapper .description {
+  max-width: 558px;
+  margin-bottom: 25px;
+}
+.hero-index-about .home-main .home-btn a {
+  background: #543EE9;
+  border-radius: 30px;
+  color: white;
+  position: relative;
+}
+.hero-index-about .home-main .gallery-home {
+  position: relative;
+}
+.hero-index-about .home-main .gallery-home i {
+  top: 50%;
+  left: 50%;
+  width: 88px;
+  height: 88px;
+  font-size: 22px;
+  padding: 33px 39px;
+  position: absolute;
+  z-index: 111111111111111;
+  background: rgba(84, 62, 233, 0.8);
+  color: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-index-about .home-main .video-popup img {
+  position: relative;
+  z-index: 111111111;
+}
+.hero-index-about .home-main .video-popup div {
+  position: relative;
+}
+.hero-index-about .home-main .video-popup div:nth-child(1)::before {
+  position: absolute;
+  content: "";
+  width: 211px;
+  height: 234px;
+  z-index: -1;
+  top: -77px;
+  left: -48px;
+  right: 0;
+  bottom: 0;
+  background: #3AD4D8;
+  box-shadow: 30px 4px 27px rgba(82, 82, 82, 0.25);
+  border-radius: 5px;
+  transform: rotate(-37.25deg);
+}
+.hero-index-about .home-main .video-popup div:nth-child(2)::before {
+  position: absolute;
+  content: "";
+  width: 292.78px;
+  height: 458.87px;
+  z-index: 1;
+  top: -77px;
+  left: auto;
+  right: 52px;
+  bottom: 0;
+  background: #671C7C;
+  box-shadow: 49px 42px 12px rgba(80, 80, 80, 0.25);
+  border-radius: 5px;
+  transform: rotate(22.66deg);
+}
+.hero-index-about .home-main .video-popup div:nth-child(3)::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  z-index: 1111;
+  top: -101px;
+  left: 32px;
+  right: 0;
+  bottom: 0;
+  background: #671C7C;
+  box-shadow: 30px 20px 11px rgba(101, 101, 101, 0.25);
+  border-radius: 50%;
+}
+.hero-index-about .home-main .video-popup div:nth-child(4)::before {
   position: absolute;
   content: "";
   width: 40px;
@@ -1934,6 +2065,134 @@ footer .last-footer div span {
   .hero-index .video-popup img {
     width: 100%;
   }
+  .hero-index-about {
+    display: block;
+  }
+  .hero-index-about .home-content {
+    padding: 50px 0;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  .hero-index-about .home-content .wrapper {
+    width: 100%;
+  }
+  .hero-index-about .home-content .wrapper .title {
+    width: 100%;
+  }
+  .hero-index-about .slick-dots {
+    bottom: -41px;
+  }
+  .hero-index-about .slick-dots li {
+    width: 16px;
+    height: 16px;
+    margin: 0 3px;
+  }
+  .hero-index-about .home-main {
+    padding-top: 100px;
+  }
+  .hero-index-about .home-main .slick-list {
+    padding-top: 0px;
+  }
+  .hero-index-about .home-main .slick-list {
+    height: 125vh;
+  }
+  .hero-index-about .home-main .gallery-home i {
+    width: 70px;
+    height: 70px;
+    font-size: 26px;
+    padding: 20px 27px;
+  }
+  .hero-index-about .home-main .home-btn a {
+    position: relative;
+    max-width: 132px;
+    padding: 7px 30px;
+    display: block;
+  }
+  .hero-index-about .wrapper h1 {
+    margin: initial;
+    font-size: 32px !important;
+    font-weight: bold;
+    font-family: "Futurica", sans-serif;
+    line-height: 33px !important;
+    padding-bottom: 10px;
+  }
+  .hero-index-about .wrapper .description {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  .hero-index-about .video-popup {
+    margin: 0 auto;
+  }
+  .hero-index-about .video-popup div:nth-child(1)::before, .hero-index-about .video-popup div:nth-child(2)::before, .hero-index-about .video-popup div:nth-child(3)::before, .hero-index-about .video-popup div:nth-child(4)::before {
+    display: none;
+  }
+  .hero-index-about .video-popup img {
+    width: 100%;
+  }
+  .course-index-product {
+    display: block;
+  }
+  .course-index-product .home-content {
+    padding: 50px 0;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  .course-index-product .home-content .wrapper {
+    width: 100%;
+  }
+  .course-index-product .home-content .wrapper .title {
+    width: 100%;
+  }
+  .course-index-product .slick-dots {
+    bottom: -41px;
+  }
+  .course-index-product .slick-dots li {
+    width: 16px;
+    height: 16px;
+    margin: 0 3px;
+  }
+  .course-index-product .home-main {
+    padding-top: 100px;
+  }
+  .course-index-product .home-main .slick-list {
+    padding-top: 0px;
+  }
+  .course-index-product .home-main .slick-list {
+    height: 125vh;
+  }
+  .course-index-product .home-main .gallery-home i {
+    width: 70px;
+    height: 70px;
+    font-size: 26px;
+    padding: 20px 27px;
+  }
+  .course-index-product .home-main .home-btn a {
+    position: relative;
+    max-width: 132px;
+    padding: 7px 30px;
+    display: block;
+  }
+  .course-index-product .wrapper h1 {
+    margin: initial;
+    font-size: 32px !important;
+    font-weight: bold;
+    font-family: "Futurica", sans-serif;
+    line-height: 33px !important;
+    padding-bottom: 10px;
+  }
+  .course-index-product .wrapper .description {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  .course-index-product .video-popup {
+    margin: 0 auto;
+  }
+  .course-index-product .video-popup div:nth-child(1)::before, .course-index-product .video-popup div:nth-child(2)::before, .course-index-product .video-popup div:nth-child(3)::before, .course-index-product .video-popup div:nth-child(4)::before {
+    display: none;
+  }
+  .course-index-product .video-popup img {
+    width: 100%;
+  }
   .about-item .all-about {
     flex-direction: column;
     padding: 22px 14px;
@@ -1970,6 +2229,9 @@ footer .last-footer div span {
   }
   .about-item .all-about .right-h h6 {
     display: none;
+  }
+  .about-item .all-about .right-h p {
+    max-width: 532px;
   }
   .about-item .all-about .right-h .info-all a {
     padding: 7px 33px;
@@ -2806,6 +3068,122 @@ footer .last-footer div span {
   .hero-index .video-popup img {
     width: 100%;
   }
+  .hero-index-about {
+    display: block;
+  }
+  .hero-index-about .home-content {
+    padding: 50px 0;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  .hero-index-about .slick-dots {
+    bottom: -41px;
+  }
+  .hero-index-about .slick-dots li {
+    width: 16px;
+    height: 16px;
+    margin: 0 3px;
+  }
+  .hero-index-about .home-main {
+    padding-top: 100px;
+  }
+  .hero-index-about .home-main .slick-list {
+    padding-top: 0px;
+  }
+  .hero-index-about .home-main .slick-list {
+    height: 125vh;
+  }
+  .hero-index-about .home-main .gallery-home i {
+    width: 70px;
+    height: 70px;
+    font-size: 26px;
+    padding: 20px 27px;
+  }
+  .hero-index-about .home-main .home-btn a {
+    position: relative;
+    max-width: 132px;
+    padding: 7px 30px;
+    display: block;
+  }
+  .hero-index-about .wrapper h1 {
+    margin: initial;
+    font-size: 32px !important;
+    font-weight: bold;
+    font-family: "Futurica", sans-serif;
+    line-height: 33px !important;
+    padding-bottom: 10px;
+  }
+  .hero-index-about .wrapper .description {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  .hero-index-about .video-popup {
+    margin: 0 auto;
+  }
+  .hero-index-about .video-popup div:nth-child(1)::before, .hero-index-about .video-popup div:nth-child(2)::before, .hero-index-about .video-popup div:nth-child(3)::before, .hero-index-about .video-popup div:nth-child(4)::before {
+    display: none;
+  }
+  .hero-index-about .video-popup img {
+    width: 100%;
+  }
+  .course-index-product {
+    display: block;
+  }
+  .course-index-product .home-content {
+    padding: 50px 0;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  .course-index-product .slick-dots {
+    bottom: -41px;
+  }
+  .course-index-product .slick-dots li {
+    width: 16px;
+    height: 16px;
+    margin: 0 3px;
+  }
+  .course-index-product .home-main {
+    padding-top: 100px;
+  }
+  .course-index-product .home-main .slick-list {
+    padding-top: 0px;
+  }
+  .course-index-product .home-main .slick-list {
+    height: 125vh;
+  }
+  .course-index-product .home-main .gallery-home i {
+    width: 70px;
+    height: 70px;
+    font-size: 26px;
+    padding: 20px 27px;
+  }
+  .course-index-product .home-main .home-btn a {
+    position: relative;
+    max-width: 132px;
+    padding: 7px 30px;
+    display: block;
+  }
+  .course-index-product .wrapper h1 {
+    margin: initial;
+    font-size: 32px !important;
+    font-weight: bold;
+    font-family: "Futurica", sans-serif;
+    line-height: 33px !important;
+    padding-bottom: 10px;
+  }
+  .course-index-product .wrapper .description {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  .course-index-product .video-popup {
+    margin: 0 auto;
+  }
+  .course-index-product .video-popup div:nth-child(1)::before, .course-index-product .video-popup div:nth-child(2)::before, .course-index-product .video-popup div:nth-child(3)::before, .course-index-product .video-popup div:nth-child(4)::before {
+    display: none;
+  }
+  .course-index-product .video-popup img {
+    width: 100%;
+  }
   .about-item .all-about {
     flex-direction: column;
     padding: 32px 10px;
@@ -3296,6 +3674,130 @@ footer .last-footer div span {
   .hero-index .video-popup img {
     width: 100%;
   }
+  .hero-index-about {
+    height: 100%;
+  }
+  .hero-index-about .home-content {
+    padding: 50px 0;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  .hero-index-about .wrapper {
+    margin: 0 auto;
+    padding-right: 81px;
+  }
+  .hero-index-about .slick-dots {
+    bottom: -20px;
+  }
+  .hero-index-about .slick-dots li {
+    width: 16px;
+    height: 16px;
+    margin: 0 3px;
+  }
+  .hero-index-about .home-main {
+    padding-top: 100px;
+  }
+  .hero-index-about .home-main .slick-list {
+    padding-top: 0px;
+  }
+  .hero-index-about .home-main .slick-list {
+    height: auto;
+  }
+  .hero-index-about .home-main .gallery-home i {
+    width: 70px;
+    height: 70px;
+    font-size: 26px;
+    padding: 20px 27px;
+  }
+  .hero-index-about .home-main .home-btn a {
+    position: relative;
+    max-width: 132px;
+    padding: 7px 30px;
+    display: block;
+  }
+  .hero-index-about .wrapper h1 {
+    margin: initial;
+    font-size: 45px !important;
+    font-weight: bold;
+    font-family: "Futurica", sans-serif;
+    line-height: 50px !important;
+    padding-bottom: 10px;
+  }
+  .hero-index-about .wrapper .description {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  .hero-index-about .video-popup {
+    margin: 0 auto;
+  }
+  .hero-index-about .video-popup div:nth-child(1)::before, .hero-index-about .video-popup div:nth-child(2)::before, .hero-index-about .video-popup div:nth-child(3)::before, .hero-index-about .video-popup div:nth-child(4)::before {
+    display: none;
+  }
+  .hero-index-about .video-popup img {
+    width: 100%;
+  }
+  .course-index-product {
+    height: 100%;
+  }
+  .course-index-product .home-content {
+    padding: 50px 0;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  .course-index-product .wrapper {
+    margin: 0 auto;
+    padding-right: 81px;
+  }
+  .course-index-product .slick-dots {
+    bottom: -20px;
+  }
+  .course-index-product .slick-dots li {
+    width: 16px;
+    height: 16px;
+    margin: 0 3px;
+  }
+  .course-index-product .home-main {
+    padding-top: 100px;
+  }
+  .course-index-product .home-main .slick-list {
+    padding-top: 0px;
+  }
+  .course-index-product .home-main .slick-list {
+    height: auto;
+  }
+  .course-index-product .home-main .gallery-home i {
+    width: 70px;
+    height: 70px;
+    font-size: 26px;
+    padding: 20px 27px;
+  }
+  .course-index-product .home-main .home-btn a {
+    position: relative;
+    max-width: 132px;
+    padding: 7px 30px;
+    display: block;
+  }
+  .course-index-product .wrapper h1 {
+    margin: initial;
+    font-size: 45px !important;
+    font-weight: bold;
+    font-family: "Futurica", sans-serif;
+    line-height: 50px !important;
+    padding-bottom: 10px;
+  }
+  .course-index-product .wrapper .description {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  .course-index-product .video-popup {
+    margin: 0 auto;
+  }
+  .course-index-product .video-popup div:nth-child(1)::before, .course-index-product .video-popup div:nth-child(2)::before, .course-index-product .video-popup div:nth-child(3)::before, .course-index-product .video-popup div:nth-child(4)::before {
+    display: none;
+  }
+  .course-index-product .video-popup img {
+    width: 100%;
+  }
   .about-item {
     padding-top: 114px;
   }
@@ -3685,6 +4187,178 @@ footer .last-footer div span {
     font-weight: 600;
     opacity: 0.85;
   }
+  .hero-index {
+    height: 100%;
+  }
+  .hero-index .home-content {
+    padding: 50px 0;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  .hero-index .slick-dots {
+    bottom: -20px;
+  }
+  .hero-index .slick-dots li {
+    width: 16px;
+    height: 16px;
+    margin: 0 3px;
+  }
+  .hero-index .home-main {
+    padding-top: 100px;
+  }
+  .hero-index .home-main .slick-list {
+    padding-top: 0px;
+  }
+  .hero-index .home-main .slick-list {
+    height: auto;
+  }
+  .hero-index .home-main .gallery-home i {
+    width: 70px;
+    height: 70px;
+    font-size: 26px;
+    padding: 20px 27px;
+  }
+  .hero-index .home-main .home-btn a {
+    position: relative;
+    max-width: 132px;
+    padding: 7px 30px;
+    display: block;
+  }
+  .hero-index .wrapper h1 {
+    margin: initial;
+    font-size: 45px !important;
+    font-weight: bold;
+    font-family: "Futurica", sans-serif;
+    line-height: 50px !important;
+    padding-bottom: 10px;
+  }
+  .hero-index .wrapper .description {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  .hero-index .video-popup {
+    margin: 0 auto;
+  }
+  .hero-index .video-popup div:nth-child(1)::before, .hero-index .video-popup div:nth-child(2)::before, .hero-index .video-popup div:nth-child(3)::before, .hero-index .video-popup div:nth-child(4)::before {
+    display: none;
+  }
+  .hero-index .video-popup img {
+    width: 100%;
+  }
+  .hero-index-about {
+    height: 100%;
+  }
+  .hero-index-about .home-content {
+    padding-top: 190px;
+    gap: 3rem;
+  }
+  .hero-index-about .slick-dots {
+    bottom: -20px;
+  }
+  .hero-index-about .slick-dots li {
+    width: 16px;
+    height: 16px;
+    margin: 0 3px;
+  }
+  .hero-index-about .home-main {
+    padding-top: 100px;
+  }
+  .hero-index-about .home-main .slick-list {
+    padding-top: 0px;
+  }
+  .hero-index-about .home-main .slick-list {
+    height: auto;
+  }
+  .hero-index-about .home-main .gallery-home i {
+    width: 70px;
+    height: 70px;
+    font-size: 26px;
+    padding: 20px 27px;
+  }
+  .hero-index-about .home-main .home-btn a {
+    position: relative;
+    max-width: 132px;
+    padding: 7px 30px;
+    display: block;
+  }
+  .hero-index-about .wrapper h1 {
+    margin: initial;
+    font-size: 45px !important;
+    font-weight: bold;
+    font-family: "Futurica", sans-serif;
+    line-height: 50px !important;
+    padding-bottom: 10px;
+  }
+  .hero-index-about .wrapper .description {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  .hero-index-about .video-popup {
+    margin: 0 auto;
+  }
+  .hero-index-about .video-popup div:nth-child(1)::before, .hero-index-about .video-popup div:nth-child(2)::before, .hero-index-about .video-popup div:nth-child(3)::before, .hero-index-about .video-popup div:nth-child(4)::before {
+    display: none;
+  }
+  .hero-index-about .video-popup img {
+    width: 100%;
+  }
+  .course-index-product {
+    height: 100%;
+  }
+  .course-index-product .home-content {
+    padding-top: 190px;
+    gap: 3rem;
+  }
+  .course-index-product .slick-dots {
+    bottom: -20px;
+  }
+  .course-index-product .slick-dots li {
+    width: 16px;
+    height: 16px;
+    margin: 0 3px;
+  }
+  .course-index-product .home-main {
+    padding-top: 100px;
+  }
+  .course-index-product .home-main .slick-list {
+    padding-top: 0px;
+  }
+  .course-index-product .home-main .slick-list {
+    height: auto;
+  }
+  .course-index-product .home-main .gallery-home i {
+    width: 70px;
+    height: 70px;
+    font-size: 26px;
+    padding: 20px 27px;
+  }
+  .course-index-product .home-main .home-btn a {
+    position: relative;
+    max-width: 132px;
+    padding: 7px 30px;
+    display: block;
+  }
+  .course-index-product .wrapper h1 {
+    margin: initial;
+    font-size: 45px !important;
+    font-weight: bold;
+    font-family: "Futurica", sans-serif;
+    line-height: 50px !important;
+    padding-bottom: 10px;
+  }
+  .course-index-product .wrapper .description {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  .course-index-product .video-popup {
+    margin: 0 auto;
+  }
+  .course-index-product .video-popup div:nth-child(1)::before, .course-index-product .video-popup div:nth-child(2)::before, .course-index-product .video-popup div:nth-child(3)::before, .course-index-product .video-popup div:nth-child(4)::before {
+    display: none;
+  }
+  .course-index-product .video-popup img {
+    width: 100%;
+  }
   .about-item {
     padding-top: 114px;
   }
@@ -3741,60 +4415,39 @@ footer .last-footer div span {
     margin-left: auto;
     padding-left: 85px;
   }
-  .hero-index {
-    height: 100%;
+  .grade-card .card .card-title-second {
+    font-size: 19px;
+    line-height: 32px;
   }
-  .hero-index .home-content {
-    padding-top: 200px;
-    gap: 3rem;
+  .grade-card .all-item {
+    display: flex;
+    justify-content: center;
   }
-  .hero-index .slick-dots {
-    bottom: -20px;
+  .grade-card .all-item a {
+    position: absolute;
+    z-index: 1111;
   }
-  .hero-index .slick-dots li {
-    width: 16px;
-    height: 16px;
-    margin: 0 3px;
+  .book__card .slick-prev,
+  .book__card .slick-next {
+    bottom: 115px;
   }
-  .hero-index .home-main {
-    padding-top: 100px;
+  .book__card .card .card-index {
+    padding: 30px 29px !important;
   }
-  .hero-index .home-main .slick-list {
-    padding-top: 0px;
-    width: 980px;
+  .book__card .card .card-thumbnail {
+    width: 60%;
+    justify-content: center;
   }
-  .hero-index .home-main .video-popup {
-    padding-right: 58px;
+  .book__card .card .card-body {
+    width: 40%;
+    height: 225px;
+    padding: 30px 32px;
   }
-  .hero-index .home-main .video-popup div:nth-child(2) {
-    right: -13px;
+  .book__card .card .card-body .content {
+    padding: 2px 20px;
   }
-  .hero-index .home-main .slick-list {
-    height: auto;
-  }
-  .hero-index .home-main .gallery-home i {
-    width: 70px;
-    height: 70px;
-    font-size: 26px;
-    padding: 20px 27px;
-  }
-  .hero-index .home-main .home-btn a {
-    position: relative;
-    max-width: 132px;
-    padding: 7px 30px;
-    display: block;
-  }
-  .hero-index .wrapper h1 {
-    margin: initial;
-    font-size: 45px !important;
-    font-weight: bold;
-    font-family: "Futurica", sans-serif;
-    line-height: 50px !important;
-    padding-bottom: 10px;
-  }
-  .hero-index .wrapper .description {
-    font-size: 1rem;
-    margin: 0 auto;
+  .book__card .card img {
+    width: 50%;
   }
   .course-card .card-body {
     padding: 1rem 0.6rem !important;
@@ -3802,81 +4455,33 @@ footer .last-footer div span {
   .course-card .card {
     height: 611px !important;
   }
-  .hero-index-about {
-    height: 100%;
-  }
-  .hero-index-about .home-content {
-    padding: 50px 0;
-    flex-wrap: wrap;
-    gap: 3rem;
-  }
-  .hero-index-about .slick-dots {
-    bottom: -20px;
-  }
-  .hero-index-about .slick-dots li {
-    width: 16px;
-    height: 16px;
-    margin: 0 3px;
-  }
-  .hero-index-about .home-main {
-    padding-top: 100px;
-  }
-  .hero-index-about .home-main .slick-list {
-    padding-top: 0px;
-  }
-  .hero-index-about .home-main .slick-list {
-    height: auto;
-  }
-  .hero-index-about .home-main .gallery-home i {
-    width: 70px;
-    height: 70px;
-    font-size: 26px;
-    padding: 20px 27px;
-  }
-  .hero-index-about .home-main .home-btn a {
-    position: relative;
-    max-width: 132px;
-    padding: 7px 30px;
-    display: block;
-  }
-  .hero-index-about .wrapper h1 {
-    margin: initial;
-    font-size: 45px !important;
-    font-weight: bold;
-    font-family: "Futurica", sans-serif;
-    line-height: 50px !important;
-    padding-bottom: 10px;
-  }
-  .hero-index-about .wrapper .description {
-    font-size: 1rem;
-    margin: 0 auto;
-  }
-  .hero-index-about .video-popup {
-    margin: 0 auto;
-  }
-  .hero-index-about .video-popup div:nth-child(1)::before, .hero-index-about .video-popup div:nth-child(2)::before, .hero-index-about .video-popup div:nth-child(3)::before, .hero-index-about .video-popup div:nth-child(4)::before {
-    display: none;
-  }
-  .hero-index-about .video-popup img {
-    width: 100%;
+  .course-card .card .card-title-second {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 50px;
+    font-weight: 400;
+    color: #353535;
+    font-size: 19px;
+    line-height: 19px;
+    overflow: hidden;
+    height: 35px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
   }
   .main-section .index-main img {
     width: 100%;
   }
-  .online-card-first .card-item {
-    flex-direction: column;
-  }
   .online-card-second {
     padding: 33px 0;
   }
-  .info-item .all-info {
-    align-items: flex-start;
-    padding: 44px 16px;
-    flex-direction: column;
+  .online-card-second .card .card-title-second {
+    font-size: 21px;
+    line-height: 32px;
   }
-  .info-item .all-info .left-h,
-  .info-item .all-info .right-h {
-    width: 100%;
+  .info-item .all-info {
+    padding: 44px 16px;
   }
   .info-item .all-info .left-h img,
   .info-item .all-info .right-h img {
@@ -3886,56 +4491,66 @@ footer .last-footer div span {
   .info-item .all-info .right-h h1 {
     font-size: 28px;
   }
+  .info-item .all-info .left-h {
+    width: 50%;
+  }
+  .info-item .all-info .right-h {
+    width: 50%;
+    padding-left: 100px;
+  }
   .feedback-card {
     margin-top: 0;
     padding: 60px 0;
   }
-  .home-course-index .main-index {
-    flex-direction: column;
-  }
   .home-course-index .main-index .left-h,
   .home-course-index .main-index .right-h {
-    width: 100%;
+    padding-top: 36px;
   }
   .home-course-index .main-index .left-h img,
   .home-course-index .main-index .right-h img {
     width: 100%;
+    padding-left: 65px;
+  }
+  .home-course-index .main-index .left-h {
+    width: 50%;
+  }
+  .home-course-index .main-index .right-h {
+    width: 50%;
+  }
+  .home-course-index .main-index .right-h div:nth-child(1) {
+    display: none;
   }
   footer {
     height: 100%;
   }
   footer .main-footer {
-    padding: 56px 0;
+    display: block;
+    padding: 80px 0;
     text-align: center;
-    gap: 0.8rem;
+  }
+  footer .main-footer .logo {
+    margin-bottom: 32px;
   }
   footer .main-footer .logo img {
-    width: 11%;
+    width: 19%;
+    padding-bottom: 13px;
   }
   footer .main-footer .contact-footer {
     margin-bottom: 18px;
-  }
-  footer .main-footer .router-link-first,
-  footer .main-footer .router-link-second,
-  footer .main-footer .router-link-thirst {
-    font-family: "Mulish", sans-serif;
   }
   footer .main-footer .main-router {
     display: flex;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    justify-content: center;
-    gap: 14rem;
-  }
-  footer .main-footer .router-link-thirst {
-    padding: 31px 0;
+    justify-content: space-around;
+    gap: 0rem;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
   }
   footer .main-footer .social-link {
     flex-direction: unset;
     justify-content: center;
-    margin-bottom: 21px;
-    padding-top: 12px;
   }
   footer .main-footer .social-link img {
     width: 100%;
@@ -4166,6 +4781,233 @@ footer .last-footer div span {
     font-weight: 600;
     opacity: 0.85;
   }
+  .grade-card .card .card-title-second {
+    font-size: 19px;
+    line-height: 32px;
+  }
+  .grade-card .all-item {
+    display: flex;
+    justify-content: center;
+  }
+  .grade-card .all-item a {
+    position: absolute;
+    z-index: 1111;
+  }
+  .book__card .slick-prev,
+  .book__card .slick-next {
+    bottom: 115px;
+  }
+  .book__card .card .card-index {
+    padding: 30px 29px !important;
+  }
+  .book__card .card .card-thumbnail {
+    width: 60%;
+    justify-content: center;
+  }
+  .book__card .card .card-body {
+    width: 40%;
+    height: 225px;
+    padding: 30px 32px;
+  }
+  .book__card .card .card-body .content {
+    padding: 2px 20px;
+  }
+  .book__card .card img {
+    width: 52%;
+  }
+  .hero-index {
+    height: 100%;
+  }
+  .hero-index .home-content {
+    padding-top: 200px;
+    padding-bottom: 160px;
+    gap: 3rem;
+  }
+  .hero-index .slick-dots {
+    bottom: -20px;
+  }
+  .hero-index .slick-dots li {
+    width: 16px;
+    height: 16px;
+    margin: 0 3px;
+  }
+  .hero-index .home-main {
+    padding-top: 100px;
+  }
+  .hero-index .home-main .slick-list {
+    padding-top: 0px;
+    width: 100%;
+  }
+  .hero-index .home-main .video-popup {
+    padding-right: 58px;
+  }
+  .hero-index .home-main .video-popup div:nth-child(2) {
+    right: -13px;
+  }
+  .hero-index .home-main .slick-list {
+    height: auto;
+  }
+  .hero-index .home-main .gallery-home i {
+    width: 70px;
+    height: 70px;
+    font-size: 26px;
+    padding: 20px 27px;
+  }
+  .hero-index .home-main .home-btn a {
+    position: relative;
+    max-width: 132px;
+    padding: 7px 30px;
+    display: block;
+  }
+  .hero-index .wrapper h1 {
+    margin: initial;
+    font-size: 45px !important;
+    font-weight: bold;
+    font-family: "Futurica", sans-serif;
+    line-height: 50px !important;
+    padding-bottom: 10px;
+  }
+  .hero-index .wrapper .description {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  .hero-index-about {
+    height: 100%;
+  }
+  .hero-index-about .home-content {
+    padding: 50px 0;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  .hero-index-about .slick-dots {
+    bottom: -20px;
+  }
+  .hero-index-about .slick-dots li {
+    width: 16px;
+    height: 16px;
+    margin: 0 3px;
+  }
+  .hero-index-about .home-main {
+    padding-top: 100px;
+  }
+  .hero-index-about .home-main .slick-list {
+    padding-top: 0px;
+  }
+  .hero-index-about .home-main .slick-list {
+    height: auto;
+  }
+  .hero-index-about .home-main .gallery-home i {
+    width: 70px;
+    height: 70px;
+    font-size: 26px;
+    padding: 20px 27px;
+  }
+  .hero-index-about .home-main .home-btn a {
+    position: relative;
+    max-width: 132px;
+    padding: 7px 30px;
+    display: block;
+  }
+  .hero-index-about .wrapper h1 {
+    margin: initial;
+    font-size: 45px !important;
+    font-weight: bold;
+    font-family: "Futurica", sans-serif;
+    line-height: 50px !important;
+    padding-bottom: 10px;
+  }
+  .hero-index-about .wrapper .description {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  .hero-index-about .video-popup {
+    margin: 0 auto;
+  }
+  .hero-index-about .video-popup div:nth-child(1)::before, .hero-index-about .video-popup div:nth-child(2)::before, .hero-index-about .video-popup div:nth-child(3)::before, .hero-index-about .video-popup div:nth-child(4)::before {
+    display: none;
+  }
+  .hero-index-about .video-popup img {
+    width: 100%;
+  }
+  .course-index-product {
+    height: 100%;
+  }
+  .course-index-product .home-content {
+    padding: 50px 0;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  .course-index-product .slick-dots {
+    bottom: -20px;
+  }
+  .course-index-product .slick-dots li {
+    width: 16px;
+    height: 16px;
+    margin: 0 3px;
+  }
+  .course-index-product .home-main {
+    padding-top: 100px;
+  }
+  .course-index-product .home-main .slick-list {
+    padding-top: 0px;
+  }
+  .course-index-product .home-main .slick-list {
+    height: auto;
+  }
+  .course-index-product .home-main .gallery-home i {
+    width: 70px;
+    height: 70px;
+    font-size: 26px;
+    padding: 20px 27px;
+  }
+  .course-index-product .home-main .home-btn a {
+    position: relative;
+    max-width: 132px;
+    padding: 7px 30px;
+    display: block;
+  }
+  .course-index-product .wrapper h1 {
+    margin: initial;
+    font-size: 45px !important;
+    font-weight: bold;
+    font-family: "Futurica", sans-serif;
+    line-height: 50px !important;
+    padding-bottom: 10px;
+  }
+  .course-index-product .wrapper .description {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  .course-index-product .video-popup {
+    margin: 0 auto;
+  }
+  .course-index-product .video-popup div:nth-child(1)::before, .course-index-product .video-popup div:nth-child(2)::before, .course-index-product .video-popup div:nth-child(3)::before, .course-index-product .video-popup div:nth-child(4)::before {
+    display: none;
+  }
+  .course-index-product .video-popup img {
+    width: 100%;
+  }
+  .course-card .card-body {
+    padding: 1rem 0.6rem !important;
+  }
+  .course-card .card {
+    height: 611px !important;
+  }
+  .course-card .card .card-title-second {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 50px;
+    font-weight: 400;
+    color: #353535;
+    font-size: 19px;
+    line-height: 19px;
+    overflow: hidden;
+    height: 35px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
   .about-item {
     padding-top: 114px;
   }
@@ -4223,30 +5065,33 @@ footer .last-footer div span {
     padding-left: 85px;
   }
   .main-section .index-main {
-    padding: 7px 18px;
-    flex-direction: column;
+    padding: 7px 93px;
+    margin-bottom: 88px;
   }
   .main-section .index-main img {
     width: 100%;
   }
-  .online-card-first .card-item {
-    flex-direction: column;
-  }
   .online-card-second {
     padding: 33px 0;
+  }
+  .online-card-second .card .card-title-second {
+    font-size: 21px;
+    line-height: 32px;
+  }
+  .info-item {
+    height: 480px;
   }
   .info-item .all-info {
     align-items: flex-start;
     padding: 44px 16px;
-    flex-direction: column;
   }
   .info-item .all-info .left-h,
   .info-item .all-info .right-h {
-    width: 100%;
+    padding-left: 31px;
   }
   .info-item .all-info .left-h img,
   .info-item .all-info .right-h img {
-    width: 100%;
+    width: 89%;
   }
   .info-item .all-info .left-h h1,
   .info-item .all-info .right-h h1 {
@@ -4257,7 +5102,7 @@ footer .last-footer div span {
     padding: 60px 0;
   }
   .home-course-index .main-index {
-    flex-direction: column;
+    padding: 150px 0 50px 0;
   }
   .home-course-index .main-index .left-h,
   .home-course-index .main-index .right-h {
@@ -4282,6 +5127,7 @@ footer .last-footer div span {
     width: 100%;
   }
   footer .main-footer .contact-footer {
+    padding-right: 39px;
     margin-bottom: 18px;
   }
   footer .main-footer .router-link-first,
@@ -4296,6 +5142,7 @@ footer .last-footer div span {
     margin-right: auto;
     justify-content: center;
     gap: 7rem;
+    align-items: center;
   }
   footer .main-footer .footer-content {
     gap: 6rem;
@@ -4443,6 +5290,9 @@ footer .last-footer div span {
   }
 }
 @media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 1140px !important;
+  }
   .header-main .slick-dots {
     bottom: -44px;
   }
@@ -4512,7 +5362,7 @@ footer .last-footer div span {
     display: none;
   }
   .header-main .main-header .main-text ul {
-    gap: 1.7rem !important;
+    gap: 1.1rem !important;
     width: 100% !important;
     padding-right: 4px;
   }
@@ -4524,6 +5374,62 @@ footer .last-footer div span {
     font-family: "Mulish", sans-serif;
     font-weight: 600;
     opacity: 0.85;
+  }
+  .hero-index {
+    height: 100%;
+  }
+  .hero-index .home-content {
+    padding-top: 200px;
+    padding-bottom: 160px;
+    gap: 3rem;
+  }
+  .hero-index .slick-dots {
+    bottom: -20px;
+  }
+  .hero-index .slick-dots li {
+    width: 16px;
+    height: 16px;
+    margin: 0 3px;
+  }
+  .hero-index .home-main {
+    padding-top: 100px;
+  }
+  .hero-index .home-main .slick-list {
+    padding-top: 0px;
+    width: 100%;
+  }
+  .hero-index .home-main .video-popup {
+    padding-right: 58px;
+  }
+  .hero-index .home-main .video-popup div:nth-child(2) {
+    right: -13px;
+  }
+  .hero-index .home-main .slick-list {
+    height: auto;
+  }
+  .hero-index .home-main .gallery-home i {
+    width: 70px;
+    height: 70px;
+    font-size: 26px;
+    padding: 20px 27px;
+  }
+  .hero-index .home-main .home-btn a {
+    position: relative;
+    max-width: 132px;
+    padding: 7px 30px;
+    display: block;
+  }
+  .hero-index .wrapper h1 {
+    margin: initial;
+    font-size: 45px !important;
+    font-weight: bold;
+    font-family: "Futurica", sans-serif;
+    line-height: 50px !important;
+    padding-bottom: 10px;
+  }
+  .hero-index .wrapper .description {
+    font-size: 1rem;
+    margin: 0 auto;
   }
   .about-item {
     padding-top: 114px;
@@ -4582,30 +5488,28 @@ footer .last-footer div span {
     padding-left: 85px;
   }
   .main-section .index-main {
-    padding: 7px 18px;
-    flex-direction: column;
+    padding: 7px 98px;
   }
   .main-section .index-main img {
     width: 100%;
   }
-  .online-card-first .card-item {
-    flex-direction: column;
-  }
   .online-card-second {
     padding: 33px 0;
+  }
+  .info-item {
+    height: 480px;
   }
   .info-item .all-info {
     align-items: flex-start;
     padding: 44px 16px;
-    flex-direction: column;
   }
   .info-item .all-info .left-h,
   .info-item .all-info .right-h {
-    width: 100%;
+    padding-left: 31px;
   }
   .info-item .all-info .left-h img,
   .info-item .all-info .right-h img {
-    width: 100%;
+    width: 89%;
   }
   .info-item .all-info .left-h h1,
   .info-item .all-info .right-h h1 {
@@ -4614,9 +5518,6 @@ footer .last-footer div span {
   .feedback-card {
     margin-top: 0;
     padding: 60px 0;
-  }
-  .home-course-index .main-index {
-    flex-direction: column;
   }
   .home-course-index .main-index .left-h,
   .home-course-index .main-index .right-h {

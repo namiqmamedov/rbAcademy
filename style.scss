@@ -8,11 +8,6 @@ a {
     text-decoration: none !important;
 }
 
-@media(min-width: 1400px) {
-    .container {
-        max-width: 1400px !important;
-    }
-}
 
 header {
     position: fixed;
@@ -307,6 +302,183 @@ header {
 
     }
 }
+
+.hero-index-about {
+
+    height: 815px;
+    position: relative;
+    overflow: hidden;
+    background: url('/assets/img/background.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .slick-dots li.slick-active button:before {
+        opacity: .75;
+        color: #671C7C !important;
+    }
+
+    .slick-dots li button:before {
+        font-size: 15px;
+        color: #42C0C4;
+        opacity: 1 !important;
+    }
+
+    .slick-dots {
+        bottom: 92px;
+    }
+
+    .home-content {
+        display: flex !important;
+        gap: 12rem;
+        // padding: 170px 0;
+
+    }
+
+    .home-main {
+
+        padding-top: 160px;
+
+        .slick-list {
+            height: 93vh;
+            padding-top: 155px;
+        }
+
+        .wrapper {
+            h1 {
+                font-size: 46px;
+                font-weight: bold;
+                max-width: 350px;
+                line-height: 60px;
+            }
+
+            h5 {
+                margin-bottom: 20px;
+            }
+
+
+            .description {
+                max-width: 558px;
+                margin-bottom: 25px;
+            }
+
+        }
+
+        .home-btn {
+            a {
+                background: #543EE9;
+                border-radius: 30px;
+                color: white;
+                position: relative;
+            }
+        }
+
+        .gallery-home {
+            position: relative;
+
+            i {
+                top: 50%;
+                left: 50%;
+                width: 88px;
+                height: 88px;
+                font-size: 22px;
+                padding: 33px 39px;
+                position: absolute;
+                z-index: 111111111111111;
+                background: rgba(84, 62, 233, 0.8);
+                color: white;
+                border-radius: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .video-popup {
+            img {
+                position: relative;
+                z-index: 111111111;
+            }
+
+            div {
+                position: relative;
+
+                &:nth-child(1) {
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        width: 211px;
+                        height: 234px;
+                        z-index: -1;
+                        top: -77px;
+                        left: -48px;
+                        right: 0;
+                        bottom: 0;
+                        background: #3AD4D8;
+                        box-shadow: 30px 4px 27px rgba(82, 82, 82, 0.25);
+                        border-radius: 5px;
+                        transform: rotate(-37.25deg);
+                    }
+
+                }
+
+                &:nth-child(2) {
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        width: 292.78px;
+                        height: 458.87px;
+                        z-index: 1;
+                        top: -77px;
+                        left: auto;
+                        right: 52px;
+                        bottom: 0;
+                        background: #671C7C;
+                        box-shadow: 49px 42px 12px rgba(80, 80, 80, 0.25);
+                        border-radius: 5px;
+                        transform: rotate(22.66deg);
+                    }
+                }
+
+                &:nth-child(3) {
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        width: 40px;
+                        height: 40px;
+                        z-index: 1111;
+                        top: -101px;
+                        left: 32px;
+                        right: 0;
+                        bottom: 0;
+                        background: #671C7C;
+                        box-shadow: 30px 20px 11px rgba(101, 101, 101, 0.25);
+                        border-radius: 50%;
+                    }
+                }
+
+                &:nth-child(4) {
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        width: 40px;
+                        height: 40px;
+                        z-index: 1111;
+                        top: -106px;
+                        left: auto;
+                        right: 48px;
+                        bottom: 0;
+                        background: #FE5538;
+                        box-shadow: 30px 20px 11px rgba(101, 101, 101, 0.25);
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
 
 .about-item {
     .all-about {
@@ -2478,6 +2650,196 @@ footer {
         }
     }
 
+    .hero-index-about {
+        display: block;
+
+        .home-content {
+            padding: 50px 0;
+            flex-wrap: wrap;
+            gap: 3rem;
+
+            .wrapper {
+                width: 100%;
+
+                .title {
+                    width: 100%;
+                }
+            }
+        }
+
+        .slick-dots {
+            bottom: -41px;
+
+            li {
+                width: 16px;
+                height: 16px;
+                margin: 0 3px;
+            }
+        }
+
+        .home-main {
+            padding-top: 100px;
+
+            .slick-list {
+                padding-top: 0px;
+            }
+
+            .slick-list {
+                height: 125vh;
+            }
+
+            .gallery-home {
+                i {
+                    width: 70px;
+                    height: 70px;
+                    font-size: 26px;
+                    padding: 20px 27px;
+                }
+            }
+
+            .home-btn {
+                a {
+                    position: relative;
+                    max-width: 132px;
+                    padding: 7px 30px;
+                    display: block;
+                }
+
+            }
+        }
+
+        .wrapper {
+            h1 {
+                margin: initial;
+                font-size: 32px !important;
+                font-weight: bold;
+                font-family: 'Futurica', sans-serif;
+                line-height: 33px !important;
+                padding-bottom: 10px;
+            }
+
+            .description {
+                font-size: 1rem;
+                margin: 0 auto;
+            }
+        }
+
+        .video-popup {
+            margin: 0 auto;
+
+            div {
+
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .course-index-product {
+        display: block;
+
+        .home-content {
+            padding: 50px 0;
+            flex-wrap: wrap;
+            gap: 3rem;
+
+            .wrapper {
+                width: 100%;
+
+                .title {
+                    width: 100%;
+                }
+            }
+        }
+
+        .slick-dots {
+            bottom: -41px;
+
+            li {
+                width: 16px;
+                height: 16px;
+                margin: 0 3px;
+            }
+        }
+
+        .home-main {
+            padding-top: 100px;
+
+            .slick-list {
+                padding-top: 0px;
+            }
+
+            .slick-list {
+                height: 125vh;
+            }
+
+            .gallery-home {
+                i {
+                    width: 70px;
+                    height: 70px;
+                    font-size: 26px;
+                    padding: 20px 27px;
+                }
+            }
+
+            .home-btn {
+                a {
+                    position: relative;
+                    max-width: 132px;
+                    padding: 7px 30px;
+                    display: block;
+                }
+
+            }
+        }
+
+        .wrapper {
+            h1 {
+                margin: initial;
+                font-size: 32px !important;
+                font-weight: bold;
+                font-family: 'Futurica', sans-serif;
+                line-height: 33px !important;
+                padding-bottom: 10px;
+            }
+
+            .description {
+                font-size: 1rem;
+                margin: 0 auto;
+            }
+        }
+
+        .video-popup {
+            margin: 0 auto;
+
+            div {
+
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
     .about-item {
         .all-about {
             flex-direction: column;
@@ -2530,6 +2892,10 @@ footer {
                     display: none;
                 }
 
+                p{
+                    max-width: 532px;
+                }
+
                 .info-all {
                     a {
                         padding: 7px 33px;
@@ -2540,7 +2906,6 @@ footer {
             }
         }
     }
-
 
     .course-card {
 
@@ -2975,7 +3340,6 @@ footer {
     }
 
     .book__card {
-
         .square {
             display: none;
         }
@@ -3698,6 +4062,180 @@ footer {
         }
     }
 
+    .hero-index-about {
+        display: block;
+
+        .home-content {
+            padding: 50px 0;
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+
+        .slick-dots {
+            bottom: -41px;
+
+            li {
+                width: 16px;
+                height: 16px;
+                margin: 0 3px;
+            }
+        }
+
+        .home-main {
+            padding-top: 100px;
+
+            .slick-list {
+                padding-top: 0px;
+            }
+
+            .slick-list {
+                height: 125vh;
+            }
+
+            .gallery-home {
+                i {
+                    width: 70px;
+                    height: 70px;
+                    font-size: 26px;
+                    padding: 20px 27px;
+                }
+            }
+
+            .home-btn {
+                a {
+                    position: relative;
+                    max-width: 132px;
+                    padding: 7px 30px;
+                    display: block;
+                }
+
+            }
+        }
+
+        .wrapper {
+            h1 {
+                margin: initial;
+                font-size: 32px !important;
+                font-weight: bold;
+                font-family: 'Futurica', sans-serif;
+                line-height: 33px !important;
+                padding-bottom: 10px;
+            }
+
+            .description {
+                font-size: 1rem;
+                margin: 0 auto;
+            }
+        }
+
+        .video-popup {
+            margin: 0 auto;
+
+            div {
+
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .course-index-product {
+        display: block;
+
+        .home-content {
+            padding: 50px 0;
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+
+        .slick-dots {
+            bottom: -41px;
+
+            li {
+                width: 16px;
+                height: 16px;
+                margin: 0 3px;
+            }
+        }
+
+        .home-main {
+            padding-top: 100px;
+
+            .slick-list {
+                padding-top: 0px;
+            }
+
+            .slick-list {
+                height: 125vh;
+            }
+
+            .gallery-home {
+                i {
+                    width: 70px;
+                    height: 70px;
+                    font-size: 26px;
+                    padding: 20px 27px;
+                }
+            }
+
+            .home-btn {
+                a {
+                    position: relative;
+                    max-width: 132px;
+                    padding: 7px 30px;
+                    display: block;
+                }
+
+            }
+        }
+
+        .wrapper {
+            h1 {
+                margin: initial;
+                font-size: 32px !important;
+                font-weight: bold;
+                font-family: 'Futurica', sans-serif;
+                line-height: 33px !important;
+                padding-bottom: 10px;
+            }
+
+            .description {
+                font-size: 1rem;
+                margin: 0 auto;
+            }
+        }
+
+        .video-popup {
+            margin: 0 auto;
+
+            div {
+
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
     .about-item {
         .all-about {
             flex-direction: column;
@@ -4263,8 +4801,6 @@ footer {
     }
 
     .book__card {
-
-
         .slick-prev,
         .slick-next {
             bottom: 115px;
@@ -4314,6 +4850,190 @@ footer {
             padding: 50px 0;
             flex-wrap: wrap;
             gap: 3rem;
+        }
+
+        .slick-dots {
+            bottom: -20px;
+
+            li {
+                width: 16px;
+                height: 16px;
+                margin: 0 3px;
+            }
+        }
+
+        .home-main {
+            padding-top: 100px;
+
+            .slick-list {
+                padding-top: 0px;
+            }
+
+            .slick-list {
+                height: auto;
+            }
+
+            .gallery-home {
+                i {
+                    width: 70px;
+                    height: 70px;
+                    font-size: 26px;
+                    padding: 20px 27px;
+                }
+            }
+
+            .home-btn {
+                a {
+                    position: relative;
+                    max-width: 132px;
+                    padding: 7px 30px;
+                    display: block;
+                }
+
+            }
+        }
+
+        .wrapper {
+            h1 {
+                margin: initial;
+                font-size: 45px !important;
+                font-weight: bold;
+                font-family: 'Futurica', sans-serif;
+                line-height: 50px !important;
+                padding-bottom: 10px;
+            }
+
+            .description {
+                font-size: 1rem;
+                margin: 0 auto;
+            }
+        }
+
+        .video-popup {
+            margin: 0 auto;
+
+            div {
+
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .hero-index-about {
+        height: 100%;
+
+        .home-content {
+            padding: 50px 0;
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+
+        .wrapper{
+            margin: 0 auto;
+            padding-right: 81px;
+        }
+
+        .slick-dots {
+            bottom: -20px;
+
+            li {
+                width: 16px;
+                height: 16px;
+                margin: 0 3px;
+            }
+        }
+
+        .home-main {
+            padding-top: 100px;
+
+            .slick-list {
+                padding-top: 0px;
+            }
+
+            .slick-list {
+                height: auto;
+            }
+
+            .gallery-home {
+                i {
+                    width: 70px;
+                    height: 70px;
+                    font-size: 26px;
+                    padding: 20px 27px;
+                }
+            }
+
+            .home-btn {
+                a {
+                    position: relative;
+                    max-width: 132px;
+                    padding: 7px 30px;
+                    display: block;
+                }
+
+            }
+        }
+
+        .wrapper {
+            h1 {
+                margin: initial;
+                font-size: 45px !important;
+                font-weight: bold;
+                font-family: 'Futurica', sans-serif;
+                line-height: 50px !important;
+                padding-bottom: 10px;
+            }
+
+            .description {
+                font-size: 1rem;
+                margin: 0 auto;
+            }
+        }
+
+        .video-popup {
+            margin: 0 auto;
+
+            div {
+
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .course-index-product {
+        height: 100%;
+
+        .home-content {
+            padding: 50px 0;
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+
+        .wrapper{
+            margin: 0 auto;
+            padding-right: 81px;
         }
 
         .slick-dots {
@@ -4826,8 +5546,6 @@ footer {
 
 @media (min-width: 992px) and (max-width: 1200px) {
 
-
-
     .header-main {
 
         .slick-dots {
@@ -4955,172 +5673,7 @@ footer {
         }
     }
 
-    .about-item {
-        padding-top: 114px;
-
-        .all-about {
-            padding: 32px 10px;
-
-            .left-h {
-                width: 50%;
-                text-align: center;
-
-
-                img {
-                    width: 100%;
-                    margin-right: 80px;
-                    margin-top: 0.5rem;
-                }
-
-                div {
-                    &:nth-child(1) {
-                        display: none;
-                    }
-
-                    &:nth-child(2) {
-                        top: 104.5%;
-                        left: -24px;
-                        right: 0;
-                    }
-
-                    &:nth-child(4) {
-                        &::before {
-                            bottom: 141px;
-                            right: 99px;
-                            width: 237px;
-                        }
-                    }
-
-                    &:nth-child(5) {
-                        &::before {
-                            left: 97px;
-                            top: auto;
-                            bottom: -60px;
-                        }
-                    }
-                }
-            }
-
-            .right-h {
-                width: 50%;
-
-                h1 {
-                    font-size: 30px;
-                    font-family: "Futurica", sans-serif;
-                    line-height: 39px;
-                    max-width: 383px;
-                    min-width: 0 !important;
-                    margin-left: auto;
-                }
-
-                h6 {
-                    display: none;
-                }
-
-                .info-all {
-                    display: none;
-                }
-
-                p {
-                    max-width: 470px;
-                    font-family: "Mulish", sans-serif;
-                    margin-left: auto;
-                    padding-left: 85px;
-                }
-            }
-        }
-    }
-
     .hero-index {
-        height: 100%;
-
-        .home-content {
-            padding-top: 200px;
-            gap: 3rem;
-        }
-
-        .slick-dots {
-            bottom: -20px;
-
-            li {
-                width: 16px;
-                height: 16px;
-                margin: 0 3px;
-            }
-        }
-
-        .home-main {
-            padding-top: 100px;
-
-            .slick-list {
-                padding-top: 0px;
-                width: 980px;
-            }
-
-            .video-popup{
-                padding-right: 58px;
-
-                div{
-                    &:nth-child(2){
-                        right: -13px;
-                    }
-                }
-            }
-
-            .slick-list {
-                height: auto;
-            }
-
-            .gallery-home {
-                i {
-                    width: 70px;
-                    height: 70px;
-                    font-size: 26px;
-                    padding: 20px 27px;
-                }
-            }
-
-            .home-btn {
-                a {
-                    position: relative;
-                    max-width: 132px;
-                    padding: 7px 30px;
-                    display: block;
-                }
-
-            }
-        }
-
-        .wrapper {
-            h1 {
-                margin: initial;
-                font-size: 45px !important;
-                font-weight: bold;
-                font-family: 'Futurica', sans-serif;
-                line-height: 50px !important;
-                padding-bottom: 10px;
-            }
-
-            .description {
-                font-size: 1rem;
-                margin: 0 auto;
-            }
-        }
-
-       
-    }
-
-    .course-card{
-        .card-body{
-            padding: 1rem 0.6rem !important;
-        }
-
-        .card{
-            height: 611px !important;
-        }
-    }
-
-    .hero-index-about {
         height: 100%;
 
         .home-content {
@@ -5207,6 +5760,335 @@ footer {
         }
     }
 
+    .hero-index-about {
+        height: 100%;
+
+        .home-content {
+            padding-top: 190px;
+            gap: 3rem;
+        }
+
+        .slick-dots {
+            bottom: -20px;
+
+            li {
+                width: 16px;
+                height: 16px;
+                margin: 0 3px;
+            }
+        }
+
+        .home-main {
+            padding-top: 100px;
+
+            .slick-list {
+                padding-top: 0px;
+            }
+
+            .slick-list {
+                height: auto;
+            }
+
+            .gallery-home {
+                i {
+                    width: 70px;
+                    height: 70px;
+                    font-size: 26px;
+                    padding: 20px 27px;
+                }
+            }
+
+            .home-btn {
+                a {
+                    position: relative;
+                    max-width: 132px;
+                    padding: 7px 30px;
+                    display: block;
+                }
+
+            }
+        }
+
+        .wrapper {
+            h1 {
+                margin: initial;
+                font-size: 45px !important;
+                font-weight: bold;
+                font-family: 'Futurica', sans-serif;
+                line-height: 50px !important;
+                padding-bottom: 10px;
+            }
+
+            .description {
+                font-size: 1rem;
+                margin: 0 auto;
+            }
+        }
+
+        .video-popup {
+            margin: 0 auto;
+
+            div {
+
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .course-index-product {
+        height: 100%;
+
+        .home-content {
+            padding-top: 190px;
+            gap: 3rem;
+        }
+
+        .slick-dots {
+            bottom: -20px;
+
+            li {
+                width: 16px;
+                height: 16px;
+                margin: 0 3px;
+            }
+        }
+
+        .home-main {
+            padding-top: 100px;
+
+            .slick-list {
+                padding-top: 0px;
+            }
+
+            .slick-list {
+                height: auto;
+            }
+
+            .gallery-home {
+                i {
+                    width: 70px;
+                    height: 70px;
+                    font-size: 26px;
+                    padding: 20px 27px;
+                }
+            }
+
+            .home-btn {
+                a {
+                    position: relative;
+                    max-width: 132px;
+                    padding: 7px 30px;
+                    display: block;
+                }
+
+            }
+        }
+
+        .wrapper {
+            h1 {
+                margin: initial;
+                font-size: 45px !important;
+                font-weight: bold;
+                font-family: 'Futurica', sans-serif;
+                line-height: 50px !important;
+                padding-bottom: 10px;
+            }
+
+            .description {
+                font-size: 1rem;
+                margin: 0 auto;
+            }
+        }
+
+        .video-popup {
+            margin: 0 auto;
+
+            div {
+
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .about-item {
+        padding-top: 114px;
+
+        .all-about {
+            padding: 32px 10px;
+
+            .left-h {
+                width: 50%;
+                text-align: center;
+
+
+                img {
+                    width: 100%;
+                    margin-right: 80px;
+                    margin-top: 0.5rem;
+                }
+
+                div {
+                    &:nth-child(1) {
+                        display: none;
+                    }
+
+                    &:nth-child(2) {
+                        top: 104.5%;
+                        left: -24px;
+                        right: 0;
+                    }
+
+                    &:nth-child(4) {
+                        &::before {
+                            bottom: 141px;
+                            right: 99px;
+                            width: 237px;
+                        }
+                    }
+
+                    &:nth-child(5) {
+                        &::before {
+                            left: 97px;
+                            top: auto;
+                            bottom: -60px;
+                        }
+                    }
+                }
+            }
+
+            .right-h {
+                width: 50%;
+
+                h1 {
+                    font-size: 30px;
+                    font-family: "Futurica", sans-serif;
+                    line-height: 39px;
+                    max-width: 383px;
+                    min-width: 0 !important;
+                    margin-left: auto;
+                }
+
+                h6 {
+                    display: none;
+                }
+
+                .info-all {
+                    display: none;
+                }
+
+                p {
+                    max-width: 470px;
+                    font-family: "Mulish", sans-serif;
+                    margin-left: auto;
+                    padding-left: 85px;
+                }
+            }
+        }
+    }
+
+    .grade-card {
+        .card {
+            .card-title-second {
+                font-size: 19px;
+                line-height: 32px;
+            }
+        }
+
+        .all-item {
+            display: flex;
+            justify-content: center;
+
+            a {
+                position: absolute;
+                z-index: 1111;
+            }
+        }
+    }
+
+    .book__card {
+
+        .slick-prev,
+        .slick-next {
+            bottom: 115px;
+        }
+
+        .card {
+            .card-index {
+                padding: 30px 29px !important;
+            }
+
+            .card-thumbnail {
+                width: 60%;
+                justify-content: center;
+            }
+
+
+            .card-body {
+                width: 40%;
+                height: 225px;
+                padding: 30px 32px;
+
+                .content {
+                    padding: 2px 20px;
+                }
+            }
+
+            img {
+                width: 50%;
+            }
+
+        }
+    }
+
+    .course-card {
+        .card-body {
+            padding: 1rem 0.6rem !important;
+        }
+
+        .card {
+            height: 611px !important;
+
+            .card-title-second {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                height: 50px;
+                font-weight: 400;
+                color: #353535;
+                font-size: 19px;
+                line-height: 19px;
+                overflow: hidden;
+                height: 35px;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+        }
+    }
+
+
     .main-section {
         .index-main {
 
@@ -5216,26 +6098,24 @@ footer {
         }
     }
 
-    .online-card-first {
-        .card-item {
-            flex-direction: column;
-        }
-    }
-
     .online-card-second {
         padding: 33px 0;
+
+        .card {
+            .card-title-second {
+                font-size: 21px;
+                line-height: 32px;
+            }
+        }
 
     }
 
     .info-item {
         .all-info {
-            align-items: flex-start;
             padding: 44px 16px;
-            flex-direction: column;
 
             .left-h,
             .right-h {
-                width: 100%;
 
                 img {
                     width: 100%;
@@ -5244,6 +6124,16 @@ footer {
                 h1 {
                     font-size: 28px;
                 }
+            }
+
+
+            .left-h {
+                width: 50%;
+            }
+
+            .right-h {
+                width: 50%;
+                padding-left: 100px;
             }
         }
     }
@@ -5255,14 +6145,29 @@ footer {
 
     .home-course-index {
         .main-index {
-            flex-direction: column;
 
             .left-h,
             .right-h {
-                width: 100%;
+                padding-top: 36px;
 
                 img {
                     width: 100%;
+                    padding-left: 65px;
+                }
+            }
+
+
+            .left-h {
+                width: 50%;
+            }
+
+            .right-h {
+                width: 50%;
+
+                div {
+                    &:nth-child(1) {
+                        display: none;
+                    }
                 }
             }
         }
@@ -5272,14 +6177,16 @@ footer {
         height: 100%;
 
         .main-footer {
-            padding: 56px 0;
+            display: block;
+            padding: 80px 0;
             text-align: center;
-            gap: 0.8rem;
-
 
             .logo {
+                margin-bottom: 32px;
+
                 img {
-                    width: 11%;
+                    width: 19%;
+                    padding-bottom: 13px;
                 }
             }
 
@@ -5287,30 +6194,20 @@ footer {
                 margin-bottom: 18px;
             }
 
-            .router-link-first,
-            .router-link-second,
-            .router-link-thirst {
-                font-family: "Mulish", sans-serif;
-            }
-
             .main-router {
                 display: flex;
                 text-align: center;
                 margin-left: auto;
                 margin-right: auto;
-                justify-content: center;
-                gap: 14rem;
-            }
-
-            .router-link-thirst {
-                padding: 31px 0;
+                justify-content: space-around;
+                gap: 0rem;
+                flex-wrap: wrap;
+                padding-bottom: 20px;
             }
 
             .social-link {
                 flex-direction: unset;
                 justify-content: center;
-                margin-bottom: 21px;
-                padding-top: 12px;
 
                 img {
                     width: 100%;
@@ -5462,6 +6359,8 @@ footer {
                 gap: 2.8rem !important;
 
 
+
+
                 #card {
                     width: 43% !important;
                     height: 24.3% !important;
@@ -5603,6 +6502,8 @@ footer {
                 }
             }
 
+            .search-widget {}
+
             .social-link {
                 gap: 0.5rem !important;
                 padding-right: 0 !important;
@@ -5633,6 +6534,340 @@ footer {
             }
 
 
+        }
+    }
+
+    .grade-card {
+        .card {
+            .card-title-second {
+                font-size: 19px;
+                line-height: 32px;
+            }
+        }
+
+        .all-item {
+            display: flex;
+            justify-content: center;
+
+            a {
+                position: absolute;
+                z-index: 1111;
+            }
+        }
+    }
+
+    .book__card {
+
+        .slick-prev,
+        .slick-next {
+            bottom: 115px;
+        }
+
+        .card {
+            .card-index {
+                padding: 30px 29px !important;
+            }
+
+            .card-thumbnail {
+                width: 60%;
+                justify-content: center;
+            }
+
+
+            .card-body {
+                width: 40%;
+                height: 225px;
+                padding: 30px 32px;
+
+                .content {
+                    padding: 2px 20px;
+                }
+            }
+
+            img {
+                width: 52%;
+            }
+
+        }
+    }
+
+    .hero-index {
+        height: 100%;
+
+        .home-content {
+            padding-top: 200px;
+            padding-bottom: 160px;
+            gap: 3rem;
+        }
+
+        .slick-dots {
+            bottom: -20px;
+
+            li {
+                width: 16px;
+                height: 16px;
+                margin: 0 3px;
+            }
+        }
+
+        .home-main {
+            padding-top: 100px;
+
+            .slick-list {
+                padding-top: 0px;
+                width: 100%;
+            }
+
+            .video-popup {
+                padding-right: 58px;
+
+                div {
+                    &:nth-child(2) {
+                        right: -13px;
+                    }
+                }
+            }
+
+            .slick-list {
+                height: auto;
+            }
+
+            .gallery-home {
+                i {
+                    width: 70px;
+                    height: 70px;
+                    font-size: 26px;
+                    padding: 20px 27px;
+                }
+            }
+
+            .home-btn {
+                a {
+                    position: relative;
+                    max-width: 132px;
+                    padding: 7px 30px;
+                    display: block;
+                }
+
+            }
+        }
+
+        .wrapper {
+            h1 {
+                margin: initial;
+                font-size: 45px !important;
+                font-weight: bold;
+                font-family: 'Futurica', sans-serif;
+                line-height: 50px !important;
+                padding-bottom: 10px;
+            }
+
+            .description {
+                font-size: 1rem;
+                margin: 0 auto;
+            }
+        }
+
+
+    }
+
+    .hero-index-about {
+        height: 100%;
+
+        .home-content {
+            padding: 50px 0;
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+
+        .slick-dots {
+            bottom: -20px;
+
+            li {
+                width: 16px;
+                height: 16px;
+                margin: 0 3px;
+            }
+        }
+
+        .home-main {
+            padding-top: 100px;
+
+            .slick-list {
+                padding-top: 0px;
+            }
+
+            .slick-list {
+                height: auto;
+            }
+
+            .gallery-home {
+                i {
+                    width: 70px;
+                    height: 70px;
+                    font-size: 26px;
+                    padding: 20px 27px;
+                }
+            }
+
+            .home-btn {
+                a {
+                    position: relative;
+                    max-width: 132px;
+                    padding: 7px 30px;
+                    display: block;
+                }
+
+            }
+        }
+
+        .wrapper {
+            h1 {
+                margin: initial;
+                font-size: 45px !important;
+                font-weight: bold;
+                font-family: 'Futurica', sans-serif;
+                line-height: 50px !important;
+                padding-bottom: 10px;
+            }
+
+            .description {
+                font-size: 1rem;
+                margin: 0 auto;
+            }
+        }
+
+        .video-popup {
+            margin: 0 auto;
+
+            div {
+
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .course-index-product {
+        height: 100%;
+
+        .home-content {
+            padding: 50px 0;
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+
+        .slick-dots {
+            bottom: -20px;
+
+            li {
+                width: 16px;
+                height: 16px;
+                margin: 0 3px;
+            }
+        }
+
+        .home-main {
+            padding-top: 100px;
+
+            .slick-list {
+                padding-top: 0px;
+            }
+
+            .slick-list {
+                height: auto;
+            }
+
+            .gallery-home {
+                i {
+                    width: 70px;
+                    height: 70px;
+                    font-size: 26px;
+                    padding: 20px 27px;
+                }
+            }
+
+            .home-btn {
+                a {
+                    position: relative;
+                    max-width: 132px;
+                    padding: 7px 30px;
+                    display: block;
+                }
+
+            }
+        }
+
+        .wrapper {
+            h1 {
+                margin: initial;
+                font-size: 45px !important;
+                font-weight: bold;
+                font-family: 'Futurica', sans-serif;
+                line-height: 50px !important;
+                padding-bottom: 10px;
+            }
+
+            .description {
+                font-size: 1rem;
+                margin: 0 auto;
+            }
+        }
+
+        .video-popup {
+            margin: 0 auto;
+
+            div {
+
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .course-card {
+        .card-body {
+            padding: 1rem 0.6rem !important;
+        }
+
+        .card {
+            height: 611px !important;
+
+            .card-title-second {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                height: 50px;
+                font-weight: 400;
+                color: #353535;
+                font-size: 19px;
+                line-height: 19px;
+                overflow: hidden;
+                height: 35px;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
         }
     }
 
@@ -5714,8 +6949,8 @@ footer {
 
     .main-section {
         .index-main {
-            padding: 7px 18px;
-            flex-direction: column;
+            padding: 7px 93px;
+            margin-bottom: 88px;
 
             img {
                 width: 100%;
@@ -5723,35 +6958,38 @@ footer {
         }
     }
 
-    .online-card-first {
-        .card-item {
-            flex-direction: column;
-        }
-    }
-
     .online-card-second {
         padding: 33px 0;
+
+        .card {
+            .card-title-second {
+                font-size: 21px;
+                line-height: 32px;
+            }
+        }
 
     }
 
     .info-item {
+        height: 480px;
+
         .all-info {
             align-items: flex-start;
             padding: 44px 16px;
-            flex-direction: column;
 
             .left-h,
             .right-h {
-                width: 100%;
+                padding-left: 31px;
 
                 img {
-                    width: 100%;
+                    width: 89%;
                 }
 
                 h1 {
                     font-size: 28px;
                 }
             }
+
         }
     }
 
@@ -5762,7 +7000,7 @@ footer {
 
     .home-course-index {
         .main-index {
-            flex-direction: column;
+            padding: 150px 0 50px 0;
 
             .left-h,
             .right-h {
@@ -5794,6 +7032,7 @@ footer {
             }
 
             .contact-footer {
+                padding-right: 39px;
                 margin-bottom: 18px;
             }
 
@@ -5810,6 +7049,7 @@ footer {
                 margin-right: auto;
                 justify-content: center;
                 gap: 7rem;
+                align-items: center;
             }
 
             .footer-content {
@@ -6007,6 +7247,11 @@ footer {
 
 @media only screen and (min-width: 1400px) {
 
+
+    .container {
+        max-width: 1140px !important;
+    }
+
     .header-main {
 
         .slick-dots {
@@ -6111,7 +7356,7 @@ footer {
             .main-text {
 
                 ul {
-                    gap: 1.7rem !important;
+                    gap: 1.1rem !important;
                     width: 100% !important;
                     padding-right: 4px;
 
@@ -6130,6 +7375,86 @@ footer {
 
 
         }
+    }
+
+    .hero-index {
+        height: 100%;
+
+        .home-content {
+            padding-top: 200px;
+            padding-bottom: 160px;
+            gap: 3rem;
+        }
+
+        .slick-dots {
+            bottom: -20px;
+
+            li {
+                width: 16px;
+                height: 16px;
+                margin: 0 3px;
+            }
+        }
+
+        .home-main {
+            padding-top: 100px;
+
+            .slick-list {
+                padding-top: 0px;
+                width: 100%;
+            }
+
+            .video-popup {
+                padding-right: 58px;
+
+                div {
+                    &:nth-child(2) {
+                        right: -13px;
+                    }
+                }
+            }
+
+            .slick-list {
+                height: auto;
+            }
+
+            .gallery-home {
+                i {
+                    width: 70px;
+                    height: 70px;
+                    font-size: 26px;
+                    padding: 20px 27px;
+                }
+            }
+
+            .home-btn {
+                a {
+                    position: relative;
+                    max-width: 132px;
+                    padding: 7px 30px;
+                    display: block;
+                }
+
+            }
+        }
+
+        .wrapper {
+            h1 {
+                margin: initial;
+                font-size: 45px !important;
+                font-weight: bold;
+                font-family: 'Futurica', sans-serif;
+                line-height: 50px !important;
+                padding-bottom: 10px;
+            }
+
+            .description {
+                font-size: 1rem;
+                margin: 0 auto;
+            }
+        }
+
+
     }
 
     .about-item {
@@ -6210,18 +7535,11 @@ footer {
 
     .main-section {
         .index-main {
-            padding: 7px 18px;
-            flex-direction: column;
+            padding: 7px 98px;
 
             img {
                 width: 100%;
             }
-        }
-    }
-
-    .online-card-first {
-        .card-item {
-            flex-direction: column;
         }
     }
 
@@ -6231,23 +7549,25 @@ footer {
     }
 
     .info-item {
+        height: 480px;
+
         .all-info {
             align-items: flex-start;
             padding: 44px 16px;
-            flex-direction: column;
 
             .left-h,
             .right-h {
-                width: 100%;
+                padding-left: 31px;
 
                 img {
-                    width: 100%;
+                    width: 89%;
                 }
 
                 h1 {
                     font-size: 28px;
                 }
             }
+
         }
     }
 
@@ -6258,7 +7578,6 @@ footer {
 
     .home-course-index {
         .main-index {
-            flex-direction: column;
 
             .left-h,
             .right-h {
