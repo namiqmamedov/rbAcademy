@@ -129,6 +129,8 @@ $('#course-item').slick({
     ]
 });
 
+
+
 $('.home-main').slick({
     dots: true,
     infinite: true,

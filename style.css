@@ -515,6 +515,118 @@ header {
   border-radius: 50%;
 }
 
+.teacher-wrapper {
+  padding-top: 135px;
+}
+.teacher-wrapper .breadcrumb {
+  align-items: center;
+}
+.teacher-wrapper .breadcrumb-item::before {
+  content: "";
+  margin-top: 10px;
+  margin-right: 10px;
+  background: #3ad4d8;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+.teacher-wrapper .breadcrumb-item a {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+.teacher-wrapper .breadcrumb-item:last-child {
+  font-family: "Mulish", sans-serif;
+  color: #fe5538;
+  font-weight: bold;
+}
+.teacher-wrapper .teacher-index .teacher-info {
+  text-align: center;
+  margin-bottom: 90px;
+}
+.teacher-wrapper .teacher-index .teacher-info h2 {
+  font-size: 30px;
+  font-family: "Furturica", sans-serif;
+  font-weight: bold;
+}
+.teacher-wrapper .teacher-index .teacher-info p {
+  font-size: 16px;
+  max-width: 640px;
+  margin: 0 auto;
+  font-family: "Mulish", sans-serif;
+}
+.teacher-wrapper .teacher-index .teacher-info .main-section {
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+}
+.teacher-wrapper .teacher-index .teacher-info .main-section .index-main {
+  display: flex;
+  padding: 35px 99px;
+}
+.teacher-wrapper .teacher-index .teacher-info .main-section .index-main .left-m {
+  padding-right: 11px;
+}
+.teacher-wrapper .teacher-index .teacher-info .main-section .index-main .left-m div {
+  text-align: left;
+}
+.teacher-wrapper .teacher-index .teacher-info .main-section .index-main .left-m div:nth-child(5)::before {
+  content: "";
+  background: #3AD4D8;
+  box-shadow: 30px 20px 11px rgba(101, 101, 101, 0.25);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: 309px;
+}
+.teacher-wrapper .teacher-index .teacher-info .main-section .index-main .left-m div:nth-child(6)::before {
+  content: "";
+  background: #FE5538;
+  box-shadow: 30px 20px 11px rgba(101, 101, 101, 0.25);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: -301px;
+  left: -94px;
+}
+.teacher-wrapper .teacher-index .teacher-info .main-section .index-main .left-m .title h6 {
+  color: #543EE9;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+.teacher-wrapper .teacher-index .teacher-info .main-section .index-main .left-m .fullname {
+  padding-bottom: 14px;
+}
+.teacher-wrapper .teacher-index .teacher-info .main-section .index-main .left-m .fullname h1 {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 56px;
+  font-family: "Futurica", sans-serif;
+}
+.teacher-wrapper .teacher-index .teacher-info .main-section .index-main .left-m .description p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 580px;
+  margin-bottom: 2.15rem;
+}
+.teacher-wrapper .teacher-index .teacher-info .main-section .index-main .left-m .subscribe-btn a {
+  background: #543EE9;
+  border-radius: 30px;
+  color: white;
+  width: 125px;
+  height: 40px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.teacher-wrapper .teacher-index .teacher-info .main-section .index-main .right-m img {
+  width: 100%;
+}
+
 .course-detail-card {
   padding-top: 96px;
   padding-bottom: 70px;
@@ -1135,10 +1247,12 @@ header {
 
 .main-section {
   background: #E2EAF8;
+  margin-top: 65px;
 }
 .main-section .index-main {
   display: flex;
   padding: 75px 99px;
+  margin-bottom: 0 !important;
 }
 .main-section .index-main .left-m {
   padding-right: 11px;
@@ -2795,6 +2909,7 @@ footer .last-footer div span {
   }
   .hero-index-product .breadcrumb-index {
     padding-top: 110px;
+    padding-left: 0;
   }
   .hero-index-product .home-content {
     padding: 29px 0;
@@ -2852,6 +2967,84 @@ footer .last-footer div span {
   .hero-index-product .video-popup img {
     width: 100%;
   }
+  .teacher-index .teacher-info {
+    text-align: center;
+    margin-bottom: 90px;
+  }
+  .teacher-index .teacher-info h2 {
+    font-size: 30px;
+    font-family: "Furturica", sans-serif;
+    font-weight: bold;
+  }
+  .teacher-index .teacher-info p {
+    font-size: 16px;
+    max-width: 640px;
+    margin: 0 auto;
+    font-family: "Mulish", sans-serif;
+  }
+  .teacher-index .teacher-info .teacher-main {
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+    padding: 0;
+    margin-top: 60px;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main {
+    display: flex;
+    padding: 45px 0 !important;
+    flex-direction: column;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .fullname h1 {
+    font-size: 30px !important;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m {
+    padding-right: 11px;
+    padding-top: 12px;
+    padding-left: 17px;
+    order: 1;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m div {
+    text-align: left;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m .title h6 {
+    color: #543EE9;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m .fullname {
+    padding-bottom: 14px;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m .fullname h1 {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 56px;
+    font-family: "Futurica", sans-serif;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m .description p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 580px;
+    margin-bottom: 2.15rem;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m .subscribe-btn a {
+    background: #543EE9;
+    border-radius: 30px;
+    color: white;
+    width: 125px;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .right-m .image-content {
+    text-align: left;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .right-m .image-content img {
+    width: 94% !important;
+    height: 285px;
+  }
   .rating-section .card {
     display: none;
   }
@@ -2907,6 +3100,13 @@ footer .last-footer div span {
   .rating-section .rating-index .wrapper-main .leader-index .leader-board .leader-full {
     min-width: -moz-max-content;
     min-width: max-content;
+  }
+  .course-detail-card {
+    padding-bottom: 212px;
+  }
+  .course-detail-card #card {
+    width: 50% !important;
+    height: 12.5% !important;
   }
   .about-item .all-about {
     flex-direction: column;
@@ -3841,6 +4041,209 @@ footer .last-footer div span {
   .hero-index-about .video-popup img {
     width: 100%;
   }
+  .hero-index-product {
+    display: block;
+  }
+  .hero-index-product .breadcrumb-index {
+    padding-top: 110px;
+    padding-left: 0;
+  }
+  .hero-index-product .home-content {
+    padding: 29px 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0rem;
+  }
+  .hero-index-product .slick-dots {
+    bottom: -41px;
+  }
+  .hero-index-product .slick-dots li {
+    width: 16px;
+    height: 16px;
+    margin: 0 3px;
+  }
+  .hero-index-product .home-main {
+    padding-top: 0;
+  }
+  .hero-index-product .home-main .slick-list {
+    padding-top: 0px;
+  }
+  .hero-index-product .home-main .slick-list {
+    height: 125vh;
+  }
+  .hero-index-product .home-main .gallery-home i {
+    width: 70px;
+    height: 70px;
+    font-size: 26px;
+    padding: 20px 27px;
+  }
+  .hero-index-product .home-main .home-btn a {
+    position: relative;
+    max-width: 132px;
+    padding: 7px 30px;
+    display: block;
+  }
+  .hero-index-product .wrapper h1 {
+    margin: initial;
+    font-weight: bold;
+    font-family: "Futurica", sans-serif;
+    line-height: 33px !important;
+    padding-bottom: 10px;
+    padding-top: 24px;
+    font-size: 45px !important;
+  }
+  .hero-index-product .wrapper .description {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  .hero-index-product .video-popup {
+    margin: 0 auto;
+  }
+  .hero-index-product .video-popup div:nth-child(1)::before, .hero-index-product .video-popup div:nth-child(2)::before, .hero-index-product .video-popup div:nth-child(3)::before, .hero-index-product .video-popup div:nth-child(4)::before {
+    display: none;
+  }
+  .hero-index-product .video-popup img {
+    width: 100%;
+  }
+  .teacher-index .teacher-info {
+    text-align: center;
+    margin-bottom: 90px;
+  }
+  .teacher-index .teacher-info h2 {
+    font-size: 30px;
+    font-family: "Furturica", sans-serif;
+    font-weight: bold;
+  }
+  .teacher-index .teacher-info p {
+    font-size: 16px;
+    max-width: 640px;
+    margin: 0 auto;
+    font-family: "Mulish", sans-serif;
+  }
+  .teacher-index .teacher-info .teacher-main {
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+    padding: 0;
+    margin-top: 65px;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main {
+    display: flex;
+    padding: 45px 0 !important;
+    flex-direction: column;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .fullname h1 {
+    font-size: 30px !important;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .image-content img {
+    width: 94% !important;
+    height: 255px;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m {
+    padding-right: 11px;
+    padding-top: 12px;
+    padding-left: 17px;
+    order: 1;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m div {
+    text-align: left;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m .title h6 {
+    color: #543EE9;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m .fullname {
+    padding-bottom: 14px;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m .fullname h1 {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 56px;
+    font-family: "Futurica", sans-serif;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m .description p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 580px;
+    margin-bottom: 2.15rem;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m .subscribe-btn a {
+    background: #543EE9;
+    border-radius: 30px;
+    color: white;
+    width: 125px;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .right-m .image-content {
+    text-align: left;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .right-m .image-content img {
+    width: 88% !important;
+  }
+  .rating-section .card {
+    display: none;
+  }
+  .rating-section .rating-index .wrapper-main {
+    padding-left: 0;
+  }
+  .rating-section .rating-index .wrapper-main ul {
+    padding-left: 2.9rem;
+  }
+  .rating-section .rating-index .wrapper-main .wrapper-second .title {
+    padding-left: 1.5rem;
+  }
+  .rating-section .rating-index .wrapper-main .wrapper-thirst .accordion-button {
+    padding-left: 1.7rem;
+  }
+  .rating-section .rating-index .wrapper-main .course-owner .teacher-info a {
+    margin-left: auto;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+  .rating-section .rating-index .wrapper-main .course-owner .teacher-info p {
+    max-width: 29em;
+  }
+  .rating-section .rating-index .wrapper-main .rating-center {
+    flex-direction: column;
+  }
+  .rating-section .rating-index .wrapper-main .rating-center .rating-body {
+    margin: 0 auto;
+  }
+  .rating-section .rating-index .wrapper-main .btn-light {
+    width: 100%;
+    padding: 5px 28px;
+  }
+  .rating-section .rating-index .wrapper-main .progress__bar .progress {
+    margin-top: 32px !important;
+    width: 75% !important;
+    margin-left: 9px;
+  }
+  .rating-section .rating-index .wrapper-main .progress__bar .progress-index {
+    padding-top: 30px;
+  }
+  .rating-section .rating-index .wrapper-main .leader-index .leader-board-content {
+    display: none;
+  }
+  .rating-section .rating-index .wrapper-main .leader-index .leader-board {
+    flex-direction: column;
+  }
+  .rating-section .rating-index .wrapper-main .leader-index .leader-board .leader-full {
+    min-width: -moz-max-content;
+    min-width: max-content;
+  }
+  .course-detail-card {
+    padding-bottom: 212px;
+  }
+  .course-detail-card #card {
+    width: 54% !important;
+    height: 12.5% !important;
+  }
   .course-index-product {
     display: block;
   }
@@ -4300,6 +4703,225 @@ footer .last-footer div span {
   }
   .course-card .card .card-body {
     padding: 1rem 0.7rem;
+  }
+  .hero-index-product {
+    display: block;
+  }
+  .hero-index-product .breadcrumb-index {
+    padding-top: 110px;
+    padding-left: 0;
+  }
+  .hero-index-product .home-content {
+    padding: 29px 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0rem;
+  }
+  .hero-index-product .slick-dots {
+    bottom: -41px;
+  }
+  .hero-index-product .slick-dots li {
+    width: 16px;
+    height: 16px;
+    margin: 0 3px;
+  }
+  .hero-index-product .home-main {
+    padding-top: 0;
+  }
+  .hero-index-product .home-main .slick-list {
+    padding-top: 0px;
+  }
+  .hero-index-product .home-main .slick-list {
+    height: 125vh;
+  }
+  .hero-index-product .home-main .gallery-home i {
+    width: 70px;
+    height: 70px;
+    font-size: 26px;
+    padding: 20px 27px;
+  }
+  .hero-index-product .home-main .home-btn a {
+    position: relative;
+    max-width: 132px;
+    padding: 7px 30px;
+    display: block;
+  }
+  .hero-index-product .wrapper {
+    margin-bottom: 68px;
+  }
+  .hero-index-product .wrapper h1 {
+    margin: initial;
+    font-weight: bold;
+    font-family: "Futurica", sans-serif;
+    line-height: 33px !important;
+    padding-bottom: 10px;
+    padding-top: 24px;
+    font-size: 45px !important;
+  }
+  .hero-index-product .wrapper .description {
+    max-width: 474px;
+    font-size: 1rem;
+  }
+  .hero-index-product .video-popup {
+    margin: 0 auto;
+  }
+  .hero-index-product .video-popup div:nth-child(1)::before, .hero-index-product .video-popup div:nth-child(2)::before, .hero-index-product .video-popup div:nth-child(3)::before, .hero-index-product .video-popup div:nth-child(4)::before {
+    display: none;
+  }
+  .hero-index-product .video-popup img {
+    width: 100%;
+  }
+  .rating-section .card {
+    display: none;
+  }
+  .rating-section .rating-index .wrapper-main {
+    padding-left: 0;
+  }
+  .rating-section .rating-index .wrapper-main ul {
+    padding-left: 2.9rem;
+  }
+  .rating-section .rating-index .wrapper-main .wrapper-second .title {
+    padding-left: 1.5rem;
+  }
+  .rating-section .rating-index .wrapper-main .course-owner .title {
+    font-size: 32px;
+    font-family: "Furturica", sans-serif;
+  }
+  .rating-section .rating-index .wrapper-main .wrapper-thirst .accordion-button {
+    padding-left: 1.7rem;
+  }
+  .rating-section .rating-index .wrapper-main .course-owner .teacher-info a {
+    margin-left: auto;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+  .rating-section .rating-index .wrapper-main .course-owner .teacher-info p {
+    max-width: 29em;
+  }
+  .rating-section .rating-index .wrapper-main .rating-center {
+    flex-direction: column;
+  }
+  .rating-section .rating-index .wrapper-main .rating-center .rating-body {
+    margin: 0 auto;
+  }
+  .rating-section .rating-index .wrapper-main .btn-light {
+    width: 100%;
+    padding: 5px 28px;
+  }
+  .rating-section .rating-index .wrapper-main .progress__bar {
+    justify-content: center;
+  }
+  .rating-section .rating-index .wrapper-main .progress__bar .progress {
+    margin-top: 32px !important;
+    width: 51% !important;
+    margin-left: 9px;
+  }
+  .rating-section .rating-index .wrapper-main .progress__bar .progress-index {
+    width: 15%;
+    padding-top: 30px;
+  }
+  .rating-section .rating-index .wrapper-main .leader-index .leader-board-content {
+    display: none;
+  }
+  .rating-section .rating-index .wrapper-main .leader-index .leader-board {
+    flex-direction: column;
+  }
+  .rating-section .rating-index .wrapper-main .leader-index .leader-board .leader-full {
+    min-width: -moz-max-content;
+    min-width: max-content;
+  }
+  .course-detail-card {
+    padding-bottom: 212px;
+  }
+  .course-detail-card #card {
+    width: 49% !important;
+    height: 12.5% !important;
+  }
+  .teacher-index .teacher-info {
+    text-align: center;
+    margin-bottom: 90px;
+  }
+  .teacher-index .teacher-info h2 {
+    font-size: 30px;
+    font-family: "Furturica", sans-serif;
+    font-weight: bold;
+  }
+  .teacher-index .teacher-info p {
+    font-size: 16px;
+    max-width: 640px;
+    margin: 0 auto;
+    font-family: "Mulish", sans-serif;
+  }
+  .teacher-index .teacher-info .teacher-main {
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+    padding: 0;
+    margin-top: 65px;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main {
+    display: flex;
+    padding: 45px 0 !important;
+    flex-direction: column;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .fullname h1 {
+    font-size: 30px !important;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .image-content img {
+    width: 94% !important;
+    height: 255px;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m {
+    padding-right: 11px;
+    padding-top: 12px;
+    padding-left: 17px;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m div {
+    text-align: left;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m .title h6 {
+    color: #543EE9;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m .description p {
+    margin: 0;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m .fullname {
+    padding-bottom: 14px;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m .fullname h1 {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 56px;
+    font-family: "Futurica", sans-serif;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m .description p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 580px;
+    margin-bottom: 2.15rem;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m .subscribe-btn a {
+    background: #543EE9;
+    border-radius: 30px;
+    color: white;
+    width: 125px;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .right-m {
+    padding-top: 40px;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .right-m .image-content {
+    text-align: left;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .right-m .image-content img {
+    width: 64% !important;
   }
   .book__card .slick-prev,
   .book__card .slick-next {
@@ -5017,6 +5639,220 @@ footer .last-footer div span {
   .hero-index-about .video-popup img {
     width: 100%;
   }
+  .hero-index-product {
+    height: 710px;
+    display: block;
+  }
+  .hero-index-product .breadcrumb-index {
+    padding-top: 110px;
+    padding-left: 0;
+  }
+  .hero-index-product .home-content {
+    padding: 29px 0;
+    gap: 0rem;
+  }
+  .hero-index-product .slick-dots {
+    bottom: -41px;
+  }
+  .hero-index-product .slick-dots li {
+    width: 16px;
+    height: 16px;
+    margin: 0 3px;
+  }
+  .hero-index-product .home-main {
+    padding-top: 0;
+  }
+  .hero-index-product .home-main .slick-list {
+    padding-top: 0px;
+  }
+  .hero-index-product .home-main .slick-list {
+    height: 125vh;
+  }
+  .hero-index-product .home-main .gallery-home i {
+    width: 70px;
+    height: 70px;
+    font-size: 26px;
+    padding: 20px 27px;
+  }
+  .hero-index-product .home-main .home-btn a {
+    position: relative;
+    max-width: 132px;
+    padding: 7px 30px;
+    display: block;
+  }
+  .hero-index-product .wrapper {
+    width: 50%;
+    margin-bottom: 68px;
+  }
+  .hero-index-product .wrapper h1 {
+    margin: initial;
+    font-weight: bold;
+    font-family: "Futurica", sans-serif;
+    line-height: 33px !important;
+    padding-bottom: 25px;
+    padding-top: 24px;
+    font-size: 45px !important;
+  }
+  .hero-index-product .wrapper .description {
+    max-width: 474px;
+    font-size: 1rem;
+  }
+  .hero-index-product .video-popup {
+    width: 50% !important;
+    margin: 0 auto;
+  }
+  .hero-index-product .video-popup div:nth-child(1)::before, .hero-index-product .video-popup div:nth-child(2)::before, .hero-index-product .video-popup div:nth-child(3)::before, .hero-index-product .video-popup div:nth-child(4)::before {
+    display: none;
+  }
+  .hero-index-product .video-popup img {
+    width: 100%;
+  }
+  .teacher-index .teacher-info {
+    text-align: center;
+    margin-bottom: 90px;
+  }
+  .teacher-index .teacher-info h2 {
+    font-size: 30px;
+    font-family: "Furturica", sans-serif;
+    font-weight: bold;
+  }
+  .teacher-index .teacher-info p {
+    font-size: 16px;
+    max-width: 640px;
+    margin: 0 auto;
+    font-family: "Mulish", sans-serif;
+  }
+  .teacher-index .teacher-info .teacher-main {
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+    padding: 0;
+    margin-top: 65px;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main {
+    display: flex;
+    padding: 45px 0 !important;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .fullname h1 {
+    font-size: 30px !important;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .image-content img {
+    width: 94% !important;
+    height: 255px;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m {
+    width: 50%;
+    padding-right: 11px;
+    padding-top: 12px;
+    padding-left: 17px;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m div {
+    text-align: left;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m .title h6 {
+    color: #543EE9;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m .description p {
+    margin: 0;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m .fullname {
+    padding-bottom: 14px;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m .fullname h1 {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 56px;
+    font-family: "Futurica", sans-serif;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m .description p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 580px;
+    margin-bottom: 2.15rem;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m .subscribe-btn a {
+    background: #543EE9;
+    border-radius: 30px;
+    color: white;
+    width: 125px;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .right-m {
+    width: 50%;
+    padding-top: 40px;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .right-m .image-content {
+    text-align: left;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .right-m .image-content img {
+    width: 88% !important;
+  }
+  .rating-section .rating-index .card {
+    height: 19%;
+  }
+  .rating-section .rating-index .wrapper-main {
+    padding-left: 30px;
+  }
+  .rating-section .rating-index .wrapper-main ul {
+    padding-left: 2.9rem;
+  }
+  .rating-section .rating-index .wrapper-main .wrapper-second .title {
+    padding-left: 1.5rem;
+  }
+  .rating-section .rating-index .wrapper-main .course-owner .title {
+    font-size: 32px;
+    font-family: "Furturica", sans-serif;
+  }
+  .rating-section .rating-index .wrapper-main .wrapper-thirst .accordion-button {
+    padding-left: 1.7rem;
+  }
+  .rating-section .rating-index .wrapper-main .course-owner .teacher-info a {
+    margin-left: auto;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+  .rating-section .rating-index .wrapper-main .course-owner .teacher-info p {
+    max-width: 29em;
+  }
+  .rating-section .rating-index .wrapper-main .rating-center {
+    align-items: center;
+  }
+  .rating-section .rating-index .wrapper-main .rating-center .rating-body {
+    margin: 0 auto;
+  }
+  .rating-section .rating-index .wrapper-main .btn-light {
+    width: 83%;
+    padding: 5px 28px;
+  }
+  .rating-section .rating-index .wrapper-main .progress__bar .progress {
+    margin-top: 40px !important;
+    width: 51% !important;
+    margin-left: 22px;
+  }
+  .rating-section .rating-index .wrapper-main .progress__bar .progress-index {
+    width: 15%;
+    padding-top: 30px;
+  }
+  .rating-section .rating-index .wrapper-main .leader-index .leader-board-content {
+    display: none;
+  }
+  .rating-section .rating-index .wrapper-main .leader-index .leader-board .leader-full {
+    min-width: 260px;
+  }
+  .course-detail-card {
+    padding-bottom: 212px;
+  }
+  .course-detail-card #card {
+    width: 23% !important;
+    height: 49.5% !important;
+  }
   .course-index-product {
     height: 100%;
   }
@@ -5586,6 +6422,93 @@ footer .last-footer div span {
     font-size: 1rem;
     margin: 0 auto;
   }
+  .teacher-index .teacher-info {
+    text-align: center;
+    margin-bottom: 90px;
+  }
+  .teacher-index .teacher-info h2 {
+    font-size: 30px;
+    font-family: "Furturica", sans-serif;
+    font-weight: bold;
+  }
+  .teacher-index .teacher-info p {
+    font-size: 16px;
+    max-width: 640px;
+    margin: 0 auto;
+    font-family: "Mulish", sans-serif;
+  }
+  .teacher-index .teacher-info .teacher-main {
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+    padding: 0;
+    margin-top: 65px;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main {
+    display: flex;
+    padding: 45px 35px !important;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .fullname h1 {
+    font-size: 30px !important;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .image-content img {
+    width: 94% !important;
+    height: 255px;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m {
+    width: 50%;
+    padding-right: 11px;
+    padding-top: 12px;
+    padding-left: 17px;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m div {
+    text-align: left;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m .title h6 {
+    color: #543EE9;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m .description p {
+    margin: 0;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m .fullname {
+    padding-bottom: 14px;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m .fullname h1 {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 56px;
+    font-family: "Futurica", sans-serif;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m .description p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 580px;
+    margin-bottom: 2.15rem;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .left-m .subscribe-btn a {
+    background: #543EE9;
+    border-radius: 30px;
+    color: white;
+    width: 125px;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .right-m {
+    width: 50%;
+    padding-top: 40px;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .right-m .image-content {
+    text-align: center;
+  }
+  .teacher-index .teacher-info .teacher-main .index-main .right-m .image-content img {
+    width: 88% !important;
+  }
   .hero-index-about {
     height: 100%;
   }
@@ -5643,6 +6566,133 @@ footer .last-footer div span {
   }
   .hero-index-about .video-popup img {
     width: 100%;
+  }
+  .hero-index-product {
+    height: 745px;
+    display: block;
+  }
+  .hero-index-product .breadcrumb-index {
+    padding-top: 110px;
+    padding-left: 0;
+  }
+  .hero-index-product .home-content {
+    padding: 29px 0;
+    gap: 0rem;
+  }
+  .hero-index-product .slick-dots {
+    bottom: -41px;
+  }
+  .hero-index-product .slick-dots li {
+    width: 16px;
+    height: 16px;
+    margin: 0 3px;
+  }
+  .hero-index-product .home-main {
+    padding-top: 0;
+  }
+  .hero-index-product .home-main .slick-list {
+    padding-top: 0px;
+  }
+  .hero-index-product .home-main .slick-list {
+    height: 125vh;
+  }
+  .hero-index-product .home-main .gallery-home i {
+    width: 70px;
+    height: 70px;
+    font-size: 26px;
+    padding: 20px 27px;
+  }
+  .hero-index-product .home-main .home-btn a {
+    position: relative;
+    max-width: 132px;
+    padding: 7px 30px;
+    display: block;
+  }
+  .hero-index-product .wrapper {
+    width: 50%;
+    margin-bottom: 68px;
+  }
+  .hero-index-product .wrapper h1 {
+    margin: initial;
+    font-weight: bold;
+    font-family: "Futurica", sans-serif;
+    line-height: 33px !important;
+    padding-bottom: 25px;
+    padding-top: 24px;
+    font-size: 45px !important;
+  }
+  .hero-index-product .wrapper .description {
+    max-width: 440px !important;
+    font-size: 1rem;
+  }
+  .hero-index-product .video-popup {
+    width: 50% !important;
+    margin: 0 auto;
+  }
+  .hero-index-product .video-popup div:nth-child(1)::before, .hero-index-product .video-popup div:nth-child(2)::before, .hero-index-product .video-popup div:nth-child(3)::before, .hero-index-product .video-popup div:nth-child(4)::before {
+    display: none;
+  }
+  .hero-index-product .video-popup img {
+    width: 100%;
+  }
+  .rating-section .rating-index .card {
+    height: 20%;
+  }
+  .rating-section .rating-index .wrapper-main {
+    padding-left: 30px;
+  }
+  .rating-section .rating-index .wrapper-main ul {
+    padding-left: 2.9rem;
+  }
+  .rating-section .rating-index .wrapper-main .wrapper-second .title {
+    padding-left: 1.5rem;
+  }
+  .rating-section .rating-index .wrapper-main .course-owner .title {
+    font-size: 32px;
+    font-family: "Furturica", sans-serif;
+  }
+  .rating-section .rating-index .wrapper-main .wrapper-thirst .accordion-button {
+    padding-left: 1.7rem;
+  }
+  .rating-section .rating-index .wrapper-main .course-owner .teacher-info a {
+    margin-left: auto;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+  .rating-section .rating-index .wrapper-main .course-owner .teacher-info p {
+    max-width: 29em;
+  }
+  .rating-section .rating-index .wrapper-main .rating-center {
+    align-items: center;
+  }
+  .rating-section .rating-index .wrapper-main .rating-center .rating-body {
+    margin: 0 auto;
+  }
+  .rating-section .rating-index .wrapper-main .btn-light {
+    width: 83%;
+    padding: 5px 28px;
+  }
+  .rating-section .rating-index .wrapper-main .progress__bar .progress {
+    margin-top: 40px !important;
+    width: 51% !important;
+    margin-left: 22px;
+  }
+  .rating-section .rating-index .wrapper-main .progress__bar .progress-index {
+    width: 15%;
+    padding-top: 30px;
+  }
+  .rating-section .rating-index .wrapper-main .leader-index .leader-board-content {
+    display: none;
+  }
+  .rating-section .rating-index .wrapper-main .leader-index .leader-board .leader-full {
+    min-width: 260px;
+  }
+  .course-detail-card {
+    padding-bottom: 212px;
+  }
+  .course-detail-card #card {
+    width: 23% !important;
+    height: 49.5% !important;
   }
   .course-index-product {
     height: 100%;
@@ -6145,6 +7195,205 @@ footer .last-footer div span {
   .hero-index .wrapper .description {
     font-size: 1rem;
     margin: 0 auto;
+  }
+  .hero-index-product {
+    height: 745px;
+    display: block;
+  }
+  .hero-index-product .breadcrumb-index {
+    padding-top: 110px;
+    padding-left: 0;
+  }
+  .hero-index-product .home-content {
+    padding: 29px 0;
+    gap: 0rem;
+  }
+  .hero-index-product .slick-dots {
+    bottom: -41px;
+  }
+  .hero-index-product .slick-dots li {
+    width: 16px;
+    height: 16px;
+    margin: 0 3px;
+  }
+  .hero-index-product .home-main {
+    padding-top: 0;
+  }
+  .hero-index-product .home-main .slick-list {
+    padding-top: 0px;
+  }
+  .hero-index-product .home-main .slick-list {
+    height: 125vh;
+  }
+  .hero-index-product .home-main .gallery-home i {
+    width: 70px;
+    height: 70px;
+    font-size: 26px;
+    padding: 20px 27px;
+  }
+  .hero-index-product .home-main .home-btn a {
+    position: relative;
+    max-width: 132px;
+    padding: 7px 30px;
+    display: block;
+  }
+  .hero-index-product .wrapper {
+    width: 50%;
+    margin-bottom: 68px;
+  }
+  .hero-index-product .wrapper h1 {
+    margin: initial;
+    font-weight: bold;
+    font-family: "Futurica", sans-serif;
+    line-height: 33px !important;
+    padding-bottom: 25px;
+    padding-top: 24px;
+    font-size: 45px !important;
+  }
+  .hero-index-product .wrapper .description {
+    max-width: 440px !important;
+    font-size: 1rem;
+  }
+  .hero-index-product .video-popup {
+    width: 50% !important;
+    margin: 0 auto;
+  }
+  .hero-index-product .video-popup div:nth-child(1)::before, .hero-index-product .video-popup div:nth-child(2)::before, .hero-index-product .video-popup div:nth-child(3)::before, .hero-index-product .video-popup div:nth-child(4)::before {
+    display: none;
+  }
+  .hero-index-product .video-popup img {
+    width: 100%;
+  }
+  .teacher-main {
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+    padding: 0;
+    margin-top: 65px;
+  }
+  .teacher-main .index-main {
+    display: flex;
+    padding: 45px 65px !important;
+  }
+  .teacher-main .index-main .fullname h1 {
+    font-size: 30px !important;
+  }
+  .teacher-main .index-main .image-content img {
+    width: 94% !important;
+    height: 255px;
+  }
+  .teacher-main .index-main .left-m {
+    width: 50%;
+    padding-right: 11px;
+    padding-top: 12px;
+    padding-left: 17px;
+  }
+  .teacher-main .index-main .left-m div {
+    text-align: left;
+  }
+  .teacher-main .index-main .left-m .title h6 {
+    color: #543EE9;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+  .teacher-main .index-main .left-m .description p {
+    margin: 0;
+  }
+  .teacher-main .index-main .left-m .fullname {
+    padding-bottom: 14px;
+  }
+  .teacher-main .index-main .left-m .fullname h1 {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 56px;
+    font-family: "Futurica", sans-serif;
+  }
+  .teacher-main .index-main .left-m .description p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 580px;
+    margin-bottom: 2.15rem;
+  }
+  .teacher-main .index-main .left-m .subscribe-btn a {
+    background: #543EE9;
+    border-radius: 30px;
+    color: white;
+    width: 125px;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .teacher-main .index-main .right-m {
+    width: 50%;
+    padding-top: 40px;
+  }
+  .teacher-main .index-main .right-m .image-content {
+    text-align: center;
+  }
+  .teacher-main .index-main .right-m .image-content img {
+    width: 88% !important;
+  }
+  .rating-section .rating-index .card {
+    height: 20%;
+  }
+  .rating-section .rating-index .wrapper-main {
+    padding-left: 30px;
+  }
+  .rating-section .rating-index .wrapper-main ul {
+    padding-left: 2.9rem;
+  }
+  .rating-section .rating-index .wrapper-main .wrapper-second .title {
+    padding-left: 1.5rem;
+  }
+  .rating-section .rating-index .wrapper-main .course-owner .title {
+    font-size: 32px;
+    font-family: "Furturica", sans-serif;
+  }
+  .rating-section .rating-index .wrapper-main .wrapper-thirst .accordion-button {
+    padding-left: 1.7rem;
+  }
+  .rating-section .rating-index .wrapper-main .course-owner .teacher-info a {
+    margin-left: auto;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+  .rating-section .rating-index .wrapper-main .course-owner .teacher-info p {
+    max-width: 29em;
+  }
+  .rating-section .rating-index .wrapper-main .rating-center {
+    align-items: center;
+  }
+  .rating-section .rating-index .wrapper-main .rating-center .rating-body {
+    margin: 0 auto;
+  }
+  .rating-section .rating-index .wrapper-main .btn-light {
+    width: 83%;
+    padding: 5px 28px;
+  }
+  .rating-section .rating-index .wrapper-main .progress__bar .progress {
+    margin-top: 40px !important;
+    width: 51% !important;
+    margin-left: 22px;
+  }
+  .rating-section .rating-index .wrapper-main .progress__bar .progress-index {
+    width: 15%;
+    padding-top: 30px;
+  }
+  .rating-section .rating-index .wrapper-main .leader-index .leader-board-content {
+    display: none;
+  }
+  .rating-section .rating-index .wrapper-main .leader-index .leader-board .leader-full {
+    min-width: 260px;
+  }
+  .course-detail-card {
+    padding-bottom: 212px;
+  }
+  .course-detail-card #card {
+    width: 23% !important;
+    height: 49.5% !important;
   }
   .about-item {
     padding-top: 114px;

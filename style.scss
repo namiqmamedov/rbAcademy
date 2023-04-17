@@ -490,12 +490,12 @@ header {
     justify-content: center;
     align-items: center;
 
-    .breadcrumb{
+    .breadcrumb {
         align-items: center;
     }
 
-    .breadcrumb-item{
-        &::before{
+    .breadcrumb-item {
+        &::before {
             content: "";
             margin-top: 10px;
             margin-right: 10px;
@@ -505,12 +505,12 @@ header {
             border-radius: 50%;
         }
 
-        a{
+        a {
             color: black;
-            font-family: 'Montserrat',sans-serif;
+            font-family: 'Montserrat', sans-serif;
         }
 
-        &:last-child{
+        &:last-child {
             font-family: "Mulish", sans-serif;
             color: #fe5538;
             font-weight: bold;
@@ -550,12 +550,13 @@ header {
 
         .wrapper {
 
-            .star{
-                i{
+            .star {
+                i {
                     color: #543ee9;
                     font-size: 12.7px;
                 }
             }
+
             h1 {
                 font-size: 46px;
                 font-weight: bold;
@@ -605,7 +606,8 @@ header {
 
         .video-popup {
             width: 100%;
-                max-width: 100%;
+            max-width: 100%;
+
             img {
                 position: relative;
                 z-index: 111111111;
@@ -655,230 +657,383 @@ header {
     }
 }
 
- .course-detail-card {
+.teacher-wrapper {
+    padding-top: 135px;
+
+
+    .breadcrumb {
+        align-items: center;
+    }
+
+    .breadcrumb-item {
+        &::before {
+            content: "";
+            margin-top: 10px;
+            margin-right: 10px;
+            background: #3ad4d8;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+        }
+
+        a {
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        &:last-child {
+            font-family: "Mulish", sans-serif;
+            color: #fe5538;
+            font-weight: bold;
+        }
+    }
+
+    .teacher-index {
+        .teacher-info {
+            text-align: center;
+            margin-bottom: 90px;
+
+            h2 {
+                font-size: 30px;
+                font-family: 'Furturica', sans-serif;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 16px;
+                max-width: 640px;
+                margin: 0 auto;
+                font-family: 'Mulish', sans-serif;
+            }
+
+            .main-section {
+                background: #ffffff;
+                -webkit-box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+                box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+
+
+                .index-main {
+                    display: flex;
+                    padding: 35px 99px;
+
+
+                    .left-m {
+                        padding-right: 11px;
+
+                        div {
+                            text-align: left;
+
+                            &:nth-child(5) {
+                                &::before {
+                                    content: "";
+                                    background: #3AD4D8;
+                                    box-shadow: 30px 20px 11px rgba(101, 101, 101, 0.25);
+                                    width: 40px;
+                                    height: 40px;
+                                    border-radius: 50%;
+                                    position: absolute;
+                                    top: -10px;
+                                    left: 309px;
+                                }
+                            }
+
+                            &:nth-child(6) {
+                                &::before {
+                                    content: "";
+                                    background: #FE5538;
+                                    box-shadow: 30px 20px 11px rgba(101, 101, 101, 0.25);
+                                    width: 40px;
+                                    height: 40px;
+                                    border-radius: 50%;
+                                    position: absolute;
+                                    top: -301px;
+                                    left: -94px;
+                                }
+                            }
+                        }
+
+                        .title {
+                            h6 {
+                                color: #543EE9;
+                                font-size: 15px;
+                                font-weight: 600;
+                                margin-bottom: 0.2rem;
+                            }
+                        }
+
+                        .fullname {
+                            padding-bottom: 14px;
+
+                            h1 {
+                                font-weight: 700;
+                                font-size: 46px;
+                                line-height: 56px;
+                                font-family: 'Futurica', sans-serif;
+                            }
+                        }
+
+                        .description {
+                            p {
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 24px;
+                                max-width: 580px;
+                                margin-bottom: 2.15rem;
+                            }
+                        }
+
+                        .subscribe-btn {
+                            a {
+                                background: #543EE9;
+                                border-radius: 30px;
+                                color: white;
+                                width: 125px;
+                                height: 40px;
+                                display: flex;
+                                text-align: center;
+                                align-items: center;
+                                justify-content: center;
+
+                            }
+                        }
+                    }
+
+                    .right-m {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.course-detail-card {
     padding-top: 96px;
     padding-bottom: 70px;
 
-            .course-title{
-                font-weight: bold;
-                font-size: 32px;
-                text-align: center;
-                font-family: 'Mulish',sans-serif;
-                padding-bottom: 22px;
-            }
+    .course-title {
+        font-weight: bold;
+        font-size: 32px;
+        text-align: center;
+        font-family: 'Mulish', sans-serif;
+        padding-bottom: 22px;
+    }
 
-            .card {
+    .card {
 
-                .slick-slide {
-                    width: 100%;
-                    height: 100% !important;
-                }
+        .slick-slide {
+            width: 100%;
+            height: 100% !important;
+        }
 
-                .card-body {
-                    padding: 1rem 1.4rem;
+        .card-body {
+            padding: 1rem 1.4rem;
 
-                    .card-text {
-                        margin-bottom: 2rem;
-                        opacity: 0;
-                        transition: .5s ease-in-out;
-                        display: -webkit-box;
-                        -webkit-line-clamp: 3;
-                        -webkit-box-orient: vertical;
-                        text-overflow: ellipsis;
-                        overflow: hidden;
-                        max-width: 27em;
-
-                    }
-
-                    .bottom-content {
-                        display: flex;
-                        align-items: center;
-                        // justify-content: space-between;
-
-                        .btn {
-                            background: #543EE9;
-                            outline: none;
-                            border: none;
-                            width: 50%;
-                            border-radius: 30px;
-                            transition: .5s ease-in-out;
-                        }
-
-                        .price-card {
-                            margin-left: auto;
-
-                            h6 {
-                                font-family: "Mulish", sans-serif;
-                                font-weight: 800;
-                                font-size: 15px;
-                                line-height: 20px;
-                                color: #fe5538 !important;
-                                transition: .5s ease-in-out;
-                            }
-
-                            p {
-                                text-decoration-line: line-through;
-                                margin-bottom: 0;
-                                color: #929292 !important;
-                                font-family: 'Mulish', sans-serif;
-                                font-weight: bold;
-                                text-decoration-color: black;
-                                text-decoration-thickness: 2px;
-
-                            }
-                        }
-                    }
-                }
-
-                .card-title-first {
-                    display: flex;
-                    gap: 1rem;
-
-                    .title-first {
-                        display: flex;
-                        align-items: center;
-                    }
-
-                    .square {
-                        background: #3AD4D8;
-                        width: 4px;
-                        height: 4px;
-                        margin-left: 1rem;
-                        margin-top: -0.3rem;
-                        border-radius: 50%;
-                    }
-
-                    h6 {
-                        font-weight: 700;
-                        font-size: 12px !important;
-                        line-height: 20px;
-                        color: #FE5538;
-                    }
-                }
-
-                .card-title-second {
-                    font-family: 'Futurica', sans-serif;
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 20px;
-                    line-height: 25px;
-                    margin-bottom: 38px;
-                    color: black;
-
-                }
-
-                .card-text {
-                    color: black;
-
-                }
-
+            .card-text {
+                margin-bottom: 2rem;
+                opacity: 0;
+                transition: .5s ease-in-out;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                max-width: 27em;
 
             }
 
-            .card:hover {
-                .card-text {
-                    opacity: 1;
-                    transition: .5s ease-in-out;
-                    color: black;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 3;
-                    -webkit-box-orient: vertical;
-                    text-overflow: ellipsis;
-                    overflow: hidden;
-                    max-width: 27em;
-
-                }
-
-                .btn {
-                    background: #fff !important;
-                    color: black;
-                    transition: .5s ease-in-out;
-                    border: 1px solid #353535 !important;
-                }
-
-                .card-img-top {
-                    padding: 10px 10px 10px 10px;
-                }
-
-                .card-feedback {
-                    opacity: 1;
-                    visibility: visible !important;
-                }
-
-            }
-
-            .title {
-                font-weight: 700;
-                font-size: 30px;
-                padding-bottom: 10px;
-            }
-
-            .subtitle {
-                max-width: 648px;
-                margin: 0 auto;
-            }
-
-            .card-feedback {
+            .bottom-content {
                 display: flex;
                 align-items: center;
-                gap: 0.25rem;
-                padding-bottom: 8px;
-                opacity: 0;
-                visibility: hidden !important;
-                transition: .5s ease-in-out;
+                // justify-content: space-between;
 
-                .fa-solid {
-                    color: #543EE9;
+                .btn {
+                    background: #543EE9;
+                    outline: none;
+                    border: none;
+                    width: 50%;
+                    border-radius: 30px;
+                    transition: .5s ease-in-out;
                 }
 
-                .fa-regular {
-                    color: #543EE9;
-                }
+                .price-card {
+                    margin-left: auto;
 
-                img {
-                    width: 15px;
-                    height: 15px;
-                }
-            }
+                    h6 {
+                        font-family: "Mulish", sans-serif;
+                        font-weight: 800;
+                        font-size: 15px;
+                        line-height: 20px;
+                        color: #fe5538 !important;
+                        transition: .5s ease-in-out;
+                    }
 
-            img {
-                width: 100%;
-                border-radius: 0;
-                transition: .5s ease-in-out;
-                height: 213px;
+                    p {
+                        text-decoration-line: line-through;
+                        margin-bottom: 0;
+                        color: #929292 !important;
+                        font-family: 'Mulish', sans-serif;
+                        font-weight: bold;
+                        text-decoration-color: black;
+                        text-decoration-thickness: 2px;
 
-            }
-
-            .card-item {
-                display: flex;
-                gap: 1rem;
-                justify-content: center;
-                padding-top: 58px;
-
-            }
-
-            &::before {
-                position: static;
-            }
-
-            #course-item {
-                display: flex;
-                flex-wrap: wrap;
-                padding-top: 0;
-                gap: 1.4rem;
-
-
-                #card {
-                    width: 23%;
-                    height: 48%;
-                    transition: .3s ease-in-out;
-
-                    &:hover {
-                        box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
                     }
                 }
             }
         }
+
+        .card-title-first {
+            display: flex;
+            gap: 1rem;
+
+            .title-first {
+                display: flex;
+                align-items: center;
+            }
+
+            .square {
+                background: #3AD4D8;
+                width: 4px;
+                height: 4px;
+                margin-left: 1rem;
+                margin-top: -0.3rem;
+                border-radius: 50%;
+            }
+
+            h6 {
+                font-weight: 700;
+                font-size: 12px !important;
+                line-height: 20px;
+                color: #FE5538;
+            }
+        }
+
+        .card-title-second {
+            font-family: 'Futurica', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;
+            margin-bottom: 38px;
+            color: black;
+
+        }
+
+        .card-text {
+            color: black;
+
+        }
+
+
+    }
+
+    .card:hover {
+        .card-text {
+            opacity: 1;
+            transition: .5s ease-in-out;
+            color: black;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            max-width: 27em;
+
+        }
+
+        .btn {
+            background: #fff !important;
+            color: black;
+            transition: .5s ease-in-out;
+            border: 1px solid #353535 !important;
+        }
+
+        .card-img-top {
+            padding: 10px 10px 10px 10px;
+        }
+
+        .card-feedback {
+            opacity: 1;
+            visibility: visible !important;
+        }
+
+    }
+
+    .title {
+        font-weight: 700;
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+
+    .subtitle {
+        max-width: 648px;
+        margin: 0 auto;
+    }
+
+    .card-feedback {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        padding-bottom: 8px;
+        opacity: 0;
+        visibility: hidden !important;
+        transition: .5s ease-in-out;
+
+        .fa-solid {
+            color: #543EE9;
+        }
+
+        .fa-regular {
+            color: #543EE9;
+        }
+
+        img {
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    img {
+        width: 100%;
+        border-radius: 0;
+        transition: .5s ease-in-out;
+        height: 213px;
+
+    }
+
+    .card-item {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        padding-top: 58px;
+
+    }
+
+    &::before {
+        position: static;
+    }
+
+    #course-item {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 0;
+        gap: 1.4rem;
+
+
+        #card {
+            width: 23%;
+            height: 48%;
+            transition: .3s ease-in-out;
+
+            &:hover {
+                box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
+            }
+        }
+    }
+}
 
 
 .rating-section {
@@ -1446,10 +1601,12 @@ header {
 
 .main-section {
     background: #E2EAF8;
+    margin-top: 65px;
 
     .index-main {
         display: flex;
         padding: 75px 99px;
+        margin-bottom: 0 !important;
 
 
         .left-m {
@@ -3246,9 +3403,6 @@ footer {
     }
 
     .header-main {
-
-
-
         .slick-dots {
             bottom: -44px;
         }
@@ -3596,8 +3750,9 @@ footer {
     .hero-index-product {
         display: block;
 
-        .breadcrumb-index{
+        .breadcrumb-index {
             padding-top: 110px;
+            padding-left: 0;
         }
 
         .home-content {
@@ -3619,6 +3774,7 @@ footer {
 
         .home-main {
             padding-top: 0;
+
             .slick-list {
                 padding-top: 0px;
             }
@@ -3684,80 +3840,206 @@ footer {
         }
     }
 
-    .rating-section{
-        .card{
+    .teacher-index {
+        .teacher-info {
+            text-align: center;
+            margin-bottom: 90px;
+
+            h2 {
+                font-size: 30px;
+                font-family: 'Furturica', sans-serif;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 16px;
+                max-width: 640px;
+                margin: 0 auto;
+                font-family: 'Mulish', sans-serif;
+            }
+
+            .teacher-main {
+                background: #ffffff;
+                -webkit-box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+                box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+                padding: 0;
+                margin-top: 60px;
+
+
+                .index-main {
+                    display: flex;
+                    padding: 45px 0 !important;
+                    flex-direction: column;
+
+                    .fullname {
+                        h1 {
+                            font-size: 30px !important;
+                        }
+                    }
+
+
+                    .left-m {
+                        padding-right: 11px;
+                        padding-top: 12px;
+                        padding-left: 17px;
+                        order: 1;
+
+                        div {
+                            text-align: left;
+                        }
+
+                        .title {
+                            h6 {
+                                color: #543EE9;
+                                font-size: 15px;
+                                font-weight: 600;
+                                margin-bottom: 0.2rem;
+                            }
+                        }
+
+                        .fullname {
+                            padding-bottom: 14px;
+
+                            h1 {
+                                font-weight: 700;
+                                font-size: 46px;
+                                line-height: 56px;
+                                font-family: 'Futurica', sans-serif;
+                            }
+                        }
+
+                        .description {
+                            p {
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 24px;
+                                max-width: 580px;
+                                margin-bottom: 2.15rem;
+                            }
+                        }
+
+                        .subscribe-btn {
+                            a {
+                                background: #543EE9;
+                                border-radius: 30px;
+                                color: white;
+                                width: 125px;
+                                height: 40px;
+                                display: flex;
+                                text-align: center;
+                                align-items: center;
+                                justify-content: center;
+
+                            }
+                        }
+                    }
+
+                    .right-m {
+                        .image-content {
+                            text-align: left;
+
+                            img {
+                                width: 94% !important;
+                                height: 285px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+
+    .rating-section {
+        .card {
             display: none;
         }
-       .rating-index{
-        .wrapper-main{
-            padding-left: 0;
 
-            .title{
-                padding-left: 1.4rem !important;
-            }
+        .rating-index {
+            .wrapper-main {
+                padding-left: 0;
 
-            ul{
-                padding-left: 2.9rem;
-            }
-
-            .wrapper-thirst{
-                .accordion-button{
-                    padding-left: 1.7rem;
+                .title {
+                    padding-left: 1.4rem !important;
                 }
-            }
 
-            .course-owner{
-                .teacher-info{
-                    flex-wrap: wrap;
-                    a{
-                        margin-left: auto;
-                        margin-top: 6px;
-                        margin-bottom: 30px;
-                    }
-                    p{
-                        max-width: 29em;
+                ul {
+                    padding-left: 2.9rem;
+                }
+
+                .wrapper-thirst {
+                    .accordion-button {
+                        padding-left: 1.7rem;
                     }
                 }
-            }
 
-            .rating-center{
-                flex-direction: column;
+                .course-owner {
+                    .teacher-info {
+                        flex-wrap: wrap;
 
-                .rating-body{
-                    margin: 0 auto;
+                        a {
+                            margin-left: auto;
+                            margin-top: 6px;
+                            margin-bottom: 30px;
+                        }
+
+                        p {
+                            max-width: 29em;
+                        }
+                    }
                 }
-            }
 
-            .btn-light{
-                width: 100%;
-                padding: 5px 28px;
-            }
+                .rating-center {
+                    flex-direction: column;
 
-            .progress__bar{
-                flex-direction: column;
-                .progress{
-                    margin-top: 0 !important; 
-                    width: 75% !important;
+                    .rating-body {
+                        margin: 0 auto;
+                    }
                 }
-                .progress-index{
-                    padding-top: 30px;
-                }
-            }
 
-            .leader-index{
-                .leader-board-content{
-                    display: none;
+                .btn-light {
+                    width: 100%;
+                    padding: 5px 28px;
                 }
-                .leader-board{
-                    flex-direction: column; 
-                    
-                    .leader-full{
-                        min-width: max-content;
+
+                .progress__bar {
+                    flex-direction: column;
+
+                    .progress {
+                        margin-top: 0 !important;
+                        width: 75% !important;
+                    }
+
+                    .progress-index {
+                        padding-top: 30px;
+                    }
+                }
+
+                .leader-index {
+                    .leader-board-content {
+                        display: none;
+                    }
+
+                    .leader-board {
+                        flex-direction: column;
+
+                        .leader-full {
+                            min-width: max-content;
+                        }
                     }
                 }
             }
         }
-       }
+    }
+
+    .course-detail-card {
+        padding-bottom: 212px;
+
+        #card {
+            width: 50% !important;
+            height: 12.5% !important;
+        }
     }
 
     .about-item {
@@ -5069,6 +5351,306 @@ footer {
         }
     }
 
+    .hero-index-product {
+        display: block;
+
+        .breadcrumb-index {
+            padding-top: 110px;
+            padding-left: 0;
+        }
+
+        .home-content {
+            padding: 29px 0;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 0rem;
+        }
+
+        .slick-dots {
+            bottom: -41px;
+
+            li {
+                width: 16px;
+                height: 16px;
+                margin: 0 3px;
+            }
+        }
+
+        .home-main {
+            padding-top: 0;
+
+            .slick-list {
+                padding-top: 0px;
+            }
+
+            .slick-list {
+                height: 125vh;
+            }
+
+            .gallery-home {
+                i {
+                    width: 70px;
+                    height: 70px;
+                    font-size: 26px;
+                    padding: 20px 27px;
+                }
+            }
+
+            .home-btn {
+                a {
+                    position: relative;
+                    max-width: 132px;
+                    padding: 7px 30px;
+                    display: block;
+                }
+
+            }
+        }
+
+        .wrapper {
+            h1 {
+                margin: initial;
+                font-weight: bold;
+                font-family: 'Futurica', sans-serif;
+                line-height: 33px !important;
+                padding-bottom: 10px;
+                padding-top: 24px;
+                font-size: 45px !important;
+            }
+
+            .description {
+                font-size: 1rem;
+                margin: 0 auto;
+            }
+        }
+
+        .video-popup {
+            margin: 0 auto;
+
+            div {
+
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .teacher-index {
+        .teacher-info {
+            text-align: center;
+            margin-bottom: 90px;
+
+            h2 {
+                font-size: 30px;
+                font-family: 'Furturica', sans-serif;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 16px;
+                max-width: 640px;
+                margin: 0 auto;
+                font-family: 'Mulish', sans-serif;
+            }
+
+            .teacher-main {
+                background: #ffffff;
+                -webkit-box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+                box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+                padding: 0;
+                margin-top: 65px;
+
+                .index-main {
+                    display: flex;
+                    padding: 45px 0 !important;
+                    flex-direction: column;
+
+                    .fullname {
+                        h1 {
+                            font-size: 30px !important;
+                        }
+                    }
+
+                    .image-content {
+                        img {
+                            width: 94% !important;
+                            height: 255px;
+                        }
+                    }
+
+
+                    .left-m {
+                        padding-right: 11px;
+                        padding-top: 12px;
+                        padding-left: 17px;
+                        order: 1;
+
+                        div {
+                            text-align: left;
+                        }
+
+                        .title {
+                            h6 {
+                                color: #543EE9;
+                                font-size: 15px;
+                                font-weight: 600;
+                                margin-bottom: 0.2rem;
+                            }
+                        }
+
+                        .fullname {
+                            padding-bottom: 14px;
+
+                            h1 {
+                                font-weight: 700;
+                                font-size: 46px;
+                                line-height: 56px;
+                                font-family: 'Futurica', sans-serif;
+                            }
+                        }
+
+                        .description {
+                            p {
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 24px;
+                                max-width: 580px;
+                                margin-bottom: 2.15rem;
+                            }
+                        }
+
+                        .subscribe-btn {
+                            a {
+                                background: #543EE9;
+                                border-radius: 30px;
+                                color: white;
+                                width: 125px;
+                                height: 40px;
+                                display: flex;
+                                text-align: center;
+                                align-items: center;
+                                justify-content: center;
+
+                            }
+                        }
+                    }
+
+                    .right-m {
+                        .image-content {
+                            text-align: left;
+
+                            img {
+                                width: 88% !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .rating-section {
+        .card {
+            display: none;
+        }
+
+        .rating-index {
+            .wrapper-main {
+                padding-left: 0;
+
+
+                ul {
+                    padding-left: 2.9rem;
+                }
+
+                .wrapper-second {
+                    .title {
+                        padding-left: 1.5rem;
+                    }
+                }
+
+                .wrapper-thirst {
+                    .accordion-button {
+                        padding-left: 1.7rem;
+                    }
+                }
+
+                .course-owner {
+                    .teacher-info {
+                        a {
+                            margin-left: auto;
+                            margin-top: 80px;
+                            margin-bottom: 30px;
+                        }
+
+                        p {
+                            max-width: 29em;
+                        }
+                    }
+                }
+
+                .rating-center {
+                    flex-direction: column;
+
+                    .rating-body {
+                        margin: 0 auto;
+                    }
+                }
+
+                .btn-light {
+                    width: 100%;
+                    padding: 5px 28px;
+                }
+
+                .progress__bar {
+                    .progress {
+                        margin-top: 32px !important;
+                        width: 75% !important;
+                        margin-left: 9px;
+                    }
+
+                    .progress-index {
+                        padding-top: 30px;
+                    }
+                }
+
+                .leader-index {
+                    .leader-board-content {
+                        display: none;
+                    }
+
+                    .leader-board {
+                        flex-direction: column;
+
+                        .leader-full {
+                            min-width: max-content;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .course-detail-card {
+        padding-bottom: 212px;
+
+        #card {
+            width: 54% !important;
+            height: 12.5% !important;
+        }
+    }
+
     .course-index-product {
         display: block;
 
@@ -5717,6 +6299,324 @@ footer {
             .card-body {
                 padding: 1rem 0.7rem;
             }
+        }
+    }
+
+    .hero-index-product {
+        display: block;
+
+        .breadcrumb-index {
+            padding-top: 110px;
+            padding-left: 0;
+        }
+
+        .home-content {
+            padding: 29px 0;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 0rem;
+        }
+
+        .slick-dots {
+            bottom: -41px;
+
+            li {
+                width: 16px;
+                height: 16px;
+                margin: 0 3px;
+            }
+        }
+
+        .home-main {
+            padding-top: 0;
+
+            .slick-list {
+                padding-top: 0px;
+            }
+
+            .slick-list {
+                height: 125vh;
+            }
+
+            .gallery-home {
+                i {
+                    width: 70px;
+                    height: 70px;
+                    font-size: 26px;
+                    padding: 20px 27px;
+                }
+            }
+
+            .home-btn {
+                a {
+                    position: relative;
+                    max-width: 132px;
+                    padding: 7px 30px;
+                    display: block;
+                }
+
+            }
+        }
+
+        .wrapper {
+            margin-bottom: 68px;
+
+            h1 {
+                margin: initial;
+                font-weight: bold;
+                font-family: 'Futurica', sans-serif;
+                line-height: 33px !important;
+                padding-bottom: 10px;
+                padding-top: 24px;
+                font-size: 45px !important;
+            }
+
+            .description {
+                max-width: 474px;
+                font-size: 1rem;
+            }
+        }
+
+        .video-popup {
+            margin: 0 auto;
+
+            div {
+
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .rating-section {
+        .card {
+            display: none;
+        }
+
+        .rating-index {
+            .wrapper-main {
+                padding-left: 0;
+
+
+                ul {
+                    padding-left: 2.9rem;
+                }
+
+                .wrapper-second {
+                    .title {
+                        padding-left: 1.5rem;
+                    }
+                }
+
+                .course-owner {
+                    .title {
+                        font-size: 32px;
+                        font-family: 'Furturica', sans-serif;
+                    }
+                }
+
+                .wrapper-thirst {
+                    .accordion-button {
+                        padding-left: 1.7rem;
+                    }
+                }
+
+                .course-owner {
+                    .teacher-info {
+                        a {
+                            margin-left: auto;
+                            margin-top: 80px;
+                            margin-bottom: 30px;
+                        }
+
+                        p {
+                            max-width: 29em;
+                        }
+                    }
+                }
+
+                .rating-center {
+                    flex-direction: column;
+
+                    .rating-body {
+                        margin: 0 auto;
+                    }
+                }
+
+                .btn-light {
+                    width: 100%;
+                    padding: 5px 28px;
+                }
+
+                .progress__bar {
+                    justify-content: center;
+
+                    .progress {
+                        margin-top: 32px !important;
+                        width: 51% !important;
+                        margin-left: 9px;
+                    }
+
+                    .progress-index {
+                        width: 15%;
+                        padding-top: 30px;
+                    }
+                }
+
+                .leader-index {
+                    .leader-board-content {
+                        display: none;
+                    }
+
+                    .leader-board {
+                        flex-direction: column;
+
+                        .leader-full {
+                            min-width: max-content;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .course-detail-card {
+        padding-bottom: 212px;
+
+        #card {
+            width: 49% !important;
+            height: 12.5% !important;
+        }
+    }
+
+    .teacher-index {
+        .teacher-info {
+            text-align: center;
+            margin-bottom: 90px;
+
+            h2 {
+                font-size: 30px;
+                font-family: 'Furturica', sans-serif;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 16px;
+                max-width: 640px;
+                margin: 0 auto;
+                font-family: 'Mulish', sans-serif;
+            }
+
+            .teacher-main {
+                background: #ffffff;
+                -webkit-box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+                box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+                padding: 0;
+                margin-top: 65px;
+
+                .index-main {
+                    display: flex;
+                    padding: 45px 0 !important;
+                    flex-direction: column;
+
+                    .fullname {
+                        h1 {
+                            font-size: 30px !important;
+                        }
+                    }
+
+                    .image-content {
+                        img {
+                            width: 94% !important;
+                            height: 255px;
+                        }
+                    }
+
+
+                    .left-m {
+                        padding-right: 11px;
+                        padding-top: 12px;
+                        padding-left: 17px;
+
+                        div {
+                            text-align: left;
+                        }
+
+                        .title {
+                            h6 {
+                                color: #543EE9;
+                                font-size: 15px;
+                                font-weight: 600;
+                                margin-bottom: 0.2rem;
+                            }
+                        }
+
+                        .description{
+                            p{
+                                margin: 0;
+                            }
+                        }
+
+                        .fullname {
+                            padding-bottom: 14px;
+
+                            h1 {
+                                font-weight: 700;
+                                font-size: 46px;
+                                line-height: 56px;
+                                font-family: 'Futurica', sans-serif;
+                            }
+                        }
+
+                        .description {
+                            p {
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 24px;
+                                max-width: 580px;
+                                margin-bottom: 2.15rem;
+                            }
+                        }
+
+                        .subscribe-btn {
+                            a {
+                                background: #543EE9;
+                                border-radius: 30px;
+                                color: white;
+                                width: 125px;
+                                height: 40px;
+                                display: flex;
+                                text-align: center;
+                                align-items: center;
+                                justify-content: center;
+
+                            }
+                        }
+                    }
+
+                    .right-m {
+                        padding-top: 40px;
+                        .image-content {
+                            text-align: left;
+
+                            img {
+                                width: 64% !important;
+                            }
+                        }
+                    }
+                }
+            }
+
         }
     }
 
@@ -6767,6 +7667,323 @@ footer {
         }
     }
 
+    .hero-index-product {
+        height: 710px;
+        display: block;
+
+        .breadcrumb-index {
+            padding-top: 110px;
+            padding-left: 0;
+        }
+
+        .home-content {
+            padding: 29px 0;
+            gap: 0rem;
+        }
+
+        .slick-dots {
+            bottom: -41px;
+
+            li {
+                width: 16px;
+                height: 16px;
+                margin: 0 3px;
+            }
+        }
+
+        .home-main {
+            padding-top: 0;
+
+            .slick-list {
+                padding-top: 0px;
+            }
+
+            .slick-list {
+                height: 125vh;
+            }
+
+            .gallery-home {
+                i {
+                    width: 70px;
+                    height: 70px;
+                    font-size: 26px;
+                    padding: 20px 27px;
+                }
+            }
+
+            .home-btn {
+                a {
+                    position: relative;
+                    max-width: 132px;
+                    padding: 7px 30px;
+                    display: block;
+                }
+
+            }
+        }
+
+        .wrapper {
+            width: 50%;
+            margin-bottom: 68px;
+
+            h1 {
+                margin: initial;
+                font-weight: bold;
+                font-family: 'Futurica', sans-serif;
+                line-height: 33px !important;
+                padding-bottom: 25px;
+                padding-top: 24px;
+                font-size: 45px !important;
+            }
+
+            .description {
+                max-width: 474px;
+                font-size: 1rem;
+            }
+        }
+
+        .video-popup {
+            width: 50% !important;
+            margin: 0 auto;
+
+            div {
+
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .teacher-index {
+        .teacher-info {
+            text-align: center;
+            margin-bottom: 90px;
+
+            h2 {
+                font-size: 30px;
+                font-family: 'Furturica', sans-serif;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 16px;
+                max-width: 640px;
+                margin: 0 auto;
+                font-family: 'Mulish', sans-serif;
+            }
+
+            .teacher-main {
+                background: #ffffff;
+                -webkit-box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+                box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+                padding: 0;
+                margin-top: 65px;
+
+                .index-main {
+                    display: flex;
+                    padding: 45px 0 !important;
+
+                    .fullname {
+                        h1 {
+                            font-size: 30px !important;
+                        }
+                    }
+
+                    .image-content {
+                        img {
+                            width: 94% !important;
+                            height: 255px;
+                        }
+                    }
+
+
+                    .left-m {
+                        width: 50%;
+                        padding-right: 11px;
+                        padding-top: 12px;
+                        padding-left: 17px;
+
+                        div {
+                            text-align: left;
+                        }
+
+                        .title {
+                            h6 {
+                                color: #543EE9;
+                                font-size: 15px;
+                                font-weight: 600;
+                                margin-bottom: 0.2rem;
+                            }
+                        }
+
+                        .description{
+                            p{
+                                margin: 0;
+                            }
+                        }
+
+                        .fullname {
+                            padding-bottom: 14px;
+
+                            h1 {
+                                font-weight: 700;
+                                font-size: 46px;
+                                line-height: 56px;
+                                font-family: 'Futurica', sans-serif;
+                            }
+                        }
+
+                        .description {
+                            p {
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 24px;
+                                max-width: 580px;
+                                margin-bottom: 2.15rem;
+                            }
+                        }
+
+                        .subscribe-btn {
+                            a {
+                                background: #543EE9;
+                                border-radius: 30px;
+                                color: white;
+                                width: 125px;
+                                height: 40px;
+                                display: flex;
+                                text-align: center;
+                                align-items: center;
+                                justify-content: center;
+
+                            }
+                        }
+                    }
+
+                    .right-m {
+                        width: 50%;
+                        padding-top: 40px;
+                        .image-content {
+                            text-align: left;
+
+                            img {
+                                width: 88% !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .rating-section {
+
+        .rating-index {
+            .card {
+                height: 19%;
+            }
+
+            .wrapper-main {
+                padding-left: 30px;
+
+                ul {
+                    padding-left: 2.9rem;
+                }
+
+                .wrapper-second {
+                    .title {
+                        padding-left: 1.5rem;
+                    }
+                }
+
+                .course-owner {
+                    .title {
+                        font-size: 32px;
+                        font-family: 'Furturica', sans-serif;
+                    }
+                }
+
+                .wrapper-thirst {
+                    .accordion-button {
+                        padding-left: 1.7rem;
+                    }
+                }
+
+                .course-owner {
+                    .teacher-info {
+                        a {
+                            margin-left: auto;
+                            margin-top: 80px;
+                            margin-bottom: 30px;
+                        }
+
+                        p {
+                            max-width: 29em;
+                        }
+                    }
+                }
+
+                .rating-center {
+                    align-items: center;
+
+                    .rating-body {
+                        margin: 0 auto;
+                    }
+                }
+
+                .btn-light {
+                    width: 83%;
+                    padding: 5px 28px;
+                }
+
+                .progress__bar {
+                    .progress {
+                        margin-top: 40px !important;
+                        width: 51% !important;
+                        margin-left: 22px;
+                    }
+
+                    .progress-index {
+                        width: 15%;
+                        padding-top: 30px;
+                    }
+                }
+
+                .leader-index {
+                    .leader-board-content {
+                        display: none;
+                    }
+
+                    .leader-board {
+
+                        .leader-full {
+                            min-width: 260px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .course-detail-card {
+        padding-bottom: 212px;
+
+        #card {
+            width: 23% !important;
+            height: 49.5% !important;
+        }
+    }
+
     .course-index-product {
         height: 100%;
 
@@ -7012,7 +8229,6 @@ footer {
 
     .main-section {
         .index-main {
-
             img {
                 width: 100%;
             }
@@ -7592,6 +8808,128 @@ footer {
 
     }
 
+    .teacher-index {
+        .teacher-info {
+            text-align: center;
+            margin-bottom: 90px;
+
+            h2 {
+                font-size: 30px;
+                font-family: 'Furturica', sans-serif;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 16px;
+                max-width: 640px;
+                margin: 0 auto;
+                font-family: 'Mulish', sans-serif;
+            }
+
+            .teacher-main {
+                background: #ffffff;
+                -webkit-box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+                box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+                padding: 0;
+                margin-top: 65px;
+
+                .index-main {
+                    display: flex;
+                    padding: 45px 35px !important;
+
+                    .fullname {
+                        h1 {
+                            font-size: 30px !important;
+                        }
+                    }
+
+                    .image-content {
+                        img {
+                            width: 94% !important;
+                            height: 255px;
+                        }
+                    }
+
+
+                    .left-m {
+                        width: 50%;
+                        padding-right: 11px;
+                        padding-top: 12px;
+                        padding-left: 17px;
+
+                        div {
+                            text-align: left;
+                        }
+
+                        .title {
+                            h6 {
+                                color: #543EE9;
+                                font-size: 15px;
+                                font-weight: 600;
+                                margin-bottom: 0.2rem;
+                            }
+                        }
+
+                        .description{
+                            p{
+                                margin: 0;
+                            }
+                        }
+
+                        .fullname {
+                            padding-bottom: 14px;
+
+                            h1 {
+                                font-weight: 700;
+                                font-size: 46px;
+                                line-height: 56px;
+                                font-family: 'Futurica', sans-serif;
+                            }
+                        }
+
+                        .description {
+                            p {
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 24px;
+                                max-width: 580px;
+                                margin-bottom: 2.15rem;
+                            }
+                        }
+
+                        .subscribe-btn {
+                            a {
+                                background: #543EE9;
+                                border-radius: 30px;
+                                color: white;
+                                width: 125px;
+                                height: 40px;
+                                display: flex;
+                                text-align: center;
+                                align-items: center;
+                                justify-content: center;
+
+                            }
+                        }
+                    }
+
+                    .right-m {
+                        width: 50%;
+                        padding-top: 40px;
+                        .image-content {
+                            text-align: center;
+
+                            img {
+                                width: 88% !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
     .hero-index-about {
         height: 100%;
 
@@ -7678,6 +9016,203 @@ footer {
             }
         }
     }
+
+
+    .hero-index-product {
+        height: 745px;
+        display: block;
+
+        .breadcrumb-index {
+            padding-top: 110px;
+            padding-left: 0;
+        }
+
+        .home-content {
+            padding: 29px 0;
+            gap: 0rem;
+        }
+
+        .slick-dots {
+            bottom: -41px;
+
+            li {
+                width: 16px;
+                height: 16px;
+                margin: 0 3px;
+            }
+        }
+
+        .home-main {
+            padding-top: 0;
+
+            .slick-list {
+                padding-top: 0px;
+            }
+
+            .slick-list {
+                height: 125vh;
+            }
+
+            .gallery-home {
+                i {
+                    width: 70px;
+                    height: 70px;
+                    font-size: 26px;
+                    padding: 20px 27px;
+                }
+            }
+
+            .home-btn {
+                a {
+                    position: relative;
+                    max-width: 132px;
+                    padding: 7px 30px;
+                    display: block;
+                }
+
+            }
+        }
+
+        .wrapper {
+            width: 50%;
+            margin-bottom: 68px;
+
+            h1 {
+                margin: initial;
+                font-weight: bold;
+                font-family: 'Futurica', sans-serif;
+                line-height: 33px !important;
+                padding-bottom: 25px;
+                padding-top: 24px;
+                font-size: 45px !important;
+            }
+
+            .description {
+                max-width: 440px !important;
+                font-size: 1rem;
+            }
+        }
+
+        .video-popup {
+            width: 50% !important;
+            margin: 0 auto;
+
+            div {
+
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .rating-section {
+
+        .rating-index {
+            .card {
+                height: 20%;
+            }
+
+            .wrapper-main {
+                padding-left: 30px;
+
+                ul {
+                    padding-left: 2.9rem;
+                }
+
+                .wrapper-second {
+                    .title {
+                        padding-left: 1.5rem;
+                    }
+                }
+
+                .course-owner {
+                    .title {
+                        font-size: 32px;
+                        font-family: 'Furturica', sans-serif;
+                    }
+                }
+
+                .wrapper-thirst {
+                    .accordion-button {
+                        padding-left: 1.7rem;
+                    }
+                }
+
+                .course-owner {
+                    .teacher-info {
+                        a {
+                            margin-left: auto;
+                            margin-top: 80px;
+                            margin-bottom: 30px;
+                        }
+
+                        p {
+                            max-width: 29em;
+                        }
+                    }
+                }
+
+                .rating-center {
+                    align-items: center;
+
+                    .rating-body {
+                        margin: 0 auto;
+                    }
+                }
+
+                .btn-light {
+                    width: 83%;
+                    padding: 5px 28px;
+                }
+
+                .progress__bar {
+                    .progress {
+                        margin-top: 40px !important;
+                        width: 51% !important;
+                        margin-left: 22px;
+                    }
+
+                    .progress-index {
+                        width: 15%;
+                        padding-top: 30px;
+                    }
+                }
+
+                .leader-index {
+                    .leader-board-content {
+                        display: none;
+                    }
+
+                    .leader-board {
+
+                        .leader-full {
+                            min-width: 260px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .course-detail-card {
+        padding-bottom: 212px;
+
+        #card {
+            width: 23% !important;
+            height: 49.5% !important;
+        }
+    }
+
 
     .course-index-product {
         height: 100%;
@@ -8376,6 +9911,302 @@ footer {
         }
 
 
+    }
+
+    .hero-index-product {
+        height: 745px;
+        display: block;
+
+        .breadcrumb-index {
+            padding-top: 110px;
+            padding-left: 0;
+        }
+
+        .home-content {
+            padding: 29px 0;
+            gap: 0rem;
+        }
+
+        .slick-dots {
+            bottom: -41px;
+
+            li {
+                width: 16px;
+                height: 16px;
+                margin: 0 3px;
+            }
+        }
+
+        .home-main {
+            padding-top: 0;
+
+            .slick-list {
+                padding-top: 0px;
+            }
+
+            .slick-list {
+                height: 125vh;
+            }
+
+            .gallery-home {
+                i {
+                    width: 70px;
+                    height: 70px;
+                    font-size: 26px;
+                    padding: 20px 27px;
+                }
+            }
+
+            .home-btn {
+                a {
+                    position: relative;
+                    max-width: 132px;
+                    padding: 7px 30px;
+                    display: block;
+                }
+
+            }
+        }
+
+        .wrapper {
+            width: 50%;
+            margin-bottom: 68px;
+
+            h1 {
+                margin: initial;
+                font-weight: bold;
+                font-family: 'Futurica', sans-serif;
+                line-height: 33px !important;
+                padding-bottom: 25px;
+                padding-top: 24px;
+                font-size: 45px !important;
+            }
+
+            .description {
+                max-width: 440px !important;
+                font-size: 1rem;
+            }
+        }
+
+        .video-popup {
+            width: 50% !important;
+            margin: 0 auto;
+
+            div {
+
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .teacher-main {
+        background: #ffffff;
+        -webkit-box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+        box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+        padding: 0;
+        margin-top: 65px;
+
+        .index-main {
+            display: flex;
+            padding: 45px 65px !important;
+
+            .fullname {
+                h1 {
+                    font-size: 30px !important;
+                }
+            }
+
+            .image-content {
+                img {
+                    width: 94% !important;
+                    height: 255px;
+                }
+            }
+
+
+            .left-m {
+                width: 50%;
+                padding-right: 11px;
+                padding-top: 12px;
+                padding-left: 17px;
+
+                div {
+                    text-align: left;
+                }
+
+                .title {
+                    h6 {
+                        color: #543EE9;
+                        font-size: 15px;
+                        font-weight: 600;
+                        margin-bottom: 0.2rem;
+                    }
+                }
+
+                .description{
+                    p{
+                        margin: 0;
+                    }
+                }
+
+                .fullname {
+                    padding-bottom: 14px;
+
+                    h1 {
+                        font-weight: 700;
+                        font-size: 46px;
+                        line-height: 56px;
+                        font-family: 'Futurica', sans-serif;
+                    }
+                }
+
+                .description {
+                    p {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        max-width: 580px;
+                        margin-bottom: 2.15rem;
+                    }
+                }
+
+                .subscribe-btn {
+                    a {
+                        background: #543EE9;
+                        border-radius: 30px;
+                        color: white;
+                        width: 125px;
+                        height: 40px;
+                        display: flex;
+                        text-align: center;
+                        align-items: center;
+                        justify-content: center;
+
+                    }
+                }
+            }
+
+            .right-m {
+                width: 50%;
+                padding-top: 40px;
+                .image-content {
+                    text-align: center;
+
+                    img {
+                        width: 88% !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .rating-section {
+
+        .rating-index {
+            .card {
+                height: 20%;
+            }
+
+            .wrapper-main {
+                padding-left: 30px;
+
+                ul {
+                    padding-left: 2.9rem;
+                }
+
+                .wrapper-second {
+                    .title {
+                        padding-left: 1.5rem;
+                    }
+                }
+
+                .course-owner {
+                    .title {
+                        font-size: 32px;
+                        font-family: 'Furturica', sans-serif;
+                    }
+                }
+
+                .wrapper-thirst {
+                    .accordion-button {
+                        padding-left: 1.7rem;
+                    }
+                }
+
+                .course-owner {
+                    .teacher-info {
+                        a {
+                            margin-left: auto;
+                            margin-top: 80px;
+                            margin-bottom: 30px;
+                        }
+
+                        p {
+                            max-width: 29em;
+                        }
+                    }
+                }
+
+                .rating-center {
+                    align-items: center;
+
+                    .rating-body {
+                        margin: 0 auto;
+                    }
+                }
+
+                .btn-light {
+                    width: 83%;
+                    padding: 5px 28px;
+                }
+
+                .progress__bar {
+                    .progress {
+                        margin-top: 40px !important;
+                        width: 51% !important;
+                        margin-left: 22px;
+                    }
+
+                    .progress-index {
+                        width: 15%;
+                        padding-top: 30px;
+                    }
+                }
+
+                .leader-index {
+                    .leader-board-content {
+                        display: none;
+                    }
+
+                    .leader-board {
+
+                        .leader-full {
+                            min-width: 260px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .course-detail-card {
+        padding-bottom: 212px;
+
+        #card {
+            width: 23% !important;
+            height: 49.5% !important;
+        }
     }
 
     .about-item {
