@@ -2038,6 +2038,46 @@ header {
   -webkit-clip-path: polygon(100% 28%, 0 100%, 100% 100%);
   clip-path: polygon(100% 28%, 0 100%, 100% 100%);
 }
+.grade-card .all-grade {
+  padding-top: 119px;
+}
+.grade-card .all-grade h2 {
+  font-size: 30px;
+  font-family: "Furturica", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+.grade-card .all-grade .subtitle {
+  font-size: 16px;
+  max-width: 640px;
+  margin: 0 auto;
+  font-family: "Mulish", sans-serif;
+  text-align: center;
+}
+.grade-card .all-grade .card-item {
+  padding-bottom: 95px;
+}
+.grade-card .all-grade .breadcrumb {
+  align-items: center;
+}
+.grade-card .all-grade .breadcrumb-item::before {
+  content: "";
+  margin-top: 10px;
+  margin-right: 10px;
+  background: #3ad4d8;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+.grade-card .all-grade .breadcrumb-item a {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+.grade-card .all-grade .breadcrumb-item:last-child {
+  font-family: "Mulish", sans-serif;
+  color: #fe5538;
+  font-weight: bold;
+}
 .grade-card .slick-next,
 .grade-card .slick-prev {
   display: none;
@@ -2158,6 +2198,10 @@ header {
   gap: 1rem;
   justify-content: center;
   padding-top: 58px;
+}
+
+#grade-card-index::before {
+  position: static;
 }
 
 .home-course-index {
@@ -2664,6 +2708,29 @@ footer .last-footer div span {
   font-weight: bold;
 }
 
+.breadcrumb {
+  align-items: center;
+}
+
+.breadcrumb-item::before {
+  content: "" !important;
+  margin-top: 10px;
+  margin-right: 10px;
+  background: #3ad4d8;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+.breadcrumb-item a {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+.breadcrumb-item:last-child {
+  font-family: "Mulish", sans-serif;
+  color: #fe5538;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 576px) {
   .top-header h6 {
     font-size: 12px;
@@ -2903,6 +2970,167 @@ footer .last-footer div span {
   }
   .hero-index-about .video-popup img {
     width: 100%;
+  }
+  .all-grade {
+    padding-top: 119px;
+  }
+  .all-grade h2 {
+    font-size: 30px;
+    font-family: "Furturica", sans-serif;
+    font-weight: bold;
+    text-align: center;
+  }
+  .all-grade .subtitle {
+    font-size: 16px;
+    max-width: 640px;
+    margin: 0 auto;
+    font-family: "Mulish", sans-serif;
+    text-align: center;
+  }
+  .all-grade .card-item {
+    padding-bottom: 95px;
+    flex-wrap: wrap;
+  }
+  .all-grade .card {
+    width: 70% !important;
+  }
+  .all-grade .breadcrumb {
+    align-items: center;
+  }
+  .all-grade .breadcrumb-item::before {
+    content: "";
+    margin-top: 10px;
+    margin-right: 10px;
+    background: #3ad4d8;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+  .all-grade .breadcrumb-item a {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+  }
+  .all-grade .breadcrumb-item:last-child {
+    font-family: "Mulish", sans-serif;
+    color: #fe5538;
+    font-weight: bold;
+  }
+  #news-card-index .card-item {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #news-card-index .card-item .card {
+    width: 63% !important;
+    height: 31% !important;
+  }
+  #news-card-index .card-item .card .card-body {
+    padding: 1rem 1.4rem;
+  }
+  #news-card-index .card-item .card .card-body .card-text {
+    margin-bottom: 2rem;
+  }
+  #news-card-index .card-item .card .card-body .bottom-content {
+    padding-bottom: 10px;
+  }
+  #news-card-index .card-item .card .card-body .bottom-content p {
+    margin-bottom: 0;
+  }
+  #news-card-index .card-item .card .card-body span {
+    color: #fe5538;
+    font-weight: 700;
+    font-family: "Mulish", sans-serif;
+  }
+  #news-card-index .card-item .card .card-body .link-card {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-align: center;
+  }
+  #news-card-index .card-item .card .card-body .link-card i {
+    margin-top: 6px;
+  }
+  #news-card-index .card-item .card-title-second {
+    line-height: 25px !important;
+    transition: 0.5s ease-in-out;
+    color: black;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 27em;
+  }
+  #book__card .square {
+    display: none;
+  }
+  #book__card .subtitle {
+    max-width: 518px;
+  }
+  #book__card .square-first {
+    display: none;
+  }
+  #book__card .square-second {
+    display: none;
+  }
+  #book__card .breadcrumb {
+    align-items: center;
+  }
+  #book__card .breadcrumb-item::before {
+    content: "";
+    margin-top: 10px;
+    margin-right: 10px;
+    background: #3ad4d8;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+  #book__card .breadcrumb-item a {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+  }
+  #book__card .breadcrumb-item:last-child {
+    font-family: "Mulish", sans-serif;
+    color: #fe5538;
+    font-weight: bold;
+  }
+  #book__card #book-card-index {
+    flex-wrap: wrap;
+  }
+  #book__card #book-card-index .card {
+    margin-top: 0;
+    height: 33% !important;
+  }
+  #book__card #book-card-index .card img {
+    height: 280px;
+    width: 100%;
+  }
+  #book__card #book-card-index .card .card-body {
+    height: 205px;
+  }
+  #certification__card-index .card {
+    width: 265px !important;
+    height: 35% !important;
+  }
+  #certification__card-index .card img {
+    margin: 0 auto;
+    max-width: 170px;
+    max-height: 230px;
+    width: 100%;
+    border: 0.5px solid #181818;
+    border-radius: 10px;
+    padding: 0;
+    margin-top: 24px;
+  }
+  #certification__card-index .card-item {
+    padding-bottom: 30px !important;
+    flex-wrap: wrap;
+  }
+  #certification__card-index .breadcrumb-index {
+    padding-top: 80px;
+  }
+  #certification__card-index .subtitle {
+    max-width: 480px;
   }
   .hero-index-product {
     display: block;
@@ -3811,6 +4039,79 @@ footer .last-footer div span {
   .top-header .icon-header {
     display: none !important;
   }
+  #certification__card-index .card {
+    width: 49% !important;
+    height: 35% !important;
+  }
+  #certification__card-index .card img {
+    margin: 0 auto;
+    max-width: 170px;
+    max-height: 230px;
+    width: 100%;
+    border: 0.5px solid #181818;
+    border-radius: 10px;
+    padding: 0;
+    margin-top: 24px;
+  }
+  #certification__card-index .card-item {
+    flex-wrap: wrap;
+    padding-bottom: 30px !important;
+  }
+  #certification__card-index .breadcrumb-index {
+    padding-top: 80px;
+  }
+  #certification__card-index .subtitle {
+    max-width: 480px;
+  }
+  #news-card-index {
+    padding: 120px 0;
+  }
+  #news-card-index .card-item {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #news-card-index .card-item .card {
+    width: 63% !important;
+    height: 31% !important;
+  }
+  #news-card-index .card-item .card .card-body {
+    padding: 1rem 1.4rem;
+  }
+  #news-card-index .card-item .card .card-body .card-text {
+    margin-bottom: 2rem;
+  }
+  #news-card-index .card-item .card .card-body .bottom-content {
+    padding-bottom: 18px;
+  }
+  #news-card-index .card-item .card .card-body .bottom-content p {
+    margin-bottom: 0;
+  }
+  #news-card-index .card-item .card .card-body span {
+    color: #fe5538;
+    font-weight: 700;
+    font-family: "Mulish", sans-serif;
+  }
+  #news-card-index .card-item .card .card-body .link-card {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-align: center;
+  }
+  #news-card-index .card-item .card .card-body .link-card i {
+    margin-top: 6px;
+  }
+  #news-card-index .card-item .card-title-second {
+    line-height: 25px !important;
+    transition: 0.5s ease-in-out;
+    color: black;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 27em;
+  }
   .header-main .slick-dots {
     bottom: -44px;
   }
@@ -3921,6 +4222,50 @@ footer .last-footer div span {
     padding-left: 13px;
     color: black !important;
     margin-bottom: 12px;
+  }
+  #book__card .square {
+    display: none;
+  }
+  #book__card .subtitle {
+    max-width: 518px;
+  }
+  #book__card .breadcrumb-item::before {
+    content: "";
+    margin-top: 10px;
+    margin-right: 10px;
+    background: #3ad4d8;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+  #book__card .breadcrumb-item a {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+  }
+  #book__card .breadcrumb-item:last-child {
+    font-family: "Mulish", sans-serif;
+    color: #fe5538;
+    font-weight: bold;
+  }
+  #book__card .square-first {
+    display: none;
+  }
+  #book__card .square-second {
+    display: none;
+  }
+  #book__card #book-card-index {
+    flex-wrap: wrap;
+  }
+  #book__card #book-card-index .card {
+    margin-top: 0;
+    height: 33% !important;
+  }
+  #book__card #book-card-index .card img {
+    height: 280px;
+    width: 100%;
+  }
+  #book__card #book-card-index .card .card-body {
+    height: 205px;
   }
   .course-card .subtitle {
     max-width: 465px;
@@ -4236,6 +4581,53 @@ footer .last-footer div span {
   .rating-section .rating-index .wrapper-main .leader-index .leader-board .leader-full {
     min-width: -moz-max-content;
     min-width: max-content;
+  }
+  .all-grade {
+    padding-top: 119px;
+  }
+  .all-grade h2 {
+    font-size: 30px;
+    font-family: "Furturica", sans-serif;
+    font-weight: bold;
+    text-align: center;
+  }
+  .all-grade .subtitle {
+    font-size: 16px;
+    max-width: 640px;
+    margin: 0 auto;
+    font-family: "Mulish", sans-serif;
+    text-align: center;
+  }
+  .all-grade .card-item {
+    padding-bottom: 95px;
+    flex-wrap: wrap;
+  }
+  .all-grade .card {
+    width: 48% !important;
+  }
+  .all-grade .card .card-title-second {
+    font-size: 19px;
+  }
+  .all-grade .breadcrumb {
+    align-items: center;
+  }
+  .all-grade .breadcrumb-item::before {
+    content: "";
+    margin-top: 10px;
+    margin-right: 10px;
+    background: #3ad4d8;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+  .all-grade .breadcrumb-item a {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+  }
+  .all-grade .breadcrumb-item:last-child {
+    font-family: "Mulish", sans-serif;
+    color: #fe5538;
+    font-weight: bold;
   }
   .course-detail-card {
     padding-bottom: 212px;
@@ -4704,6 +5096,80 @@ footer .last-footer div span {
   .course-card .card .card-body {
     padding: 1rem 0.7rem;
   }
+  #certification__card-index .card {
+    width: 33% !important;
+    height: 50.5% !important;
+  }
+  #certification__card-index .card img {
+    margin: 0 auto;
+    max-width: 170px;
+    max-height: 230px;
+    width: 100%;
+    border: 0.5px solid #181818;
+    border-radius: 10px;
+    padding: 0;
+    margin-top: 24px;
+  }
+  #certification__card-index .card-item {
+    flex-wrap: wrap;
+    gap: 2.4rem;
+    padding-bottom: 30px !important;
+  }
+  #certification__card-index .breadcrumb-index {
+    padding-top: 80px;
+  }
+  #certification__card-index .subtitle {
+    max-width: 645px;
+  }
+  #news-card-index {
+    padding: 120px 0;
+  }
+  #news-card-index .card-item {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #news-card-index .card-item .card {
+    width: 48% !important;
+    height: 49% !important;
+  }
+  #news-card-index .card-item .card .card-body {
+    padding: 1rem 1.4rem;
+  }
+  #news-card-index .card-item .card .card-body .card-text {
+    margin-bottom: 2rem;
+  }
+  #news-card-index .card-item .card .card-body .bottom-content {
+    padding-bottom: 18px;
+  }
+  #news-card-index .card-item .card .card-body .bottom-content p {
+    margin-bottom: 0;
+  }
+  #news-card-index .card-item .card .card-body span {
+    color: #fe5538;
+    font-weight: 700;
+    font-family: "Mulish", sans-serif;
+  }
+  #news-card-index .card-item .card .card-body .link-card {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-align: center;
+  }
+  #news-card-index .card-item .card .card-body .link-card i {
+    margin-top: 6px;
+  }
+  #news-card-index .card-item .card-title-second {
+    line-height: 25px !important;
+    transition: 0.5s ease-in-out;
+    color: black;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 27em;
+  }
   .hero-index-product {
     display: block;
   }
@@ -4922,6 +5388,100 @@ footer .last-footer div span {
   }
   .teacher-index .teacher-info .teacher-main .index-main .right-m .image-content img {
     width: 64% !important;
+  }
+  .breadcrumb-item::before {
+    content: "" !important;
+    margin-top: 10px;
+    margin-right: 10px;
+    background: #3ad4d8;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+  .breadcrumb-item a {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+  }
+  .breadcrumb-item:last-child {
+    font-family: "Mulish", sans-serif;
+    color: #fe5538;
+    font-weight: bold;
+  }
+  .all-grade {
+    padding-top: 119px;
+  }
+  .all-grade h2 {
+    font-size: 30px;
+    font-family: "Furturica", sans-serif;
+    font-weight: bold;
+    text-align: center;
+  }
+  .all-grade .subtitle {
+    font-size: 16px;
+    max-width: 640px;
+    margin: 0 auto;
+    font-family: "Mulish", sans-serif;
+    text-align: center;
+  }
+  .all-grade .card-item {
+    padding-bottom: 95px;
+    flex-wrap: wrap;
+  }
+  .all-grade .card {
+    width: 31% !important;
+  }
+  .all-grade .card .card-title-second {
+    font-size: 21px;
+  }
+  .all-grade .breadcrumb {
+    align-items: center;
+  }
+  .all-grade .breadcrumb-item::before {
+    content: "";
+    margin-top: 10px;
+    margin-right: 10px;
+    background: #3ad4d8;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+  .all-grade .breadcrumb-item a {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+  }
+  .all-grade .breadcrumb-item:last-child {
+    font-family: "Mulish", sans-serif;
+    color: #fe5538;
+    font-weight: bold;
+  }
+  #book__card .square {
+    display: none;
+  }
+  #book__card .subtitle {
+    max-width: 518px;
+  }
+  #book__card .square-first {
+    display: none;
+  }
+  #book__card .square-second {
+    display: none;
+  }
+  #book__card .card-item {
+    gap: 0;
+  }
+  #book__card #book-card-index {
+    flex-wrap: wrap;
+  }
+  #book__card #book-card-index .card {
+    margin-top: 0;
+    height: 33% !important;
+  }
+  #book__card #book-card-index .card img {
+    height: 325px;
+    width: 100%;
+  }
+  #book__card #book-card-index .card .card-body {
+    height: 205px;
   }
   .book__card .slick-prev,
   .book__card .slick-next {
@@ -5707,6 +6267,55 @@ footer .last-footer div span {
   .hero-index-product .video-popup img {
     width: 100%;
   }
+  #news-card-index {
+    padding: 120px 0;
+  }
+  #news-card-index .card-item {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #news-card-index .card-item .card {
+    width: 32% !important;
+    height: 100% !important;
+  }
+  #news-card-index .card-item .card .card-body {
+    padding: 1rem 1.4rem;
+  }
+  #news-card-index .card-item .card .card-body .card-text {
+    margin-bottom: 2rem;
+  }
+  #news-card-index .card-item .card .card-body .bottom-content {
+    padding-bottom: 18px;
+  }
+  #news-card-index .card-item .card .card-body .bottom-content p {
+    margin-bottom: 0;
+  }
+  #news-card-index .card-item .card .card-body span {
+    color: #fe5538;
+    font-weight: 700;
+    font-family: "Mulish", sans-serif;
+  }
+  #news-card-index .card-item .card .card-body .link-card {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-align: center;
+  }
+  #news-card-index .card-item .card .card-body .link-card i {
+    margin-top: 6px;
+  }
+  #news-card-index .card-item .card-title-second {
+    line-height: 25px !important;
+    transition: 0.5s ease-in-out;
+    color: black;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 27em;
+  }
   .teacher-index .teacher-info {
     text-align: center;
     margin-bottom: 90px;
@@ -5999,6 +6608,82 @@ footer .last-footer div span {
   }
   .book__card .card img {
     width: 50%;
+  }
+  #book__card .square {
+    display: none;
+  }
+  #book__card .subtitle {
+    max-width: 518px;
+  }
+  #book__card .square-first {
+    display: none;
+  }
+  #book__card .square-second {
+    display: none;
+  }
+  #book__card .breadcrumb-item::before {
+    content: "" !important;
+    margin-top: 10px;
+    margin-right: 10px;
+    background: #3ad4d8;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+  #book__card .breadcrumb-item a {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+  }
+  #book__card .breadcrumb-item:last-child {
+    font-family: "Mulish", sans-serif;
+    color: #fe5538;
+    font-weight: bold;
+  }
+  #book__card .card-item {
+    gap: 0;
+  }
+  #book__card #book-card-index {
+    flex-wrap: wrap;
+  }
+  #book__card #book-card-index .card {
+    margin-top: 0;
+    width: 50% !important;
+    height: 33% !important;
+  }
+  #book__card #book-card-index .card img {
+    height: 325px;
+    width: 100%;
+  }
+  #book__card #book-card-index .card .card-body {
+    height: 269px;
+    padding: 30px 0;
+    width: 52%;
+  }
+  #certification__card-index .card {
+    width: 23% !important;
+    height: 100% !important;
+  }
+  #certification__card-index .card img {
+    margin: 0 auto;
+    max-width: 170px;
+    max-height: 230px;
+    width: 100%;
+    border: 0.5px solid #181818;
+    border-radius: 10px;
+    padding: 0;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  #certification__card-index .card-item {
+    flex-wrap: wrap;
+    gap: 1.8rem;
+    padding-bottom: 30px !important;
+  }
+  #certification__card-index .breadcrumb-index {
+    padding-top: 80px;
+  }
+  #certification__card-index .subtitle {
+    max-width: 645px;
   }
   .course-card .card-body {
     padding: 1rem 0.6rem !important;
@@ -6366,6 +7051,65 @@ footer .last-footer div span {
   .book__card .card img {
     width: 52%;
   }
+  #book__card .square {
+    display: none;
+  }
+  #book__card .subtitle {
+    max-width: 518px;
+  }
+  #book__card .square-first {
+    display: none;
+  }
+  #book__card .square-second {
+    display: none;
+  }
+  #book__card .breadcrumb-item::before {
+    content: "" !important;
+    margin-top: 10px;
+    margin-right: 10px;
+    background: #3ad4d8;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+  #book__card .breadcrumb-item a {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+  }
+  #book__card .breadcrumb-item:last-child {
+    font-family: "Mulish", sans-serif;
+    color: #fe5538;
+    font-weight: bold;
+  }
+  #book__card .card-item {
+    gap: 0;
+  }
+  #book__card #book-card-index {
+    flex-wrap: wrap;
+  }
+  #book__card #book-card-index .card-index {
+    transition: 0.4s ease-in-out;
+  }
+  #book__card #book-card-index .card-index:hover {
+    transform: scale(1.02);
+  }
+  #book__card #book-card-index .card {
+    margin-top: 0;
+    width: 50% !important;
+    height: 33% !important;
+  }
+  #book__card #book-card-index .card img {
+    height: 325px;
+    width: 100%;
+  }
+  #book__card #book-card-index .card .card-body {
+    height: auto;
+    padding: 30px 0;
+    width: auto;
+  }
+  #book__card #book-card-index .card-thumbnail {
+    width: 72%;
+  }
   .hero-index {
     height: 100%;
   }
@@ -6421,6 +7165,56 @@ footer .last-footer div span {
   .hero-index .wrapper .description {
     font-size: 1rem;
     margin: 0 auto;
+  }
+  #news-card-index {
+    padding: 120px 0;
+  }
+  #news-card-index .card-item {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #news-card-index .card-item .card {
+    width: 32% !important;
+    height: 100% !important;
+  }
+  #news-card-index .card-item .card .card-body {
+    padding: 1rem 1.4rem;
+  }
+  #news-card-index .card-item .card .card-body .card-text {
+    margin-bottom: 2rem;
+    height: 30px;
+  }
+  #news-card-index .card-item .card .card-body .bottom-content {
+    padding-bottom: 18px;
+  }
+  #news-card-index .card-item .card .card-body .bottom-content p {
+    margin-bottom: 0;
+  }
+  #news-card-index .card-item .card .card-body span {
+    color: #fe5538;
+    font-weight: 700;
+    font-family: "Mulish", sans-serif;
+  }
+  #news-card-index .card-item .card .card-body .link-card {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-align: center;
+  }
+  #news-card-index .card-item .card .card-body .link-card i {
+    margin-top: 6px;
+  }
+  #news-card-index .card-item .card-title-second {
+    line-height: 25px !important;
+    transition: 0.5s ease-in-out;
+    color: black;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 27em;
   }
   .teacher-index .teacher-info {
     text-align: center;
@@ -6634,6 +7428,32 @@ footer .last-footer div span {
   }
   .hero-index-product .video-popup img {
     width: 100%;
+  }
+  #certification__card-index .card {
+    width: 23% !important;
+    height: 100% !important;
+  }
+  #certification__card-index .card img {
+    margin: 0 auto;
+    max-width: 170px;
+    max-height: 230px;
+    width: 100%;
+    border: 0.5px solid #181818;
+    border-radius: 10px;
+    padding: 0;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  #certification__card-index .card-item {
+    flex-wrap: wrap;
+    gap: 1.8rem;
+    padding-bottom: 30px !important;
+  }
+  #certification__card-index .breadcrumb-index {
+    padding-top: 80px;
+  }
+  #certification__card-index .subtitle {
+    max-width: 645px;
   }
   .rating-section .rating-index .card {
     height: 20%;

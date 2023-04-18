@@ -2603,6 +2603,61 @@ header {
         clip-path: polygon(100% 28%, 0 100%, 100% 100%);
     }
 
+    .all-grade {
+        padding-top: 119px;
+
+        h2 {
+            font-size: 30px;
+            font-family: 'Furturica', sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            max-width: 640px;
+            margin: 0 auto;
+            font-family: 'Mulish', sans-serif;
+            text-align: center;
+        }
+
+        .card-item {
+            padding-bottom: 95px;
+        }
+
+        // .card{
+        //     width: 80% !important;
+        // }
+
+        .breadcrumb {
+            align-items: center;
+        }
+
+        .breadcrumb-item {
+            &::before {
+                content: "";
+                margin-top: 10px;
+                margin-right: 10px;
+                background: #3ad4d8;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+            }
+
+            a {
+                color: black;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            &:last-child {
+                font-family: "Mulish", sans-serif;
+                color: #fe5538;
+                font-weight: bold;
+            }
+        }
+
+    }
+
     .slick-next,
     .slick-prev {
         display: none;
@@ -2756,6 +2811,12 @@ header {
         padding-top: 58px;
     }
 
+}
+
+#grade-card-index {
+    &::before {
+        position: static;
+    }
 }
 
 .home-course-index {
@@ -3390,6 +3451,35 @@ footer {
     }
 }
 
+
+.breadcrumb {
+    align-items: center;
+}
+
+
+.breadcrumb-item {
+    &::before {
+        content: "" !important;
+        margin-top: 10px;
+        margin-right: 10px;
+        background: #3ad4d8;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+    }
+
+    a {
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    &:last-child {
+        font-family: "Mulish", sans-serif;
+        color: #fe5538;
+        font-weight: bold;
+    }
+}
+
 @media only screen and (max-width: 576px) {
 
     .top-header {
@@ -3747,6 +3837,219 @@ footer {
         }
     }
 
+    .all-grade {
+        padding-top: 119px;
+
+        h2 {
+            font-size: 30px;
+            font-family: 'Furturica', sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            max-width: 640px;
+            margin: 0 auto;
+            font-family: 'Mulish', sans-serif;
+            text-align: center;
+        }
+
+        .card-item {
+            padding-bottom: 95px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 70% !important;
+        }
+
+        .breadcrumb {
+            align-items: center;
+        }
+
+        .breadcrumb-item {
+            &::before {
+                content: "";
+                margin-top: 10px;
+                margin-right: 10px;
+                background: #3ad4d8;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+            }
+
+            a {
+                color: black;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            &:last-child {
+                font-family: "Mulish", sans-serif;
+                color: #fe5538;
+                font-weight: bold;
+            }
+        }
+
+    }
+
+    #news-card-index{
+        .card-item{
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .card{
+                width: 63% !important;
+                height: 31% !important;
+
+                .card-body{
+                    padding: 1rem 1.4rem;
+                    .card-text{
+                        margin-bottom: 2rem;
+                    }
+                    .bottom-content{
+                        padding-bottom: 10px;
+                        p{
+                            margin-bottom: 0;
+                        }
+                    }
+                    span{
+                        color: #fe5538;
+                        font-weight: 700;
+                        font-family: 'Mulish',sans-serif;
+                    }
+                    .link-card{
+                        height: 30px;
+                        width: 30px;
+                        border-radius: 50%;
+                        border: 1px solid black;
+                        text-align: center;
+
+                        i{
+                            margin-top: 6px;
+                        }
+                        
+                    }
+                }
+            }
+
+            .card-title-second{
+                line-height: 25px !important;
+                transition: 0.5s ease-in-out;
+                color: black;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                max-width: 27em;
+            }
+            
+        }
+    }
+
+    #book__card {
+        .square {
+            display: none;
+        }
+
+        .subtitle {
+            max-width: 518px;
+        }
+
+        .square-first {
+            display: none;
+        }
+
+        .square-second {
+            display: none;
+
+        }
+
+
+        .breadcrumb {
+            align-items: center;
+        }
+
+        .breadcrumb-item {
+            &::before {
+                content: "";
+                margin-top: 10px;
+                margin-right: 10px;
+                background: #3ad4d8;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+            }
+
+            a {
+                color: black;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            &:last-child {
+                font-family: "Mulish", sans-serif;
+                color: #fe5538;
+                font-weight: bold;
+            }
+        }
+
+
+        #book-card-index {
+            flex-wrap: wrap;
+
+
+            .card {
+                margin-top: 0;
+
+                height: 33% !important;
+
+                img {
+                    height: 280px;
+                    width: 100%;
+                }
+
+                .card-body {
+                    height: 205px;
+                }
+
+            }
+        }
+    }
+
+    #certification__card-index {
+        .card {
+            width: 265px !important;
+            height: 35% !important;
+
+            img{
+                margin: 0 auto;
+                max-width: 170px;
+                max-height: 230px;
+                width: 100%;
+                border: 0.5px solid #181818;
+                border-radius: 10px;
+                padding: 0;
+                margin-top: 24px;
+            }
+        }
+
+        .card-item {
+            padding-bottom: 30px !important;
+            flex-wrap: wrap;
+        }
+
+        .breadcrumb-index {
+            padding-top: 80px;
+        }
+
+        .subtitle {
+
+            max-width: 480px;
+
+        }
+    }
+
     .hero-index-product {
         display: block;
 
@@ -3949,7 +4252,6 @@ footer {
 
         }
     }
-
 
     .rating-section {
         .card {
@@ -5007,6 +5309,95 @@ footer {
         }
     }
 
+    #certification__card-index {
+        .card {
+            width: 49% !important;
+            height: 35% !important;
+
+            img{
+                margin: 0 auto;
+                max-width: 170px;
+                max-height: 230px;
+                width: 100%;
+                border: 0.5px solid #181818;
+                border-radius: 10px;
+                padding: 0;
+                margin-top: 24px;
+            }
+        }
+
+        .card-item {
+            flex-wrap: wrap;
+            padding-bottom: 30px !important;
+        }
+
+        .breadcrumb-index {
+            padding-top: 80px;
+        }
+
+        .subtitle {
+
+            max-width: 480px;
+
+        }
+    }
+
+    #news-card-index{
+        padding: 120px 0;
+        .card-item{
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .card{
+                width: 63% !important;
+                height: 31% !important;
+
+                .card-body{
+                    padding: 1rem 1.4rem;
+                    .card-text{
+                        margin-bottom: 2rem;
+                    }
+                    .bottom-content{
+                        padding-bottom: 18px;
+                        p{
+                            margin-bottom: 0;
+                        }
+                    }
+                    span{
+                        color: #fe5538;
+                        font-weight: 700;
+                        font-family: 'Mulish',sans-serif;
+                    }
+                    .link-card{
+                        height: 30px;
+                        width: 30px;
+                        border-radius: 50%;
+                        border: 1px solid black;
+                        text-align: center;
+
+                        i{
+                            margin-top: 6px;
+                        }
+                        
+                    }
+                }
+            }
+
+            .card-title-second{
+                line-height: 25px !important;
+                transition: 0.5s ease-in-out;
+                color: black;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                max-width: 27em;
+            }
+            
+        }
+    }
+
     .header-main {
 
         .slick-dots {
@@ -5168,6 +5559,68 @@ footer {
             }
 
 
+        }
+    }
+
+    #book__card {
+        .square {
+            display: none;
+        }
+
+        .subtitle {
+            max-width: 518px;
+        }
+
+        .breadcrumb-item {
+            &::before {
+                content: "";
+                margin-top: 10px;
+                margin-right: 10px;
+                background: #3ad4d8;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+            }
+
+            a {
+                color: black;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            &:last-child {
+                font-family: "Mulish", sans-serif;
+                color: #fe5538;
+                font-weight: bold;
+            }
+        }
+
+        .square-first {
+            display: none;
+        }
+
+        .square-second {
+            display: none;
+
+        }
+
+        #book-card-index {
+            flex-wrap: wrap;
+
+            .card {
+                margin-top: 0;
+
+                height: 33% !important;
+
+                img {
+                    height: 280px;
+                    width: 100%;
+                }
+
+                .card-body {
+                    height: 205px;
+                }
+
+            }
         }
     }
 
@@ -5640,6 +6093,66 @@ footer {
                 }
             }
         }
+    }
+
+    .all-grade {
+        padding-top: 119px;
+
+        h2 {
+            font-size: 30px;
+            font-family: 'Furturica', sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            max-width: 640px;
+            margin: 0 auto;
+            font-family: 'Mulish', sans-serif;
+            text-align: center;
+        }
+
+        .card-item {
+            padding-bottom: 95px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 48% !important;
+
+            .card-title-second {
+                font-size: 19px;
+            }
+        }
+
+        .breadcrumb {
+            align-items: center;
+        }
+
+        .breadcrumb-item {
+            &::before {
+                content: "";
+                margin-top: 10px;
+                margin-right: 10px;
+                background: #3ad4d8;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+            }
+
+            a {
+                color: black;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            &:last-child {
+                font-family: "Mulish", sans-serif;
+                color: #fe5538;
+                font-weight: bold;
+            }
+        }
+
     }
 
     .course-detail-card {
@@ -6302,6 +6815,96 @@ footer {
         }
     }
 
+    #certification__card-index {
+        .card {
+            width: 33% !important;
+            height: 50.5% !important;
+
+            img{
+                margin: 0 auto;
+                max-width: 170px;
+                max-height: 230px;
+                width: 100%;
+                border: 0.5px solid #181818;
+                border-radius: 10px;
+                padding: 0;
+                margin-top: 24px;
+            }
+
+
+        }
+
+        .card-item {
+            flex-wrap: wrap;
+            gap: 2.4rem;
+            padding-bottom: 30px !important;
+        }
+
+        .breadcrumb-index {
+            padding-top: 80px;
+        }
+
+        .subtitle {
+            max-width: 645px;
+        }
+    }
+
+    #news-card-index{
+        padding: 120px 0;
+        .card-item{
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .card{
+                width: 48% !important;
+                height: 49% !important;
+
+                .card-body{
+                    padding: 1rem 1.4rem;
+                    .card-text{
+                        margin-bottom: 2rem;
+                    }
+                    .bottom-content{
+                        padding-bottom: 18px;
+                        p{
+                            margin-bottom: 0;
+                        }
+                    }
+                    span{
+                        color: #fe5538;
+                        font-weight: 700;
+                        font-family: 'Mulish',sans-serif;
+                    }
+                    .link-card{
+                        height: 30px;
+                        width: 30px;
+                        border-radius: 50%;
+                        border: 1px solid black;
+                        text-align: center;
+
+                        i{
+                            margin-top: 6px;
+                        }
+                        
+                    }
+                }
+            }
+
+            .card-title-second{
+                line-height: 25px !important;
+                transition: 0.5s ease-in-out;
+                color: black;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                max-width: 27em;
+            }
+            
+        }
+    }
+
     .hero-index-product {
         display: block;
 
@@ -6561,8 +7164,8 @@ footer {
                             }
                         }
 
-                        .description{
-                            p{
+                        .description {
+                            p {
                                 margin: 0;
                             }
                         }
@@ -6606,6 +7209,7 @@ footer {
 
                     .right-m {
                         padding-top: 40px;
+
                         .image-content {
                             text-align: left;
 
@@ -6617,6 +7221,134 @@ footer {
                 }
             }
 
+        }
+    }
+
+    .breadcrumb-item {
+        &::before {
+            content: "" !important;
+            margin-top: 10px;
+            margin-right: 10px;
+            background: #3ad4d8;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+        }
+
+        a {
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        &:last-child {
+            font-family: "Mulish", sans-serif;
+            color: #fe5538;
+            font-weight: bold;
+        }
+    }
+
+    .all-grade {
+        padding-top: 119px;
+
+        h2 {
+            font-size: 30px;
+            font-family: 'Furturica', sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            max-width: 640px;
+            margin: 0 auto;
+            font-family: 'Mulish', sans-serif;
+            text-align: center;
+        }
+
+        .card-item {
+            padding-bottom: 95px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 31% !important;
+
+
+            .card-title-second {
+                font-size: 21px;
+            }
+        }
+
+        .breadcrumb {
+            align-items: center;
+        }
+
+        .breadcrumb-item {
+            &::before {
+                content: "";
+                margin-top: 10px;
+                margin-right: 10px;
+                background: #3ad4d8;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+            }
+
+            a {
+                color: black;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            &:last-child {
+                font-family: "Mulish", sans-serif;
+                color: #fe5538;
+                font-weight: bold;
+            }
+        }
+
+    }
+
+    #book__card {
+        .square {
+            display: none;
+        }
+
+        .subtitle {
+            max-width: 518px;
+        }
+
+        .square-first {
+            display: none;
+        }
+
+        .square-second {
+            display: none;
+
+        }
+
+
+        .card-item {
+            gap: 0;
+        }
+
+        #book-card-index {
+            flex-wrap: wrap;
+
+            .card {
+                margin-top: 0;
+
+                height: 33% !important;
+
+                img {
+                    height: 325px;
+                    width: 100%;
+                }
+
+                .card-body {
+                    height: 205px;
+                }
+
+            }
         }
     }
 
@@ -7764,6 +8496,63 @@ footer {
         }
     }
 
+
+    #news-card-index{
+        padding: 120px 0;
+        .card-item{
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .card{
+                width: 32% !important;
+                height: 100% !important;
+
+                .card-body{
+                    padding: 1rem 1.4rem;
+                    .card-text{
+                        margin-bottom: 2rem;
+                    }
+                    .bottom-content{
+                        padding-bottom: 18px;
+                        p{
+                            margin-bottom: 0;
+                        }
+                    }
+                    span{
+                        color: #fe5538;
+                        font-weight: 700;
+                        font-family: 'Mulish',sans-serif;
+                    }
+                    .link-card{
+                        height: 30px;
+                        width: 30px;
+                        border-radius: 50%;
+                        border: 1px solid black;
+                        text-align: center;
+
+                        i{
+                            margin-top: 6px;
+                        }
+                        
+                    }
+                }
+            }
+
+            .card-title-second{
+                line-height: 25px !important;
+                transition: 0.5s ease-in-out;
+                color: black;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                max-width: 27em;
+            }
+            
+        }
+    }
+
     .teacher-index {
         .teacher-info {
             text-align: center;
@@ -7826,8 +8615,8 @@ footer {
                             }
                         }
 
-                        .description{
-                            p{
+                        .description {
+                            p {
                                 margin: 0;
                             }
                         }
@@ -7872,6 +8661,7 @@ footer {
                     .right-m {
                         width: 50%;
                         padding-top: 40px;
+
                         .image-content {
                             text-align: left;
 
@@ -8197,6 +8987,112 @@ footer {
                 width: 50%;
             }
 
+        }
+    }
+
+    #book__card {
+        .square {
+            display: none;
+        }
+
+        .subtitle {
+            max-width: 518px;
+        }
+
+        .square-first {
+            display: none;
+        }
+
+        .square-second {
+            display: none;
+
+        }
+
+        .breadcrumb-item {
+            &::before {
+                content: "" !important;
+                margin-top: 10px;
+                margin-right: 10px;
+                background: #3ad4d8;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+            }
+
+            a {
+                color: black;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            &:last-child {
+                font-family: "Mulish", sans-serif;
+                color: #fe5538;
+                font-weight: bold;
+            }
+        }
+
+
+
+        .card-item {
+            gap: 0;
+        }
+
+        #book-card-index {
+            flex-wrap: wrap;
+
+            .card {
+                margin-top: 0;
+                width: 50% !important;
+                height: 33% !important;
+
+                img {
+                    height: 325px;
+                    width: 100%;
+                }
+
+                .card-body {
+
+                    height: 269px;
+                    padding: 30px 0;
+                    width: 52%;
+
+                }
+
+            }
+        }
+    }
+
+    #certification__card-index {
+        .card {
+            width: 23% !important;
+            height: 100% !important;
+
+            img{
+                margin: 0 auto;
+                max-width: 170px;
+                max-height: 230px;
+                width: 100%;
+                border: 0.5px solid #181818;
+                border-radius: 10px;
+                padding: 0;
+                margin-top: 24px;
+                margin-bottom: 24px;
+            }
+
+        }
+
+        .card-item {
+            flex-wrap: wrap;
+            gap: 1.8rem;
+            padding-bottom: 30px !important;
+        }
+
+        .breadcrumb-index {
+            padding-top: 80px;
+        }
+
+        .subtitle {
+            max-width: 645px;
         }
     }
 
@@ -8728,6 +9624,91 @@ footer {
         }
     }
 
+    #book__card {
+        .square {
+            display: none;
+        }
+
+        .subtitle {
+            max-width: 518px;
+        }
+
+        .square-first {
+            display: none;
+        }
+
+        .square-second {
+            display: none;
+
+        }
+
+        .breadcrumb-item {
+            &::before {
+                content: "" !important;
+                margin-top: 10px;
+                margin-right: 10px;
+                background: #3ad4d8;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+            }
+
+            a {
+                color: black;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            &:last-child {
+                font-family: "Mulish", sans-serif;
+                color: #fe5538;
+                font-weight: bold;
+            }
+        }
+
+
+
+        .card-item {
+            gap: 0;
+        }
+
+        #book-card-index {
+            flex-wrap: wrap;
+
+            .card-index {
+                transition: .4s ease-in-out;
+
+                &:hover {
+                    -webkit-transform: scale(1.02);
+                    transform: scale(1.02);
+                }
+            }
+
+            .card {
+                margin-top: 0;
+                width: 50% !important;
+                height: 33% !important;
+
+                img {
+                    height: 325px;
+                    width: 100%;
+                }
+
+                .card-body {
+
+                    height: auto;
+                    padding: 30px 0;
+                    width: auto;
+
+                }
+
+            }
+
+            .card-thumbnail {
+                width: 72%;
+            }
+        }
+    }
+
     .hero-index {
         height: 100%;
 
@@ -8808,6 +9789,63 @@ footer {
 
     }
 
+    #news-card-index{
+        padding: 120px 0;
+        .card-item{
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .card{
+                width: 32% !important;
+                height: 100% !important;
+
+                .card-body{
+                    padding: 1rem 1.4rem;
+                    .card-text{
+                        margin-bottom: 2rem;
+                        height: 30px;
+                    }
+                    .bottom-content{
+                        padding-bottom: 18px;
+                        p{
+                            margin-bottom: 0;
+                        }
+                    }
+                    span{
+                        color: #fe5538;
+                        font-weight: 700;
+                        font-family: 'Mulish',sans-serif;
+                    }
+                    .link-card{
+                        height: 30px;
+                        width: 30px;
+                        border-radius: 50%;
+                        border: 1px solid black;
+                        text-align: center;
+
+                        i{
+                            margin-top: 6px;
+                        }
+                        
+                    }
+                }
+            }
+
+            .card-title-second{
+                line-height: 25px !important;
+                transition: 0.5s ease-in-out;
+                color: black;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                max-width: 27em;
+            }
+            
+        }
+    }
+
     .teacher-index {
         .teacher-info {
             text-align: center;
@@ -8870,8 +9908,8 @@ footer {
                             }
                         }
 
-                        .description{
-                            p{
+                        .description {
+                            p {
                                 margin: 0;
                             }
                         }
@@ -8916,6 +9954,7 @@ footer {
                     .right-m {
                         width: 50%;
                         padding-top: 40px;
+
                         .image-content {
                             text-align: center;
 
@@ -9017,7 +10056,6 @@ footer {
         }
     }
 
-
     .hero-index-product {
         height: 745px;
         display: block;
@@ -9114,6 +10152,41 @@ footer {
             }
         }
     }
+
+    #certification__card-index {
+        .card {
+            width: 23% !important;
+            height: 100% !important;
+
+            img{
+                margin: 0 auto;
+                max-width: 170px;
+                max-height: 230px;
+                width: 100%;
+                border: 0.5px solid #181818;
+                border-radius: 10px;
+                padding: 0;
+                margin-top: 24px;
+                margin-bottom: 24px;
+            }
+
+        }
+
+        .card-item {
+            flex-wrap: wrap;
+            gap: 1.8rem;
+            padding-bottom: 30px !important;
+        }
+
+        .breadcrumb-index {
+            padding-top: 80px;
+        }
+
+        .subtitle {
+            max-width: 645px;
+        }
+    }
+
 
     .rating-section {
 
@@ -10054,8 +11127,8 @@ footer {
                     }
                 }
 
-                .description{
-                    p{
+                .description {
+                    p {
                         margin: 0;
                     }
                 }
@@ -10100,6 +11173,7 @@ footer {
             .right-m {
                 width: 50%;
                 padding-top: 40px;
+
                 .image-content {
                     text-align: center;
 

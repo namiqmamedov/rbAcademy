@@ -298,6 +298,7 @@ $('#grade-card').slick({
     ]
 });
 
+
 $('#cert-card').slick({
     dots: false,
     infinite: true,
