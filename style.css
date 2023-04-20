@@ -8,6 +8,22 @@ a {
   text-decoration: none !important;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #681C7C;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #543EE9;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -2151,8 +2167,46 @@ header {
 }
 
 .login-index {
-  padding-top: 280px;
-  padding-bottom: 408px;
+  padding-bottom: 187px;
+  padding-top: 50px;
+}
+.login-index .register-mobile {
+  display: none;
+}
+.login-index .square {
+  width: 295px;
+  height: 460px;
+  background-color: #671c7c;
+  box-shadow: 49px 42px 12px rgba(80, 80, 80, 0.25);
+  border-radius: 5px;
+  transform: rotate(22.66deg);
+  position: absolute;
+  right: 40px;
+  top: -65px;
+  z-index: 1;
+}
+.login-index form {
+  padding: 0 120px;
+}
+.login-index form .bottom-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.login-index form .bottom-form label, .login-index form .bottom-form a {
+  font-size: 13px !important;
+  font-family: "Mulish", sans-serif;
+}
+.login-index form .password-form {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.login-index form .password-form span {
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  cursor: pointer;
 }
 .login-index a:visited, .login-index a:link {
   color: unset;
@@ -2161,7 +2215,8 @@ header {
   font-size: 35px;
   font-family: "Murturica", sans-serif;
   color: black;
-  margin: 0;
+  text-align: left;
+  padding-bottom: 12px;
 }
 .login-index p {
   font-size: 1rem;
@@ -2173,14 +2228,12 @@ header {
 }
 .login-index .container {
   width: 73rem;
-  height: 28rem;
+  height: 31rem;
   box-shadow: 2px 3px 7px 3px rgba(0, 0, 0, 0.0784313725);
-  position: absolute;
-  top: 64%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(0%, 25%);
   border-radius: 10px;
   background: #FFFFFF;
+  z-index: 1111;
 }
 .login-index .side-1 {
   transform: rotateY(0deg);
@@ -2193,7 +2246,7 @@ header {
   transform: rotateY(-180deg);
   transform-origin: 0%;
   left: 50%;
-  background-image: linear-gradient(90deg, #bb4d05 0%, #FF8C42 50%, #FCAF58 100%);
+  background-color: #f8f1fe;
   border-radius: 0 10px 10px 0;
 }
 .login-index .side-1, .login-index .side-2 {
@@ -2224,6 +2277,7 @@ header {
   border-radius: 2rem;
   border: none;
   outline: none;
+  margin-top: 29px;
   transition: 200ms;
 }
 .login-index .toggle-log:hover {
@@ -2317,20 +2371,24 @@ header {
   text-decoration: none;
 }
 .login-index .input-text {
-  display: block;
-  margin: 1rem auto;
-  border: none;
-  background: rgba(78, 89, 140, 0.168627451);
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  font-family: inherit;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.15);
+  border-radius: 50px;
+  border: 1px solid transparent;
+  color: #353535;
+  font-family: "Mulish", sans-serif;
+  padding: 8px 20px;
+  margin: 10px 0;
+  width: 100%;
+  transition: all 0.4s linear;
+  font-size: 15px;
 }
 .login-index .input-submit {
   display: block;
   margin: 1rem auto;
   font-size: 1rem;
-  padding: 0.5rem 2rem;
-  background: #4E598C;
+  padding: 0.5rem 8.5rem;
+  background-color: #543ee9;
   border: 1px solid #4E598C;
   color: #FFFFFF;
   border-radius: 2rem;
@@ -3117,6 +3175,32 @@ footer .last-footer div span {
   }
   .top-header .icon-header {
     display: none !important;
+  }
+  .login-index .side-1, .login-index .side-2 {
+    display: none;
+  }
+  .login-index .container {
+    left: 0;
+  }
+  .login-index .container {
+    width: 32rem;
+  }
+  .login-index .sign-in {
+    width: 84%;
+    left: 8%;
+  }
+  .login-index form {
+    padding: 0;
+  }
+  .login-index .input-submit {
+    padding: 0.5rem 11.5rem;
+  }
+  .login-index .register-mobile {
+    display: block;
+  }
+  .login-index .register-mobile p {
+    font-size: 14px;
+    text-align: left;
   }
   .header-main .slick-dots {
     bottom: -44px;
@@ -4495,6 +4579,32 @@ footer .last-footer div span {
   .top-header .icon-header {
     display: none !important;
   }
+  .login-index .side-1, .login-index .side-2 {
+    display: none;
+  }
+  .login-index .container {
+    left: 0;
+  }
+  .login-index .container {
+    width: 32rem;
+  }
+  .login-index .sign-in {
+    width: 84%;
+    left: 8%;
+  }
+  .login-index form {
+    padding: 0;
+  }
+  .login-index .input-submit {
+    padding: 0.5rem 11.5rem;
+  }
+  .login-index .register-mobile {
+    display: block;
+  }
+  .login-index .register-mobile p {
+    font-size: 14px;
+    text-align: left;
+  }
   #certification__card-index .card {
     width: 49% !important;
     height: 35% !important;
@@ -5508,6 +5618,32 @@ footer .last-footer div span {
   }
   .top-header .icon-header {
     display: none !important;
+  }
+  .login-index .side-1, .login-index .side-2 {
+    display: none;
+  }
+  .login-index .container {
+    left: 0;
+  }
+  .login-index .container {
+    width: 43rem;
+  }
+  .login-index .sign-in {
+    width: 84%;
+    left: 8%;
+  }
+  .login-index form {
+    padding: 0;
+  }
+  .login-index .input-submit {
+    padding: 0.5rem 16.5rem;
+  }
+  .login-index .register-mobile {
+    display: block;
+  }
+  .login-index .register-mobile p {
+    font-size: 14px;
+    text-align: left;
   }
   .header-main .slick-dots {
     bottom: -44px;
@@ -6700,6 +6836,31 @@ footer .last-footer div span {
     font-weight: 600;
     opacity: 0.85;
   }
+  .login-index .container {
+    left: 0;
+  }
+  .login-index .container {
+    width: 58rem;
+  }
+  .login-index .sign-in {
+    width: 42%;
+    left: 55%;
+  }
+  .login-index .sign-up {
+    width: 45%;
+    position: absolute;
+    transform: translateY(-50%);
+    left: 25px;
+  }
+  .login-index form {
+    padding: 0;
+  }
+  .login-index .input-submit {
+    padding: 0.5rem 10.5rem;
+  }
+  .login-index .register-mobile {
+    display: none;
+  }
   .hero-index {
     height: 100%;
   }
@@ -7634,6 +7795,9 @@ footer .last-footer div span {
   .header-top .top-header .icon-header img {
     width: 16.5px;
     height: 16.5px;
+  }
+  .login-index .container {
+    width: 82rem;
   }
   .header-main .slick-dots {
     bottom: -44px;

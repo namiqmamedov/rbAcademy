@@ -8,6 +8,24 @@ a {
     text-decoration: none !important;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #681C7C;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #543EE9;
+  }
+
 
 header {
     position: fixed;
@@ -2761,8 +2779,54 @@ $clr-p-l:#F9C784;
 $clr-p:#FCAF58;
 $clr-p-d:#FF8C42;
 $clr-p-d-2:#bb4d05;
-padding-top: 280px;
-padding-bottom: 408px;
+padding-bottom: 187px;
+    padding-top: 50px;
+
+    .register-mobile{
+        display: none;
+    }
+
+.square{
+    width: 295px;
+    height: 460px;
+    background-color: #671c7c;
+    -webkit-box-shadow: 49px 42px 12px rgba(80, 80, 80, 0.25);
+    box-shadow: 49px 42px 12px rgba(80, 80, 80, 0.25);
+    border-radius: 5px;
+    -webkit-transform: rotate(22.66deg);
+    transform: rotate(22.66deg);
+    position: absolute;
+    right: 40px;
+    top: -65px;
+    z-index: 1;
+}
+
+form{
+    padding: 0 120px;
+    .bottom-form{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+            label,a{
+                font-size: 13px !important;
+                font-family: 'Mulish',sans-serif;
+            }
+    }
+
+    .password-form{
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        span{
+            position: absolute;
+    top: 23px;
+    right: 20px;
+    cursor: pointer;
+        }
+    }
+}
 a:visited, a:link{
     color:unset;
   }
@@ -2771,7 +2835,8 @@ a:visited, a:link{
     font-size:35px;
     font-family: 'Murturica',sans-serif;
     color:black;
-    margin: 0;
+    text-align: left;
+    padding-bottom: 12px;
   }
 
   p{
@@ -2786,14 +2851,12 @@ a:visited, a:link{
   
   .container{
     width: 73rem;
-    height: 28rem;
+    height: 31rem;
     box-shadow: 2px 3px 7px 3px rgba(0, 0, 0, 0.0784313725);
-    position: absolute;
-    top: 64%;
-    left:50%;
-    transform:translate(-50%,-50%);
+    transform:translate(0%,25%);
     border-radius:10px;
     background:$clr-l;
+    z-index: 1111;
   }
   
   .side-1{
@@ -2802,14 +2865,12 @@ a:visited, a:link{
     background-color: #f8f1fe;
     border-radius:10px;
     border-radius:10px 0 0 10px;
-  
-  
   }
   .side-2{
     transform:rotateY(-180deg);
     transform-origin:0%;
     left:50%;
-    background-image:linear-gradient(90deg, $clr-p-d-2 0%, $clr-p-d 50%, $clr-p 100%);
+    background-color: #f8f1fe;
     border-radius:0 10px 10px 0 ;
   }
   
@@ -2842,6 +2903,7 @@ a:visited, a:link{
     border-radius:2rem;
     border: none;
     outline: none;
+    margin-top: 29px;
     transition:200ms;
     &:hover{
         background: #543ee9;
@@ -2946,21 +3008,27 @@ a:visited, a:link{
   
   
   .input-text {
-      display: block;
-      margin: 1rem auto;
-      border: none;
-      background: #4e598c2b;
-      padding: .5rem 1rem;
-      font-size: 1rem;
-      font-family: inherit;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.15);
+    box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.15);
+    border-radius: 50px;
+    border: 1px solid transparent;
+    color: #353535;
+    font-family: "Mulish", sans-serif;
+    padding: 8px 20px;
+    margin: 10px 0;
+    width: 100%;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    font-size: 15px;
   }
   
   .input-submit{
     display:block;
     margin: 1rem auto;
     font-size:1rem;
-    padding:.5rem 2rem;
-    background:$clr-s;
+    padding: 0.5rem 8.5rem;
+    background-color: #543ee9;
     border:1px solid $clr-s;
     color:$clr-l;
     border-radius:2rem;
@@ -2988,6 +3056,7 @@ a:visited, a:link{
       }
     }
   }
+  
 }
 
 .feedback-card {
@@ -3950,6 +4019,36 @@ footer {
 
         .icon-header {
             display: none !important;
+        }
+    }
+
+    .login-index{
+        .side-1,.side-2{
+            display: none;
+        }
+        .container{
+            left: 0;
+        }
+        .container{
+            width: 32rem;   
+        }
+        .sign-in{
+            width: 84%;
+            left: 8%;
+        }
+        form{
+            padding: 0;
+        }
+        .input-submit{
+            padding: 0.5rem 11.5rem;
+        }
+
+        .register-mobile{
+            display: block;
+            p{
+                font-size: 14px;
+                text-align: left;
+            }
         }
     }
 
@@ -5874,6 +5973,36 @@ footer {
         }
     }
 
+    .login-index{
+        .side-1,.side-2{
+            display: none;
+        }
+        .container{
+            left: 0;
+        }
+        .container{
+            width: 32rem;   
+        }
+        .sign-in{
+            width: 84%;
+            left: 8%;
+        }
+        form{
+            padding: 0;
+        }
+        .input-submit{
+            padding: 0.5rem 11.5rem;
+        }
+
+        .register-mobile{
+            display: block;
+            p{
+                font-size: 14px;
+                text-align: left;
+            }
+        }
+    }
+
     #certification__card-index {
         .card {
             width: 49% !important;
@@ -7310,6 +7439,36 @@ footer {
 
         .icon-header {
             display: none !important;
+        }
+    }
+
+    .login-index{
+        .side-1,.side-2{
+            display: none;
+        }
+        .container{
+            left: 0;
+        }
+        .container{
+            width: 43rem;
+        }
+        .sign-in{
+            width: 84%;
+            left: 8%;
+        }
+        form{
+            padding: 0;
+        }
+        .input-submit{
+            padding: 0.5rem 16.5rem;
+        }
+
+        .register-mobile{
+            display: block;
+            p{
+                font-size: 14px;
+                text-align: left;
+            }
         }
     }
 
@@ -9018,6 +9177,37 @@ footer {
         }
     }
 
+    
+    .login-index{
+
+        .container{
+            left: 0;
+        }
+        .container{
+            width: 58rem;
+        }
+        .sign-in{
+            width: 42%;
+    left: 55%;
+        }
+        .sign-up{
+            width: 45%;
+            position: absolute;
+            transform: translateY(-50%);
+            left: 25px;
+        }
+        form{
+            padding: 0;
+        }
+        .input-submit{
+            padding: 0.5rem 10.5rem;
+        }
+
+        .register-mobile{
+            display: none;
+        }
+    }
+
     .hero-index {
         height: 100%;
 
@@ -10352,6 +10542,12 @@ footer {
             }
         }
 
+    }
+
+    .login-index{
+        .container{
+            width: 82rem;
+        }
     }
 
     .header-main {

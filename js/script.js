@@ -25,7 +25,6 @@ $(function() {
     });
   });
 
-
   
 const side1 = $('.side-1');
 const side2 = $('.side-2');
@@ -46,4 +45,15 @@ $('.side-2 .toggle-log').click(function () {
   signInF.removeClass('block');
   signUpF.attr('disabled', 'disable');
   signUpF.addClass('block');
+});
+
+
+$(".toggle-password").click(function() {
+  $(this).toggleClass("fa-solid fa-eye fa-solid fa-eye-slash");
+  var input = $($(this).attr("toggle"));
+  if (input.attr("type") == "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
 });
