@@ -6,54 +6,38 @@ hamburger.onclick = function () {
     navBar.classList.toggle("active");
 }
 
+// nav box shadow adding in scroll
 
-/** code by webdevtrick ( https://webdevtrick.com ) **/
-$(function() {
-    $('.list-heading').on('click', function(e) {
-      e.preventDefault();
-      if ($(this).hasClass('active')) {
-        $(this).removeClass('active');
-        $(this).next()
-        .stop()
-        .slideUp(300);
-      } else {
-        $(this).addClass('active');
-        $(this).next()
-        .stop()
-        .slideDown(300);
-      }
-    });
-  });
+var navBar = document.getElementById('header-main')
 
-  
-const side1 = $('.side-1');
-const side2 = $('.side-2');
-const signInF = $('.sign-in fieldset');
-const signUpF = $('.sign-up fieldset');
-$('.side-1 .toggle-log').click(function () {
-  side1.css({ 'transform': 'rotateY(180deg)', 'background-position': '100%' });
-  side2.css({ 'transform': 'rotateY(0deg)', 'background-position': '100%' });
-  signInF.attr('disabled', 'disable');
-  signInF.addClass('block');
-  signUpF.removeAttr('disabled');
-  signUpF.removeClass('block');
-});
-$('.side-2 .toggle-log').click(function () {
-  side1.css({ 'transform': 'rotateY(0deg)', 'background-position': '0%' });
-  side2.css({ 'transform': 'rotateY(-180deg)', 'background-position': ' 0%' });
-  signInF.removeAttr('disabled');
-  signInF.removeClass('block');
-  signUpF.attr('disabled', 'disable');
-  signUpF.addClass('block');
-});
-
-
-$(".toggle-password").click(function() {
-  $(this).toggleClass("fa-solid fa-eye fa-solid fa-eye-slash");
-  var input = $($(this).attr("toggle"));
-  if (input.attr("type") == "password") {
-    input.attr("type", "text");
-  } else {
-    input.attr("type", "password");
+window.addEventListener('scroll', () => {
+  if(window.scrollY > 100){
+    navBar.classList.add('active')
   }
-});
+  else{
+    navBar.classList.remove('active')
+  }
+})
+
+// animation login page 
+
+
+var password = document.getElementById('inputBox');
+var icon = document.getElementById('toggle-password');
+
+// input show hide button
+
+myPass = () => {
+   if(password.type == 'password'){
+      password.setAttribute('type','text');
+      icon.classList.remove('fa-eye')
+      icon.classList.add('fa-eye-slash');
+   }
+   else{
+      icon.classList.add('fa-eye');
+      icon.classList.remove('fa-eye-slash');
+      password.setAttribute('type','password');
+   }
+}
+
+icon.addEventListener('click', myPass)
