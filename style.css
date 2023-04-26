@@ -53,12 +53,250 @@ a {
   bottom: 210px;
 }
 
+.account__section {
+  display: flex;
+}
+.account__section .course-main-card {
+  padding: 0;
+}
+.account__section .course-main-card .card {
+  width: 40%;
+}
+.account__section .course-main-card .card .card-body {
+  padding: 1rem 2.4rem;
+}
+.account__section .course-main-card .card .card-body .card-text {
+  margin-bottom: 2rem;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.account__section .course-main-card .card .card-body .card__main {
+  display: flex;
+  padding-bottom: 36px;
+}
+.account__section .course-main-card .card .card-body .card__main div {
+  color: #FE5538;
+  font-weight: bold;
+  font-family: "Mulish", sans-serif;
+}
+.account__section .course-main-card .card .card-body .card__main .course-info-first {
+  padding-right: 56px;
+}
+.account__section .course-main-card .card .card-body .card__main i {
+  border-radius: 50%;
+  background: #3AD4D8;
+  padding: 5px 8px;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+}
+.account__section .course-main-card .card .card-body .bottom-content {
+  display: flex;
+  align-items: center;
+  padding-bottom: 31px;
+}
+.account__section .course-main-card .card .card-body .bottom-content .btn {
+  outline: none;
+  border: none;
+  width: 47%;
+  border-radius: 30px;
+  transition: 0.5s ease-in-out;
+}
+.account__section .course-main-card .card .card-body .bottom-content .btn-white {
+  box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+}
+.account__section .course-main-card .card .card-body .bottom-content .btn-primary {
+  margin-left: auto;
+}
+.account__section .course-main-card .card .card-body .bottom-content .price-card {
+  margin-left: auto;
+}
+.account__section .course-main-card .card .card-body .bottom-content .price-card h6 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fe5538 !important;
+  transition: 0.5s ease-in-out;
+}
+.account__section .course-main-card .card .card-body .bottom-content .price-card p {
+  text-decoration-line: line-through;
+  margin-bottom: 0;
+  color: #929292 !important;
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
+  text-decoration-color: black;
+  text-decoration-thickness: 2px;
+}
+.account__section .course-main-card .card .card-title-first {
+  display: flex;
+  gap: 1rem;
+}
+.account__section .course-main-card .card .card-title-first .title-first {
+  display: flex;
+  align-items: center;
+}
+.account__section .course-main-card .card .card-title-first .square {
+  background: #3AD4D8;
+  width: 4px;
+  height: 4px;
+  margin-left: 1rem;
+  margin-top: -0.3rem;
+  border-radius: 50%;
+}
+.account__section .course-main-card .card .card-title-first h6 {
+  font-weight: 700;
+  font-size: 12px !important;
+  line-height: 20px;
+  color: #FE5538;
+}
+.account__section .course-main-card .card .card-title-second {
+  font-family: "Futurica", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 17px;
+  color: black;
+}
+.account__section .course-main-card .card .card-text {
+  color: black;
+}
+.account__section .course-main-card .card:hover .card-text {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+  color: black;
+}
+.account__section .course-main-card .card:hover .card-img-top {
+  padding: 10px 10px 10px 10px;
+}
+.account__section .course-main-card .card:hover .card-feedback {
+  opacity: 1;
+  visibility: visible !important;
+}
+.account__section .course-main-card .title {
+  font-weight: 700;
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+.account__section .course-main-card .subtitle {
+  max-width: 648px;
+  margin: 0 auto;
+}
+.account__section .course-main-card .card-feedback {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding-bottom: 8px;
+  opacity: 0;
+  visibility: hidden !important;
+  transition: 0.5s ease-in-out;
+}
+.account__section .course-main-card .card-feedback .fa-solid {
+  color: #543EE9;
+}
+.account__section .course-main-card .card-feedback .fa-regular {
+  color: #543EE9;
+}
+.account__section .course-main-card .card-feedback img {
+  width: 15px;
+  height: 15px;
+}
+.account__section .course-main-card img {
+  width: 100%;
+  border-radius: 0;
+  transition: 0.5s ease-in-out;
+  height: 213px;
+}
+.account__section .course-main-card .card-item {
+  display: flex;
+  gap: 1rem;
+  padding-top: 58px;
+}
+.account__section .course-main-card::before {
+  position: static;
+}
+.account__section .course-main-card #course-item {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0;
+  gap: 1rem;
+}
+.account__section .course-main-card #course-item #card {
+  width: 32%;
+  height: 35%;
+  transition: 0.3s ease-in-out;
+}
+.account__section .course-main-card #course-item #card:hover {
+  box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
+}
+.account__section .account-index {
+  background: #3AD4D8;
+}
+.account__section .account-index .account-wrapper {
+  padding-left: 55px;
+  padding-right: 55px;
+}
+.account__section .account-index .account-user {
+  text-align: center;
+  padding-top: 110px;
+}
+.account__section .account-index .account-user i {
+  color: white;
+  font-size: 28px;
+}
+.account__section .account-index .account-user .fullname span {
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+  font-family: "Futurica", sans-serif;
+}
+.account__section .account-index .account-content {
+  padding-top: 90px;
+}
+.account__section .account-index .account-content ul {
+  list-style: none;
+}
+.account__section .account-index .account-content ul li {
+  padding-bottom: 13px;
+}
+.account__section .account-index .account-content ul li a {
+  color: black;
+}
+.account__section .account-index .account-content ul li a i {
+  padding-right: 2px;
+}
+.account__section .account-index .account-content ul li a.active {
+  color: #FE5538 !important;
+  background: transparent !important;
+}
+.account__section .account__course-receipt {
+  padding-left: 40px;
+  width: 76%;
+}
+.account__section .account__course-receipt .top-content {
+  display: flex;
+  justify-content: space-around;
+}
+.account__section .account__course-receipt .main__receipt li {
+  display: flex;
+  justify-content: space-around;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 7px rgba(190, 190, 190, 0.25);
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
 header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 11111111111111;
+}
+
+#header-acc {
+  position: static;
 }
 
 .header-top {

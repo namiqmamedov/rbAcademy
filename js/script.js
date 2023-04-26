@@ -1,3 +1,11 @@
+$(document).ready(function() {  
+  $('.account-content ul li a').click(function(){  
+    $('.account-content li a').removeClass("active");  
+    $(this).addClass("active");  
+});  
+});  
+
+
 
 hamburger = document.querySelector(".hamburger")
 
@@ -41,3 +49,6 @@ myPass = () => {
 }
 
 icon.addEventListener('click', myPass)
+
+
+

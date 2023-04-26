@@ -62,13 +62,316 @@ a {
     bottom: 210px;
   }
 
+.account__section{
+    display: flex;
 
+    .course-main-card {
+        padding: 0;
+
+        .card {
+            width: 40%;
+            .card-body {
+                padding: 1rem 2.4rem;
+
+                .card-text {
+                    margin-bottom: 2rem;
+                    opacity: 0;
+                    transition: .5s ease-in-out;
+                }
+
+                .card__main{
+                    display: flex;
+                    padding-bottom: 36px;
+
+                    div{color: #FE5538;
+                    font-weight: bold;font-family: 'Mulish',sans-serif;}
+
+                    .course-info-first{
+                        padding-right: 56px;
+                    }
+
+                    i{
+                        border-radius: 50%;
+                        background: #3AD4D8;
+                        padding: 5px 8px;
+                        text-align: center;
+                        color: white;
+                        font-size: 12px;
+                    }
+                }
+
+                .bottom-content {
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: 31px;   
+
+                    .btn {
+                        outline: none;
+                        border: none;
+                        width: 47%;
+                        border-radius: 30px;
+                        transition: .5s ease-in-out;
+                    }
+
+                    .btn-white{
+                        box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+                    }
+
+                    .btn-primary{
+                        margin-left: auto;
+                    }
+
+                    .price-card {
+                        margin-left: auto;
+
+                        h6 {
+                            font-family: "Mulish", sans-serif;
+                            font-weight: 800;
+                            font-size: 15px;
+                            line-height: 20px;
+                            color: #fe5538 !important;
+                            transition: .5s ease-in-out;
+                        }
+
+                        p {
+                            text-decoration-line: line-through;
+                            margin-bottom: 0;
+                            color: #929292 !important;
+                            font-family: 'Mulish', sans-serif;
+                            font-weight: bold;
+                            text-decoration-color: black;
+                            text-decoration-thickness: 2px;
+
+                        }
+                    }
+                }
+            }
+
+            .card-title-first {
+                display: flex;
+                gap: 1rem;
+
+                .title-first {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .square {
+                    background: #3AD4D8;
+                    width: 4px;
+                    height: 4px;
+                    margin-left: 1rem;
+                    margin-top: -0.3rem;
+                    border-radius: 50%;
+                }
+
+                h6 {
+                    font-weight: 700;
+                    font-size: 12px !important;
+                    line-height: 20px;
+                    color: #FE5538;
+                }
+            }
+
+            .card-title-second {
+                font-family: 'Futurica', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 25px;
+                margin-bottom: 17px;
+                color: black;
+
+            }
+
+            .card-text {
+                color: black;
+            }
+        }
+
+        .card:hover {
+            .card-text {
+                opacity: 1;
+                transition: .5s ease-in-out;
+                color: black;
+
+            }
+
+            // .btn {
+            //     background: #fff !important;
+            //     color: black;
+            //     transition: .5s ease-in-out;
+            //     border: 1px solid #353535 !important;
+            // }
+
+            .card-img-top {
+                padding: 10px 10px 10px 10px;
+            }
+
+            .card-feedback {
+                opacity: 1;
+                visibility: visible !important;
+            }
+
+        }
+
+        .title {
+            font-weight: 700;
+            font-size: 30px;
+            padding-bottom: 10px;
+        }
+
+        .subtitle {
+            max-width: 648px;
+            margin: 0 auto;
+        }
+
+        .card-feedback {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            padding-bottom: 8px;
+            opacity: 0;
+            visibility: hidden !important;
+            transition: .5s ease-in-out;
+
+            .fa-solid {
+                color: #543EE9;
+            }
+
+            .fa-regular {
+                color: #543EE9;
+            }
+
+            img {
+                width: 15px;
+                height: 15px;
+            }
+        }
+
+        img {
+            width: 100%;
+            border-radius: 0;
+            transition: .5s ease-in-out;
+            height: 213px;
+
+        }
+
+        .card-item {
+            display: flex;
+            gap: 1rem;
+            padding-top: 58px;
+
+        }
+
+        &::before {
+            position: static;
+        }
+
+        #course-item {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 0;
+            gap: 1rem;
+
+
+            #card {
+                width: 32%;
+                height: 35%;
+                transition: .3s ease-in-out;
+
+                &:hover {
+                    box-shadow: 0px 0px 70px rgba(106, 106, 106, 0.4);
+                }
+            }
+        }
+    }
+    
+    .account-index{
+    background: #3AD4D8;
+    
+    .account-wrapper{
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+
+    .account-user{
+        text-align: center;
+        padding-top: 110px;
+
+        i{
+            color: white;
+            font-size: 28px;
+        }
+
+        .fullname{
+            span{
+                font-size: 22px;
+                color: white;
+                font-weight: bold;
+                font-family: 'Futurica',sans-serif;
+            }
+        }
+    }
+ 
+    .account-content{
+        padding-top: 90px;
+        ul{
+            list-style: none;
+
+            li{
+                padding-bottom: 13px;
+                a{
+                    color: black;
+
+                    i{
+                        padding-right: 2px;
+                    }
+                }
+                a.active{
+                        color: #FE5538 !important;
+                        background: transparent !important;
+                }
+            }
+        }
+    }
+  }
+
+  .account__course-receipt{
+    padding-left: 40px;
+width: 76%; 
+
+.top-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.main__receipt{
+    li{
+        display: flex;
+        justify-content: space-around;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 7px rgba(190, 190, 190, 0.25);
+        padding-top: 18px;
+    padding-bottom: 18px;
+    }
+}
+}
+
+
+
+}
+  
 header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 11111111111111;
+}
+
+#header-acc{
+    position: static;
 }
 
 .header-top {
@@ -715,7 +1018,6 @@ header {
 
 .teacher-wrapper {
     padding-top: 135px;
-
 
     .breadcrumb {
         align-items: center;
@@ -7440,7 +7742,6 @@ footer {
             .card-item {
                 flex-wrap: wrap;
                 padding-top: 0;
-
 
                 #card {
                     width: 76% !important;
