@@ -236,6 +236,7 @@ a {
 .account__section .account-index .account-wrapper {
   padding-left: 55px;
   padding-right: 55px;
+  height: 100vh;
 }
 .account__section .account-index .account-user {
   text-align: center;
@@ -272,11 +273,15 @@ a {
 }
 .account__section .account__course-receipt {
   padding-left: 40px;
+  padding-top: 90px;
   width: 76%;
 }
 .account__section .account__course-receipt .top-content {
   display: flex;
   justify-content: space-around;
+}
+.account__section .account__course-receipt .main__receipt {
+  padding-right: 2rem;
 }
 .account__section .account__course-receipt .main__receipt li {
   display: flex;
@@ -285,6 +290,176 @@ a {
   box-shadow: 0px 0px 7px rgba(190, 190, 190, 0.25);
   padding-top: 18px;
   padding-bottom: 18px;
+  margin-bottom: 18px;
+}
+.account__section .account__course-receipt .main__receipt li div {
+  color: #69768B;
+  font-weight: "Mulish", sans-serif;
+}
+.account__section .account__course-receipt .main__receipt li .price {
+  color: #FF0000;
+}
+.account__section .account__course-receipt .main__receipt li .receipt-modal .btn {
+  background: transparent;
+  color: purple;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+.account__section .account__course-receipt .main__receipt li .receipt-modal .modal-dialog {
+  max-width: 47%;
+}
+.account__section .account__course-receipt .main__receipt li .receipt-modal .modal-content {
+  height: 68vh;
+  border: 0;
+}
+.account__section .account__course-receipt .main__receipt li .receipt-modal .modal-content .modal-header {
+  align-items: normal;
+  border-bottom: 0px;
+}
+.account__section .account__course-receipt .main__receipt li .receipt-modal .modal-content .modal-header h1 {
+  margin: 0 auto;
+  font-size: 35px;
+  font-weight: bold;
+  color: black;
+  padding-top: 54px;
+}
+.account__section .account__course-receipt .main__receipt li .receipt-modal .btn-close {
+  margin: 0;
+}
+.account__section .account__course-receipt .main__receipt li .receipt-modal .modal-view {
+  padding: 45px 60px;
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  border-bottom: 1px solid #3AD4D8;
+}
+.account__section .account__course-receipt .main__receipt li .receipt-modal .modal-view .left-m span,
+.account__section .account__course-receipt .main__receipt li .receipt-modal .modal-view .right-m span {
+  padding-bottom: 10px;
+  display: block;
+  color: black;
+  font-weight: bold;
+  font-family: "Helvetica Neue", sans-serif;
+}
+.account__section .account__course-receipt .main__receipt li .receipt-modal .modal-view .left-m i,
+.account__section .account__course-receipt .main__receipt li .receipt-modal .modal-view .right-m i {
+  color: #3AD4D8;
+  padding-right: 6px;
+}
+.account__section .account__course-receipt .main__receipt li .receipt-modal .modal-view__bottom {
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+  padding-top: 32px;
+}
+.account__section .account__course-receipt .main__receipt li .receipt-modal .modal-view__bottom span {
+  padding-bottom: 5px;
+  display: block;
+}
+.account__section .account__course-receipt .main__receipt li .receipt-modal .modal-view__bottom h5 {
+  color: black;
+  font-weight: bold;
+  font-family: "Futurica", sans-serif;
+}
+.account__section .account-profile {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 7px rgba(190, 190, 190, 0.25);
+  height: 60%;
+  margin-top: 88px;
+  margin-left: 37px;
+}
+.account__section .account-profile form {
+  padding: 0 80px;
+}
+.account__section .account-profile form .fullname {
+  width: 50%;
+  display: inline-block;
+  padding-right: 10px;
+}
+.account__section .account-profile form .phone {
+  width: 49%;
+  display: inline-block;
+}
+.account__section .account-profile form .email {
+  width: 50%;
+  display: inline-block;
+  padding-right: 10px;
+}
+.account__section .account-profile form .current-pass {
+  width: 49%;
+  display: inline-block;
+}
+.account__section .account-profile form .pass {
+  width: 50%;
+  display: inline-block;
+}
+.account__section .account-profile form .passAgain {
+  width: 49%;
+  display: inline-block;
+}
+.account__section .account-profile form .save-btn-security {
+  width: 100%;
+  display: inline-block;
+}
+.account__section .account-profile form .save-btn-security button {
+  width: 100%;
+  border-radius: 50px;
+}
+.account__section .account-profile form .save-btn {
+  width: 49%;
+  display: inline-block;
+}
+.account__section .account-profile form .save-btn button {
+  width: 100%;
+  border-radius: 50px;
+}
+.account__section .account-profile form .title {
+  padding-top: 16px;
+}
+.account__section .account-profile form input {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+  border-radius: 50px;
+  border: none;
+  width: 100%;
+  padding: 10px 20px;
+}
+.account__section .account-profile .change-pass {
+  padding-left: 104px;
+  padding-top: 45px;
+  display: block;
+  color: black;
+}
+.account__section .account-profile .change-pass span {
+  color: #09B39D;
+}
+
+.error-index {
+  background: #FAFAFA;
+}
+.error-index .logo {
+  padding-top: 23px;
+}
+.error-index .error-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(100vh - 0px);
+}
+.error-index .error-main .error-title {
+  font-size: 30px;
+  font-family: "Futurica", sans-serif;
+  margin-bottom: 0;
+}
+.error-index .error-main .error-subtitle {
+  margin-bottom: 2.7rem;
+}
+.error-index .error-main a {
+  background: #543ee9;
+  border-radius: 50px;
+  width: 31%;
+  font-family: "Mulish", sans-serif;
 }
 
 header {
@@ -2461,7 +2636,8 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.login-index form .bottom-form label, .login-index form .bottom-form a {
+.login-index form .bottom-form label,
+.login-index form .bottom-form a {
   font-size: 13px !important;
   font-family: "Mulish", sans-serif;
 }
@@ -2476,7 +2652,8 @@ header {
   right: 20px;
   cursor: pointer;
 }
-.login-index a:visited, .login-index a:link {
+.login-index a:visited,
+.login-index a:link {
   color: unset;
 }
 .login-index h2 {
@@ -2491,7 +2668,8 @@ header {
   font-family: "Murturica", sans-serif;
   color: black;
 }
-.login-index button, .login-index input[type=submit] {
+.login-index button,
+.login-index input[type=submit] {
   font-family: inherit;
 }
 .login-index .container {
@@ -2517,7 +2695,8 @@ header {
   background-color: #f8f1fe;
   border-radius: 0 10px 10px 0;
 }
-.login-index .side-1, .login-index .side-2 {
+.login-index .side-1,
+.login-index .side-2 {
   backface-visibility: hidden;
   background-size: 200%;
   width: 50%;
@@ -2635,7 +2814,8 @@ header {
 .login-index .log-li:hover {
   background: #0077b5;
 }
-.login-index .log-buttons a:visited, .login-index .log-buttons a:link {
+.login-index .log-buttons a:visited,
+.login-index .log-buttons a:link {
   text-decoration: none;
 }
 .login-index .input-text {
@@ -3444,7 +3624,8 @@ footer .last-footer div span {
   .top-header .icon-header {
     display: none !important;
   }
-  .login-index .side-1, .login-index .side-2 {
+  .login-index .side-1,
+  .login-index .side-2 {
     display: none;
   }
   .login-index .container {
@@ -4847,7 +5028,8 @@ footer .last-footer div span {
   .top-header .icon-header {
     display: none !important;
   }
-  .login-index .side-1, .login-index .side-2 {
+  .login-index .side-1,
+  .login-index .side-2 {
     display: none;
   }
   .login-index .container {
@@ -5887,7 +6069,8 @@ footer .last-footer div span {
   .top-header .icon-header {
     display: none !important;
   }
-  .login-index .side-1, .login-index .side-2 {
+  .login-index .side-1,
+  .login-index .side-2 {
     display: none;
   }
   .login-index .container {
