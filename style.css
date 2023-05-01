@@ -3905,6 +3905,52 @@ footer .last-footer div span {
   .hero-index-about .video-popup img {
     width: 100%;
   }
+  .account-modal {
+    flex-direction: unset !important;
+    height: 100% !important;
+    width: 90% !important;
+    margin: 176px auto !important;
+  }
+  .error-main {
+    flex-wrap: wrap;
+    justify-content: center !important;
+    text-align: center;
+  }
+  .error-thumbnail img {
+    width: 91%;
+    max-width: 100%;
+  }
+  .verification-item {
+    text-align: center;
+  }
+  .verification-item svg {
+    margin: 16px 0;
+  }
+  .verification-item img {
+    display: none;
+  }
+  .verification-item .sms-number {
+    text-align: center;
+    width: 100%;
+    color: black;
+  }
+  .verification-item #inputs {
+    padding: 35px 0;
+  }
+  .verification-item title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .verification-item p {
+    color: #a3a3a3;
+    font-size: 14px !important;
+    width: 200px;
+    margin-top: 4px;
+  }
+  .verification-item .title {
+    font-size: 24px !important;
+    font-family: "Futurica", sans-serif;
+  }
   .contact-wrapper {
     padding-top: 140px;
     padding-bottom: 45px;
@@ -3993,6 +4039,31 @@ footer .last-footer div span {
     font-family: "Mulish", sans-serif;
     color: #fe5538;
     font-weight: bold;
+  }
+  .account__section {
+    flex-wrap: wrap;
+  }
+  .account__section .card-item {
+    flex-wrap: wrap;
+  }
+  .account__section .card-item .card {
+    width: 48% !important;
+  }
+  .account__section .card-item .card .card-title-second {
+    font-size: 16px;
+  }
+  .account__section .card-item .card .card-body {
+    padding: 1rem 1.4rem;
+  }
+  .account__section .card-item .card .card-body .card__main {
+    justify-content: space-between;
+  }
+  .account__section .card-item .card .card-body .course-info-first {
+    padding-right: 0 !important;
+  }
+  .account__section .account__course-receipt {
+    width: 100%;
+    padding-left: 0;
   }
   #news-card-index .card-item {
     justify-content: center;
@@ -5149,6 +5220,80 @@ footer .last-footer div span {
   .contact-wrapper .contact-form .btn {
     width: 87%;
   }
+  .account-modal {
+    flex-direction: unset !important;
+    height: 100% !important;
+    width: 90% !important;
+    margin: 176px auto !important;
+  }
+  .error-main {
+    flex-wrap: wrap;
+    justify-content: center !important;
+    text-align: center;
+  }
+  .error-main .btn {
+    width: 40% !important;
+  }
+  .error-thumbnail img {
+    width: 91%;
+    max-width: 100%;
+  }
+  .verification-item {
+    text-align: center;
+  }
+  .verification-item svg {
+    margin: 16px 0;
+  }
+  .verification-item .sms-number {
+    text-align: center;
+    width: 100%;
+    color: black;
+  }
+  .verification-item #inputs {
+    padding: 35px 0;
+  }
+  .verification-item img {
+    display: none;
+  }
+  .verification-item title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .verification-item p {
+    color: #a3a3a3;
+    font-size: 14px !important;
+    width: 200px;
+    margin-top: 4px;
+  }
+  .verification-item .title {
+    font-size: 24px !important;
+    font-family: "Futurica", sans-serif;
+  }
+  .account__section {
+    flex-wrap: wrap;
+  }
+  .account__section .card-item {
+    flex-wrap: wrap;
+  }
+  .account__section .card-item .card {
+    width: 48% !important;
+  }
+  .account__section .card-item .card .card-title-second {
+    font-size: 20px;
+  }
+  .account__section .card-item .card .card-body {
+    padding: 1rem 1.4rem;
+  }
+  .account__section .card-item .card .card-body .card__main {
+    justify-content: space-between;
+  }
+  .account__section .card-item .card .card-body .course-info-first {
+    padding-right: 0 !important;
+  }
+  .account__section .account__course-receipt {
+    width: 100%;
+    padding-left: 0;
+  }
   #news-card-index {
     padding: 120px 0;
   }
@@ -6285,6 +6430,99 @@ footer .last-footer div span {
   }
   .course-card .card .card-body {
     padding: 1rem 0.7rem;
+  }
+  .account-modal {
+    flex-direction: unset !important;
+    height: 25rem !important;
+    width: 90% !important;
+    margin: 176px auto !important;
+  }
+  .error-main {
+    flex-wrap: wrap;
+    justify-content: center !important;
+    text-align: center;
+  }
+  .error-main .btn {
+    width: 40% !important;
+  }
+  .error-thumbnail img {
+    width: 72%;
+    max-width: 100%;
+  }
+  .verification-item {
+    text-align: center;
+  }
+  .verification-item svg {
+    margin: 16px 0;
+  }
+  .verification-item .sms-number {
+    text-align: center;
+    width: 100%;
+    color: black;
+  }
+  .verification-item #inputs {
+    padding: 35px 0;
+  }
+  .verification-item #reset-pass {
+    width: 60% !important;
+  }
+  .verification-item img {
+    display: none;
+  }
+  .verification-item title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .verification-item p {
+    color: #a3a3a3;
+    font-size: 14px !important;
+    width: 200px;
+    margin-top: 4px;
+  }
+  .verification-item .title {
+    font-size: 24px !important;
+    font-family: "Futurica", sans-serif;
+  }
+  .account__section {
+    flex-wrap: wrap;
+  }
+  .account__section .card-item {
+    flex-wrap: wrap;
+  }
+  .account__section .card-item .card {
+    width: 31% !important;
+  }
+  .account__section .card-item .card .card-title-second {
+    font-size: 20px;
+  }
+  .account__section .card-item .card .card-body {
+    padding: 1rem 1rem;
+  }
+  .account__section .card-item .card .card-body .card__main {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .account__section .card-item .card .card-body .course-info-first {
+    padding-right: 0 !important;
+  }
+  .account__section .card-item .card .card-body .bottom-content {
+    width: 100%;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    gap: 0.7rem;
+  }
+  .account__section .card-item .card .card-body .bottom-content .btn-primary {
+    margin-right: auto;
+    margin-left: 0;
+  }
+  .account__section .card-item .card .card-body .bottom-content .btn {
+    width: 64%;
+  }
+  .account__section .account__course-receipt {
+    width: 100%;
+    padding-left: 0;
   }
   #certification__card-index .card {
     width: 33% !important;
@@ -7550,6 +7788,101 @@ footer .last-footer div span {
     font-size: 16px;
     font-family: "Mulish", sans-serif;
   }
+  .account-modal {
+    flex-direction: unset !important;
+    height: 100% !important;
+    width: 90% !important;
+    margin: 176px auto !important;
+  }
+  .error-main {
+    flex-wrap: wrap;
+    justify-content: center !important;
+    text-align: center;
+  }
+  .error-main .btn {
+    width: 40% !important;
+  }
+  .error-thumbnail img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .account__section {
+    flex-wrap: wrap;
+  }
+  .account__section .card-item {
+    flex-wrap: wrap;
+  }
+  .account__section .card-item .card {
+    width: 31% !important;
+  }
+  .account__section .card-item .card .card-title-second {
+    font-size: 20px;
+  }
+  .account__section .card-item .card .card-body {
+    padding: 1rem 1.8rem;
+  }
+  .account__section .card-item .card .card-body .card__main {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .account__section .card-item .card .card-body .course-info-first {
+    padding-right: 0 !important;
+  }
+  .account__section .card-item .card .card-body .bottom-content {
+    width: 100%;
+    justify-content: left;
+    align-items: start;
+    gap: 0.7rem;
+  }
+  .account__section .card-item .card .card-body .bottom-content .btn-primary {
+    margin-right: auto;
+    margin-left: 0;
+  }
+  .account__section .card-item .card .card-body .bottom-content .btn {
+    width: 64%;
+  }
+  .account__section .account__course-receipt {
+    width: 100%;
+    padding-left: 0;
+  }
+  .verification-item {
+    text-align: center;
+  }
+  .verification-item svg {
+    margin: 16px 0;
+  }
+  .verification-item .sms-number {
+    text-align: center;
+    width: 100%;
+    color: black;
+  }
+  .verification-item #inputs {
+    padding: 35px 0;
+  }
+  .verification-item #reset-pass {
+    width: 60% !important;
+  }
+  .verification-item title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .verification-item p {
+    color: #a3a3a3;
+    font-size: 14px !important;
+    width: 200px;
+    margin-top: 4px;
+  }
+  .verification-item .title {
+    font-size: 24px !important;
+    font-family: "Futurica", sans-serif;
+  }
+  #sms-main {
+    padding: 70px 0;
+  }
+  #forgot-main {
+    padding: 80px 0;
+  }
   .contact-wrapper {
     padding-top: 195px;
     padding-bottom: 145px;
@@ -8352,6 +8685,103 @@ footer .last-footer div span {
     font-family: "Mulish", sans-serif;
     font-weight: 600;
     opacity: 0.85;
+  }
+  .account-modal {
+    flex-direction: unset !important;
+    height: 100% !important;
+    width: 63% !important;
+    margin: 176px auto !important;
+  }
+  .account__section {
+    flex-wrap: wrap;
+  }
+  .account__section .card-item {
+    flex-wrap: wrap;
+  }
+  .account__section .card-item .card {
+    width: 26% !important;
+  }
+  .account__section .card-item .card .card-title-second {
+    font-size: 20px;
+  }
+  .account__section .card-item .card .card-body {
+    padding: 1rem 1.8rem;
+  }
+  .account__section .card-item .card .card-body .card__main {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .account__section .card-item .card .card-body .course-info-first {
+    padding-right: 0 !important;
+  }
+  .account__section .card-item .card .card-body .bottom-content {
+    width: 100%;
+    justify-content: left;
+    align-items: start;
+  }
+  .account__section .card-item .card .card-body .bottom-content .btn-primary {
+    margin-right: auto;
+    margin-left: 0;
+  }
+  .account__section .card-item .card .card-body .bottom-content .btn {
+    width: 64%;
+    margin-left: 10px;
+  }
+  .verification-item {
+    text-align: center;
+  }
+  .verification-item svg {
+    margin: 16px 0;
+  }
+  .verification-item .sms-number {
+    text-align: center;
+    width: 100%;
+    color: black;
+  }
+  .verification-item #inputs {
+    padding: 35px 0;
+  }
+  .verification-item .bottom-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .verification-item #reset-pass {
+    width: 41% !important;
+  }
+  .verification-item title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .verification-item p {
+    color: #a3a3a3;
+    font-size: 14px !important;
+    width: 200px;
+    margin-top: 4px;
+  }
+  .verification-item .title {
+    font-size: 24px !important;
+    font-family: "Futurica", sans-serif;
+  }
+  .error-main {
+    flex-wrap: wrap;
+    justify-content: center !important;
+    text-align: center;
+  }
+  .error-main .btn {
+    width: 40% !important;
+  }
+  .error-thumbnail img {
+    width: 100%;
+    max-width: 100%;
+  }
+  #sms-main {
+    padding: 70px 0;
+  }
+  #forgot-main {
+    padding: 70px 0;
   }
   .grade-card .card .card-title-second {
     font-size: 19px;
@@ -9380,6 +9810,32 @@ footer .last-footer div span {
     font-weight: 600;
     opacity: 0.85;
   }
+  .account-modal {
+    flex-direction: unset !important;
+    height: 100% !important;
+    width: 63% !important;
+    margin: 176px auto !important;
+  }
+  .verification-item {
+    text-align: center;
+  }
+  .verification-item svg {
+    margin: 16px 0;
+  }
+  .verification-item title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .verification-item p {
+    color: #a3a3a3;
+    font-size: 14px !important;
+    width: 200px;
+    margin-top: 4px;
+  }
+  .verification-item .title {
+    font-size: 24px !important;
+    font-family: "Futurica", sans-serif;
+  }
   .hero-index {
     height: 100%;
   }
@@ -10231,8 +10687,9 @@ footer .last-footer div span {
   height: 376px;
 }
 
-.sms-verification {
+.account-modal {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 62vw;
@@ -10244,10 +10701,10 @@ footer .last-footer div span {
   padding: 24px 0px;
   margin: 150px auto;
 }
-.sms-verification .square {
+.account-modal .square {
   position: relative;
 }
-.sms-verification .square::before {
+.account-modal .square::before {
   background: #3AD4D8;
   box-shadow: 30px 4px 27px rgba(82, 82, 82, 0.25);
   border-radius: 5px;
@@ -10261,6 +10718,9 @@ footer .last-footer div span {
   height: 250px;
 }
 
+.verification-item {
+  text-align: center;
+}
 .verification-item svg {
   margin: 16px 0;
 }
@@ -10274,7 +10734,12 @@ footer .last-footer div span {
   width: 200px;
   margin-top: 4px;
 }
-.verification-item input {
+.verification-item .number-reset {
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+}
+.verification-item #inputs input {
   width: 32px;
   height: 32px;
   text-align: center;
@@ -10282,18 +10747,32 @@ footer .last-footer div span {
   border-bottom: 1.5px solid #d2d2d2;
   margin: 0 10px;
 }
-.verification-item input:focus {
+.verification-item #inputs input:focus {
   border-bottom: 1.5px solid deepskyblue;
   outline: none;
 }
-.verification-item button {
-  width: 250px;
-  letter-spacing: 2px;
-  margin-top: 24px;
-  padding: 12px 16px;
-  border-radius: 8px;
+.verification-item #reset-pass {
+  width: 80%;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin-top: 13px;
   border: none;
-  background-color: #33cdff;
+  outline: none;
+}
+.verification-item .all-btn {
+  background: #543EE9;
+  border-radius: 50px;
+  font-size: 14px;
+  width: 40%;
   color: white;
-  cursor: pointer;
+  border: none;
+  outline: none;
+  height: 40px;
+  margin-top: 20px;
+}
+.verification-item .title {
+  font-size: 35px;
+  font-family: "Futurica", sans-serif;
 }/*# sourceMappingURL=style.css.map */
