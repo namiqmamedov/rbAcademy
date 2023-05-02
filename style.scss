@@ -66,6 +66,122 @@ a {
 .account__section {
     display: flex;
 
+    
+    .drawer-account{
+
+        display: none;
+            
+            #overlay {
+                font-family: "Poppins", sans-serif;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                transition: 0.3s linear;
+            }
+
+            ul{
+                padding-left: 0;
+            }
+            
+            #overlay.active {
+                width: 100%;
+                height: 100vh;
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+            
+            #burger {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                background: white;
+                padding: 1rem;
+                z-index: 1000;
+                cursor: pointer;
+                transition: 0.3s linear;
+                box-shadow: 0px 0px 7px rgba(190, 190, 190, 0.5);
+            }
+            
+            .line {
+                width: 22px;
+                margin-bottom: 5px;
+                height: 2px;
+                background-color: white;
+            }
+            
+            .line:last-child {
+                margin-bottom: 0;
+            }
+            
+            #nav {
+                height: 65vh;
+                width: 100%;
+                background-color: white;
+                color: white;
+                position: fixed;
+                right: 0;
+                transform: translateX(100%);
+                transition: transform 0.3s linear;
+                z-index: 111111111;
+
+                .close-nav{
+                    text-align: end;
+                }
+            }
+            
+            #nav.active {
+                transform: translateX(0);
+            }
+            
+            ul {
+                list-style: none;
+            }
+            
+            li {
+                text-transform: uppercase;
+                font-size: .8rem;
+                letter-spacing: 3px;
+                line-height: 1.6;
+                margin-bottom: -40px;
+            }
+            
+            .text {
+                width: 80%;
+                text-align: center;
+                line-height: 1.8;
+                letter-spacing: 3px;
+            }
+            
+            h1 {
+                margin-bottom: 3rem;
+            }
+            
+            a {
+                color: black;
+                transition: 0.3s linear;
+            }
+            
+            i {
+                margin: 2rem;
+                color: black;
+            }
+            
+            a:hover {
+                color: goldenrod;
+                outline: none;
+            }
+          
+                @media screen and (max-width: 600px) {
+                    #burger {
+                    top: 90%;
+                    right: 12%;
+                    }
+                }
+          
+                }
+
     .course-main-card {
         padding: 0;
 
@@ -5206,20 +5322,51 @@ footer {
     .account__section {
         flex-wrap: wrap;
 
+        .account-index{
+            display: none;
+        }
+
+        .drawer-account{
+            display: block;
+
+            #nav{
+                bottom: 0;
+            }
+
+            #burger{
+                right: auto;
+                left: 30%;
+                top: 15%;
+                width: 44%;
+                text-align: center;
+            }
+        }
+
         .card-item {
             flex-wrap: wrap;
 
             .card {
-                width: 48% !important;
+                width: 47% !important;
 
                 .card-title-second{
                     font-size: 16px;
                 }
 
+                .bottom-content{
+                    flex-direction: column;
+                    gap: .9rem;
+
+                    .btn{
+                        width: 100% !important;
+                    }
+                }
+
                 .card-body{
-                    padding: 1rem 1.4rem;
+                    padding: 1rem 0.4rem;
 
                     .card__main{
+                        flex-wrap: wrap;
+                        gap: 0.4rem;
                         justify-content: space-between;
                     }
 
@@ -5229,6 +5376,44 @@ footer {
                 }
             }
         }
+
+        .account-profile{
+            margin-left: 0;
+
+            .change-pass{
+            padding-left: 16px;
+            padding-bottom: 25px;
+            }
+
+            form{
+                padding: 0 10px;
+            }
+        }
+
+       .receipt-modal{
+
+        .modal-content{
+            height: 86vh !important;
+        }
+
+        .modal-view{
+            span{
+                font-size: 14px;
+            }
+        }
+        .modal-dialog{
+            max-width: 93% !important;
+            margin: 0 auto;
+
+            .modal-view__bottom{
+                gap: 4rem !important;
+
+                h5{
+                    font-size: 14px;
+                }
+            }
+        }
+       }
 
         .account__course-receipt{
             width: 100%;
@@ -6767,6 +6952,26 @@ footer {
         }
     }
 
+    .account-index{
+        display: none;
+    }
+
+    .drawer-account{
+        display: block !important;
+        
+        #nav{
+            bottom: 0;
+        }
+
+        #burger{
+            right: auto;
+            left: 30%;
+            top: 13% !important;
+            width: 42%;
+            text-align: center;
+        }
+    }
+
     .contact-wrapper {
         padding-top: 140px;
         padding-bottom: 45px;
@@ -6903,6 +7108,19 @@ footer {
     .account__section {
         flex-wrap: wrap;
 
+        .account-profile{
+            margin-left: 0;
+
+            .change-pass{
+            padding-left: 16px;
+            padding-bottom: 25px;
+            }
+
+            form{
+                padding: 0 10px;
+            }
+        }
+
         .card-item {
             flex-wrap: wrap;
 
@@ -6922,6 +7140,31 @@ footer {
 
                     .course-info-first{
                         padding-right: 0 !important;
+                    }
+                }
+            }
+        }
+
+        .receipt-modal{
+
+            .modal-content{
+                height: 55vh !important;
+            }
+    
+            .modal-view{
+                span{
+                    font-size: 14px;
+                }
+            }
+            .modal-dialog{
+                max-width: 93% !important;
+                margin: 0 auto;
+    
+                .modal-view__bottom{
+                    gap: 4rem !important;
+    
+                    h5{
+                        font-size: 14px;
                     }
                 }
             }
@@ -8474,6 +8717,26 @@ footer {
         }
     }
 
+    .account-index{
+        display: none;
+    }
+    
+    .drawer-account{
+        display: block !important;
+        
+        #nav{
+            bottom: 0;
+        }
+
+        #burger{
+            right: auto;
+            left: 30%;
+            top: 13% !important;
+            width: 42%;
+            text-align: center;
+        }
+    }
+
     .contact-wrapper {
         padding-top: 195px;
         padding-bottom: 45px;
@@ -8623,6 +8886,44 @@ footer {
 
     .account__section {
         flex-wrap: wrap;
+
+        .account-profile{
+            margin-left: 0;
+
+            .change-pass{
+            padding-left: 16px;
+            padding-bottom: 25px;
+            }
+
+            form{
+                padding: 0 10px;
+            }
+        }
+
+        .receipt-modal{
+
+            .modal-content{
+                height: 55vh !important;
+            }
+    
+            .modal-view{
+                span{
+                    font-size: 14px;
+                }
+            }
+            .modal-dialog{
+                max-width: 93% !important;
+                margin: 0 auto;
+    
+                .modal-view__bottom{
+                    gap: 4rem !important;
+    
+                    h5{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
 
         .card-item {
             flex-wrap: wrap;
@@ -10508,6 +10809,44 @@ footer {
     .account__section {
         flex-wrap: wrap;
 
+        .account-profile{
+            margin-left: 0;
+
+            .change-pass{
+            padding-left: 16px;
+            padding-bottom: 25px;
+            }
+
+            form{
+                padding: 0 10px;
+            }
+        }
+
+        .receipt-modal{
+
+            .modal-content{
+                height: 55vh !important;
+            }
+    
+            .modal-view{
+                span{
+                    font-size: 14px;
+                }
+            }
+            .modal-dialog{
+                max-width: 93% !important;
+                margin: 0 auto;
+    
+                .modal-view__bottom{
+                    gap: 4rem !important;
+    
+                    h5{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
         .card-item {
             flex-wrap: wrap;
 
@@ -10532,6 +10871,45 @@ footer {
                     }
                     .bottom-content{
                         width: 100%;
+                        justify-content: left;
+                        align-items: start;
+                        gap: .7rem;
+
+                        .btn-primary{
+                            margin-right:auto;
+                            margin-left: 0;
+                        }
+
+                        .btn{
+                            width: 64%;
+                        }
+                    }
+                }
+            }
+
+            
+            .card-exam {
+                width: 45% !important;
+
+                .card-title-second{
+                    font-size: 20px;
+                }
+
+                .card-body{
+                    padding: 1rem 1rem;
+
+                    .card__main{
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        gap: 0.5rem;
+                    }
+
+                    .course-info-first{
+                        padding-right: 0 !important;
+                    }
+                    .bottom-content{
+                        width: 100%;
+                        flex-direction: column;
                         justify-content: left;
                         align-items: start;
                         gap: .7rem;
@@ -11766,7 +12144,33 @@ footer {
     }
 
     .account__section {
-        flex-wrap: wrap;
+
+        .account-profile{
+            margin-left: 0;
+
+            .change-pass{
+            padding-left: 16px;
+            padding-bottom: 25px;
+            }
+
+            form{
+                padding: 0 10px;
+            }
+        }
+
+        .receipt-modal{
+
+            .modal-content{
+                height: 55vh !important;
+            }
+    
+            .modal-dialog{
+                max-width: 73% !important;
+                margin: 0 auto;
+    
+
+            }
+        }
 
         .card-item {
             flex-wrap: wrap;

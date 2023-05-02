@@ -56,6 +56,101 @@ a {
 .account__section {
   display: flex;
 }
+.account__section .drawer-account {
+  display: none;
+}
+.account__section .drawer-account #overlay {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  transition: 0.3s linear;
+}
+.account__section .drawer-account ul {
+  padding-left: 0;
+}
+.account__section .drawer-account #overlay.active {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.account__section .drawer-account #burger {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: white;
+  padding: 1rem;
+  z-index: 1000;
+  cursor: pointer;
+  transition: 0.3s linear;
+  box-shadow: 0px 0px 7px rgba(190, 190, 190, 0.5);
+}
+.account__section .drawer-account .line {
+  width: 22px;
+  margin-bottom: 5px;
+  height: 2px;
+  background-color: white;
+}
+.account__section .drawer-account .line:last-child {
+  margin-bottom: 0;
+}
+.account__section .drawer-account #nav {
+  height: 65vh;
+  width: 100%;
+  background-color: white;
+  color: white;
+  position: fixed;
+  right: 0;
+  transform: translateX(100%);
+  transition: transform 0.3s linear;
+  z-index: 111111111;
+}
+.account__section .drawer-account #nav .close-nav {
+  text-align: end;
+}
+.account__section .drawer-account #nav.active {
+  transform: translateX(0);
+}
+.account__section .drawer-account ul {
+  list-style: none;
+}
+.account__section .drawer-account li {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  line-height: 1.6;
+  margin-bottom: -40px;
+}
+.account__section .drawer-account .text {
+  width: 80%;
+  text-align: center;
+  line-height: 1.8;
+  letter-spacing: 3px;
+}
+.account__section .drawer-account h1 {
+  margin-bottom: 3rem;
+}
+.account__section .drawer-account a {
+  color: black;
+  transition: 0.3s linear;
+}
+.account__section .drawer-account i {
+  margin: 2rem;
+  color: black;
+}
+.account__section .drawer-account a:hover {
+  color: goldenrod;
+  outline: none;
+}
+@media screen and (max-width: 600px) {
+  .account__section .drawer-account #burger {
+    top: 90%;
+    right: 12%;
+  }
+}
 .account__section .course-main-card {
   padding: 0;
 }
@@ -4043,23 +4138,74 @@ footer .last-footer div span {
   .account__section {
     flex-wrap: wrap;
   }
+  .account__section .account-index {
+    display: none;
+  }
+  .account__section .drawer-account {
+    display: block;
+  }
+  .account__section .drawer-account #nav {
+    bottom: 0;
+  }
+  .account__section .drawer-account #burger {
+    right: auto;
+    left: 30%;
+    top: 15%;
+    width: 44%;
+    text-align: center;
+  }
   .account__section .card-item {
     flex-wrap: wrap;
   }
   .account__section .card-item .card {
-    width: 48% !important;
+    width: 47% !important;
   }
   .account__section .card-item .card .card-title-second {
     font-size: 16px;
   }
+  .account__section .card-item .card .bottom-content {
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+  .account__section .card-item .card .bottom-content .btn {
+    width: 100% !important;
+  }
   .account__section .card-item .card .card-body {
-    padding: 1rem 1.4rem;
+    padding: 1rem 0.4rem;
   }
   .account__section .card-item .card .card-body .card__main {
+    flex-wrap: wrap;
+    gap: 0.4rem;
     justify-content: space-between;
   }
   .account__section .card-item .card .card-body .course-info-first {
     padding-right: 0 !important;
+  }
+  .account__section .account-profile {
+    margin-left: 0;
+  }
+  .account__section .account-profile .change-pass {
+    padding-left: 16px;
+    padding-bottom: 25px;
+  }
+  .account__section .account-profile form {
+    padding: 0 10px;
+  }
+  .account__section .receipt-modal .modal-content {
+    height: 86vh !important;
+  }
+  .account__section .receipt-modal .modal-view span {
+    font-size: 14px;
+  }
+  .account__section .receipt-modal .modal-dialog {
+    max-width: 93% !important;
+    margin: 0 auto;
+  }
+  .account__section .receipt-modal .modal-dialog .modal-view__bottom {
+    gap: 4rem !important;
+  }
+  .account__section .receipt-modal .modal-dialog .modal-view__bottom h5 {
+    font-size: 14px;
   }
   .account__section .account__course-receipt {
     width: 100%;
@@ -5171,6 +5317,22 @@ footer .last-footer div span {
   #certification__card-index .subtitle {
     max-width: 480px;
   }
+  .account-index {
+    display: none;
+  }
+  .drawer-account {
+    display: block !important;
+  }
+  .drawer-account #nav {
+    bottom: 0;
+  }
+  .drawer-account #burger {
+    right: auto;
+    left: 30%;
+    top: 13% !important;
+    width: 42%;
+    text-align: center;
+  }
   .contact-wrapper {
     padding-top: 140px;
     padding-bottom: 45px;
@@ -5272,6 +5434,16 @@ footer .last-footer div span {
   .account__section {
     flex-wrap: wrap;
   }
+  .account__section .account-profile {
+    margin-left: 0;
+  }
+  .account__section .account-profile .change-pass {
+    padding-left: 16px;
+    padding-bottom: 25px;
+  }
+  .account__section .account-profile form {
+    padding: 0 10px;
+  }
   .account__section .card-item {
     flex-wrap: wrap;
   }
@@ -5289,6 +5461,22 @@ footer .last-footer div span {
   }
   .account__section .card-item .card .card-body .course-info-first {
     padding-right: 0 !important;
+  }
+  .account__section .receipt-modal .modal-content {
+    height: 55vh !important;
+  }
+  .account__section .receipt-modal .modal-view span {
+    font-size: 14px;
+  }
+  .account__section .receipt-modal .modal-dialog {
+    max-width: 93% !important;
+    margin: 0 auto;
+  }
+  .account__section .receipt-modal .modal-dialog .modal-view__bottom {
+    gap: 4rem !important;
+  }
+  .account__section .receipt-modal .modal-dialog .modal-view__bottom h5 {
+    font-size: 14px;
   }
   .account__section .account__course-receipt {
     width: 100%;
@@ -6376,6 +6564,22 @@ footer .last-footer div span {
     color: black !important;
     margin-bottom: 12px;
   }
+  .account-index {
+    display: none;
+  }
+  .drawer-account {
+    display: block !important;
+  }
+  .drawer-account #nav {
+    bottom: 0;
+  }
+  .drawer-account #burger {
+    right: auto;
+    left: 30%;
+    top: 13% !important;
+    width: 42%;
+    text-align: center;
+  }
   .contact-wrapper {
     padding-top: 195px;
     padding-bottom: 45px;
@@ -6485,6 +6689,32 @@ footer .last-footer div span {
   }
   .account__section {
     flex-wrap: wrap;
+  }
+  .account__section .account-profile {
+    margin-left: 0;
+  }
+  .account__section .account-profile .change-pass {
+    padding-left: 16px;
+    padding-bottom: 25px;
+  }
+  .account__section .account-profile form {
+    padding: 0 10px;
+  }
+  .account__section .receipt-modal .modal-content {
+    height: 55vh !important;
+  }
+  .account__section .receipt-modal .modal-view span {
+    font-size: 14px;
+  }
+  .account__section .receipt-modal .modal-dialog {
+    max-width: 93% !important;
+    margin: 0 auto;
+  }
+  .account__section .receipt-modal .modal-dialog .modal-view__bottom {
+    gap: 4rem !important;
+  }
+  .account__section .receipt-modal .modal-dialog .modal-view__bottom h5 {
+    font-size: 14px;
   }
   .account__section .card-item {
     flex-wrap: wrap;
@@ -7809,6 +8039,32 @@ footer .last-footer div span {
   .account__section {
     flex-wrap: wrap;
   }
+  .account__section .account-profile {
+    margin-left: 0;
+  }
+  .account__section .account-profile .change-pass {
+    padding-left: 16px;
+    padding-bottom: 25px;
+  }
+  .account__section .account-profile form {
+    padding: 0 10px;
+  }
+  .account__section .receipt-modal .modal-content {
+    height: 55vh !important;
+  }
+  .account__section .receipt-modal .modal-view span {
+    font-size: 14px;
+  }
+  .account__section .receipt-modal .modal-dialog {
+    max-width: 93% !important;
+    margin: 0 auto;
+  }
+  .account__section .receipt-modal .modal-dialog .modal-view__bottom {
+    gap: 4rem !important;
+  }
+  .account__section .receipt-modal .modal-dialog .modal-view__bottom h5 {
+    font-size: 14px;
+  }
   .account__section .card-item {
     flex-wrap: wrap;
   }
@@ -7840,6 +8096,37 @@ footer .last-footer div span {
     margin-left: 0;
   }
   .account__section .card-item .card .card-body .bottom-content .btn {
+    width: 64%;
+  }
+  .account__section .card-item .card-exam {
+    width: 45% !important;
+  }
+  .account__section .card-item .card-exam .card-title-second {
+    font-size: 20px;
+  }
+  .account__section .card-item .card-exam .card-body {
+    padding: 1rem 1rem;
+  }
+  .account__section .card-item .card-exam .card-body .card__main {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .account__section .card-item .card-exam .card-body .course-info-first {
+    padding-right: 0 !important;
+  }
+  .account__section .card-item .card-exam .card-body .bottom-content {
+    width: 100%;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    gap: 0.7rem;
+  }
+  .account__section .card-item .card-exam .card-body .bottom-content .btn-primary {
+    margin-right: auto;
+    margin-left: 0;
+  }
+  .account__section .card-item .card-exam .card-body .bottom-content .btn {
     width: 64%;
   }
   .account__section .account__course-receipt {
@@ -8692,8 +8979,22 @@ footer .last-footer div span {
     width: 63% !important;
     margin: 176px auto !important;
   }
-  .account__section {
-    flex-wrap: wrap;
+  .account__section .account-profile {
+    margin-left: 0;
+  }
+  .account__section .account-profile .change-pass {
+    padding-left: 16px;
+    padding-bottom: 25px;
+  }
+  .account__section .account-profile form {
+    padding: 0 10px;
+  }
+  .account__section .receipt-modal .modal-content {
+    height: 55vh !important;
+  }
+  .account__section .receipt-modal .modal-dialog {
+    max-width: 73% !important;
+    margin: 0 auto;
   }
   .account__section .card-item {
     flex-wrap: wrap;
