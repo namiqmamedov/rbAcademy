@@ -9,7 +9,7 @@ a {
     text-decoration: none !important;
 }
 
-.active {
+.active-header {
     background: white;
     -webkit-box-shadow: 0px 0px 7px rgba(190, 190, 190, 0.5);
     box-shadow: 0px 0px 7px rgba(190, 190, 190, 0.5);
@@ -48,6 +48,14 @@ a {
     bottom: 70px;
     z-index: 1000;
     cursor: pointer;
+    transition: .3s ease-in-out;
+
+    &:hover{
+        background:  #543ee9;
+        i{
+            color: white;
+        }
+    }
 
     i {
         font-size: 22px;
@@ -65,122 +73,116 @@ a {
 
 .account__section {
     display: flex;
+    overflow-x: hidden;
 
-    
-    .drawer-account{
+    .drawer-account {
 
         display: none;
-            
-            #overlay {
-                font-family: "Poppins", sans-serif;
-                margin: 0;
-                padding: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 100vh;
-                transition: 0.3s linear;
-            }
 
-            ul{
-                padding-left: 0;
-            }
-            
-            #overlay.active {
-                width: 100%;
-                height: 100vh;
-                background-color: rgba(0, 0, 0, 0.7);
-            }
-            
-            #burger {
-                position: absolute;
-                top: 20px;
-                right: 20px;
-                background: white;
-                padding: 1rem;
-                z-index: 1000;
-                cursor: pointer;
-                transition: 0.3s linear;
-                box-shadow: 0px 0px 7px rgba(190, 190, 190, 0.5);
-            }
-            
-            .line {
-                width: 22px;
-                margin-bottom: 5px;
-                height: 2px;
-                background-color: white;
-            }
-            
-            .line:last-child {
-                margin-bottom: 0;
-            }
-            
-            #nav {
-                height: 65vh;
-                width: 100%;
-                background-color: white;
-                color: white;
-                position: fixed;
-                right: 0;
-                transform: translateX(100%);
-                transition: transform 0.3s linear;
-                z-index: 111111111;
+        #overlay {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            transition: 0.3s linear;
+        }
 
-                .close-nav{
-                    text-align: end;
-                }
+        ul {
+            padding-left: 0;
+        }
+
+        #overlay.active {
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        #burger {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: white;
+            padding: 1rem;
+            z-index: 1000;
+            cursor: pointer;
+            transition: 0.3s linear;
+            box-shadow: 0px 0px 7px rgba(190, 190, 190, 0.5);
+        }
+
+        .line {
+            width: 22px;
+            margin-bottom: 5px;
+            height: 2px;
+            background-color: white;
+        }
+
+        .line:last-child {
+            margin-bottom: 0;
+        }
+
+        #nav {
+            height: 65vh;
+            width: 100%;
+            background-color: white;
+            color: white;
+            position: fixed;
+            right: 0;
+            transform: translateX(100%);
+            transition: transform 0.3s linear;
+            z-index: 111111111;
+
+            .close-nav {
+                text-align: end;
             }
-            
-            #nav.active {
-                transform: translateX(0);
-            }
-            
-            ul {
-                list-style: none;
-            }
-            
-            li {
-                text-transform: uppercase;
-                font-size: .8rem;
-                letter-spacing: 3px;
-                line-height: 1.6;
-                margin-bottom: -40px;
-            }
-            
-            .text {
-                width: 80%;
-                text-align: center;
-                line-height: 1.8;
-                letter-spacing: 3px;
-            }
-            
-            h1 {
-                margin-bottom: 3rem;
-            }
-            
-            a {
-                color: black;
-                transition: 0.3s linear;
-            }
-            
-            i {
-                margin: 2rem;
-                color: black;
-            }
-            
-            a:hover {
-                color: goldenrod;
-                outline: none;
-            }
-          
-                @media screen and (max-width: 600px) {
-                    #burger {
-                    top: 90%;
-                    right: 12%;
-                    }
-                }
-          
-                }
+        }
+
+        #nav.active {
+            transform: translateX(0);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            text-transform: uppercase;
+            font-size: .8rem;
+            letter-spacing: 3px;
+            line-height: 1.6;
+            margin-bottom: -40px;
+        }
+
+        .text {
+            width: 80%;
+            text-align: center;
+            line-height: 1.8;
+            letter-spacing: 3px;
+        }
+
+        h1 {
+            margin-bottom: 3rem;
+        }
+
+        a {
+            color: black;
+            transition: 0.3s linear;
+        }
+
+        i {
+            margin: 2rem;
+            color: black;
+        }
+
+        a:hover {
+            color: goldenrod;
+            outline: none;
+        }
+
+
+    }
 
     .course-main-card {
         padding: 0;
@@ -444,19 +446,18 @@ a {
 
                 li {
                     padding-bottom: 13px;
-
                     a {
                         color: black;
 
                         i {
-                            padding-right: 2px;
+                            padding-left: 2px;
                         }
                     }
+                }
 
-                    a.active {
-                        color: #FE5538 !important;
-                        background: transparent !important;
-                    }
+                a.active {
+                    color: #FE5538 !important;
+                    background: transparent !important;
                 }
             }
         }
@@ -507,8 +508,7 @@ a {
                     }
 
                     .modal-content {
-                        height: 68vh;
-                        border: 0;
+                        height: 68vh !important;
 
                         .modal-header {
                             align-items: normal;
@@ -716,9 +716,6 @@ header {
     z-index: 11111111111111;
 }
 
-#header-acc {
-    position: static;
-}
 
 .header-top {
     background: #3AD4D8;
@@ -2247,7 +2244,7 @@ header {
                     width: 40px;
                     height: 40px;
                     border-radius: 50%;
-                    z-index: 111111111111;
+                    z-index: 111;
                     top: 101%;
                     left: 46%;
                 }
@@ -4197,18 +4194,16 @@ header {
         align-items: center;
         justify-content: center;
         font-size: 12px;
+        color: white;
 
-        &:hover {
-            background: #543EE9;
-            outline: auto;
-            color: #543EE9;
+        i{
+            color: white;
         }
 
-        &::before {
-            font-family: inherit !important;
-            font-size: 16px;
-
+        &::before{
+            display: none;
         }
+        
     }
 
     .slick-next {
@@ -4225,18 +4220,17 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
+        font-size: 12px;
+        color: white;
 
-        &:hover {
-            background: #543EE9;
-            outline: auto;
-            color: #543EE9;
+        i{
+            color: white;
         }
 
-        &::before {
-            font-family: inherit !important;
-            font-size: 16px;
-
+        &::before{
+            display: none;
         }
+
     }
 
     .all-item {
@@ -4916,7 +4910,7 @@ footer {
                 top: 80px;
                 right: 0;
                 left: 0;
-                width: 100vw;
+                width: 100%;
                 background: #FFFFFF;
                 transition: .2s;
                 overflow-y: scroll;
@@ -5150,14 +5144,44 @@ footer {
         margin: 176px auto !important;
     }
 
-    .error-main{
+    .sidenav {
+        .square {
+            margin-left: 8rem !important;
+        }
+
+        .card-right {
+            padding-left: 4px !important;
+        }
+
+        #card-item-nav {
+            padding-top: 40px;
+        }
+    }
+
+    .course-detail {
+        margin-top: 116px;
+
+        .account__course-detail {
+            .course-thumbnail {
+                img {
+                    width: 90%;
+                }
+            }
+
+            .course__wrapper-body {
+                width: 90% !important;
+            }
+        }
+    }
+
+    .error-main {
         flex-wrap: wrap;
         justify-content: center !important;
         text-align: center;
     }
 
-    .error-thumbnail{
-        img{
+    .error-thumbnail {
+        img {
             width: 91%;
             max-width: 100%;
         }
@@ -5319,24 +5343,32 @@ footer {
 
     }
 
+    .account__security {
+        flex-wrap: nowrap !important;
+    }
+
     .account__section {
         flex-wrap: wrap;
 
-        .account-index{
+        .account-index {
             display: none;
         }
 
-        .drawer-account{
+        .account__main-wrapper {
+            margin-top: 105px;
+        }
+
+        .drawer-account {
             display: block;
 
-            #nav{
+            #nav {
                 bottom: 0;
             }
 
-            #burger{
+            #burger {
                 right: auto;
                 left: 30%;
-                top: 15%;
+                top: 8.5%;
                 width: 44%;
                 text-align: center;
             }
@@ -5348,74 +5380,84 @@ footer {
             .card {
                 width: 47% !important;
 
-                .card-title-second{
+                .card-title-second {
                     font-size: 16px;
                 }
 
-                .bottom-content{
+                .bottom-content {
                     flex-direction: column;
                     gap: .9rem;
 
-                    .btn{
+                    .btn {
                         width: 100% !important;
                     }
                 }
 
-                .card-body{
+                .card-body {
                     padding: 1rem 0.4rem;
 
-                    .card__main{
+                    .card__main {
                         flex-wrap: wrap;
                         gap: 0.4rem;
                         justify-content: space-between;
                     }
 
-                    .course-info-first{
+                    .course-info-first {
                         padding-right: 0 !important;
                     }
                 }
             }
         }
 
-        .account-profile{
+        #account-profile {
             margin-left: 0;
+            margin-right: 0;
+        }
 
-            .change-pass{
-            padding-left: 16px;
-            padding-bottom: 25px;
+        .account-profile {
+            margin: 109px 17px;
+
+            .change-pass {
+                padding-left: 16px;
+                padding-bottom: 25px;
             }
 
-            form{
+            form {
                 padding: 0 10px;
-            }
-        }
 
-       .receipt-modal{
-
-        .modal-content{
-            height: 86vh !important;
-        }
-
-        .modal-view{
-            span{
-                font-size: 14px;
-            }
-        }
-        .modal-dialog{
-            max-width: 93% !important;
-            margin: 0 auto;
-
-            .modal-view__bottom{
-                gap: 4rem !important;
-
-                h5{
-                    font-size: 14px;
+                input {
+                    width: 94%;
                 }
             }
         }
-       }
 
-        .account__course-receipt{
+        .receipt-modal {
+
+            .modal-content {
+                height: 86vh !important;
+            }
+
+            .modal-view {
+                span {
+                    font-size: 14px;
+                }
+            }
+
+            .modal-dialog {
+                max-width: 93% !important;
+                margin: 0 auto;
+
+                .modal-view__bottom {
+                    gap: 4rem !important;
+
+                    h5 {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .account__course-receipt {
             width: 100%;
             padding-left: 0;
         }
@@ -6952,23 +6994,53 @@ footer {
         }
     }
 
-    .account-index{
+    .account-index {
         display: none;
     }
 
-    .drawer-account{
+    .drawer-account {
         display: block !important;
-        
-        #nav{
+
+        #nav {
             bottom: 0;
         }
 
-        #burger{
+        #burger {
             right: auto;
             left: 30%;
-            top: 13% !important;
+            top: 9% !important;
             width: 42%;
             text-align: center;
+        }
+    }
+
+    .course-detail {
+        margin-top: 116px;
+
+        .account__course-detail {
+            .course-thumbnail {
+                img {
+                    width: 90%;
+                }
+            }
+
+            .course__wrapper-body {
+                width: 90% !important;
+            }
+        }
+    }
+
+    .sidenav {
+        .square {
+            margin-left: 8rem !important;
+        }
+
+        .card-right {
+            padding-left: 4px !important;
+        }
+
+        #card-item-nav {
+            padding-top: 20px !important;
         }
     }
 
@@ -7047,18 +7119,18 @@ footer {
         margin: 176px auto !important;
     }
 
-    .error-main{
+    .error-main {
         flex-wrap: wrap;
         justify-content: center !important;
         text-align: center;
 
-        .btn{
+        .btn {
             width: 40% !important;
         }
     }
 
-    .error-thumbnail{
-        img{
+    .error-thumbnail {
+        img {
             width: 91%;
             max-width: 100%;
         }
@@ -7108,69 +7180,76 @@ footer {
     .account__section {
         flex-wrap: wrap;
 
-        .account-profile{
-            margin-left: 0;
+        .account-profile {
+            margin: 195px 17px;
 
-            .change-pass{
-            padding-left: 16px;
-            padding-bottom: 25px;
+            .change-pass {
+                padding-left: 16px;
+                padding-bottom: 25px;
             }
 
-            form{
+            form {
                 padding: 0 10px;
+
+                input {
+                    width: 94%;
+                }
             }
         }
 
         .card-item {
             flex-wrap: wrap;
+            padding-top: 178px !important;
+
 
             .card {
                 width: 48% !important;
 
-                .card-title-second{
+                .card-title-second {
                     font-size: 20px;
                 }
 
-                .card-body{
+                .card-body {
                     padding: 1rem 1.4rem;
 
-                    .card__main{
+                    .card__main {
                         justify-content: space-between;
                     }
 
-                    .course-info-first{
+                    .course-info-first {
                         padding-right: 0 !important;
                     }
                 }
             }
         }
 
-        .receipt-modal{
+        .receipt-modal {
 
-            .modal-content{
+            .modal-content {
                 height: 55vh !important;
             }
-    
-            .modal-view{
-                span{
+
+            .modal-view {
+                span {
                     font-size: 14px;
                 }
             }
-            .modal-dialog{
+
+            .modal-dialog {
                 max-width: 93% !important;
                 margin: 0 auto;
-    
-                .modal-view__bottom{
+
+                .modal-view__bottom {
                     gap: 4rem !important;
-    
-                    h5{
+
+                    h5 {
                         font-size: 14px;
                     }
                 }
             }
         }
 
-        .account__course-receipt{
+        .account__course-receipt {
             width: 100%;
             padding-left: 0;
         }
@@ -7357,7 +7436,7 @@ footer {
                 top: 80px;
                 right: 0;
                 left: 0;
-                width: 100vw;
+                width: 100%;
                 background: #FFFFFF;
                 transition: .2s;
                 overflow-y: scroll;
@@ -8672,7 +8751,7 @@ footer {
                 top: 80px;
                 right: 0;
                 left: 0;
-                width: 100vw;
+                width: 100%;
                 background: #FFFFFF;
                 transition: .2s;
                 overflow-y: scroll;
@@ -8717,21 +8796,21 @@ footer {
         }
     }
 
-    .account-index{
+    .account-index {
         display: none;
     }
-    
-    .drawer-account{
+
+    .drawer-account {
         display: block !important;
-        
-        #nav{
+
+        #nav {
             bottom: 0;
         }
 
-        #burger{
+        #burger {
             right: auto;
             left: 30%;
-            top: 13% !important;
+            top: 9.4% !important;
             width: 42%;
             text-align: center;
         }
@@ -8816,6 +8895,22 @@ footer {
         }
     }
 
+    .course-detail {
+        margin-top: 116px;
+
+        .account__course-detail {
+            .course-thumbnail {
+                img {
+                    width: 90%;
+                }
+            }
+
+            .course__wrapper-body {
+                width: 90% !important;
+            }
+        }
+    }
+
     .account-modal {
         flex-direction: unset !important;
         height: 25rem !important;
@@ -8823,18 +8918,18 @@ footer {
         margin: 176px auto !important;
     }
 
-    .error-main{
+    .error-main {
         flex-wrap: wrap;
         justify-content: center !important;
         text-align: center;
 
-        .btn{
+        .btn {
             width: 40% !important;
         }
     }
 
-    .error-thumbnail{
-        img{
+    .error-thumbnail {
+        img {
             width: 72%;
             max-width: 100%;
         }
@@ -8884,41 +8979,64 @@ footer {
 
     }
 
+    .sidenav {
+        .square {
+            margin-left: 8rem !important;
+        }
+
+        .card-right {
+            padding-left: 4px !important;
+        }
+
+        #card-item-nav {
+            padding-top: 20px !important;
+        }
+    }
+
     .account__section {
         flex-wrap: wrap;
 
-        .account-profile{
-            margin-left: 0;
+        .account-profile {
+            margin: 195px 24px !important;
 
-            .change-pass{
-            padding-left: 16px;
-            padding-bottom: 25px;
+            .change-pass {
+                padding-left: 16px;
+                padding-bottom: 25px;
             }
 
-            form{
+            form {
                 padding: 0 10px;
+            }
+
+            .passAgain {
+                padding-left: 10px;
+            }
+
+            .pass {
+                width: 49% !important;
             }
         }
 
-        .receipt-modal{
+        .receipt-modal {
 
-            .modal-content{
+            .modal-content {
                 height: 55vh !important;
             }
-    
-            .modal-view{
-                span{
+
+            .modal-view {
+                span {
                     font-size: 14px;
                 }
             }
-            .modal-dialog{
+
+            .modal-dialog {
                 max-width: 93% !important;
                 margin: 0 auto;
-    
-                .modal-view__bottom{
+
+                .modal-view__bottom {
                     gap: 4rem !important;
-    
-                    h5{
+
+                    h5 {
                         font-size: 14px;
                     }
                 }
@@ -8927,39 +9045,41 @@ footer {
 
         .card-item {
             flex-wrap: wrap;
+            padding-top: 185px !important;
 
             .card {
                 width: 31% !important;
 
-                .card-title-second{
+                .card-title-second {
                     font-size: 20px;
                 }
 
-                .card-body{
+                .card-body {
                     padding: 1rem 1rem;
 
-                    .card__main{
+                    .card__main {
                         justify-content: space-between;
                         flex-wrap: wrap;
                         gap: 0.5rem;
                     }
 
-                    .course-info-first{
+                    .course-info-first {
                         padding-right: 0 !important;
                     }
-                    .bottom-content{
+
+                    .bottom-content {
                         width: 100%;
                         flex-direction: column;
                         justify-content: left;
                         align-items: start;
                         gap: .7rem;
 
-                        .btn-primary{
-                            margin-right:auto;
+                        .btn-primary {
+                            margin-right: auto;
                             margin-left: 0;
                         }
 
-                        .btn{
+                        .btn {
                             width: 64%;
                         }
                     }
@@ -8967,7 +9087,7 @@ footer {
             }
         }
 
-        .account__course-receipt{
+        .account__course-receipt {
             width: 100%;
             padding-left: 0;
         }
@@ -10788,59 +10908,92 @@ footer {
         margin: 176px auto !important;
     }
 
-    
-    .error-main{
+
+    .error-main {
         flex-wrap: wrap;
         justify-content: center !important;
         text-align: center;
 
-        .btn{
+        .btn {
             width: 40% !important;
         }
     }
 
-    .error-thumbnail{
-        img{
+    .error-thumbnail {
+        img {
             width: 100%;
             max-width: 100%;
+        }
+    }
+
+
+    .account__security {
+        gap: 4rem !important;
+        flex-wrap: nowrap !important;
+
+        .account-profile {
+            width: 80% !important;
+
+            .pass {
+                width: 49% !important;
+            }
+
+            .passAgain {
+                padding-left: 10px;
+            }
+        }
+    }
+
+    .sidenav {
+        .square {
+            margin-left: 8rem !important;
+        }
+
+        .card-right {
+            padding-left: 4px !important;
+        }
+
+        #card-item-nav {
+            padding-top: 20px !important;
         }
     }
 
     .account__section {
         flex-wrap: wrap;
 
-        .account-profile{
+        .account-profile {
             margin-left: 0;
 
-            .change-pass{
-            padding-left: 16px;
-            padding-bottom: 25px;
+            .change-pass {
+                padding-left: 16px;
+                padding-bottom: 25px;
             }
 
-            form{
+            form {
                 padding: 0 10px;
             }
         }
 
-        .receipt-modal{
+        .receipt-modal {
 
-            .modal-content{
+            .modal-content {
                 height: 55vh !important;
             }
-    
-            .modal-view{
-                span{
+
+            .modal-view {
+                span {
                     font-size: 14px;
                 }
             }
-            .modal-dialog{
+
+            .modal-dialog {
                 max-width: 93% !important;
                 margin: 0 auto;
-    
-                .modal-view__bottom{
+
+                .modal-view__bottom {
                     gap: 4rem !important;
-    
-                    h5{
+
+                    h5 {
                         font-size: 14px;
                     }
                 }
@@ -10849,84 +11002,88 @@ footer {
 
         .card-item {
             flex-wrap: wrap;
+            padding-top: 150px !important;
 
             .card {
                 width: 31% !important;
 
-                .card-title-second{
+                .card-title-second {
                     font-size: 20px;
                 }
 
-                .card-body{
+                .card-body {
                     padding: 1rem 1.8rem;
 
-                    .card__main{
+                    .card__main {
                         justify-content: space-between;
                         flex-wrap: wrap;
                         gap: 0.5rem;
                     }
 
-                    .course-info-first{
+                    .course-info-first {
                         padding-right: 0 !important;
                     }
-                    .bottom-content{
+
+                    .bottom-content {
                         width: 100%;
                         justify-content: left;
                         align-items: start;
                         gap: .7rem;
 
-                        .btn-primary{
-                            margin-right:auto;
+                        .btn-primary {
+                            margin-right: auto;
                             margin-left: 0;
                         }
 
-                        .btn{
+                        .btn {
                             width: 64%;
                         }
                     }
                 }
             }
 
-            
+
             .card-exam {
                 width: 45% !important;
 
-                .card-title-second{
+                .card-title-second {
                     font-size: 20px;
                 }
 
-                .card-body{
+                .card-body {
                     padding: 1rem 1rem;
 
-                    .card__main{
+                    .card__main {
                         justify-content: space-between;
                         flex-wrap: wrap;
                         gap: 0.5rem;
                     }
 
-                    .course-info-first{
+                    .course-info-first {
                         padding-right: 0 !important;
                     }
-                    .bottom-content{
+
+                    .bottom-content {
                         width: 100%;
                         flex-direction: column;
                         justify-content: left;
                         align-items: start;
                         gap: .7rem;
 
-                        .btn-primary{
-                            margin-right:auto;
+                        .btn-primary {
+                            margin-right: auto;
                             margin-left: 0;
                         }
 
-                        .btn{
+                        .btn {
                             width: 64%;
                         }
                     }
                 }
             }
         }
-        .account__course-receipt{
+
+        .account__course-receipt {
             width: 100%;
             padding-left: 0;
         }
@@ -12136,6 +12293,20 @@ footer {
         }
     }
 
+    .sidenav {
+        .square {
+            margin-left: 8rem !important;
+        }
+
+        .card-right {
+            padding-left: 4px !important;
+        }
+
+        #card-item-nav {
+            padding-top: 20px !important;
+        }
+    }
+
     .account-modal {
         flex-direction: unset !important;
         height: 100% !important;
@@ -12143,68 +12314,91 @@ footer {
         margin: 176px auto !important;
     }
 
-    .account__section {
+    .account__security {
+        gap: 4rem !important;
+        flex-wrap: nowrap !important;
 
-        .account-profile{
-            margin-left: 0;
+        .account-profile {
+            width: 63% !important;
+            height: 49%;
+            margin-top: 130px;
 
-            .change-pass{
-            padding-left: 16px;
-            padding-bottom: 25px;
+            .pass {
+                width: 49% !important;
             }
 
-            form{
+            .passAgain {
+                width: 50% !important;
+                padding-left: 11px;
+            }
+        }
+    }
+
+    .account__section {
+
+        .account-profile {
+            margin-left: 0;
+
+            .change-pass {
+                padding-left: 16px;
+                padding-bottom: 25px;
+            }
+
+            form {
                 padding: 0 10px;
             }
         }
 
-        .receipt-modal{
+        .receipt-modal {
 
-            .modal-content{
+            .modal-content {
                 height: 55vh !important;
             }
-    
-            .modal-dialog{
+
+            .modal-dialog {
                 max-width: 73% !important;
                 margin: 0 auto;
-    
+
 
             }
         }
 
         .card-item {
             flex-wrap: wrap;
+            padding-top: 150px !important;
+
 
             .card {
                 width: 26% !important;
 
-                .card-title-second{
+                .card-title-second {
                     font-size: 20px;
                 }
 
-                .card-body{
+                .card-body {
                     padding: 1rem 1.8rem;
 
-                    .card__main{
+                    .card__main {
                         justify-content: space-between;
                         flex-wrap: wrap;
                         gap: 0.5rem;
                     }
 
-                    .course-info-first{
+                    .course-info-first {
                         padding-right: 0 !important;
                     }
-                    .bottom-content{
+
+                    .bottom-content {
                         width: 100%;
                         justify-content: left;
                         align-items: start;
 
-                        .btn-primary{
-                            margin-right:auto;
+                        .btn-primary {
+                            margin-right: auto;
                             margin-left: 0;
                         }
 
-                        .btn{
+                        .btn {
                             width: 64%;
                             margin-left: 10px;
                         }
@@ -12261,18 +12455,18 @@ footer {
 
     }
 
-    .error-main{
+    .error-main {
         flex-wrap: wrap;
         justify-content: center !important;
         text-align: center;
 
-        .btn{
+        .btn {
             width: 40% !important;
         }
     }
 
-    .error-thumbnail{
-        img{
+    .error-thumbnail {
+        img {
             width: 100%;
             max-width: 100%;
         }
@@ -13774,6 +13968,20 @@ footer {
 
     }
 
+    .sidenav {
+        .square {
+            margin-left: 8rem !important;
+        }
+
+        .card-right {
+            padding-left: 4px !important;
+        }
+
+        #card-item-nav {
+            padding-top: 20px !important;
+        }
+    }
+
     .hero-index {
         height: 100%;
 
@@ -13948,6 +14156,13 @@ footer {
             img {
                 width: 100%;
             }
+        }
+    }
+
+    .account__section {
+        #account-profile {
+            margin: 140px 29px;
+            width: 95%;
         }
     }
 
@@ -14342,7 +14557,7 @@ footer {
 
     .main-section {
         .index-main {
-            padding: 7px 98px;
+            padding: 115px 98px;
 
             img {
                 width: 100%;
@@ -14635,7 +14850,7 @@ footer {
     /* 0 width - change this with JavaScript */
     position: fixed;
     /* Stay in place */
-    z-index: 1;
+    z-index: 11111111111111;
     /* Stay on top */
     top: 0;
     right: 0;

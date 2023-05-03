@@ -303,6 +303,9 @@ $('#cert-card').slick({
     dots: false,
     infinite: true,
     speed: 300,
+    prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa-solid fa-chevron-left' aria-hidden='true'></i></button>",
+    nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa-solid fa-chevron-right' aria-hidden='true'></i></button>",
+
     // slidesToShow: 4,
     // slidesToScroll: 2,
     responsive: [{

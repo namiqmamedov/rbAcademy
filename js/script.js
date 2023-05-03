@@ -1,9 +1,34 @@
-$(document).ready(function() {  
-  $('.account-content ul li a').click(function(){  
-    $('.account-content li a').removeClass("active");  
-    $(this).addClass("active");  
-});  
-});  
+// hamburger menu 
+
+hamburger = document.querySelector(".hamburger")
+
+hamburger.onclick = function () {
+    navBar = document.querySelector(".main-text")
+    navBar.classList.toggle("active");
+}
+
+
+// nav box shadow adding in scroll
+
+var navBar = document.getElementById('header-main')
+
+window.addEventListener('scroll', () => {
+  if(window.scrollY > 100){
+    navBar.classList.add('active-header')
+  }
+  else{
+    navBar.classList.remove('active-header')
+  }
+})
+
+
+$(document).ready(function() {
+  $('.account-content ul li a').click(function() {
+      $('.account-content ul li a').removeClass("active");
+      $(this).addClass("active");
+  });
+});
+
 
 const nav = document.getElementById('nav');
 const burger = document.getElementById('burger');
@@ -29,19 +54,6 @@ hamburger.onclick = function () {
     navBar = document.querySelector(".main-text")
     navBar.classList.toggle("active");
 }
-
-// nav box shadow adding in scroll
-
-var navBar = document.getElementById('header-main')
-
-window.addEventListener('scroll', () => {
-  if(window.scrollY > 100){
-    navBar.classList.add('active')
-  }
-  else{
-    navBar.classList.remove('active')
-  }
-})
 
 // animation login page 
 

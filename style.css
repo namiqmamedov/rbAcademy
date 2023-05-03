@@ -9,7 +9,7 @@ a {
   text-decoration: none !important;
 }
 
-.active {
+.active-header {
   background: white;
   box-shadow: 0px 0px 7px rgba(190, 190, 190, 0.5);
 }
@@ -39,6 +39,13 @@ a {
   bottom: 70px;
   z-index: 1000;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.scrollToTop:hover {
+  background: #543ee9;
+}
+.scrollToTop:hover i {
+  color: white;
 }
 .scrollToTop i {
   font-size: 22px;
@@ -55,6 +62,7 @@ a {
 
 .account__section {
   display: flex;
+  overflow-x: hidden;
 }
 .account__section .drawer-account {
   display: none;
@@ -144,12 +152,6 @@ a {
 .account__section .drawer-account a:hover {
   color: goldenrod;
   outline: none;
-}
-@media screen and (max-width: 600px) {
-  .account__section .drawer-account #burger {
-    top: 90%;
-    right: 12%;
-  }
 }
 .account__section .course-main-card {
   padding: 0;
@@ -360,9 +362,9 @@ a {
   color: black;
 }
 .account__section .account-index .account-content ul li a i {
-  padding-right: 2px;
+  padding-left: 2px;
 }
-.account__section .account-index .account-content ul li a.active {
+.account__section .account-index .account-content ul a.active {
   color: #FE5538 !important;
   background: transparent !important;
 }
@@ -405,8 +407,7 @@ a {
   max-width: 47%;
 }
 .account__section .account__course-receipt .main__receipt li .receipt-modal .modal-content {
-  height: 68vh;
-  border: 0;
+  height: 68vh !important;
 }
 .account__section .account__course-receipt .main__receipt li .receipt-modal .modal-content .modal-header {
   align-items: normal;
@@ -563,10 +564,6 @@ header {
   left: 0;
   right: 0;
   z-index: 11111111111111;
-}
-
-#header-acc {
-  position: static;
 }
 
 .header-top {
@@ -1754,7 +1751,7 @@ header {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  z-index: 111111111111;
+  z-index: 111;
   top: 101%;
   left: 46%;
 }
@@ -3297,15 +3294,13 @@ header {
   align-items: center;
   justify-content: center;
   font-size: 12px;
+  color: white;
 }
-.certification__card .slick-prev:hover {
-  background: #543EE9;
-  outline: auto;
-  color: #543EE9;
+.certification__card .slick-prev i {
+  color: white;
 }
 .certification__card .slick-prev::before {
-  font-family: inherit !important;
-  font-size: 16px;
+  display: none;
 }
 .certification__card .slick-next {
   top: auto;
@@ -3321,15 +3316,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 12px;
+  color: white;
 }
-.certification__card .slick-next:hover {
-  background: #543EE9;
-  outline: auto;
-  color: #543EE9;
+.certification__card .slick-next i {
+  color: white;
 }
 .certification__card .slick-next::before {
-  font-family: inherit !important;
-  font-size: 16px;
+  display: none;
 }
 .certification__card .all-item a {
   background: #FFFFFF !important;
@@ -3848,7 +3842,7 @@ footer .last-footer div span {
     top: 80px;
     right: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     background: #FFFFFF;
     transition: 0.2s;
     overflow-y: scroll;
@@ -4006,6 +4000,24 @@ footer .last-footer div span {
     width: 90% !important;
     margin: 176px auto !important;
   }
+  .sidenav .square {
+    margin-left: 8rem !important;
+  }
+  .sidenav .card-right {
+    padding-left: 4px !important;
+  }
+  .sidenav #card-item-nav {
+    padding-top: 40px;
+  }
+  .course-detail {
+    margin-top: 116px;
+  }
+  .course-detail .account__course-detail .course-thumbnail img {
+    width: 90%;
+  }
+  .course-detail .account__course-detail .course__wrapper-body {
+    width: 90% !important;
+  }
   .error-main {
     flex-wrap: wrap;
     justify-content: center !important;
@@ -4135,11 +4147,17 @@ footer .last-footer div span {
     color: #fe5538;
     font-weight: bold;
   }
+  .account__security {
+    flex-wrap: nowrap !important;
+  }
   .account__section {
     flex-wrap: wrap;
   }
   .account__section .account-index {
     display: none;
+  }
+  .account__section .account__main-wrapper {
+    margin-top: 105px;
   }
   .account__section .drawer-account {
     display: block;
@@ -4150,7 +4168,7 @@ footer .last-footer div span {
   .account__section .drawer-account #burger {
     right: auto;
     left: 30%;
-    top: 15%;
+    top: 8.5%;
     width: 44%;
     text-align: center;
   }
@@ -4181,8 +4199,12 @@ footer .last-footer div span {
   .account__section .card-item .card .card-body .course-info-first {
     padding-right: 0 !important;
   }
-  .account__section .account-profile {
+  .account__section #account-profile {
     margin-left: 0;
+    margin-right: 0;
+  }
+  .account__section .account-profile {
+    margin: 109px 17px;
   }
   .account__section .account-profile .change-pass {
     padding-left: 16px;
@@ -4190,6 +4212,9 @@ footer .last-footer div span {
   }
   .account__section .account-profile form {
     padding: 0 10px;
+  }
+  .account__section .account-profile form input {
+    width: 94%;
   }
   .account__section .receipt-modal .modal-content {
     height: 86vh !important;
@@ -5329,9 +5354,27 @@ footer .last-footer div span {
   .drawer-account #burger {
     right: auto;
     left: 30%;
-    top: 13% !important;
+    top: 9% !important;
     width: 42%;
     text-align: center;
+  }
+  .course-detail {
+    margin-top: 116px;
+  }
+  .course-detail .account__course-detail .course-thumbnail img {
+    width: 90%;
+  }
+  .course-detail .account__course-detail .course__wrapper-body {
+    width: 90% !important;
+  }
+  .sidenav .square {
+    margin-left: 8rem !important;
+  }
+  .sidenav .card-right {
+    padding-left: 4px !important;
+  }
+  .sidenav #card-item-nav {
+    padding-top: 20px !important;
   }
   .contact-wrapper {
     padding-top: 140px;
@@ -5435,7 +5478,7 @@ footer .last-footer div span {
     flex-wrap: wrap;
   }
   .account__section .account-profile {
-    margin-left: 0;
+    margin: 195px 17px;
   }
   .account__section .account-profile .change-pass {
     padding-left: 16px;
@@ -5444,8 +5487,12 @@ footer .last-footer div span {
   .account__section .account-profile form {
     padding: 0 10px;
   }
+  .account__section .account-profile form input {
+    width: 94%;
+  }
   .account__section .card-item {
     flex-wrap: wrap;
+    padding-top: 178px !important;
   }
   .account__section .card-item .card {
     width: 48% !important;
@@ -5612,7 +5659,7 @@ footer .last-footer div span {
     top: 80px;
     right: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     background: #FFFFFF;
     transition: 0.2s;
     overflow-y: scroll;
@@ -6534,7 +6581,7 @@ footer .last-footer div span {
     top: 80px;
     right: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     background: #FFFFFF;
     transition: 0.2s;
     overflow-y: scroll;
@@ -6576,7 +6623,7 @@ footer .last-footer div span {
   .drawer-account #burger {
     right: auto;
     left: 30%;
-    top: 13% !important;
+    top: 9.4% !important;
     width: 42%;
     text-align: center;
   }
@@ -6635,6 +6682,15 @@ footer .last-footer div span {
   .course-card .card .card-body {
     padding: 1rem 0.7rem;
   }
+  .course-detail {
+    margin-top: 116px;
+  }
+  .course-detail .account__course-detail .course-thumbnail img {
+    width: 90%;
+  }
+  .course-detail .account__course-detail .course__wrapper-body {
+    width: 90% !important;
+  }
   .account-modal {
     flex-direction: unset !important;
     height: 25rem !important;
@@ -6687,11 +6743,20 @@ footer .last-footer div span {
     font-size: 24px !important;
     font-family: "Futurica", sans-serif;
   }
+  .sidenav .square {
+    margin-left: 8rem !important;
+  }
+  .sidenav .card-right {
+    padding-left: 4px !important;
+  }
+  .sidenav #card-item-nav {
+    padding-top: 20px !important;
+  }
   .account__section {
     flex-wrap: wrap;
   }
   .account__section .account-profile {
-    margin-left: 0;
+    margin: 195px 24px !important;
   }
   .account__section .account-profile .change-pass {
     padding-left: 16px;
@@ -6699,6 +6764,12 @@ footer .last-footer div span {
   }
   .account__section .account-profile form {
     padding: 0 10px;
+  }
+  .account__section .account-profile .passAgain {
+    padding-left: 10px;
+  }
+  .account__section .account-profile .pass {
+    width: 49% !important;
   }
   .account__section .receipt-modal .modal-content {
     height: 55vh !important;
@@ -6718,6 +6789,7 @@ footer .last-footer div span {
   }
   .account__section .card-item {
     flex-wrap: wrap;
+    padding-top: 185px !important;
   }
   .account__section .card-item .card {
     width: 31% !important;
@@ -8036,6 +8108,28 @@ footer .last-footer div span {
     width: 100%;
     max-width: 100%;
   }
+  .account__security {
+    gap: 4rem !important;
+    flex-wrap: nowrap !important;
+  }
+  .account__security .account-profile {
+    width: 80% !important;
+  }
+  .account__security .account-profile .pass {
+    width: 49% !important;
+  }
+  .account__security .account-profile .passAgain {
+    padding-left: 10px;
+  }
+  .sidenav .square {
+    margin-left: 8rem !important;
+  }
+  .sidenav .card-right {
+    padding-left: 4px !important;
+  }
+  .sidenav #card-item-nav {
+    padding-top: 20px !important;
+  }
   .account__section {
     flex-wrap: wrap;
   }
@@ -8067,6 +8161,7 @@ footer .last-footer div span {
   }
   .account__section .card-item {
     flex-wrap: wrap;
+    padding-top: 150px !important;
   }
   .account__section .card-item .card {
     width: 31% !important;
@@ -8973,11 +9068,36 @@ footer .last-footer div span {
     font-weight: 600;
     opacity: 0.85;
   }
+  .sidenav .square {
+    margin-left: 8rem !important;
+  }
+  .sidenav .card-right {
+    padding-left: 4px !important;
+  }
+  .sidenav #card-item-nav {
+    padding-top: 20px !important;
+  }
   .account-modal {
     flex-direction: unset !important;
     height: 100% !important;
     width: 63% !important;
     margin: 176px auto !important;
+  }
+  .account__security {
+    gap: 4rem !important;
+    flex-wrap: nowrap !important;
+  }
+  .account__security .account-profile {
+    width: 63% !important;
+    height: 49%;
+    margin-top: 130px;
+  }
+  .account__security .account-profile .pass {
+    width: 49% !important;
+  }
+  .account__security .account-profile .passAgain {
+    width: 50% !important;
+    padding-left: 11px;
   }
   .account__section .account-profile {
     margin-left: 0;
@@ -8998,6 +9118,7 @@ footer .last-footer div span {
   }
   .account__section .card-item {
     flex-wrap: wrap;
+    padding-top: 150px !important;
   }
   .account__section .card-item .card {
     width: 26% !important;
@@ -10137,6 +10258,15 @@ footer .last-footer div span {
     font-size: 24px !important;
     font-family: "Futurica", sans-serif;
   }
+  .sidenav .square {
+    margin-left: 8rem !important;
+  }
+  .sidenav .card-right {
+    padding-left: 4px !important;
+  }
+  .sidenav #card-item-nav {
+    padding-top: 20px !important;
+  }
   .hero-index {
     height: 100%;
   }
@@ -10260,6 +10390,10 @@ footer .last-footer div span {
   }
   .hero-index-product .video-popup img {
     width: 100%;
+  }
+  .account__section #account-profile {
+    margin: 140px 29px;
+    width: 95%;
   }
   #news-card-detail {
     padding-top: 127px;
@@ -10533,7 +10667,7 @@ footer .last-footer div span {
     padding-left: 85px;
   }
   .main-section .index-main {
-    padding: 7px 98px;
+    padding: 115px 98px;
   }
   .main-section .index-main img {
     width: 100%;
@@ -10754,7 +10888,7 @@ footer .last-footer div span {
   /* 0 width - change this with JavaScript */
   position: fixed;
   /* Stay in place */
-  z-index: 1;
+  z-index: 11111111111111;
   /* Stay on top */
   top: 0;
   right: 0;
