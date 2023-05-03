@@ -750,7 +750,7 @@ header {
 }
 .hero-index .home-main .video-popup img {
   position: relative;
-  z-index: 111111111;
+  z-index: 1;
 }
 .hero-index .home-main .video-popup div {
   position: relative;
@@ -1039,7 +1039,7 @@ header {
   font-size: 22px;
   padding: 33px 39px;
   position: absolute;
-  z-index: 111111111111111;
+  z-index: 1111;
   background: rgba(84, 62, 233, 0.8);
   color: white;
   border-radius: 50%;
@@ -1051,7 +1051,7 @@ header {
 }
 .hero-index-product .home-main .video-popup img {
   position: relative;
-  z-index: 111111111;
+  z-index: 1;
   width: 100%;
   max-width: 100%;
 }
@@ -5060,6 +5060,7 @@ footer .last-footer div span {
 .course-index .course-main {
   display: flex;
   padding-top: 79px;
+  padding-bottom: 120px;
 }
 .course-index .course-main .card-title h3 {
   font-family: "Futurica", sans-serif;
@@ -5317,6 +5318,14 @@ footer .last-footer div span {
   .login-index .register-mobile p {
     font-size: 14px;
     text-align: left;
+  }
+  .grade-card .card-title-second {
+    font-size: 21px !important;
+    line-height: 28px !important;
+  }
+  .grade-card .all-item a {
+    position: relative;
+    width: 25%;
   }
   #certification__card-index .card {
     width: 49% !important;
@@ -6284,20 +6293,8 @@ footer .last-footer div span {
   .book__card .card .card-body .content {
     padding: 2px 20px;
   }
-  .book__card .card img:nth-child(1) {
-    width: 60%;
-    height: 250px;
-  }
-  .book__card .card img:nth-child(2) {
-    width: 60%;
-    height: 250px;
-    top: 0;
-  }
-  .book__card .card img:nth-child(3) {
-    width: 85%;
-    height: 263.5px;
-    right: -166px;
-    top: -8px;
+  .book__card .card img {
+    width: 100%;
   }
   .home-course-index .main-index {
     flex-direction: column;
@@ -10552,7 +10549,7 @@ footer .last-footer div span {
     width: 69%;
   }
   .rating-section .rating-index .card {
-    height: 20%;
+    height: 22%;
   }
   .rating-section .rating-index .wrapper-main {
     padding-left: 30px;

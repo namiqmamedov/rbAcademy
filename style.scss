@@ -50,9 +50,10 @@ a {
     cursor: pointer;
     transition: .3s ease-in-out;
 
-    &:hover{
-        background:  #543ee9;
-        i{
+    &:hover {
+        background: #543ee9;
+
+        i {
             color: white;
         }
     }
@@ -446,6 +447,7 @@ a {
 
                 li {
                     padding-bottom: 13px;
+
                     a {
                         color: black;
 
@@ -951,7 +953,7 @@ header {
         .video-popup {
             img {
                 position: relative;
-                z-index: 111111111;
+                z-index: 1;
             }
 
             div {
@@ -1327,7 +1329,7 @@ header {
                 font-size: 22px;
                 padding: 33px 39px;
                 position: absolute;
-                z-index: 111111111111111;
+                z-index: 1111;
                 background: rgba(84, 62, 233, 0.8);
                 color: white;
                 border-radius: 50%;
@@ -1341,7 +1343,7 @@ header {
 
             img {
                 position: relative;
-                z-index: 111111111;
+                z-index: 1;
                 width: 100%;
                 max-width: 100%;
             }
@@ -4196,14 +4198,14 @@ header {
         font-size: 12px;
         color: white;
 
-        i{
+        i {
             color: white;
         }
 
-        &::before{
+        &::before {
             display: none;
         }
-        
+
     }
 
     .slick-next {
@@ -4223,11 +4225,11 @@ header {
         font-size: 12px;
         color: white;
 
-        i{
+        i {
             color: white;
         }
 
-        &::before{
+        &::before {
             display: none;
         }
 
@@ -6616,6 +6618,7 @@ footer {
     .course-main {
         display: flex;
         padding-top: 79px;
+        padding-bottom: 120px;
 
 
         .card-title {
@@ -6957,6 +6960,20 @@ footer {
             p {
                 font-size: 14px;
                 text-align: left;
+            }
+        }
+    }
+
+    .grade-card{
+        .card-title-second{
+            font-size: 21px !important;
+            line-height: 28px !important;
+        }
+
+        .all-item{
+            a{
+                position: relative;
+                width: 25%;
             }
         }
     }
@@ -8344,23 +8361,7 @@ footer {
             }
 
             img {
-                &:nth-child(1) {
-                    width: 60%;
-                    height: 250px;
-                }
-
-                &:nth-child(2) {
-                    width: 60%;
-                    height: 250px;
-                    top: 0;
-                }
-
-                &:nth-child(3) {
-                    width: 85%;
-                    height: 263.5px;
-                    right: -166px;
-                    top: -8px;
-                }
+                width: 100%;
             }
         }
     }
@@ -14385,7 +14386,7 @@ footer {
 
         .rating-index {
             .card {
-                height: 20%;
+                height: 22%;
             }
 
             .wrapper-main {

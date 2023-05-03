@@ -13,7 +13,7 @@ hamburger.onclick = function () {
 var navBar = document.getElementById('header-main')
 
 window.addEventListener('scroll', () => {
-  if(window.scrollY > 100){
+  if(window.scrollY > 40){
     navBar.classList.add('active-header')
   }
   else{
