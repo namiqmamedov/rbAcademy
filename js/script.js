@@ -1,11 +1,18 @@
-// hamburger menu 
 
-hamburger = document.querySelector(".hamburger")
+const navsearch = document.getElementById('search_nav');
+const burgersearch = document.getElementById('search_burger');
+const overlaysearch = document.getElementById('overlay_search');
 
-hamburger.onclick = function () {
-    navBar = document.querySelector(".main-text")
-    navBar.classList.toggle("active");
-}
+burgersearch.addEventListener('click', () => {
+    burgersearch.classList.toggle('search-active');
+    navsearch.classList.add('translate-active');
+    overlaysearch.classList.toggle('active');
+});
+overlaysearch.addEventListener('click', () => {
+  overlaysearch.classList.remove('active');
+  navsearch.classList.remove('translate-active');
+});
+
 
 
 // nav box shadow adding in scroll
@@ -21,6 +28,15 @@ window.addEventListener('scroll', () => {
   }
 })
 
+
+// hamburger menu 
+
+hamburger = document.querySelector(".hamburger")
+
+hamburger.onclick = function () {
+    navBar1 = document.getElementById("main-text")
+    navBar1.classList.toggle("show-menu");
+}
 
 $(document).ready(function() {
   $('.account-content ul li a').click(function() {

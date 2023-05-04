@@ -18,10 +18,123 @@ a {
   width: 10px;
 }
 
+.show-menu {
+  height: 100vh !important;
+}
+.show-menu ul {
+  opacity: 1 !important;
+}
+
+.mobile-menu {
+  display: none;
+}
+
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #681C7C;
+}
+
+.search-active {
+  transform: translateX(0);
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.translate-active {
+  height: 8% !important;
+}
+
+.search-box #overlay_search {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s linear;
+  height: 0vh;
+  background: black;
+}
+.search-box #overlay_search.active {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.search-box #search_burger {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  padding: 1rem;
+  z-index: 1000;
+  cursor: pointer;
+  transition: 0.3s linear;
+  box-shadow: 2px 2px 5px #17141d;
+}
+.search-box .line {
+  width: 22px;
+  margin-bottom: 5px;
+  height: 2px;
+  background-color: white;
+}
+.search-box .line:last-child {
+  margin-bottom: 0;
+}
+.search-box #search_nav {
+  height: 0%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: white;
+  position: fixed;
+  transition: transform 0.3s linear;
+  top: 0;
+  left: 0;
+}
+.search-box #search_nav.active {
+  transform: translateX(0);
+}
+.search-box ul {
+  list-style: none;
+  text-align: center;
+}
+.search-box li {
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  line-height: 1.6;
+}
+.search-box .text {
+  width: 80%;
+  text-align: center;
+  line-height: 1.8;
+  letter-spacing: 3px;
+}
+.search-box h1 {
+  margin-bottom: 3rem;
+}
+.search-box a {
+  color: #fafafa;
+  transition: 0.3s linear;
+}
+.search-box i {
+  margin: 2rem;
+}
+.search-box a:hover {
+  color: goldenrod;
+  outline: none;
+}
+@media screen and (max-width: 600px) {
+  .search-box #burger_search {
+    top: 90%;
+    right: 12%;
+  }
 }
 
 .scrollToTop {
@@ -37,7 +150,7 @@ a {
   position: fixed;
   right: 50px;
   bottom: 70px;
-  z-index: 1000;
+  z-index: 111111111111111;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
@@ -1817,6 +1930,16 @@ header {
   font-size: 15px;
 }
 
+#main-section {
+  background: transparent;
+  margin-bottom: 85px;
+}
+#main-section .index-main {
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+  padding: 60px 98px;
+}
+
 .main-section {
   background: #E2EAF8;
   margin-top: 65px;
@@ -3537,6 +3660,15 @@ header {
   width: 37%;
 }
 
+.teacher__card {
+  padding-top: 93px;
+  overflow-x: hidden;
+}
+.teacher__card .subtitle {
+  max-width: 591px;
+  margin: 0 auto;
+}
+
 .news-card {
   margin-top: 40px;
   padding: 60px 0;
@@ -3733,6 +3865,46 @@ footer .last-footer div span {
   }
   .top-header .icon-header {
     display: none !important;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .mobile-menu .main-text {
+    height: 0;
+    position: absolute;
+    z-index: 1;
+    top: 129px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background: #FFFFFF;
+    transition: 0.2s;
+    overflow-y: scroll;
+  }
+  .mobile-menu .main-text .bottom-content {
+    display: block !important;
+    padding: 23px 7px;
+  }
+  .mobile-menu .main-text .bottom-content img {
+    padding: 0 7px;
+  }
+  .mobile-menu .main-text ul {
+    flex-direction: column;
+    gap: 0.7rem !important;
+    width: 100% !important;
+    text-align: left;
+    padding: 30px 0;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .mobile-menu .main-text ul li:nth-child(odd) {
+    background: #F4F4F4;
+    padding: 9px 0;
+  }
+  .mobile-menu .main-text ul a {
+    padding-left: 13px;
+    color: black !important;
+    margin-bottom: 12px;
   }
   .login-index .side-1,
   .login-index .side-2 {
@@ -4634,9 +4806,10 @@ footer .last-footer div span {
   .course-card .card {
     display: flex !important;
     margin: 0 auto;
+    width: 60% !important;
   }
   .main-section .index-main {
-    padding: 7px 18px;
+    padding: 47px 18px;
     flex-direction: column;
   }
   .main-section .index-main .fullname {
@@ -4734,10 +4907,14 @@ footer .last-footer div span {
     margin-left: auto;
     margin-right: auto;
   }
+  .grade-card .subtitle {
+    max-width: 456px;
+  }
   .grade-card .card {
     height: 588px !important;
     display: flex !important;
     margin: 0 auto;
+    width: 60% !important;
   }
   .grade-card .card-title-second {
     line-height: 30px !important;
@@ -4778,6 +4955,9 @@ footer .last-footer div span {
   }
   .certification__card .all-item a {
     padding: 7px 32px;
+  }
+  .course-card .subtitle {
+    max-width: 469px;
   }
   .course-card .all-item a {
     padding: 7px 32px;
@@ -4977,11 +5157,6 @@ footer .last-footer div span {
   .about-item {
     overflow-x: hidden;
     overflow-y: hidden;
-  }
-  .info-item {
-    overflow-x: hidden;
-    overflow-y: hidden;
-    height: 580px;
   }
   .grade-card {
     overflow-x: hidden;
@@ -5291,6 +5466,49 @@ footer .last-footer div span {
   }
   .top-header .icon-header {
     display: none !important;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .mobile-menu .main-text {
+    height: 0;
+    position: absolute;
+    z-index: 1;
+    top: 129px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background: #FFFFFF;
+    transition: 0.2s;
+    overflow-y: scroll;
+  }
+  .mobile-menu .main-text .bottom-content {
+    display: block !important;
+    padding: 23px 7px;
+  }
+  .mobile-menu .main-text .bottom-content img {
+    padding: 0 7px;
+  }
+  .mobile-menu .main-text ul {
+    flex-direction: column;
+    gap: 0.7rem !important;
+    width: 100% !important;
+    text-align: left;
+    padding: 30px 0;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .mobile-menu .main-text ul li:nth-child(odd) {
+    background: #F4F4F4;
+    padding: 9px 0;
+  }
+  .mobile-menu .main-text ul a {
+    padding-left: 13px;
+    color: black !important;
+    margin-bottom: 12px;
+  }
+  .certification__card {
+    padding: 40px 0;
   }
   .login-index .side-1,
   .login-index .side-2 {
@@ -5744,6 +5962,22 @@ footer .last-footer div span {
   }
   .course-card .subtitle {
     max-width: 465px;
+  }
+  .course-card .card-title-second {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 27em;
+  }
+  .course-card .card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 27em;
   }
   .hero-index {
     display: block;
@@ -6466,6 +6700,46 @@ footer .last-footer div span {
   }
   .top-header .icon-header {
     display: none !important;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .mobile-menu .main-text {
+    height: 0;
+    position: absolute;
+    z-index: 1;
+    top: 129px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background: #FFFFFF;
+    transition: 0.2s;
+    overflow-y: scroll;
+  }
+  .mobile-menu .main-text .bottom-content {
+    display: block !important;
+    padding: 23px 7px;
+  }
+  .mobile-menu .main-text .bottom-content img {
+    padding: 0 7px;
+  }
+  .mobile-menu .main-text ul {
+    flex-direction: column;
+    gap: 0.7rem !important;
+    width: 100% !important;
+    text-align: left;
+    padding: 30px 0;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .mobile-menu .main-text ul li:nth-child(odd) {
+    background: #F4F4F4;
+    padding: 9px 0;
+  }
+  .mobile-menu .main-text ul a {
+    padding-left: 13px;
+    color: black !important;
+    margin-bottom: 12px;
   }
   .login-index .side-1,
   .login-index .side-2 {

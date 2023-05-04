@@ -20,10 +20,143 @@ a {
 }
 
 
+.show-menu {
+    height: 100vh !important;
+
+    ul {
+        opacity: 1 !important;
+    }
+}
+
+.mobile-menu{
+    display: none;
+}
+
+
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
     background-color: #681C7C;
+}
+
+.search-active{
+    transform: translateX(0);
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.translate-active{
+        height: 8% !important;
+}
+
+.search-box{
+
+    #overlay_search {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s linear;
+        height: 0vh;
+        background: black;
+      }
+      
+      #overlay_search.active {
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+      
+      #search_burger {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(4px);
+        padding: 1rem;
+        z-index: 1000;
+        cursor: pointer;
+        transition: 0.3s linear;
+        box-shadow: 2px 2px 5px #17141d;
+      }
+      
+      
+      .line {
+        width: 22px;
+        margin-bottom: 5px;
+        height: 2px;
+        background-color: white;
+      }
+      
+      .line:last-child {
+        margin-bottom: 0;
+      }
+      
+      #search_nav {
+        height: 0%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        color: white;
+        position: fixed;
+        transition: transform 0.3s linear;
+        top: 0;
+        left: 0;
+      }
+      
+      #search_nav.active {
+        transform: translateX(0);
+      }
+      
+      ul {
+        list-style: none;
+        text-align: center;
+      }
+      
+      li {
+        text-transform: uppercase;
+        font-size: 2rem;
+        letter-spacing: 3px;
+        line-height: 1.6;
+      }
+      
+      .text {
+        width: 80%;
+        text-align: center;
+        line-height: 1.8;
+        letter-spacing: 3px;
+      }
+      
+      h1 {
+        margin-bottom: 3rem;
+      }
+      
+      a {
+        color: #fafafa;
+        transition: 0.3s linear;
+      }
+      
+      i {
+        margin: 2rem;
+      }
+      
+      a:hover {
+        color: goldenrod;
+        outline: none;
+      }
+      
+      @media screen and (max-width: 600px) {
+        #burger_search {
+          top: 90%;
+          right: 12%;
+        }
+      }
+      
 }
 
 .scrollToTop {
@@ -46,7 +179,7 @@ a {
     position: fixed;
     right: 50px;
     bottom: 70px;
-    z-index: 1000;
+    z-index: 111111111111111;
     cursor: pointer;
     transition: .3s ease-in-out;
 
@@ -2330,6 +2463,17 @@ header {
     }
 }
 
+#main-section{
+    background: transparent;
+    margin-bottom: 85px;
+    .index-main{
+        background: #ffffff;
+    -webkit-box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+    box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+    padding: 60px 98px;
+    }
+}
+
 .main-section {
     background: #E2EAF8;
     margin-top: 65px;
@@ -4499,6 +4643,16 @@ header {
     }
 }
 
+.teacher__card{
+        padding-top: 93px;
+        overflow-x: hidden;
+    
+        .subtitle {
+            max-width: 591px;
+            margin: 0 auto;
+        }
+}
+
 .news-card {
     margin-top: 40px;
     padding: 60px 0;
@@ -4755,6 +4909,58 @@ footer {
             display: none !important;
         }
     }
+
+    .mobile-menu{
+        display: block;
+        .main-text {
+            height: 0;
+            position: absolute;
+            z-index: 1;
+            top: 129px;
+            right: 0;
+            left: 0;
+            width: 100%;
+            background: #FFFFFF;
+            transition: .2s;
+            overflow-y: scroll;
+
+            .bottom-content {
+                display: block !important;
+                padding: 23px 7px;
+
+                img {
+                    padding: 0 7px;
+                }
+
+            }
+
+
+            ul {
+                flex-direction: column;
+                gap: 0.7rem !important;
+                width: 100% !important;
+                text-align: left;
+                padding: 30px 0;
+                transition: .5s;
+                opacity: 0;
+
+                li {
+                    &:nth-child(odd) {
+                        background: #F4F4F4;
+                        padding: 9px 0;
+                    }
+                }
+
+                a {
+                    padding-left: 13px;
+                    color: black !important;
+                    margin-bottom: 12px;
+                }
+            }
+
+        }
+    }
+
 
     .login-index {
 
@@ -6032,12 +6238,13 @@ footer {
         .card {
             display: flex !important;
             margin: 0 auto;
+            width: 60% !important;
         }
     }
 
     .main-section {
         .index-main {
-            padding: 7px 18px;
+            padding: 47px 18px;
             flex-direction: column;
 
             .fullname {
@@ -6187,10 +6394,14 @@ footer {
     }
 
     .grade-card {
+        .subtitle{
+            max-width: 456px;
+        }
         .card {
             height: 588px !important;
             display: flex !important;
             margin: 0 auto;
+            width: 60% !important;
         }
 
         .card-title-second {
@@ -6251,6 +6462,9 @@ footer {
     }
 
     .course-card {
+        .subtitle{
+            max-width: 469px;
+        }
         .all-item {
             a {
                 padding: 7px 32px;
@@ -6516,12 +6730,6 @@ footer {
     .about-item {
         overflow-x: hidden;
         overflow-y: hidden;
-    }
-
-    .info-item {
-        overflow-x: hidden;
-        overflow-y: hidden;
-        height: 580px;
     }
 
     .grade-card {
@@ -6926,6 +7134,63 @@ footer {
         }
     }
 
+    .mobile-menu{
+        display: block;
+        .main-text {
+            height: 0;
+            position: absolute;
+            z-index: 1;
+            top: 129px;
+            right: 0;
+            left: 0;
+            width: 100%;
+            background: #FFFFFF;
+            transition: .2s;
+            overflow-y: scroll;
+
+            .bottom-content {
+                display: block !important;
+                padding: 23px 7px;
+
+                img {
+                    padding: 0 7px;
+                }
+
+            }
+
+
+            ul {
+                flex-direction: column;
+                gap: 0.7rem !important;
+                width: 100% !important;
+                text-align: left;
+                padding: 30px 0;
+                transition: .5s;
+                opacity: 0;
+
+                li {
+                    &:nth-child(odd) {
+                        background: #F4F4F4;
+                        padding: 9px 0;
+                    }
+                }
+
+                a {
+                    padding-left: 13px;
+                    color: black !important;
+                    margin-bottom: 12px;
+                }
+            }
+
+        }
+    }
+
+    .certification__card{
+        padding: 40px 0;
+
+    }
+
+
     .login-index {
 
         .side-1,
@@ -6977,6 +7242,7 @@ footer {
             }
         }
     }
+    
 
     #certification__card-index {
         .card {
@@ -7563,6 +7829,24 @@ footer {
     .course-card {
         .subtitle {
             max-width: 465px;
+        }
+
+        .card-title-second{
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            max-width: 27em;
+        }
+
+        .card-text{
+            display: -webkit-box;
+            -webkit-line-clamp: 6;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            max-width: 27em;
         }
     }
 
@@ -8592,6 +8876,58 @@ footer {
             display: none !important;
         }
     }
+
+    .mobile-menu{
+        display: block;
+        .main-text {
+            height: 0;
+            position: absolute;
+            z-index: 1;
+            top: 129px;
+            right: 0;
+            left: 0;
+            width: 100%;
+            background: #FFFFFF;
+            transition: .2s;
+            overflow-y: scroll;
+
+            .bottom-content {
+                display: block !important;
+                padding: 23px 7px;
+
+                img {
+                    padding: 0 7px;
+                }
+
+            }
+
+
+            ul {
+                flex-direction: column;
+                gap: 0.7rem !important;
+                width: 100% !important;
+                text-align: left;
+                padding: 30px 0;
+                transition: .5s;
+                opacity: 0;
+
+                li {
+                    &:nth-child(odd) {
+                        background: #F4F4F4;
+                        padding: 9px 0;
+                    }
+                }
+
+                a {
+                    padding-left: 13px;
+                    color: black !important;
+                    margin-bottom: 12px;
+                }
+            }
+
+        }
+    }
+
 
     .login-index {
 

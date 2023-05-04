@@ -77,8 +77,16 @@ $('#course-item').slick({
     autoplaySpeed: 3000,
     prevArrow: '<i class="fa-solid fa-arrow-left slick-prev"></i>',
     nextArrow: '<i class="fa-solid fa-arrow-right slick-next"></i>',
+    mobileFirst: true,
     responsive: [{
             breakpoint: 2000,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 1200,
             settings: {
                 slidesToShow: 4,
                 slidesToScroll: 2
