@@ -2,15 +2,29 @@
 const navsearch = document.getElementById('search_nav');
 const burgersearch = document.getElementById('search_burger');
 const overlaysearch = document.getElementById('overlay_search');
+const closesearch = document.getElementById('close-btn');
+const searchbox = document.getElementById('search-box');
 
 burgersearch.addEventListener('click', () => {
-    burgersearch.classList.toggle('search-active');
+    burgersearch.classList.add('search-active');
     navsearch.classList.add('translate-active');
-    overlaysearch.classList.toggle('active');
+    navsearch.classList.add('d-block');
+    overlaysearch.classList.add('active');
+    searchbox.classList.remove('d-none');
+    searchbox.classList.add('d-block');
+
 });
 overlaysearch.addEventListener('click', () => {
   overlaysearch.classList.remove('active');
   navsearch.classList.remove('translate-active');
+  navsearch.classList.remove('close-btn');
+  searchbox.classList.add('d-none');
+});
+
+closesearch.addEventListener('click', () => {
+  searchbox.classList.remove('d-block');
+  searchbox.classList.add('d-none');
+
 });
 
 

@@ -44,6 +44,26 @@
             </div>
         </div>
 
+        <div class="search-box" id="search-box">
+                <div id="search_nav">
+                    <div class="container">
+                        <div class="row">
+                            <form class="d-flex" action="#">
+                                <div class="search-body">
+                                    <input type="text" name="query" placeholder="Axtarış">
+                                <button class="d-flex search-btn" type="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <i class="fa-solid fa-circle-xmark" id="close-btn"></i>
+                                </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="overlay_search"> 
+                </div>
+        </div>
+
         <div id="header-main" class="header-main">
             <div class="container">
                 <div class="row">
@@ -57,13 +77,13 @@
                             <ul>
                                 <li><a href="about.html">Haqqımızda</a></li>
                                 <li><a href="course.html">Kurslar</a></li>
-                                <li><a href="#">İmtahanlar</a></li>
+                                <li><a href="course.html">İmtahanlar</a></li>
                                 <li><a href="teacher.html">Müəllimlər</a></li>
                                 <li><a href="grade.html">Məzunlar</a></li>
-                                <li><a href="#">Kitablar</a></li>
-                                <li><a href="#">Sertifikatlar</a></li>
-                                <li><a href="#">Xəbərlər</a></li>
-                                <li><a href="#">Əlaqə</a></li>
+                                <li><a href="book.html">Kitablar</a></li>
+                                <li><a href="certificates.html">Sertifikatlar</a></li>
+                                <li><a href="news.html">Xəbərlər</a></li>
+                                <li><a href="contact.html">Əlaqə</a></li>
                             </ul>
                             <div class="bottom-content">
                                 <img src="/assets/img/Instagram.svg" alt="IG">
@@ -73,21 +93,102 @@
                         </div>
                         <div class="social-link">
                             <div class="wish-list">
-                                <img src="/assets/img/WishList.svg" alt="wishlist">
+                                <a href="#" onclick="openNav()">
+                                    <img src="/assets/img/WishList.svg" alt="wishlist">
+                                </a>
+                                    <div id="mySidenav" class="sidenav">
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                    <div class="sidebar-body">
+                                        <div class="side-title">
+                                            <span> İstək siyahısı</span>
+                                        </div>
+                                        <div class="wish-item">
+                                            <div class="card-item">
+                                                <img src="assets/img/courseCard01.png" alt="course image">
+                                                <div class="card-right">
+                                                    <h5 class="card-title-first">
+                                                        <div class="title-first">
+                                                            <h6>5:07:15 saat</h6>
+                                                            <div class="square"></div>
+                                                        </div>
+                                                        <div class="title-second">
+                                                            <h6>Nailə Axundova</h6>
+                                                        </div>
+                                                    </h5>
+                                                    <div class="card-main">
+                                                        <div class="card-name">
+                                                            Çoxluqlar 
+                                                        </div>
+                                                        <div class="card-price">
+                                                            10 AZN <span>ay</span>
+                                                        </div>
+                                                       </div>
+                                                       <a href="#" class="btn btn-primary">Ətraflı</a>
+                                                </div>
+                                            </div>
+                                            <div class="card-item">
+                                                <img src="assets/img/courseCard01.png" alt="course image">
+                                                <div class="card-right">
+                                                    <h5 class="card-title-first">
+                                                        <div class="title-first">
+                                                            <h6>5:07:15 saat</h6>
+                                                            <div class="square"></div>
+                                                        </div>
+                                                        <div class="title-second">
+                                                            <h6>Nailə Axundova</h6>
+                                                        </div>
+                                                    </h5>
+                                                   <div class="card-main">
+                                                    <div class="card-name">
+                                                        Çoxluqlar 
+                                                    </div>
+                                                    <div class="card-price">
+                                                        10 AZN <span>ay</span>
+                                                    </div>
+                                                   </div>
+                                                   <a href="#" class="btn btn-primary">Ətraflı</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
                             </div>
                             <div class="user">
-                                <img src="/assets/img/User.svg" alt="user">
+                                <a href="./login.html">
+                                    <img src="/assets/img/User.svg" alt="user">
+                                </a>
                             </div>
-                            <div class="search-widget">
+                            <div class="search-widget"  id="search_burger">
                                 <img src="/assets/img/Search.svg" alt="search">
-                            </div>
+                            </div>                   
                             <div class="hamburger">
                                 <div class="line"></div>
                                 <div class="line"></div>
                                 <div class="line"></div>
-                            </div>
+                            </div> 
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+      
+        <div class="mobile-menu">
+            <div id="main-text" class="main-text">
+                <ul>
+                    <li><a href="about.html">Haqqımızda</a></li>
+                    <li><a href="course.html">Kurslar</a></li>
+                    <li><a href="course.html">İmtahanlar</a></li>
+                    <li><a href="teacher.html">Müəllimlər</a></li>
+                    <li><a href="grade.html">Məzunlar</a></li>
+                    <li><a href="book.html">Kitablar</a></li>
+                    <li><a href="certificates.html">Sertifikatlar</a></li>
+                    <li><a href="news.html">Xəbərlər</a></li>
+                    <li><a href="contact.html">Əlaqə</a></li>
+                </ul>
+                <div class="bottom-content">
+                    <img src="/assets/img/Instagram.svg" alt="IG">
+                    <img src="/assets/img/Facebook.svg" alt="FB">
+                    <img src="/assets/img/Twitter.svg" alt="TW">
                 </div>
             </div>
         </div>
@@ -246,7 +347,16 @@
         </div>
     </footer>
 
-    <div id="scrollToTop" class="scrollToTop">
+    <div class="main-btn">
+        <div id="chatBtn" class="scrollToTop">
+            <i class="fa-solid fa-chalkboard-user"></i>
+        </div>
+        <a href="https://wa.me/+994553496060" target="blank" id="wpBtn" class="scrollToTop">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <div id="scrollToTop" class="scrollToTop">
+            <i class="fa-solid fa-chevron-up"></i>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
