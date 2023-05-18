@@ -43,7 +43,7 @@ a {
 }
 
 .translate-active {
-  height: 8% !important;
+  height: 10% !important;
 }
 
 .search-box #overlay_search {
@@ -9274,7 +9274,7 @@ footer .last-footer div span {
     height: 16.5px;
   }
   #search_nav .search-body {
-    padding: 3px 45px !important;
+    padding: 11px 45px !important;
     height: 85%;
   }
   .login-index .container {
